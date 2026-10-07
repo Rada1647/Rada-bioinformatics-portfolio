@@ -1,0 +1,191 @@
+Prospective benchmark of a theorem-linked protein-contact smoother
+
+Computational research report | Frozen protocol 1.1 | AI-assisted analysis and five independent AI technical review roles. This is not human peer review.
+
+The T4 primary practical-success decision is FAIL. The decision requires at least 2% lower mean Brier error than the validation-selected strongest prespecified nonoracle control, improvement on every test run, and no more than two percentage points of rare- or brief-contact recall lost on any run. These are engineering thresholds, not a theorem-derived guarantee.
+
+Experiment | Cubic error | Selected control | Control error | Cubic gain
+T4 primary | 0.040363 | Power (63 settings) | 0.037191 | -8.53%
+Villin stress | 0.019960 | Power (63 settings) | 0.015995 | -24.79%
+
+Positive gain means lower error from the cubic; negative gain means the selected control has lower error. Villin is reported separately and cannot determine the T4 primary decision. Ubiquitin was excluded by the predeclared provenance gate, so there is no ubiquitin denoising result.
+
+Figure: primary_results.png
+
+The method computes H = [I + t(I-A)]^-1 Z and Y = 3H^2 - 2H^3 for binary contact input Z on a reflecting temporal path. This is a faithful binary specialization of the expected median of three independent geometric-walk endpoints. The released geometric inequality does not guarantee lower Brier reconstruction error or improved protein physics. The cubic itself predates the released proof. [1, 2]
+
+T4 lysozyme: held-out simulation runs
+
+The five deposited one-microsecond runs were downloaded completely and checked against their published MD5s. Run md1us4 supplied discovery features; md1us5 supplied validation settings; md1us6, md1us7 and md1us8 were held out for testing. We used 162 CA atoms at 200 ps intervals. The deposited sequence is reported exactly in the provenance audit and is not labelled wild type. The original study concerns side-chain NMR relaxation; its ABSURDer reweighting pipeline is not implemented here. [12, 13]
+
+Relative to the current UniProt P00720 sequence, the deposited 162-residue construct has differences at positions 12, 54, 97 and 137 and lacks the terminal NL. This is a sequence comparison, not a claim that every difference was an engineered mutation. Periodic-boundary reconstruction uses the bonded backbone; all 2,430,486 CA coordinate values in the first run matched full-protein reconstruction exactly. UniProt P00720 was accessed on 7 October 2026; the reference bytes and their hash are retained. [21]
+
+Method | Brier | Rare recall | Brief recall | Occupancy error
+Raw contacts | 0.100013 | 89.99% | 90.00% | 0.083482
+Linear resolvent | 0.050807 | 65.34% | 63.78% | 0.083482
+#332 cubic | 0.040363 | 55.20% | 52.33% | 0.038922
+Known-noise oracle | 0.042255 | 55.20% | 52.33% | 0.041011
+Hard threshold | 0.049474 | 55.20% | 52.33% | 0.019125
+Moving average | 0.056812 | 41.13% | 36.94% | 0.083482
+Gaussian filter | 0.054729 | 46.44% | 38.83% | 0.083482
+Temporal median | 0.062084 | 48.43% | 38.85% | 0.022633
+Power (63 settings) | 0.037191 | 65.34% | 63.78% | 0.022783
+Power alpha=3 (7) | 0.037191 | 65.34% | 63.78% | 0.022783
+
+Recall is the fraction of reference-positive cells recovered at a 0.5 decision threshold. Brief recall concerns cells within complete positive runs of at most 600 ps; it is not an event-detection rate. Occupancy error compares each contact's average predicted and reference occurrence.
+
+At the cubic-selected t=16, the same-t linear comparator has Brier 0.050754 and the cubic has 0.040363. Their threshold disagreements total 0; rare and brief recall are identical at this same smoothing scale. The independently tuned linear method in the preceding table uses t=8, which explains its different recall.
+
+Test run | Brier gain | Rare loss | Brief loss | Gain >0 | Rare gate | Brief gate
+md1us6 | -0.003292 | 8.80% | 11.35% | False | False | False
+md1us7 | -0.003090 | 10.80% | 11.39% | False | False | False
+md1us8 | -0.003134 | 10.81% | 11.62% | False | False | False
+
+Losses in the preceding table are percentage-point differences, displayed as percentage values: e.g. 2.00% means two percentage points. Required gates use unrounded numbers. Primary settings: {"gaussian": {"sigma": 4}, "hard_linear": {"t": 16}, "linear": {"t": 8}, "median": {"width": 9}, "moving_average": {"half_width": 16}, "oracle_debiased_linear": {"t": 16}, "paper332": {"t": 16}, "power_full": {"alpha": 3, "t": 8}, "power_matched": {"alpha": 3, "t": 8}, "raw": {}}.
+
+The matched-budget contrast fixes sharpening alpha=3 using prior adenylate-kinase development information and tunes seven t values, matching the cubic's seven candidates. Its validation-selected comparator is Power alpha=3 (7), Brier 0.037191; cubic relative gain -8.53%. Its separately recorded practical criterion is FAIL.
+
+Test run | Brier gain vs selected control | Noise-only 95% lower | Noise-only 95% upper
+md1us6 | -0.003292 | -0.003311 | -0.003273
+md1us7 | -0.003090 | -0.003110 | -0.003070
+md1us8 | -0.003134 | -0.003151 | -0.003118
+
+These paired intervals describe corruption-draw variability on each fixed reference trajectory. They are pointwise and unadjusted for multiple comparisons; they do not quantify uncertainty across proteins or establish population significance.
+
+Villin: a separate adaptive-sampling stress test
+
+The complete checksum-verified archive contains 2,137 short trajectories across three archive groups. The frozen metadata-only selection chose 24 discovery trajectories from group 1, 24 validation from group 2 and 48 test trajectories from group 3, using SHA256 path ordering. Every path stays separate. These groups resemble adaptive campaigns, but their statistical independence and generation seeds are not certified by the source. The analyzed subset is 96 trajectories, not the entire approximately 107-microsecond archive. [16, 17, 18]
+
+The topology has 35 CA atoms, with norleucine residues at source positions 65 and 70 and HSP at position 68. This is engineered HP35, not wild-type villin. CA selection includes noncanonical residues. The source tutorial reports 360 K; the original coordinates are already whole and pass adjacent-CA geometry checks. Crystal pH from the corroborating PDB entry is not used to infer simulation pH. [19, 20]
+
+Method | Brier | Rare recall | Brief recall | Occupancy error
+Raw contacts | 0.100035 | 90.01% | 90.01% | 0.090070
+Linear resolvent | 0.031136 | 65.60% | 24.00% | 0.090070
+#332 cubic | 0.019960 | 65.60% | 24.00% | 0.034686
+Known-noise oracle | 0.021211 | 65.60% | 24.00% | 0.033234
+Hard threshold | 0.020177 | 70.49% | 30.44% | 0.011296
+Moving average | 0.033692 | 60.47% | 20.91% | 0.090070
+Gaussian filter | 0.032304 | 65.64% | 23.03% | 0.090070
+Temporal median | 0.024049 | 68.09% | 25.42% | 0.010753
+Power (63 settings) | 0.015995 | 70.49% | 30.44% | 0.011579
+Power alpha=3 (7) | 0.015995 | 70.49% | 30.44% | 0.011579
+
+The descriptive stress criterion is FAIL. Cubic and linear predictions at the same t had 0 threshold disagreements. Both primary tuned methods selected t=64; their equal classification recall is consistent with the cubic's monotonic threshold-preserving transformation. Lower Brier error alone can reflect sharper probability estimates without recovering additional binary contacts.
+
+Ubiquitin qualification: no temporal benchmark
+
+The verified PROTHON archive contains native Q99 and five biased partially folded ensembles, each with 5,000 frames. The article reports five native runs and 40 ps sampling, but inspected archive/author code does not document original run boundaries or chronological assembly. MDAnalysis interprets the DCD header spacing as 0.04888821 ps. We therefore did not infer five consecutive 1,000-frame runs, repair the timing by assumption, or compute denoising scores. The archive remains useful for structural-ensemble work; our exclusion applies to this temporal experiment. [14, 15]
+
+All prespecified scenarios
+
+Dataset | Scenario | Cubic error | Selected control | Gain vs control | Gain vs independently tuned linear
+T4 | flip10_cut8 | 0.04036 | Power (63 settings) | -8.53% | +20.55%
+T4 | flip05_cut8 | 0.02715 | Power (63 settings) | -13.55% | +15.80%
+T4 | flip20_cut8 | 0.06191 | Power (63 settings) | -22.76% | +25.16%
+T4 | jitter025_cut8 | 0.04242 | Power (63 settings) | -0.01% | +4.23%
+T4 | jitter050_cut8 | 0.05439 | Power (63 settings) | -2.68% | +11.79%
+T4 | correlated10_cut8 | 0.07896 | Gaussian filter | -26.38% | -1.89%
+T4 | flip10_cut7 | 0.03736 | Power (63 settings) | -9.76% | +21.73%
+T4 | flip10_cut9 | 0.04710 | Power (63 settings) | -7.85% | +16.73%
+Villin | flip10_cut8 | 0.01996 | Power (63 settings) | -24.79% | +35.90%
+Villin | flip05_cut8 | 0.01396 | Power (63 settings) | -22.82% | +29.57%
+Villin | flip20_cut8 | 0.04087 | Power (63 settings) | -69.77% | +36.46%
+Villin | jitter025_cut8 | 0.00757 | Power (63 settings) | -1.08% | +0.90%
+Villin | jitter050_cut8 | 0.01264 | Power (63 settings) | +0.02% | +3.85%
+Villin | correlated10_cut8 | 0.06121 | Temporal median | -48.80% | -1.96%
+Villin | flip10_cut7 | 0.01517 | Power (63 settings) | -32.47% | +42.46%
+Villin | flip10_cut9 | 0.02844 | Power (63 settings) | -19.23% | +28.70%
+
+The independent 10% flip / 8-Angstrom scenario is primary. Other rows are prespecified sensitivity analyses, not opportunities to redefine success. Coordinate-jitter settings are standard deviations in Angstrom per Cartesian component. Correlated errors have stationary prevalence 10% and lag-one correlation 0.8; the error indicator has 0-to-1 and 1-to-0 transition probabilities 0.02 and 0.18, respectively. All control selection used validation scores only.
+
+Damage on clean reference input
+
+Dataset | Method | Clean Brier | Brief recall | Occupancy error
+T4 | Raw contacts | 0.000000 | 100.00% | 0.000000
+T4 | Linear resolvent | 0.022812 | 65.75% | 0.000000
+T4 | #332 cubic | 0.027346 | 52.73% | 0.011024
+T4 | Power (63 settings) | 0.021297 | 65.75% | 0.016132
+Villin | Raw contacts | 0.000000 | 100.00% | 0.000000
+Villin | Linear resolvent | 0.014976 | 21.75% | 0.000000
+Villin | #332 cubic | 0.014780 | 21.75% | 0.007118
+Villin | Power (63 settings) | 0.013757 | 26.97% | 0.009806
+
+All clean-input controls use settings selected on noisy primary validation, without retuning. Unchanged clean input has zero Brier error. Smoothing can erase real changes in the reference trajectory even while reducing artificial noise. This does not establish whether those short contacts are experimentally functional.
+
+Methods and limitations
+
+Nonlocal CA pairs have positional sequence separation at least four. Contacts use strict distance <8 Angstrom, with 7/9-Angstrom sensitivities. Distances use float64 arithmetic from stored float32 coordinates. Discovery-variable features are selected separately at each cutoff. Retrospective smoothers use both past and future observations inside each trajectory. No time interpolation, cross-trajectory filtering or test-set tuning occurs.
+
+The path operator A stays in place with probability one-half at interior frames and moves to either neighboring frame with probability one-quarter. At each endpoint the missing-neighbor probability is added to staying in place. Every contact column and trajectory is processed separately. The output is a set of contact scores, not a reconstructed three-dimensional protein structure.
+
+Rare contacts have discovery frequency at most 10%. Brief-contact recall counts positive cells within complete runs of at most three sampled frames, excluding runs cut off by a trajectory boundary. Constant discovery features are excluded from the scored set, including constant-present pairs. Coverage of newly appearing contacts is only one coverage diagnostic; it does not measure every form of omitted dynamics.
+
+Prespecified controls include linear graph smoothing, hard thresholding, moving average, Gaussian filtering, temporal median filtering, a known-flip-rate oracle and power sharpening. These are explicitly defined generic controls, not full reproductions of cited software pipelines. Power sharpening uses h^alpha/[h^alpha+(1-h)^alpha], equivalent to binary probability sharpening with temperature 1/alpha. Brier error is mean single-binary squared error, without doubling for the complementary class. [3, 5, 6]
+
+Contact-based time-series analysis has prior applications in molecular-dynamics event detection, including TimeScapes. That literature motivates the application context; TimeScapes itself is not a tested baseline here. [4]
+
+T4 primary selected features: 523. Held-out positive-cell fraction in discovery-constant-absent pairs: 0.1983%. Selected features contain 63.3229% of all held-out positive cells; total omitted positive-cell fraction is 36.6771%, including discovery-constant-present pairs. These coverage diagnostics are pooled over cells and do not change the equally weighted trajectory-level primary scores.
+
+Villin primary selected features: 496. Held-out positive-cell fraction in discovery-constant-absent pairs: 0.0000%. Selected features contain 100.0000% of all held-out positive cells; total omitted positive-cell fraction is 0.0000%, including discovery-constant-present pairs. These coverage diagnostics are pooled over cells and do not change the equally weighted trajectory-level primary scores.
+
+Eight validation and sixteen test corruption draws are used per trajectory. Scores average draws within each run and then give each run equal weight. Noise-only paired 95% intervals are descriptive, pointwise, unadjusted for multiple comparisons, and conditional on fixed trajectories. Frames, contacts and noise draws are not independent biological replicates. The small protein panel, artificial corruption models, fixed 200 ps resolution, finite tuning ranges and discovery-feature selection limit external inference. Boundary-selected hyperparameters are reported as such; no grid expansion followed test inspection.
+
+Reproduction and independent checks
+
+Villin: 1105791 scientific numeric fields compared across all 17 validation/test/clean JSON files; 0 differences. Runtime/timestamps and validation-file hashes that include timestamps are explicitly excluded. Reproduction used newly installed benchmark dependencies in a fresh virtual environment on the same host, not an independent computer.
+
+T4: 69721 scientific numeric fields compared across all 17 validation/test/clean JSON files; 0 differences. Runtime/timestamps and validation-file hashes that include timestamps are explicitly excluded. Reproduction used newly installed benchmark dependencies in a fresh virtual environment on the same host, not an independent computer.
+
+Final independent AI review records present: 5 of five. The review roles cover mathematics/implementation, data/provenance, statistics/protocol, citations/claims and numerical reproduction. Consult the individual reports for checks performed, limitations and resolved findings. AI technical audits do not constitute human peer review.
+
+Independent spectral implementations agree on continuous predictions to numerical precision, but some scores extremely close to 0.5 give different binary classifications under floating-point rounding. In sampled independent-solver checks, the largest observed classified-metric shift was 0.0558 percentage points in clean-input rare-contact recall. The review records preserve those discrepancies. Exact same-algorithm reproduction is a separate claim from bitwise agreement between independent mathematical implementations.
+
+From the package directory: create a Python 3.12 virtual environment; install requirements-benchmark.txt; run check_methods.py; then run benchmark_extension.py --dataset t4 --out results/local_t4 and the corresponding villin command. README.txt documents complete acquisition and reconstruction. Core software: NumPy 2.3.5, SciPy 1.17.0 and MDAnalysis 2.9.0; plotting uses Matplotlib. [7, 8, 9, 10, 11]
+
+Villin and ubiquitin source records explicitly specify CC BY 4.0. The examined T4 record supplies no explicit dataset license. Public availability is not treated as a blanket redistribution grant. Original atomistic trajectories are not bundled. This task did not publish a GitHub repository.
+
+Frozen protocol SHA256: 1e25ff2c9890809f5432675c259f8ec705d2ce9bcca23969111f771fd520c84c. The private prospective save predates new-protein outcomes; it is not a public registry preregistration. Protocol v1.0 and its pre-outcome amendment to v1.1 are preserved.
+
+References and source attribution
+
+[1] OpenAI (2026). Metric Markov Cotype Two of ℓ1. https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/preprints/Metric-Markov-Cotype-Two-of-l1-October-5-2026/l1-markov-cotype.pdf
+
+[2] Qingjin Cheng; Yue Wang; Bo Xiang (2026). Sharp Metric Cotype Inequalities for L1 via Nonlinear Cut Smoothing. https://arxiv.org/html/2609.08749v2
+
+[3] Veeru Sadhanala; Yu-Xiang Wang; Ryan Tibshirani (2016). Graph Sparsification Approaches for Laplacian Smoothing. Proceedings of the 19th International Conference on Artificial Intelligence and Statistics; Proceedings of Machine Learning Research; 51; 1250–1259; https://proceedings.mlr.press/v51/sadhanala16.html
+
+[4] Willy Wriggers; Kate A. Stafford; Yibing Shan; Stefano Piana; Paul Maragakis; Kresten Lindorff-Larsen; Patrick J. Miller; Justin Gullingsrud; Charles A. Rendleman; Michael P. Eastwood; Ron O. Dror; David E. Shaw (2009). Automated Event Detection and Activity Monitoring in Long Molecular Dynamics Simulations. Journal of Chemical Theory and Computation; 5; 10; 2595–2605; https://doi.org/10.1021/ct900229u
+
+[5] David Berthelot; Nicholas Carlini; Ian Goodfellow; Nicolas Papernot; Avital Oliver; Colin A. Raffel (2019). MixMatch: A Holistic Approach to Semi-Supervised Learning. Advances in Neural Information Processing Systems; 32; https://papers.neurips.cc/paper_files/paper/2019/hash/1cd138d0499a68f4bb72bee04bbec2d7-Abstract.html
+
+[6] Glenn W. Brier (1950). Verification of forecasts expressed in terms of probability. Monthly Weather Review; 78; 1; 1–3; https://journals.ametsoc.org/view/journals/mwre/78/1/1520-0493_1950_078_0001_vofeit_2_0_co_2.xml
+
+[7] Naveen Michaud-Agrawal; Elizabeth J. Denning; Thomas B. Woolf; Oliver Beckstein (2011). MDAnalysis: A toolkit for the analysis of molecular dynamics simulations. Journal of Computational Chemistry; 32; 10; 2319–2327; https://doi.org/10.1002/jcc.21787
+
+[8] Richard J. Gowers; Max Linke; Jonathan Barnoud; Tyler J. E. Reddy; Manuel N. Melo; Sean L. Seyler; Jan Domański; David L. Dotson; Sébastien Buchoux; Ian M. Kenney; Oliver Beckstein (2016). MDAnalysis: A Python Package for the Rapid Analysis of Molecular Dynamics Simulations. Proceedings of the 15th Python in Science Conference; 98–105; https://doi.org/10.25080/Majora-629e541a-00e
+
+[9] Charles R. Harris; K. Jarrod Millman; Stéfan J. van der Walt; et al. (2020). Array programming with NumPy. Nature; 585; 7825; 357–362; https://doi.org/10.1038/s41586-020-2649-2
+
+[10] Pauli Virtanen; Ralf Gommers; Travis E. Oliphant; et al. (2020). SciPy 1.0: Fundamental Algorithms for Scientific Computing in Python. Nature Methods; 17; 3; 261–272; https://doi.org/10.1038/s41592-019-0686-2
+
+[11] John D. Hunter (2007). Matplotlib: A 2D graphics environment. Computing in Science & Engineering; 9; 3; 90–95; https://doi.org/10.1109/MCSE.2007.55
+
+[12] Felix Kümmerer; Simone Orioli; David Harding-Larsen; Falk Hoffmann; Yulian Gavrilov; Kaare Teilum; Kresten Lindorff-Larsen (2021). Fitting Side-Chain NMR Relaxation Data Using Molecular Simulations. Journal of Chemical Theory and Computation; 17; 8; 5262–5275; https://doi.org/10.1021/acs.jctc.0c01338
+
+[13] Felix Kümmerer; Simone Orioli; David Harding-Larsen; Falk Hoffmann; Yulian Gavrilov; Kaare Teilum; Kresten Lindorff-Larsen (2020). 5x 1 µs all-atom MD trajectories; AMBER ff99SB*-ILDN & TIP4P/2005; T4 Lysozyme; Fitting side-chain NMR relaxation data using molecular simulations. https://zenodo.org/records/3989057
+
+[14] Adekunle Aina; Shawn C. C. Hsueh; Steven S. Plotkin (2023). PROTHON: A Local Order Parameter-Based Method for Efficient Comparison of Protein Ensembles. Journal of Chemical Information and Modeling; 63; 11; 3453–3461; https://doi.org/10.1021/acs.jcim.3c00145
+
+[15] Adekunle Aina; Shawn C. C. Hsueh; Steven S. Plotkin (2023). Molecular dynamics-generated ensemble dataset of ubiquitin; for PROTHON: A Local Order Parameter-Based Method for Efficient Comparison of Protein Ensembles. https://zenodo.org/records/7792288
+
+[16] Stefan Doerr; Matthew J. Harvey; Frank Noé; Gianni De Fabritiis (2016). HTMD: High-Throughput Molecular Dynamics for Molecular Discovery. Journal of Chemical Theory and Computation; 12; 4; 1845–1852; https://doi.org/10.1021/acs.jctc.6b00049
+
+[17] Stefan Doerr (2026). HTMD tutorial data. https://doi.org/10.6084/m9.figshare.32541291.v1
+
+[18] Acellera (2026). Protein folding MSM: villin headpiece. https://software.acellera.com/htmd/tutorials/analysis/villin-folding.html
+
+[19] Jan Kubelka; T.-K. Chiu; David R. Davies; William A. Eaton; James Hofrichter (2006). Sub-microsecond Protein Folding. Journal of Molecular Biology; 359; 546–553; https://doi.org/10.1016/j.jmb.2006.03.034
+
+[20] T. K. Chiu; D. R. Davies; J. Kubelka; J. Hofrichter; W. A. Eaton (2006). 2F4K: Chicken villin subdomain HP-35, K65(NLE), N68H, K70(NLE), pH9. https://www.rcsb.org/structure/2F4K
+
+[21] UniProt Consortium (2026). UniProtKB P00720: Endolysin, bacteriophage T4; reference sequence. https://rest.uniprot.org/uniprotkb/P00720.fasta (accessed 2026-10-07)

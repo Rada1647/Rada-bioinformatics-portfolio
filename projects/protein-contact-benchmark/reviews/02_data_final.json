@@ -1,0 +1,631 @@
+{
+  "reviewer": "Independent AI technical auditor 2 of 5; data and provenance",
+  "review_kind": "AI technical audit, not human peer review",
+  "phase": "final data/preparation audit; report wording review can be appended separately",
+  "created_utc": "2026-10-07T15:55:05.445215+00:00",
+  "overall": "PASS_WITH_BOUNDED_SCOPE_AND_NONBLOCKING_ADVISORY",
+  "scope": {
+    "reviewed": [
+      "Frozen protocol v1.1 data qualification, preprocessing and split rules",
+      "Villin raw ZIP and all archive path inventory",
+      "All three raw Villin topologies",
+      "All 96 selected Villin raw XTC trajectories; full even-frame C-alpha extraction and 7/8/9 Angstrom contacts",
+      "Complete source manifest metadata and ancestry graph",
+      "All prepared coordinate/contact file checksums and discovery-only selection",
+      "Ubiquitin complete raw ZIP, member hashes/CRC, topology and Q99 raw header/time interpretation",
+      "Primary ubiquitin article author PDF, especially pages 4 and 7",
+      "Pinned original author repository (4 tracked files) and current author repository (129 tracked files): Q99 sources, direct scripts/documents, and keyword search",
+      "All5 T4 raw TPR topologies and published source MD5/size records",
+      "All5 completed T4 CA outputs against extraction hashes, atom mappings, finite geometry and exact200ps grid",
+      "All5 prepared T4 coordinate/contact inputs: hash/split consistency, discovery-only feature selection, independent contact and coverage regeneration",
+      "Retained md1us8 raw XTC: complete MD5/SHA256, all1000001 native frame headers,129 full-protein unwrap samples and their direct contacts",
+      "T4 preparation integrity hardening diff and16 isolated rejection/control cases"
+    ],
+    "not_reviewed": [
+      "Raw re-extraction of 2041 unselected Villin trajectories; their metadata records and qualification code were reviewed",
+      "No denoising mathematics, method ranking, or performance claims audited here",
+      "Ubiquitin supporting-information PDF was not obtained; official ACS page lookup returned HTTP403. Absence of run mapping is limited to explicitly inspected sources.",
+      "T4 raw md1us4-7 were removed by acquisition after its checksum/extraction; their complete raw bytes were not independently rehashed/re-extracted by reviewer2. Published MD5 manifests and actual derived-output hashes were independently cross-checked. Saved full-versus-backbone md1us4 array equality is independently confirmed but is not a raw re-extraction.",
+      "T4 raw md1us8 coordinates were independently reconstructed at129 sampled positions, not all5001; all1000001 raw native time headers were checked.",
+      "No model-performance or final report prose was used to change any input qualification or contact selection."
+    ]
+  },
+  "source_hashes_sha256": {
+    "prepare_extension.py": "e5dba0ca20af339d7a45159e35d354d3f01cf473e19982fa375366de19f81aff",
+    "data/villin/qualify_extract.py": "d08847de547d59abaf98409c9fc606ee964c6c01a90dbdefe36ae1bf51ea2f4f",
+    "data/ubiquitin/inspect_archive.py": "ff356650f58f4e11776260d61145a3d3da47f5d3ba9b68bf5e9e07224e25e743",
+    "protocol/protocol_v1.1.json": "1e25ff2c9890809f5432675c259f8ec705d2ce9bcca23969111f771fd520c84c",
+    "data/villin/qualification.json": "141c5c9bc17907a441c81258e5b732a91f8d796e872278a507b14172438dc60b",
+    "data/villin/trajectory_manifest.json": "3af7c623fe28612cd01d1314f1ab89df1dc2ad73e3058cd01a70cfc48ca91d24",
+    "data/prepared/villin/manifest.json": "3a60515ed3f669cfcf28551fd171a2cb0107976988fc8a4848abd29b9bcbaa63",
+    "data/ubiquitin/qualification.json": "5b907dcd133a485af974ae5da426225a341d4ecabf38a093345d708c7fb40bef",
+    "data/ubiquitin/article.pdf": "9a1cae8b84a31ace2763d8c23fdcea25cd4f69a31cdd160304bd2cbf544fed13",
+    "data/ubiquitin/source_provenance.json": "394602b98d2e46bdb08b156cf810b01a8e99f31e9774b1ffa1ee4d732632dbd0",
+    "data/ubiquitin/author_repository/prothon_example_script.py": "51788dc73e2d174fc02f02ffb16027767314616809696ab1e014efce061382a8",
+    "data/ubiquitin/current_author_repository/scripts/ubiquitin_rerun.py": "553259dbb4897e4d197dba0748a91a3fffc52c4b2f102da673fe6ddef8507422",
+    "data/ubiquitin/current_author_repository/scripts/convergence.py": "b0232d36c33e4e7f8cbce5cb5ffce0a50dc3757766396122f872c0fdc53de688",
+    "reviews/02_data_review_checks.py": "d080785b142ac762feb2ff06af7221e36adaca1b22caaf4e6a3927748b7b3567"
+  },
+  "repository_pins": {
+    "PlotkinLab/Prothon": "d2d7fdb462f1cf1fa9294a6a77de8c0ca4e47fbf",
+    "aai-research-lab/Prothon": "882e4f157d7b5db2837e2bdc5bca0ea8ef592a97"
+  },
+  "numerical_check_artifact": "reviews/02_data_numerical_checks.json",
+  "numerical_checks": {
+    "villin_archive": {
+      "bytes": 2559410654,
+      "md5": "484eafab71b27e3d66f48d4820d08f47",
+      "sha256": "4f512459ac7bfc42e8bcd6b247648b9ccdfe60dde7d8ace1dbeb765293618fff"
+    },
+    "selection": {
+      "archive_group_counts": {
+        "1": 708,
+        "2": 710,
+        "3": 719
+      },
+      "selected_split_counts": {
+        "discovery": 24,
+        "validation": 24,
+        "test": 48
+      },
+      "recomputed_from_archive_paths": true,
+      "manifest_eligible_count": 2137,
+      "selection_mismatches": 0,
+      "source_cadence_min_ps": 100.0,
+      "source_cadence_max_ps": 100.0
+    },
+    "ancestry": {
+      "root_count": 60,
+      "parent_links": 2077,
+      "roots_per_group": {
+        "1": 20,
+        "2": 20,
+        "3": 20
+      },
+      "missing_cross_group_cyclic_or_out_of_bounds_links": 0,
+      "independence": "Not established by metadata; adaptive stress reporting remains necessary."
+    },
+    "raw_selected_trajectories_checked": 96,
+    "raw_CA_scalars_checked": 2501205,
+    "max_abs_raw_to_prepared_CA_difference_A": 0.0,
+    "source_time_delta_ps": 100,
+    "prepared_time_delta_ps": 200,
+    "native_nm_to_A_conversion_factor": 10,
+    "contact_checks": {
+      "7": {
+        "eligible_pair_count": 496,
+        "selected_pair_count": 494,
+        "discovery_frame_count": 6000,
+        "constant_absent_count": 2,
+        "constant_present_count": 0,
+        "contact_cells_checked": 11767574,
+        "contact_pair_frequency_or_coverage_mismatches": 0
+      },
+      "8": {
+        "eligible_pair_count": 496,
+        "selected_pair_count": 496,
+        "discovery_frame_count": 6000,
+        "constant_absent_count": 0,
+        "constant_present_count": 0,
+        "contact_cells_checked": 11815216,
+        "contact_pair_frequency_or_coverage_mismatches": 0
+      },
+      "9": {
+        "eligible_pair_count": 496,
+        "selected_pair_count": 496,
+        "discovery_frame_count": 6000,
+        "constant_absent_count": 0,
+        "constant_present_count": 0,
+        "contact_cells_checked": 11815216,
+        "contact_pair_frequency_or_coverage_mismatches": 0
+      }
+    },
+    "ubiquitin": {
+      "archive_bytes": 228792237,
+      "archive_md5": "3372f857beb371ca5ebc8d57877c5c79",
+      "archive_sha256": "d21f88be709745f858a78c11dbfb7ff6bdb014e6cb0aaac2b489071f540dd0d8",
+      "archive_members": [
+        "topology.pdb",
+        "Q80.dcd",
+        "Q99.dcd",
+        "Q95.dcd",
+        "Q75.dcd",
+        "Q90.dcd",
+        "Q85.dcd"
+      ],
+      "all_member_checksums_match_extracted": true,
+      "topology": {
+        "n_atoms": 1231,
+        "n_residues": 76,
+        "n_ca": 76,
+        "sequence": "MQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLRLRGG"
+      },
+      "q99": {
+        "n_frames": 5000,
+        "reader_dt_ps": 0.04888821,
+        "first_time_ps": 0.0,
+        "last_time_ps": 244.39216179000002,
+        "header": {
+          "nset": 5000,
+          "istart": 0,
+          "nsavc": 1,
+          "delta_float": 1.0,
+          "titles": [
+            "Created by DCD plugin",
+            "REMARKS Created Tue Aug 23 18:14:30 2022"
+          ]
+        }
+      }
+    },
+    "stable_complete_manifest_run_indices_verified": true
+  },
+  "findings": [
+    {
+      "id": "D2-01",
+      "severity": "pass",
+      "finding": "Exact Villin construct preserved. All 3 raw PDBs are byte-identical (582 atoms, 35 CA atoms, chain P/segment P1, residues42-76). Residues65/70 are NLE,68 is HSP; name CA selection includes both NLE residues. This supports engineered HP35 labeling, not wild type or a proven exact starting PDB claim.",
+      "evidence": "Raw ZIP topology parse and each of96 XTC selections; topology SHA256 dc6130956f430e68531fa495435fa1cb2e551d2949584a8d0f538b224d43aa06"
+    },
+    {
+      "id": "D2-02",
+      "severity": "pass",
+      "finding": "SHA256 ranking of canonical archive-relative paths reproduces exactly24 discovery(group1),24 validation(group2),48 test(group3), with stable original sorted-manifest run indices. No selected trajectory spans partitions. All2137 archive paths match the source manifest. Metadata ancestry has60 roots and2077 valid within-group links; this does not establish independent campaigns.",
+      "evidence": "Independent selection from ZIP member inventory; source manifest ancestry graph audit."
+    },
+    {
+      "id": "D2-03",
+      "severity": "pass",
+      "finding": "Independent raw re-extraction exactly reproduces2,501,205 selected CA scalars and all sampled timestamps/source frame indices. Every checked source cadence is100ps and stride2 gives200ps; native XTC nm coordinates times10 reproduce stored Angstrom values exactly. Adjacent CA ranges3.5126348634574547-4.136296509676649 Angstrom and minimum-image corrections at numerical roundoff support intact filtered chains without further PBC unwrapping.",
+      "evidence": "All96 selected raw XTCs, including selected nonmodal lengths; distances computed independently using float64 squared distances."
+    },
+    {
+      "id": "D2-04",
+      "severity": "pass",
+      "finding": "496 eligible sequence-separated pairs. Discovery-only6000 frames select494 pairs at7A and496 at8A/9A. Independently regenerated35,398,006 contact cells, feature-pair lists, frequencies and coverage counts exactly match prepared artifacts. Each trajectory remains a separate coordinate/contact file.",
+      "evidence": "No production benchmark function imported by reviews/02_data_review_checks.py."
+    },
+    {
+      "id": "D2-05",
+      "severity": "pass",
+      "finding": "Ubiquitin temporal exclusion is supported within inspected sources. Archive is complete and correctly checksummed, with topology plus six5000-frame DCD ensembles. Primary article reports five50ns native runs, retaining final40ns at40ps. Original example treats Q99 as native reference and other Q values as separate biased ensembles. Neither that example, article, archive, nor inspected current-repository provenance maps original run IDs/boundaries to Q99 frame indices. Current continuous-trajectory/prefix language is weak chronology evidence but no exact five-run mapping.",
+      "evidence": "Verified ZIP member inventory; article page4; author example; scripts/ubiquitin_rerun.py lines3-20,44-64; scripts/convergence.py lines1-54. No boundary inference from5000/5 arithmetic or coordinate jumps was used."
+    },
+    {
+      "id": "D2-06",
+      "severity": "pass",
+      "finding": "Q99 header independently containsNSET5000,ISTART0,NSAVC1,DELTA1 and generic DCD-plugin titles. MDAnalysis gives0.04888821ps, conflicting with published40ps; header constants provide no original run identity. A wrong/placeholder interval alone would not prove unordered frames, so unresolved run mapping, rather than length/header contradiction alone, is the appropriate exclusion basis.",
+      "evidence": "Raw binary header unpack plus independent MDAnalysis Q99 reader."
+    },
+    {
+      "id": "D2-07",
+      "severity": "low",
+      "finding": "qualify_extract.py accepts source100ps cadence within0.1ps whereas protocol requires source cadence dividing200ps within1e-3ps. No current-data consequence: complete source manifest min/max cadences are exactly100ps, every selected raw trajectory verified exactly100ps, and prepared cadence assertion uses1e-3ps.",
+      "recommendation": "For future reuse tighten the source gate to the frozen1e-3ps requirement, with versioned code correction if applied. No rerun or protocol amendment required for present verified data."
+    },
+    {
+      "id": "D2-08",
+      "severity": "scope",
+      "finding": "The absence of a Q99 run/frame mapping is established only for audited sources. Main article mentions supporting figures, but supporting-information PDF was not audited; do not claim no mapping exists anywhere or that the published structural ensemble is invalid.",
+      "recommendation": "Retain current conservative wording and require author mapping or original runs before temporal qualification."
+    },
+    {
+      "id": "D2-T4-01",
+      "severity": "pass",
+      "finding": "All5 TPRs independently match published MD5/size. Protein-only XTC compatibility is supported by identical first2612-atom protein mappings,162 CAs atresidues1-162, protein atom names/bonds and a connected486-atom N-CA-C backbone. Exact deposited sequence is preserved. Comparison to saved164-residue P00720 givesR12G,C54T,C97A,I137R and reference-only terminalNL; do not label the construct wild type or assume every mismatch is engineered.",
+      "evidence": "reviews/02_t4_final_numerical_checks.json topologies and construct_reference_comparison"
+    },
+    {
+      "id": "D2-T4-02",
+      "severity": "pass",
+      "finding": "All5 actual NPZ SHA256 values agree with extraction completion manifests, whose raw checksums/sizes agree with saved published metadata. Arrays are finite5001x162x3 float32; every saved time is exactly0..1000000ps in200ps steps. Saved original md1us4 full-protein and optimized backbone arrays match bitwise in every field. Separate raw4-7 re-extraction was outside retained-raw scope.",
+      "evidence": "Completed_outputs; md1us4_saved_full_vs_backbone_reference."
+    },
+    {
+      "id": "D2-T4-03",
+      "severity": "pass",
+      "finding": "Independently rehashed complete10115749320-byte raw md1us8: MD5 90c65520164769655aebd92d1760662d and SHA256 ded63de376caaec529ab752eac6a288a37af377f94916a1b4e7268f100727b4f. All1000001 XTC headers have expected magic/atom count and timestamps0..1000000 at1ps. The native nm-to-A conversion reproduces reader coordinates exactly.",
+      "evidence": "Raw XTC header byte decode at MDAnalysis frame offsets plus independent full-file hashes."
+    },
+    {
+      "id": "D2-T4-04",
+      "severity": "pass",
+      "finding": "129 evenly spaced md1us8 sampled frames, including endpoints, were independently reconstructed using full-protein make_whole, distinct from the production optimized backbone route. All62694 CA scalars match bitwise despite periodic corrections up to82.35516357421875A. Their223041 selected contact cells across3 cutoffs also match.",
+      "evidence": "raw_md1us8 sample frame list, coordinate errors and contact_sample_check."
+    },
+    {
+      "id": "D2-T4-05",
+      "severity": "pass",
+      "finding": "Final splits are exactlymd1us4 discovery,md1us5 validation,md1us6/7/8 test with separate paths. Independent discovery-only5001-frame selection yields368/523/838 features at7/8/9A out of12561 eligible pairs. All43233645 saved contact cells, selected pair lists, discovery frequencies and coverage counts match independently recomputed squared distances. Prepared manifest records reviewed code/protocol hashes.",
+      "evidence": "prepared_contact_checks and direct prepared-manifest code hash check."
+    },
+    {
+      "id": "D2-T4-06",
+      "severity": "resolved",
+      "finding": "Initial T4 preparation lacked extraction-output hash cross-checks. Root added completion-manifest, size/hash, sample/CA count/cadence/geometry and published-source evidence gates before any T4 preparation. Diff inspection confirms non-T4 code text unchanged;16 isolated negative/control cases reject missing, mismatched, truncated and partial-only evidence before prepared output creation. Final real5-run inputs pass and match completion evidence.",
+      "evidence": "protocol/preparation_integrity_hardening.json; reviews/02_t4_integrity_gate_checks.json; preparationSHA256 ab9d98f07394bb34631a75f119f2aadb2fc14443f4672707944a161271122de0"
+    },
+    {
+      "id": "D2-T4-07",
+      "severity": "low",
+      "finding": "Acquisition uses default numpy isclose/allclose tolerance while the frozen cadence rule specifies1e-3ps; Villin source gate likewise used0.1ps (D2-07). Actual reviewed saved cadence grids are exact, native md1us8 headers are exactly1ps, and final preparation asserts200ps with atol1e-3/rtol0. Thus no present-data consequence.",
+      "recommendation": "For future reuse make acquisition source-cadence tolerances explicit and aligned with protocol; retain the existing actual-data checks."
+    }
+  ],
+  "critical_issue_count": 0,
+  "production_edits_made": false,
+  "pending": "None for final data/preparation audit. Parent may request a bounded final-report wording check.",
+  "initial_review_snapshot": {
+    "path": "reviews/02_data_initial.json",
+    "sha256": "f211c35e9b1ff4866363451b1a9162b8a8dfcd9dee436acefd5075dfa67db25e"
+  },
+  "initial_findings_retained": true,
+  "final_source_hashes_sha256": {
+    "protocol/protocol_v1.1.json": "1e25ff2c9890809f5432675c259f8ec705d2ce9bcca23969111f771fd520c84c",
+    "prepare_extension.py": "ab9d98f07394bb34631a75f119f2aadb2fc14443f4672707944a161271122de0",
+    "protocol/prepare_extension_villin_original.py": "e5dba0ca20af339d7a45159e35d354d3f01cf473e19982fa375366de19f81aff",
+    "protocol/preparation_integrity_hardening.json": "09f6fc86cdd60cbd428788993409740fe0e68c836ff3f555e3bdb3b48b71f6e1",
+    "data/t4/acquire_extract.py": "12de445655198752aa3da4bcafd78611b9398159056ed76284321acf217723cd",
+    "data/t4/zenodo_record.json": "20984ce5c4df217af5016534a96f19bd4e6272d609974c6cfb1e22b5d7723759",
+    "data/t4/qualification_summary.json": "b649ca69a84df290ae7850c01b6c0b3a3c460dfd3dd113908cabd13746262314",
+    "data/prepared/t4/manifest.json": "14327ca99a0f909bf818fdcd3e1c9ef947262cbda50ffcb43e75917675ae0c07",
+    "data/prepared/t4/coverage.json": "6fd32f407b0afb9f54f7d07dea11e3efbd54623e6a025153fc8e457572b97f2b",
+    "reviews/02_t4_data_review.py": "e69d630d6385857c0f58938a0dd06c3527571f6db7e59bd628b020bd8de2e948",
+    "reviews/02_t4_final_numerical_checks.json": "db0b88656c8664bb6088305e6f7923706d260e7a9d3a371bdbb5d1c9616f9af1",
+    "reviews/02_t4_integrity_gate_checks.py": "9a49ce3017a32ca886efd72e4c09db448e6e43098df02b2ccb0f37830762e3a5",
+    "reviews/02_t4_integrity_gate_checks.json": "ed03cc9c0791c97ed6edc72fa34b95975a05fa87f83098fb6e9d13e16d8d78b3",
+    "reviews/02_data_review_checks.py": "f230b8f5d67cd9463bc6c82c07a594ec6b615e666543fbd88a164eab016811a5",
+    "reviews/02_data_review_checks_initial.py": "d080785b142ac762feb2ff06af7221e36adaca1b22caaf4e6a3927748b7b3567",
+    "reviews/02_data_review_checks_numerical_initial.py": "c548bb4eb906cd66105b576438f43cecc1f2946b08b62bb4523556b9a2a73eb0"
+  },
+  "t4_numerical_check_artifact": "reviews/02_t4_final_numerical_checks.json",
+  "t4_numerical_checks": {
+    "reviewer": "Independent AI data/provenance audit #2",
+    "created_utc": "2026-10-07T15:48:41.966546+00:00",
+    "code_sha256": "e69d630d6385857c0f58938a0dd06c3527571f6db7e59bd628b020bd8de2e948",
+    "acquisition_code_sha256": "12de445655198752aa3da4bcafd78611b9398159056ed76284321acf217723cd",
+    "preparation_code_sha256": "ab9d98f07394bb34631a75f119f2aadb2fc14443f4672707944a161271122de0",
+    "protocol_sha256": "1e25ff2c9890809f5432675c259f8ec705d2ce9bcca23969111f771fd520c84c",
+    "topologies": {
+      "md1us4": {
+        "md5": "94dcaca1a87b59e051ecca10fe29d508",
+        "sha256": "6c63dcc8d205cf367916fea351840b12d966ecf122d13af94c09277a0c80fdc2",
+        "bytes": 2299440,
+        "total_atoms": 51932,
+        "protein_atoms": 2612,
+        "ca_count": 162,
+        "sequence": "MNIFEMLRIDEGLRLKIYKDTEGYYTIGIGHLLTKSPSLNAAKSELDKAIGRNTNGVITKDEAEKLFNQDVDAAVRGILRNAKLKPVYDSLDAVRRAALINMVFQMGETGVAGFTNSLRMLQQKRWDEAAVNLAKSRWYNQTPNRAKRVITTFRTGTWDAYK",
+        "residue_start": 1,
+        "residue_end": 162,
+        "connected_backbone_atoms": 486,
+        "bonds_sha256": "b517cb2dbb47fdabb2800c5c9d4212dfd9292b4d1c70346ea9c152ce4ca9179d"
+      },
+      "md1us5": {
+        "md5": "f02fbe8f098255ed93c7155d86a590cf",
+        "sha256": "f9dd6541956db40a79be033a5deb7dbcf806e0e4c93bb0a879418f32bbf96359",
+        "bytes": 2299440,
+        "total_atoms": 51932,
+        "protein_atoms": 2612,
+        "ca_count": 162,
+        "sequence": "MNIFEMLRIDEGLRLKIYKDTEGYYTIGIGHLLTKSPSLNAAKSELDKAIGRNTNGVITKDEAEKLFNQDVDAAVRGILRNAKLKPVYDSLDAVRRAALINMVFQMGETGVAGFTNSLRMLQQKRWDEAAVNLAKSRWYNQTPNRAKRVITTFRTGTWDAYK",
+        "residue_start": 1,
+        "residue_end": 162,
+        "connected_backbone_atoms": 486,
+        "bonds_sha256": "b517cb2dbb47fdabb2800c5c9d4212dfd9292b4d1c70346ea9c152ce4ca9179d"
+      },
+      "md1us6": {
+        "md5": "700612ab7a927c0673710083aba5214a",
+        "sha256": "d3bb2669f24797ee2d7147805a29c177bf78a437c5aa76df11f94fee58dc52b5",
+        "bytes": 2299440,
+        "total_atoms": 51932,
+        "protein_atoms": 2612,
+        "ca_count": 162,
+        "sequence": "MNIFEMLRIDEGLRLKIYKDTEGYYTIGIGHLLTKSPSLNAAKSELDKAIGRNTNGVITKDEAEKLFNQDVDAAVRGILRNAKLKPVYDSLDAVRRAALINMVFQMGETGVAGFTNSLRMLQQKRWDEAAVNLAKSRWYNQTPNRAKRVITTFRTGTWDAYK",
+        "residue_start": 1,
+        "residue_end": 162,
+        "connected_backbone_atoms": 486,
+        "bonds_sha256": "b517cb2dbb47fdabb2800c5c9d4212dfd9292b4d1c70346ea9c152ce4ca9179d"
+      },
+      "md1us7": {
+        "md5": "d5a66ca48a55b43a25830dd9d1355062",
+        "sha256": "dec0cbeffb1ec827720ae8d38c6ef984140597e52944a55df1bfef83d4ebf22d",
+        "bytes": 2299440,
+        "total_atoms": 51932,
+        "protein_atoms": 2612,
+        "ca_count": 162,
+        "sequence": "MNIFEMLRIDEGLRLKIYKDTEGYYTIGIGHLLTKSPSLNAAKSELDKAIGRNTNGVITKDEAEKLFNQDVDAAVRGILRNAKLKPVYDSLDAVRRAALINMVFQMGETGVAGFTNSLRMLQQKRWDEAAVNLAKSRWYNQTPNRAKRVITTFRTGTWDAYK",
+        "residue_start": 1,
+        "residue_end": 162,
+        "connected_backbone_atoms": 486,
+        "bonds_sha256": "b517cb2dbb47fdabb2800c5c9d4212dfd9292b4d1c70346ea9c152ce4ca9179d"
+      },
+      "md1us8": {
+        "md5": "eb4df68b5597af1744bf515734c3286a",
+        "sha256": "7c3b8913295b6f5cbec80e1f98ad78ed846384beacae1c9880a6841d776eac7e",
+        "bytes": 2299440,
+        "total_atoms": 51932,
+        "protein_atoms": 2612,
+        "ca_count": 162,
+        "sequence": "MNIFEMLRIDEGLRLKIYKDTEGYYTIGIGHLLTKSPSLNAAKSELDKAIGRNTNGVITKDEAEKLFNQDVDAAVRGILRNAKLKPVYDSLDAVRRAALINMVFQMGETGVAGFTNSLRMLQQKRWDEAAVNLAKSRWYNQTPNRAKRVITTFRTGTWDAYK",
+        "residue_start": 1,
+        "residue_end": 162,
+        "connected_backbone_atoms": 486,
+        "bonds_sha256": "b517cb2dbb47fdabb2800c5c9d4212dfd9292b4d1c70346ea9c152ce4ca9179d"
+      }
+    },
+    "completed_outputs": {
+      "md1us4": {
+        "sha256": "ad4ff4a7c8691709d4bb4579abfc4e01e9272e3115e054fa287facb58c2d3662",
+        "n_frames": 5001,
+        "n_ca": 162,
+        "times_exact_0_to_1000000_ps_step200": true,
+        "min_adjacent_CA_A": 3.6090710756701188,
+        "max_adjacent_CA_A": 4.149423339121786,
+        "all_CA_scalars_finite": true,
+        "raw_published_md5_manifest_verified": true,
+        "raw_rehash_performed": false,
+        "coordinate_hash_matches_extraction_manifest": true
+      },
+      "md1us5": {
+        "sha256": "af840b43ddd5049ba4a68f8a779f41f4608dd953dccc93f06dc3f1e13d7aaa09",
+        "n_frames": 5001,
+        "n_ca": 162,
+        "times_exact_0_to_1000000_ps_step200": true,
+        "min_adjacent_CA_A": 3.567870495383289,
+        "max_adjacent_CA_A": 4.1190788546668875,
+        "all_CA_scalars_finite": true,
+        "raw_published_md5_manifest_verified": true,
+        "raw_rehash_performed": false,
+        "coordinate_hash_matches_extraction_manifest": true
+      },
+      "md1us6": {
+        "sha256": "7a30f8c9319d542e253be0e092b658d20dc52275c972465f9d54ad0d99f4fe92",
+        "n_frames": 5001,
+        "n_ca": 162,
+        "times_exact_0_to_1000000_ps_step200": true,
+        "min_adjacent_CA_A": 3.595607446276775,
+        "max_adjacent_CA_A": 4.132626748930788,
+        "all_CA_scalars_finite": true,
+        "raw_published_md5_manifest_verified": true,
+        "raw_rehash_performed": false,
+        "coordinate_hash_matches_extraction_manifest": true
+      },
+      "md1us7": {
+        "sha256": "855e3597dd1eea33c1f2301d1d8fb537d9c00a2d2f62c18e9ad09bb03484d605",
+        "n_frames": 5001,
+        "n_ca": 162,
+        "times_exact_0_to_1000000_ps_step200": true,
+        "min_adjacent_CA_A": 3.567982145379955,
+        "max_adjacent_CA_A": 4.133181850817243,
+        "all_CA_scalars_finite": true,
+        "raw_published_md5_manifest_verified": true,
+        "raw_rehash_performed": false,
+        "coordinate_hash_matches_extraction_manifest": true
+      },
+      "md1us8": {
+        "sha256": "88c6f5a0466e0b8647979c700efa44b273de23395478d654e381de1729cccb0f",
+        "n_frames": 5001,
+        "n_ca": 162,
+        "times_exact_0_to_1000000_ps_step200": true,
+        "min_adjacent_CA_A": 3.572383337233701,
+        "max_adjacent_CA_A": 4.125298161499384,
+        "all_CA_scalars_finite": true,
+        "raw_published_md5_manifest_verified": true,
+        "raw_rehash_performed": false,
+        "coordinate_hash_matches_extraction_manifest": true
+      }
+    },
+    "construct_reference_comparison": {
+      "observed_sequence": "MNIFEMLRIDEGLRLKIYKDTEGYYTIGIGHLLTKSPSLNAAKSELDKAIGRNTNGVITKDEAEKLFNQDVDAAVRGILRNAKLKPVYDSLDAVRRAALINMVFQMGETGVAGFTNSLRMLQQKRWDEAAVNLAKSRWYNQTPNRAKRVITTFRTGTWDAYK",
+      "observed_length": 162,
+      "reference_sequence": "MNIFEMLRIDERLRLKIYKDTEGYYTIGIGHLLTKSPSLNAAKSELDKAIGRNCNGVITKDEAEKLFNQDVDAAVRGILRNAKLKPVYDSLDAVRRCALINMVFQMGETGVAGFTNSLRMLQQKRWDEAAVNLAKSIWYNQTPNRAKRVITTFRTGTWDAYKNL",
+      "reference_length": 164,
+      "aligned_mismatches": [
+        {
+          "position": 12,
+          "reference": "R",
+          "observed": "G"
+        },
+        {
+          "position": 54,
+          "reference": "C",
+          "observed": "T"
+        },
+        {
+          "position": 97,
+          "reference": "C",
+          "observed": "A"
+        },
+        {
+          "position": 137,
+          "reference": "I",
+          "observed": "R"
+        }
+      ],
+      "reference_extra_C_terminal_residues": "NL",
+      "interpretation": "Exact deposited162-residue construct; aligned differences do not by themselves establish engineered versus strain/reference substitutions."
+    },
+    "md1us4_saved_full_vs_backbone_reference": {
+      "all_fields_bitwise_equal": true,
+      "scalar_count": 2430486,
+      "scope": "Independent comparison of saved arrays; raw4 removed so not independent raw re-extraction."
+    },
+    "all_five_complete": true,
+    "prepared_exists": true,
+    "prepared_contact_checks": {
+      "7": {
+        "eligible_pairs": 12561,
+        "selected_pairs": 368,
+        "discovery_frames": 5001,
+        "contact_cells_checked": 9201840,
+        "mismatches": 0
+      },
+      "8": {
+        "eligible_pairs": 12561,
+        "selected_pairs": 523,
+        "discovery_frames": 5001,
+        "contact_cells_checked": 13077615,
+        "mismatches": 0
+      },
+      "9": {
+        "eligible_pairs": 12561,
+        "selected_pairs": 838,
+        "discovery_frames": 5001,
+        "contact_cells_checked": 20954190,
+        "mismatches": 0
+      }
+    },
+    "raw_md1us8": {
+      "hashes": {
+        "md5": "90c65520164769655aebd92d1760662d",
+        "sha256": "ded63de376caaec529ab752eac6a288a37af377f94916a1b4e7268f100727b4f"
+      },
+      "bytes": 10115749320,
+      "raw_source_headers_checked": 1000001,
+      "native_source_cadence_exact_ps": 1,
+      "raw_source_time_range_ps": [
+        0.0,
+        1000000.0
+      ],
+      "native_nm_to_angstrom_max_error_A": 0.0,
+      "independent_full_protein_make_whole_sample_frames": [
+        0,
+        39,
+        78,
+        117,
+        156,
+        195,
+        234,
+        273,
+        312,
+        352,
+        391,
+        430,
+        469,
+        508,
+        547,
+        586,
+        625,
+        664,
+        703,
+        742,
+        781,
+        820,
+        859,
+        898,
+        938,
+        977,
+        1016,
+        1055,
+        1094,
+        1133,
+        1172,
+        1211,
+        1250,
+        1289,
+        1328,
+        1367,
+        1406,
+        1445,
+        1484,
+        1523,
+        1562,
+        1602,
+        1641,
+        1680,
+        1719,
+        1758,
+        1797,
+        1836,
+        1875,
+        1914,
+        1953,
+        1992,
+        2031,
+        2070,
+        2109,
+        2148,
+        2188,
+        2227,
+        2266,
+        2305,
+        2344,
+        2383,
+        2422,
+        2461,
+        2500,
+        2539,
+        2578,
+        2617,
+        2656,
+        2695,
+        2734,
+        2773,
+        2812,
+        2852,
+        2891,
+        2930,
+        2969,
+        3008,
+        3047,
+        3086,
+        3125,
+        3164,
+        3203,
+        3242,
+        3281,
+        3320,
+        3359,
+        3398,
+        3438,
+        3477,
+        3516,
+        3555,
+        3594,
+        3633,
+        3672,
+        3711,
+        3750,
+        3789,
+        3828,
+        3867,
+        3906,
+        3945,
+        3984,
+        4023,
+        4062,
+        4102,
+        4141,
+        4180,
+        4219,
+        4258,
+        4297,
+        4336,
+        4375,
+        4414,
+        4453,
+        4492,
+        4531,
+        4570,
+        4609,
+        4648,
+        4688,
+        4727,
+        4766,
+        4805,
+        4844,
+        4883,
+        4922,
+        4961,
+        5000
+      ],
+      "ca_scalars_checked": 62694,
+      "max_abs_CA_error_A": 0.0,
+      "max_raw_to_whole_CA_shift_A": 82.35516357421875,
+      "contact_sample_check": {
+        "contact_cells_checked": 223041,
+        "mismatches": 0
+      }
+    }
+  },
+  "reviewer_artifact_edits": "Only reviewer scripts/evidence were written. Current Villin audit script accepts the preserved original preparation hash after T4-only gate hardening; exact earlier reviewer script snapshots are retained."
+}

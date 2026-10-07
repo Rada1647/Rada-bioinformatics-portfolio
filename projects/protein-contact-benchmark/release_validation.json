@@ -1,0 +1,36 @@
+{
+  "prepared_utc": "2026-10-07T20:45:33.054864+00:00",
+  "purpose": "Packaging verification; original benchmark scientific conclusions unchanged",
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "platform": "linux"
+  },
+  "checks": {
+    "original_files_byte_identical": 135,
+    "original_scientific_output_files": 34,
+    "broken_local_markdown_links": 0,
+    "source_structural_arrays_or_trajectories_in_release": 0,
+    "private_storage_identifiers_in_release": 0,
+    "dense_and_expected_median_method_checks": "pass",
+    "synthetic_end_to_end_benchmark_all_8_scenarios": "pass",
+    "archived_summary_scientific_content_exact_match": true,
+    "archived_metrics_csv_byte_exact_match": true,
+    "t4_missing_or_corrupt_completion_output_guard": "pass (release reproduction agent)",
+    "pinned_archive_size_and_md5_metadata": "pass (release reproduction agent)",
+    "ubiquitin_helper_existing_archive_inspection": "76 CA, 1231 atoms, six 5000-frame DCDs, 0.04888821 ps; no denoising metrics (release reproduction agent)"
+  },
+  "limits": [
+    "No new full protein benchmark rerun during packaging.",
+    "No new 51 GB T4 download during packaging.",
+    "GitHub workflow supplied but not yet executed on GitHub.",
+    "No GitHub repository published by this preparation task.",
+    "Historical five AI technical audits are distinct from human peer review."
+  ],
+  "independent_release_review": {
+    "status": "pass; no remaining blocker",
+    "scope": "Separate AI agent checked original-file identity, 34 results, eight disclosed redactions, extraction-function identity, packaging exclusions, relative links and offline checks.",
+    "limits": "No new source downloads, full protein reruns or GitHub Actions execution."
+  }
+}

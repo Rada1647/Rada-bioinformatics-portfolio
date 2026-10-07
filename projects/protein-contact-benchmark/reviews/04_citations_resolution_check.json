@@ -1,0 +1,47 @@
+{
+  "reviewer": "Independent AI reviewer4: citations and claim scope",
+  "stage": "Resolution check after report-template and response updates; not final study sign-off",
+  "reviewed_utc": "2026-10-07T15:32:07.949721+00:00",
+  "status": "all_requested_citation_scope_fixes_resolved_in_source; generated_outputs_pending",
+  "new_critical_issues": [],
+  "resolved": [
+    {
+      "id": "CIT-TEMPLATE-01",
+      "evidence": "build_report.py now cites Sadhanala/Berthelot/Brier for generic methods and gives TimeScapes a separate accurate contact-event-analysis contextual paragraph. Unused Jaeger/Wolf was removed from references.json."
+    },
+    {
+      "id": "CIT-TEMPLATE-02",
+      "evidence": "UniProtP00720 database-record entry includes exact primary FASTA URL and access date2026-10-07. Report prose explicitly states7October2026 access and archived reference-byte/hash availability."
+    },
+    {
+      "id": "SCOPE-TEMPLATE-01",
+      "evidence": "Report template explicitly says three independent geometric-walk endpoints."
+    },
+    {
+      "id": "SCOPE-01",
+      "evidence": "REVIEW_RESPONSE.txt section2 correctly assigns3test runs toT4 and48selected adaptive test paths to one held-out villin group; preserves immutable numerical output and disclaims biological replication."
+    }
+  ],
+  "response_note_checks": [
+    "Reviewed REVIEW_RESPONSE.txt sections1-8 against recorded reviewer scopes; no newly unsupported scientific attribution found.",
+    "Villin47paths of250frames plus1path of71frames agrees with03_statistics_initial.json.",
+    "Near-threshold account agrees with01_math_initial.json:3and4 distinct cells duplicated across full/matched power families; maximum half-distance1.1379786002407855e-14. Response clearly distinguishes tolerance-level agreement from exact classification equality.",
+    "Median-filter caveat is bounded to reviewer-tested lengths/windows and acknowledges unused short-array edge cases; it does not claim universal SciPy correctness.",
+    "Villin cadence account agrees with02_data_initial.json: source100ps exact, preparation200ps exact, extraction tolerance0.1ps vs frozen1e-3ps.",
+    "T4 preparation-hardening account agrees with dated protocol/preparation_integrity_hardening.json and preserved original script path.",
+    "Backbone/full-protein equality2,430,486scalar values is supported bydata/t4/unwrap_equivalence.json (shape5001x162x3, bitwise equality).",
+    "Fresh villin same-algorithm comparison records1,105,791numeric fields with zero differences, explicitly excluding runtime/timestamp metadata. Response distinguishes same-host reproducibility from independent-host/laboratory validation.",
+    "Private prospective-freeze wording does not claim public preregistration or an independently server-timestamped registry."
+  ],
+  "pending_final_checks": [
+    "REFERENCES.txt intentionally still reflects prior numbering/content until generated from current references.json; verify regenerated text/PDF remove unusedJaeger and includeUniProt.",
+    "General complete-rerun agreement statement is currently evidenced forVillin only; verifyT4fresh reproduction before final output.",
+    "Verify all fiveT4checksum/extraction completions, actual report numbers, final review count and renderedPDF before final sign-off.",
+    "Do not treat these current source/template checks as validation of still-unavailableT4outcomes."
+  ],
+  "reviewed_file_sha256": {
+    "references.json": "a04c4c2f813431112a8fc2916a8f38ca115a87e64426d3986f7c5d2b7d30d790",
+    "build_report.py": "9e1d7583bd11b0b2b7d252d51d958fba46309e82c42bee5450cdd476aebfac5e",
+    "REVIEW_RESPONSE.txt": "86cb961db68436ba4d501dc3f34f98fd787352c108f442ade62a3e5e7be5df78"
+  }
+}

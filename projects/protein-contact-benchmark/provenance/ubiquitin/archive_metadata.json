@@ -1,0 +1,455 @@
+{
+  "software": {
+    "MDAnalysis": "2.9.0",
+    "numpy": "2.3.5"
+  },
+  "topology": {
+    "path": "archive/topology.pdb",
+    "sha256": "7a08edf456bba8931c9796ae9caa534e409b263dd407274d0b2c089cb947aa36",
+    "n_atoms": 1231,
+    "n_residues": 76,
+    "n_CA": 76,
+    "CA_resids": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76
+    ],
+    "CA_resnames": [
+      "MET",
+      "GLN",
+      "ILE",
+      "PHE",
+      "VAL",
+      "LYS",
+      "THR",
+      "LEU",
+      "THR",
+      "GLY",
+      "LYS",
+      "THR",
+      "ILE",
+      "THR",
+      "LEU",
+      "GLU",
+      "VAL",
+      "GLU",
+      "PRO",
+      "SER",
+      "ASP",
+      "THR",
+      "ILE",
+      "GLU",
+      "ASN",
+      "VAL",
+      "LYS",
+      "ALA",
+      "LYS",
+      "ILE",
+      "GLN",
+      "ASP",
+      "LYS",
+      "GLU",
+      "GLY",
+      "ILE",
+      "PRO",
+      "PRO",
+      "ASP",
+      "GLN",
+      "GLN",
+      "ARG",
+      "LEU",
+      "ILE",
+      "PHE",
+      "ALA",
+      "GLY",
+      "LYS",
+      "GLN",
+      "LEU",
+      "GLU",
+      "ASP",
+      "GLY",
+      "ARG",
+      "THR",
+      "LEU",
+      "SER",
+      "ASP",
+      "TYR",
+      "ASN",
+      "ILE",
+      "GLN",
+      "LYS",
+      "GLU",
+      "SER",
+      "THR",
+      "LEU",
+      "HIS",
+      "LEU",
+      "VAL",
+      "LEU",
+      "ARG",
+      "LEU",
+      "ARG",
+      "GLY",
+      "GLY"
+    ],
+    "CA_atom_indices": [
+      4,
+      21,
+      38,
+      57,
+      77,
+      93,
+      115,
+      129,
+      148,
+      162,
+      169,
+      191,
+      205,
+      224,
+      238,
+      257,
+      272,
+      288,
+      305,
+      317,
+      328,
+      340,
+      354,
+      373,
+      388,
+      402,
+      418,
+      440,
+      450,
+      472,
+      491,
+      508,
+      520,
+      542,
+      557,
+      564,
+      585,
+      599,
+      611,
+      623,
+      640,
+      657,
+      681,
+      700,
+      719,
+      739,
+      749,
+      756,
+      778,
+      795,
+      814,
+      829,
+      841,
+      848,
+      872,
+      886,
+      905,
+      916,
+      928,
+      949,
+      963,
+      982,
+      999,
+      1021,
+      1036,
+      1047,
+      1061,
+      1080,
+      1097,
+      1116,
+      1132,
+      1151,
+      1175,
+      1194,
+      1218,
+      1225
+    ],
+    "sequence": "MQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLRLRGG",
+    "chainIDs": [
+      ""
+    ]
+  },
+  "trajectories": [
+    {
+      "path": "archive/Q75.dcd",
+      "sha256": "6838ad4da9b67f0aaa9c7bd135f9d0083bf027ff7ccd80ff165b56c2d55662ea",
+      "n_frames": 5000,
+      "n_atoms": 1231,
+      "reader_dt_ps": 0.04888821,
+      "header": {
+        "nset": 5000,
+        "istart": 0,
+        "nsavc": 1,
+        "delta_raw_float": 1.0,
+        "titles": [
+          "Created by DCD plugin",
+          "REMARKS Created Tue Aug 23 18:16:00 2022"
+        ]
+      },
+      "first_frame": {
+        "time_ps_from_DCD_header": 0.0,
+        "coordinates_finite": true,
+        "dimensions": [
+          63.86466979980469,
+          63.86466979980469,
+          63.86466979980469,
+          90.0,
+          90.0,
+          90.0
+        ]
+      },
+      "last_frame": {
+        "time_ps_from_DCD_header": 244.39216179000002,
+        "coordinates_finite": true
+      }
+    },
+    {
+      "path": "archive/Q80.dcd",
+      "sha256": "9420bb7378dc3e9d3a67c32517386015487a9d727e482fb4f0d6643eac80ed78",
+      "n_frames": 5000,
+      "n_atoms": 1231,
+      "reader_dt_ps": 0.04888821,
+      "header": {
+        "nset": 5000,
+        "istart": 0,
+        "nsavc": 1,
+        "delta_raw_float": 1.0,
+        "titles": [
+          "Created by DCD plugin",
+          "REMARKS Created Tue Aug 23 18:15:43 2022"
+        ]
+      },
+      "first_frame": {
+        "time_ps_from_DCD_header": 0.0,
+        "coordinates_finite": true,
+        "dimensions": [
+          63.8922119140625,
+          63.8922119140625,
+          63.8922119140625,
+          90.0,
+          90.0,
+          90.0
+        ]
+      },
+      "last_frame": {
+        "time_ps_from_DCD_header": 244.39216179000002,
+        "coordinates_finite": true
+      }
+    },
+    {
+      "path": "archive/Q85.dcd",
+      "sha256": "72d2dc391a102528797bfa250b31e79a0bd79daae4b5c6381d9487f963bdc31e",
+      "n_frames": 5000,
+      "n_atoms": 1231,
+      "reader_dt_ps": 0.04888821,
+      "header": {
+        "nset": 5000,
+        "istart": 0,
+        "nsavc": 1,
+        "delta_raw_float": 1.0,
+        "titles": [
+          "Created by DCD plugin",
+          "REMARKS Created Tue Aug 23 18:15:26 2022"
+        ]
+      },
+      "first_frame": {
+        "time_ps_from_DCD_header": 0.0,
+        "coordinates_finite": true,
+        "dimensions": [
+          63.926700592041016,
+          63.926700592041016,
+          63.926700592041016,
+          90.0,
+          90.0,
+          90.0
+        ]
+      },
+      "last_frame": {
+        "time_ps_from_DCD_header": 244.39216179000002,
+        "coordinates_finite": true
+      }
+    },
+    {
+      "path": "archive/Q90.dcd",
+      "sha256": "6fc0c4c4e90084c31cad5044b44cf0793db6ebbee4f5f74854251b876ec9f2d5",
+      "n_frames": 5000,
+      "n_atoms": 1231,
+      "reader_dt_ps": 0.04888821,
+      "header": {
+        "nset": 5000,
+        "istart": 0,
+        "nsavc": 1,
+        "delta_raw_float": 1.0,
+        "titles": [
+          "Created by DCD plugin",
+          "REMARKS Created Tue Aug 23 18:15:08 2022"
+        ]
+      },
+      "first_frame": {
+        "time_ps_from_DCD_header": 0.0,
+        "coordinates_finite": true,
+        "dimensions": [
+          63.98090362548828,
+          63.98090362548828,
+          63.98090362548828,
+          90.0,
+          90.0,
+          90.0
+        ]
+      },
+      "last_frame": {
+        "time_ps_from_DCD_header": 244.39216179000002,
+        "coordinates_finite": true
+      }
+    },
+    {
+      "path": "archive/Q95.dcd",
+      "sha256": "c0cdce204108bed3de7c209dd447dd0c6ab3e9b5e4480dfeec5ac71032e5032f",
+      "n_frames": 5000,
+      "n_atoms": 1231,
+      "reader_dt_ps": 0.04888821,
+      "header": {
+        "nset": 5000,
+        "istart": 0,
+        "nsavc": 1,
+        "delta_raw_float": 1.0,
+        "titles": [
+          "Created by DCD plugin",
+          "REMARKS Created Tue Aug 23 18:14:50 2022"
+        ]
+      },
+      "first_frame": {
+        "time_ps_from_DCD_header": 0.0,
+        "coordinates_finite": true,
+        "dimensions": [
+          63.86115646362305,
+          63.86115646362305,
+          63.86115646362305,
+          90.0,
+          90.0,
+          90.0
+        ]
+      },
+      "last_frame": {
+        "time_ps_from_DCD_header": 244.39216179000002,
+        "coordinates_finite": true
+      }
+    },
+    {
+      "path": "archive/Q99.dcd",
+      "sha256": "85ed381b44ec574eefd9e4706742a9a3f203c12d11bf818b8a92f570b809aa91",
+      "n_frames": 5000,
+      "n_atoms": 1231,
+      "reader_dt_ps": 0.04888821,
+      "header": {
+        "nset": 5000,
+        "istart": 0,
+        "nsavc": 1,
+        "delta_raw_float": 1.0,
+        "titles": [
+          "Created by DCD plugin",
+          "REMARKS Created Tue Aug 23 18:14:30 2022"
+        ]
+      },
+      "first_frame": {
+        "time_ps_from_DCD_header": 0.0,
+        "coordinates_finite": true,
+        "dimensions": [
+          63.97605514526367,
+          63.97605514526367,
+          63.97605514526367,
+          90.0,
+          90.0,
+          90.0
+        ]
+      },
+      "last_frame": {
+        "time_ps_from_DCD_header": 244.39216179000002,
+        "coordinates_finite": true
+      }
+    }
+  ],
+  "warnings": [
+    "DCDReader currently makes independent timesteps by copying self.ts while other readers update self.ts inplace. This behavior will be changed in 3.0 to be the same as other readers. Read more at https://github.com/MDAnalysis/mdanalysis/issues/3889 to learn if this change in behavior might affect you."
+  ],
+  "interpretation": "DCD reader timing is generated from file-wide header constants and cannot establish provenance or boundaries between original independent runs."
+}

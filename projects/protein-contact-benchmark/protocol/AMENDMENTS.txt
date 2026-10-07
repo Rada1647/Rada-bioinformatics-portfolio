@@ -1,0 +1,7 @@
+PROSPECTIVE AMENDMENT LOG
+
+v1.0 retained without modification.
+v1.1 2026-10-07T14:43:11.810208+00:00
+Before any new-protein benchmark outcomes: archive metadata shows three villin archive groups with complete within-group ancestry; adaptive selection can couple ancestral roots. Hold out entire archive groups rather than split roots. Clarify metric formulas and primary scope. No outcome-informed change.
+No new-protein denoising outcomes have been calculated or inspected.
+Final protocol SHA256: 1e25ff2c9890809f5432675c259f8ec705d2ce9bcca23969111f771fd520c84c

@@ -1,0 +1,82 @@
+{
+  "dataset": "PROTHON ubiquitin ensemble dataset, Zenodo 7792288 v1",
+  "decision": "NOT_QUALIFIED_FOR_CONFIRMATORY_TEMPORAL_BENCHMARK",
+  "eligible": false,
+  "decision_utc": "2026-10-07T14:41:45.495416+00:00",
+  "decision_basis": "Archive is a verified structural ensemble dataset, but original per-run chronological ordering and run-to-frame mapping are not established by the inspected provenance.",
+  "access_verified": true,
+  "checksum_verified": true,
+  "archive_md5": "3372f857beb371ca5ebc8d57877c5c79",
+  "archive_sha256": "d21f88be709745f858a78c11dbfb7ff6bdb014e6cb0aaac2b489071f540dd0d8",
+  "archive_bytes": 228792237,
+  "license": "CC-BY-4.0 (Zenodo record metadata)",
+  "content": {
+    "topology_atoms": 1231,
+    "residues": 76,
+    "CA_atoms": 76,
+    "sequence": "MQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLRLRGG",
+    "native_ensemble": "Q99.dcd",
+    "native_frames": 5000,
+    "partially_folded_biased_ensembles": [
+      "Q75.dcd",
+      "Q80.dcd",
+      "Q85.dcd",
+      "Q90.dcd",
+      "Q95.dcd"
+    ],
+    "frames_per_dcd": 5000,
+    "archive_readme_present": false,
+    "archive_run_manifest_present": false
+  },
+  "paper_reported_runs": {
+    "native_independent_runs": 5,
+    "per_run_total_ns": 50,
+    "retained_final_ns": 40,
+    "sampling_interval_ps": 40,
+    "per_ensemble_frames": 5000,
+    "pdb": "1UBQ",
+    "force_field": "CHARMM36m",
+    "temperature_K": 300,
+    "pressure_bar": 1,
+    "water": "TIP3P",
+    "NaCl_mM": 150
+  },
+  "time_metadata": {
+    "DCD_reader_interval_ps": 0.04888821,
+    "paper_sampling_interval_ps": 40,
+    "consistent": false,
+    "explanation": "DCD header supplies one constant DELTA=1 with NSAVC=1 and no original-run identifiers; MDAnalysis interprets this as 0.04888821 ps, not the reported 40 ps sampling. It cannot verify physical timing or replicate boundaries."
+  },
+  "sources_examined": [
+    "Zenodo API metadata and all seven archive members",
+    "Primary article DOI 10.1021/acs.jcim.3c00145, especially ubiquitin simulations methods",
+    "PlotkinLab/Prothon at d2d7fdb462f1cf1fa9294a6a77de8c0ca4e47fbf: all four tracked files",
+    "aai-research-lab/Prothon at 882e4f157d7b5db2837e2bdc5bca0ea8ef592a97: ubiquitin reanalysis, convergence scripts, related documentation and full-repository keyword search"
+  ],
+  "requirements_to_qualify": [
+    "Author-provided run-to-frame mapping or trajectory-assembly script specifying exact original-run boundaries",
+    "Confirmation of chronological frame order within each run and correspondence to the reported 40 ps sampling",
+    "Preferably original five separate native trajectories with their topology and time metadata"
+  ],
+  "prohibited_inferences": [
+    "Do not assume five consecutive 1000-frame chunks merely because the paper reports five runs and 5000 frames",
+    "Do not infer run provenance from coordinate jumps alone",
+    "Do not treat the six DCDs as six native equilibrium replicates",
+    "Do not treat DCD reader timing as original physical sampling"
+  ],
+  "benchmark_activity": {
+    "denoising_or_contact_metrics_computed": false,
+    "per_run_arrays_exported": false,
+    "authors_contacted": false,
+    "replacement_dataset_selected": false
+  },
+  "audit_files": [
+    "download_audit.json",
+    "archive_metadata.json",
+    "source_provenance.json",
+    "zenodo_record.json",
+    "download_qualification.py",
+    "download_ranges.py",
+    "inspect_archive.py"
+  ]
+}

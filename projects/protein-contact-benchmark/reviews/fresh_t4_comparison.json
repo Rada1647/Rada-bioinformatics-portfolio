@@ -1,0 +1,105 @@
+{
+  "checked_utc": "2026-10-07T16:01:35.073145+00:00",
+  "original": "/workspace/scratch/deb205ad356c/protein332_extension/results/t4",
+  "reproduction": "/workspace/scratch/deb205ad356c/protein332_extension/results/reproduced_t4",
+  "files": [
+    {
+      "file": "correlated10_cut8_test.json",
+      "original_sha256": "71165d7aea49ecfe2973b80207747b2edee163393c48720e0a0af023ffe5eaa4",
+      "reproduction_sha256": "317c855ecd7a6f79811757670b4043b32fe8780d76bc60ed3a1c2dab3060973b"
+    },
+    {
+      "file": "correlated10_cut8_validation.json",
+      "original_sha256": "f48f8c6fb9b2e778942032f2682d0bd5f28fd536642b0305a782c9776ba6a23f",
+      "reproduction_sha256": "f675cc6d1e2a6b792433efdd05bcfa5fd5205765b56f6b1a20a586f37dcecdb0"
+    },
+    {
+      "file": "flip05_cut8_test.json",
+      "original_sha256": "96aab5b4360fb9575682acbe5d4460f9067f194c33bc3d9bad0dce33dc1fca82",
+      "reproduction_sha256": "b9127bc472a19661d71824e27fd76297701ba6c8e315bdf70978672734fc5140"
+    },
+    {
+      "file": "flip05_cut8_validation.json",
+      "original_sha256": "3908aa30a89d19575d04e5258d56c9f664149374721778f159e57787496fb057",
+      "reproduction_sha256": "d1e9ec30b1633a66d65ab8700e64b0b4d957fbddd272030386c4946cf09be79b"
+    },
+    {
+      "file": "flip10_cut7_test.json",
+      "original_sha256": "848f6a10816d35d4d75aeca7b7f1bc1db9417eea9d990c1db545a2b227001ed9",
+      "reproduction_sha256": "225354d166e4f8d0acf745cceba9af888949950f2c511f00193b809c620e8bd1"
+    },
+    {
+      "file": "flip10_cut7_validation.json",
+      "original_sha256": "6c8cdd501c07e98e83b6d0f62310e022bb0d90301fb8a0c0059bc5ab84a2def7",
+      "reproduction_sha256": "b97e8ffa2b84f755fc97f3088752802bd0e5b344752966171bdc5a5ca6d69b23"
+    },
+    {
+      "file": "flip10_cut8_test.json",
+      "original_sha256": "55a8be0286cce83e055c1532f625ed5b83a086d89dc9969589aa5a29ba9f5cc5",
+      "reproduction_sha256": "a98af4af63aba0bb636b6e37bd2a73588636eac38c9d1af644636174e829d958"
+    },
+    {
+      "file": "flip10_cut8_validation.json",
+      "original_sha256": "79576cdb4c54152aa5b8ec3cd12bebadf83dbdcb9644b65e272e1993bb407d44",
+      "reproduction_sha256": "907151bf73a8076be2f58d850227e5dcba5412aa793f3618acbac3e1ced7edd6"
+    },
+    {
+      "file": "flip10_cut9_test.json",
+      "original_sha256": "8dbc4c9e1492585770cb3faaf4f68cd5a2132a74a8221e88a2c29fc2665be632",
+      "reproduction_sha256": "90333dbf3c0c3db161f82e25ef1032953a8e1598f3e773abc82678b84b0da1e3"
+    },
+    {
+      "file": "flip10_cut9_validation.json",
+      "original_sha256": "827555675ab505e450d6696c4f0fa44936e8d1c4611a82f73b19b44497638994",
+      "reproduction_sha256": "a6257def4c1bd55e273d56f0b5855aa21089566148ee500959bd63561e864082"
+    },
+    {
+      "file": "flip20_cut8_test.json",
+      "original_sha256": "801cdfdb8ffd0bbfee7bde95e37c3a881b94be6cd5ed4dcbe3b6f63df319ca1b",
+      "reproduction_sha256": "e7a07a11ee3fa08bcff9f9e4169f08c9464f32ba11cbdb949ca52a98ce16ee9f"
+    },
+    {
+      "file": "flip20_cut8_validation.json",
+      "original_sha256": "9445f418c26e81c5b4b97cfa0de0bf8aa0402a40707fee8ed87526437480584c",
+      "reproduction_sha256": "105f2d9c0f9924d8221b70dabd881f9e9e31f7ba409955869f78c9e219c63bd7"
+    },
+    {
+      "file": "jitter025_cut8_test.json",
+      "original_sha256": "902641ee3a29e41c60fa2e048c55dd88c5a5600a051bfd2572f6cc54843b2d6b",
+      "reproduction_sha256": "b2789b3be0e75526fc4f4ad674d32974ac8b3a26b6061d9dd9dbb36459241c94"
+    },
+    {
+      "file": "jitter025_cut8_validation.json",
+      "original_sha256": "feec8c41d28aad1733403cb5e8f3c829eb2b8f3a699cc2e6951079ce9eabab99",
+      "reproduction_sha256": "ed3e284fa6e9c681848244a5be064f4a4a5c6cb9b9b24a1f4ce4e5a939d982f9"
+    },
+    {
+      "file": "jitter050_cut8_test.json",
+      "original_sha256": "571da6e27cbea73dafa552f0c8c6b6ea04e2180c1f22d92d83361b562ce90e09",
+      "reproduction_sha256": "eb85c30cf6771eb66951e7fcecd2d50b2a0207d4842c3e232224be0154caef3b"
+    },
+    {
+      "file": "jitter050_cut8_validation.json",
+      "original_sha256": "ffe086f96d3e3f9bccd8db2c618b2afe8b438e7cdbf988550c353305cf92ab67",
+      "reproduction_sha256": "fed693efe4a92ead0ac72f866d3155d1286918172218d3e7bdcb9734068c78fe"
+    },
+    {
+      "file": "primary_clean.json",
+      "original_sha256": "774acbae37aa0aeeaba1f04ee92c2008e52ea2af04397ca74d57f2868c71dafa",
+      "reproduction_sha256": "169a455492024dbe049db1aeb3ff7b0feb567c250b2a22d1db1c5b500452ab62"
+    }
+  ],
+  "excluded_metadata_keys": [
+    "completed_utc",
+    "method_prediction_and_metrics_seconds",
+    "seconds",
+    "validation_file_sha256"
+  ],
+  "numeric_fields_compared": 69721,
+  "other_scalar_fields_compared": 1123,
+  "difference_count": 0,
+  "max_absolute_difference": 0.0,
+  "differences": [],
+  "status": "exact_match",
+  "scope": "All17 scientific output JSON files; invocation timestamps/paths and runtime metadata are not reproducibility targets. This comparison is numerical reproduction of the same algorithm, not an independent algorithm implementation."
+}

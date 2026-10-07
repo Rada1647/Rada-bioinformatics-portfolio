@@ -1,0 +1,2333 @@
+{
+  "7": {
+    "all_eligible_pair_count": 496,
+    "selected_pair_count": 494,
+    "discovery_frame_count": 6000,
+    "discovery_constant_absent_pairs": 2,
+    "discovery_constant_present_pairs": 0,
+    "runs": {
+      "group1__e12s2_e7s3p0f184": {
+        "split": "discovery",
+        "all_positive_cells": 6471,
+        "selected_positive_cells": 6471,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group1__e15s8_e3s1p0f254": {
+        "split": "discovery",
+        "all_positive_cells": 5102,
+        "selected_positive_cells": 5102,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group1__e16s3_e12s2p0f387": {
+        "split": "discovery",
+        "all_positive_cells": 6504,
+        "selected_positive_cells": 6504,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group1__e1s4_2": {
+        "split": "discovery",
+        "all_positive_cells": 6062,
+        "selected_positive_cells": 6062,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group1__e20s10_e11s10p0f33": {
+        "split": "discovery",
+        "all_positive_cells": 5088,
+        "selected_positive_cells": 5088,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group1__e28s10_e27s6p0f134": {
+        "split": "discovery",
+        "all_positive_cells": 5478,
+        "selected_positive_cells": 5478,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group1__e29s6_e15s10p0f10": {
+        "split": "discovery",
+        "all_positive_cells": 4495,
+        "selected_positive_cells": 4495,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group1__e30s2_e18s9p0f101": {
+        "split": "discovery",
+        "all_positive_cells": 6739,
+        "selected_positive_cells": 6739,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group1__e33s7_e28s12p0f125": {
+        "split": "discovery",
+        "all_positive_cells": 4933,
+        "selected_positive_cells": 4933,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group1__e33s8_e31s14p0f0": {
+        "split": "discovery",
+        "all_positive_cells": 8554,
+        "selected_positive_cells": 8554,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group1__e35s2_e24s5p0f215": {
+        "split": "discovery",
+        "all_positive_cells": 6100,
+        "selected_positive_cells": 6100,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group1__e36s8_e2s17p0f451": {
+        "split": "discovery",
+        "all_positive_cells": 4926,
+        "selected_positive_cells": 4926,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group1__e39s3_e30s3p0f14": {
+        "split": "discovery",
+        "all_positive_cells": 5020,
+        "selected_positive_cells": 5020,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group1__e42s10_e30s6p0f49": {
+        "split": "discovery",
+        "all_positive_cells": 4608,
+        "selected_positive_cells": 4608,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group1__e42s7_e24s8p0f161": {
+        "split": "discovery",
+        "all_positive_cells": 4947,
+        "selected_positive_cells": 4947,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group1__e48s6_e30s4p0f166": {
+        "split": "discovery",
+        "all_positive_cells": 6560,
+        "selected_positive_cells": 6560,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group1__e49s5_e20s9p0f25": {
+        "split": "discovery",
+        "all_positive_cells": 5766,
+        "selected_positive_cells": 5766,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group1__e51s6_e46s12p0f1": {
+        "split": "discovery",
+        "all_positive_cells": 4488,
+        "selected_positive_cells": 4488,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group1__e53s7_e22s8p0f164": {
+        "split": "discovery",
+        "all_positive_cells": 4567,
+        "selected_positive_cells": 4567,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group1__e54s3_e27s2p0f264": {
+        "split": "discovery",
+        "all_positive_cells": 4523,
+        "selected_positive_cells": 4523,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group1__e57s2_e45s13p0f369": {
+        "split": "discovery",
+        "all_positive_cells": 8276,
+        "selected_positive_cells": 8276,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group1__e57s7_e36s3p0f438": {
+        "split": "discovery",
+        "all_positive_cells": 7243,
+        "selected_positive_cells": 7243,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group1__e5s3_e2s1p0f225": {
+        "split": "discovery",
+        "all_positive_cells": 4941,
+        "selected_positive_cells": 4941,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group1__e8s3_e5s1p0f423": {
+        "split": "discovery",
+        "all_positive_cells": 6181,
+        "selected_positive_cells": 6181,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group2__e11s4_e10s3p0f86": {
+        "split": "validation",
+        "all_positive_cells": 9727,
+        "selected_positive_cells": 9684,
+        "discovery_absent_positive_cells": 43,
+        "discovery_absent_positive_fraction": 0.004420684692094171,
+        "omitted_positive_cells": 43
+      },
+      "group2__e12s11_e10s7p0f362": {
+        "split": "validation",
+        "all_positive_cells": 5868,
+        "selected_positive_cells": 5868,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group2__e12s9_e7s3p0f22": {
+        "split": "validation",
+        "all_positive_cells": 4590,
+        "selected_positive_cells": 4585,
+        "discovery_absent_positive_cells": 5,
+        "discovery_absent_positive_fraction": 0.0010893246187363835,
+        "omitted_positive_cells": 5
+      },
+      "group2__e13s8_e11s7p0f335": {
+        "split": "validation",
+        "all_positive_cells": 5664,
+        "selected_positive_cells": 5661,
+        "discovery_absent_positive_cells": 3,
+        "discovery_absent_positive_fraction": 0.0005296610169491525,
+        "omitted_positive_cells": 3
+      },
+      "group2__e16s8_e9s1p0f184": {
+        "split": "validation",
+        "all_positive_cells": 6351,
+        "selected_positive_cells": 6351,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group2__e17s8_e7s1p0f96": {
+        "split": "validation",
+        "all_positive_cells": 6494,
+        "selected_positive_cells": 6494,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group2__e18s5_e2s13p0f475": {
+        "split": "validation",
+        "all_positive_cells": 4597,
+        "selected_positive_cells": 4597,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group2__e20s5_e4s2p0f62": {
+        "split": "validation",
+        "all_positive_cells": 7671,
+        "selected_positive_cells": 7563,
+        "discovery_absent_positive_cells": 108,
+        "discovery_absent_positive_fraction": 0.014078998826750098,
+        "omitted_positive_cells": 108
+      },
+      "group2__e20s6_e4s1p0f239": {
+        "split": "validation",
+        "all_positive_cells": 4033,
+        "selected_positive_cells": 4020,
+        "discovery_absent_positive_cells": 13,
+        "discovery_absent_positive_fraction": 0.003223406893131664,
+        "omitted_positive_cells": 13
+      },
+      "group2__e27s1_e25s3p0f48": {
+        "split": "validation",
+        "all_positive_cells": 3096,
+        "selected_positive_cells": 3096,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group2__e28s4_e19s4p0f131": {
+        "split": "validation",
+        "all_positive_cells": 4958,
+        "selected_positive_cells": 4890,
+        "discovery_absent_positive_cells": 68,
+        "discovery_absent_positive_fraction": 0.01371520774505849,
+        "omitted_positive_cells": 68
+      },
+      "group2__e33s8_e9s10p0f39": {
+        "split": "validation",
+        "all_positive_cells": 3785,
+        "selected_positive_cells": 3784,
+        "discovery_absent_positive_cells": 1,
+        "discovery_absent_positive_fraction": 0.0002642007926023778,
+        "omitted_positive_cells": 1
+      },
+      "group2__e34s3_e19s1p0f187": {
+        "split": "validation",
+        "all_positive_cells": 5146,
+        "selected_positive_cells": 5146,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group2__e34s4_e10s7p0f348": {
+        "split": "validation",
+        "all_positive_cells": 5770,
+        "selected_positive_cells": 5770,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group2__e3s4_e2s6p0f362": {
+        "split": "validation",
+        "all_positive_cells": 5764,
+        "selected_positive_cells": 5764,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group2__e42s7_e41s9p0f257": {
+        "split": "validation",
+        "all_positive_cells": 5412,
+        "selected_positive_cells": 5411,
+        "discovery_absent_positive_cells": 1,
+        "discovery_absent_positive_fraction": 0.00018477457501847746,
+        "omitted_positive_cells": 1
+      },
+      "group2__e46s11_e26s11p0f329": {
+        "split": "validation",
+        "all_positive_cells": 4686,
+        "selected_positive_cells": 4561,
+        "discovery_absent_positive_cells": 125,
+        "discovery_absent_positive_fraction": 0.02667520273154076,
+        "omitted_positive_cells": 125
+      },
+      "group2__e50s4_e26s5p0f331": {
+        "split": "validation",
+        "all_positive_cells": 5349,
+        "selected_positive_cells": 5349,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group2__e50s6_e39s2p0f102": {
+        "split": "validation",
+        "all_positive_cells": 6323,
+        "selected_positive_cells": 6321,
+        "discovery_absent_positive_cells": 2,
+        "discovery_absent_positive_fraction": 0.0003163055511624229,
+        "omitted_positive_cells": 2
+      },
+      "group2__e52s8_e40s1p0f463": {
+        "split": "validation",
+        "all_positive_cells": 5443,
+        "selected_positive_cells": 5359,
+        "discovery_absent_positive_cells": 84,
+        "discovery_absent_positive_fraction": 0.015432665809296343,
+        "omitted_positive_cells": 84
+      },
+      "group2__e57s3_e48s2p0f149": {
+        "split": "validation",
+        "all_positive_cells": 4461,
+        "selected_positive_cells": 4461,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group2__e60s12_e31s1p0f11": {
+        "split": "validation",
+        "all_positive_cells": 6558,
+        "selected_positive_cells": 6505,
+        "discovery_absent_positive_cells": 53,
+        "discovery_absent_positive_fraction": 0.008081732235437634,
+        "omitted_positive_cells": 53
+      },
+      "group2__e7s3_e6s14p0f287": {
+        "split": "validation",
+        "all_positive_cells": 4613,
+        "selected_positive_cells": 4610,
+        "discovery_absent_positive_cells": 3,
+        "discovery_absent_positive_fraction": 0.0006503360069369175,
+        "omitted_positive_cells": 3
+      },
+      "group2__e7s4_e6s14p0f308": {
+        "split": "validation",
+        "all_positive_cells": 4990,
+        "selected_positive_cells": 4985,
+        "discovery_absent_positive_cells": 5,
+        "discovery_absent_positive_fraction": 0.001002004008016032,
+        "omitted_positive_cells": 5
+      },
+      "group3__e11s13_e10s8p0f357": {
+        "split": "test",
+        "all_positive_cells": 7989,
+        "selected_positive_cells": 7989,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e15s2_e12s1p0f92": {
+        "split": "test",
+        "all_positive_cells": 3177,
+        "selected_positive_cells": 3177,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e15s9_e13s5p0f10": {
+        "split": "test",
+        "all_positive_cells": 5429,
+        "selected_positive_cells": 5428,
+        "discovery_absent_positive_cells": 1,
+        "discovery_absent_positive_fraction": 0.0001841959845275373,
+        "omitted_positive_cells": 1
+      },
+      "group3__e17s9_e15s6p0f182": {
+        "split": "test",
+        "all_positive_cells": 4049,
+        "selected_positive_cells": 4049,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e19s7_e15s6p0f143": {
+        "split": "test",
+        "all_positive_cells": 4093,
+        "selected_positive_cells": 4093,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e1s5_2": {
+        "split": "test",
+        "all_positive_cells": 4204,
+        "selected_positive_cells": 4203,
+        "discovery_absent_positive_cells": 1,
+        "discovery_absent_positive_fraction": 0.0002378686964795433,
+        "omitted_positive_cells": 1
+      },
+      "group3__e1s9_4": {
+        "split": "test",
+        "all_positive_cells": 5397,
+        "selected_positive_cells": 5397,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e21s9_e20s6p0f95": {
+        "split": "test",
+        "all_positive_cells": 4487,
+        "selected_positive_cells": 4487,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e22s4_e12s7p0f21": {
+        "split": "test",
+        "all_positive_cells": 5920,
+        "selected_positive_cells": 5919,
+        "discovery_absent_positive_cells": 1,
+        "discovery_absent_positive_fraction": 0.00016891891891891893,
+        "omitted_positive_cells": 1
+      },
+      "group3__e24s1_e21s4p0f77": {
+        "split": "test",
+        "all_positive_cells": 6767,
+        "selected_positive_cells": 6760,
+        "discovery_absent_positive_cells": 7,
+        "discovery_absent_positive_fraction": 0.0010344318013890941,
+        "omitted_positive_cells": 7
+      },
+      "group3__e24s9_e13s13p0f59": {
+        "split": "test",
+        "all_positive_cells": 4480,
+        "selected_positive_cells": 4480,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e25s10_e18s11p0f182": {
+        "split": "test",
+        "all_positive_cells": 5590,
+        "selected_positive_cells": 5590,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e25s12_e13s5p0f145": {
+        "split": "test",
+        "all_positive_cells": 8114,
+        "selected_positive_cells": 8114,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e25s14_e6s1p0f63": {
+        "split": "test",
+        "all_positive_cells": 6892,
+        "selected_positive_cells": 6892,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e25s15_e17s12p0f106": {
+        "split": "test",
+        "all_positive_cells": 8533,
+        "selected_positive_cells": 8533,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e26s3_e24s2p0f39": {
+        "split": "test",
+        "all_positive_cells": 3960,
+        "selected_positive_cells": 3960,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e27s11_e25s4p0f173": {
+        "split": "test",
+        "all_positive_cells": 5757,
+        "selected_positive_cells": 5757,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e27s2_e9s11p0f237": {
+        "split": "test",
+        "all_positive_cells": 4856,
+        "selected_positive_cells": 4855,
+        "discovery_absent_positive_cells": 1,
+        "discovery_absent_positive_fraction": 0.00020593080724876442,
+        "omitted_positive_cells": 1
+      },
+      "group3__e27s3_e20s3p0f13": {
+        "split": "test",
+        "all_positive_cells": 3606,
+        "selected_positive_cells": 3606,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e2s13_e1s10p0f221": {
+        "split": "test",
+        "all_positive_cells": 4058,
+        "selected_positive_cells": 4057,
+        "discovery_absent_positive_cells": 1,
+        "discovery_absent_positive_fraction": 0.0002464268112370626,
+        "omitted_positive_cells": 1
+      },
+      "group3__e31s10_e26s9p0f261": {
+        "split": "test",
+        "all_positive_cells": 5024,
+        "selected_positive_cells": 5020,
+        "discovery_absent_positive_cells": 4,
+        "discovery_absent_positive_fraction": 0.0007961783439490446,
+        "omitted_positive_cells": 4
+      },
+      "group3__e31s4_e26s11p0f19": {
+        "split": "test",
+        "all_positive_cells": 5302,
+        "selected_positive_cells": 5294,
+        "discovery_absent_positive_cells": 8,
+        "discovery_absent_positive_fraction": 0.0015088645794039985,
+        "omitted_positive_cells": 8
+      },
+      "group3__e33s5_e27s5p0f147": {
+        "split": "test",
+        "all_positive_cells": 4519,
+        "selected_positive_cells": 4519,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e34s9_e15s11p0f103": {
+        "split": "test",
+        "all_positive_cells": 6609,
+        "selected_positive_cells": 6608,
+        "discovery_absent_positive_cells": 1,
+        "discovery_absent_positive_fraction": 0.00015130882130428205,
+        "omitted_positive_cells": 1
+      },
+      "group3__e37s1_e35s3p0f357": {
+        "split": "test",
+        "all_positive_cells": 4613,
+        "selected_positive_cells": 4611,
+        "discovery_absent_positive_cells": 2,
+        "discovery_absent_positive_fraction": 0.00043355733795794494,
+        "omitted_positive_cells": 2
+      },
+      "group3__e3s2_e2s2p0f349": {
+        "split": "test",
+        "all_positive_cells": 4696,
+        "selected_positive_cells": 4696,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e3s5_e2s2p0f362": {
+        "split": "test",
+        "all_positive_cells": 4908,
+        "selected_positive_cells": 4908,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e40s3_e7s4p0f110": {
+        "split": "test",
+        "all_positive_cells": 5299,
+        "selected_positive_cells": 5299,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e40s5_e16s5p0f126": {
+        "split": "test",
+        "all_positive_cells": 5427,
+        "selected_positive_cells": 5427,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e41s1_e31s3p0f362": {
+        "split": "test",
+        "all_positive_cells": 4593,
+        "selected_positive_cells": 4593,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e45s2_e18s10p0f215": {
+        "split": "test",
+        "all_positive_cells": 6535,
+        "selected_positive_cells": 6535,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e45s4_e26s13p0f217": {
+        "split": "test",
+        "all_positive_cells": 6992,
+        "selected_positive_cells": 6990,
+        "discovery_absent_positive_cells": 2,
+        "discovery_absent_positive_fraction": 0.0002860411899313501,
+        "omitted_positive_cells": 2
+      },
+      "group3__e46s9_e13s6p0f136": {
+        "split": "test",
+        "all_positive_cells": 7992,
+        "selected_positive_cells": 7992,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e48s8_e44s4p0f284": {
+        "split": "test",
+        "all_positive_cells": 4889,
+        "selected_positive_cells": 4889,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e49s13_e46s5p0f34": {
+        "split": "test",
+        "all_positive_cells": 5234,
+        "selected_positive_cells": 5234,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e52s5_e35s5p0f6": {
+        "split": "test",
+        "all_positive_cells": 7321,
+        "selected_positive_cells": 7321,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e54s1_e10s7p0f46": {
+        "split": "test",
+        "all_positive_cells": 6291,
+        "selected_positive_cells": 6291,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e54s6_e24s5p0f6": {
+        "split": "test",
+        "all_positive_cells": 5447,
+        "selected_positive_cells": 5447,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e56s20_e54s2p0f100": {
+        "split": "test",
+        "all_positive_cells": 9353,
+        "selected_positive_cells": 9353,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e59s9_e48s9p0f99": {
+        "split": "test",
+        "all_positive_cells": 4827,
+        "selected_positive_cells": 4826,
+        "discovery_absent_positive_cells": 1,
+        "discovery_absent_positive_fraction": 0.00020716801325875285,
+        "omitted_positive_cells": 1
+      },
+      "group3__e60s5_e17s8p0f38": {
+        "split": "test",
+        "all_positive_cells": 8339,
+        "selected_positive_cells": 8338,
+        "discovery_absent_positive_cells": 1,
+        "discovery_absent_positive_fraction": 0.0001199184554502938,
+        "omitted_positive_cells": 1
+      },
+      "group3__e6s2_e3s3p0f69": {
+        "split": "test",
+        "all_positive_cells": 4909,
+        "selected_positive_cells": 4909,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e6s5_e4s11p0f72": {
+        "split": "test",
+        "all_positive_cells": 4134,
+        "selected_positive_cells": 4134,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e7s5_e4s11p0f455": {
+        "split": "test",
+        "all_positive_cells": 6752,
+        "selected_positive_cells": 6752,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e8s1_e7s1p0f96": {
+        "split": "test",
+        "all_positive_cells": 6425,
+        "selected_positive_cells": 6425,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e8s4_e6s1p0f191": {
+        "split": "test",
+        "all_positive_cells": 5768,
+        "selected_positive_cells": 5768,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e9s12_e8s8p0f487": {
+        "split": "test",
+        "all_positive_cells": 5279,
+        "selected_positive_cells": 5279,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e9s2_e7s1p0f137": {
+        "split": "test",
+        "all_positive_cells": 7121,
+        "selected_positive_cells": 7121,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      }
+    }
+  },
+  "8": {
+    "all_eligible_pair_count": 496,
+    "selected_pair_count": 496,
+    "discovery_frame_count": 6000,
+    "discovery_constant_absent_pairs": 0,
+    "discovery_constant_present_pairs": 0,
+    "runs": {
+      "group1__e12s2_e7s3p0f184": {
+        "split": "discovery",
+        "all_positive_cells": 9259,
+        "selected_positive_cells": 9259,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group1__e15s8_e3s1p0f254": {
+        "split": "discovery",
+        "all_positive_cells": 7623,
+        "selected_positive_cells": 7623,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group1__e16s3_e12s2p0f387": {
+        "split": "discovery",
+        "all_positive_cells": 9670,
+        "selected_positive_cells": 9670,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group1__e1s4_2": {
+        "split": "discovery",
+        "all_positive_cells": 8785,
+        "selected_positive_cells": 8785,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group1__e20s10_e11s10p0f33": {
+        "split": "discovery",
+        "all_positive_cells": 7941,
+        "selected_positive_cells": 7941,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group1__e28s10_e27s6p0f134": {
+        "split": "discovery",
+        "all_positive_cells": 8649,
+        "selected_positive_cells": 8649,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group1__e29s6_e15s10p0f10": {
+        "split": "discovery",
+        "all_positive_cells": 7549,
+        "selected_positive_cells": 7549,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group1__e30s2_e18s9p0f101": {
+        "split": "discovery",
+        "all_positive_cells": 9436,
+        "selected_positive_cells": 9436,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group1__e33s7_e28s12p0f125": {
+        "split": "discovery",
+        "all_positive_cells": 7849,
+        "selected_positive_cells": 7849,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group1__e33s8_e31s14p0f0": {
+        "split": "discovery",
+        "all_positive_cells": 11431,
+        "selected_positive_cells": 11431,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group1__e35s2_e24s5p0f215": {
+        "split": "discovery",
+        "all_positive_cells": 9113,
+        "selected_positive_cells": 9113,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group1__e36s8_e2s17p0f451": {
+        "split": "discovery",
+        "all_positive_cells": 8174,
+        "selected_positive_cells": 8174,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group1__e39s3_e30s3p0f14": {
+        "split": "discovery",
+        "all_positive_cells": 8024,
+        "selected_positive_cells": 8024,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group1__e42s10_e30s6p0f49": {
+        "split": "discovery",
+        "all_positive_cells": 7337,
+        "selected_positive_cells": 7337,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group1__e42s7_e24s8p0f161": {
+        "split": "discovery",
+        "all_positive_cells": 7963,
+        "selected_positive_cells": 7963,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group1__e48s6_e30s4p0f166": {
+        "split": "discovery",
+        "all_positive_cells": 9664,
+        "selected_positive_cells": 9664,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group1__e49s5_e20s9p0f25": {
+        "split": "discovery",
+        "all_positive_cells": 8835,
+        "selected_positive_cells": 8835,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group1__e51s6_e46s12p0f1": {
+        "split": "discovery",
+        "all_positive_cells": 7505,
+        "selected_positive_cells": 7505,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group1__e53s7_e22s8p0f164": {
+        "split": "discovery",
+        "all_positive_cells": 7377,
+        "selected_positive_cells": 7377,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group1__e54s3_e27s2p0f264": {
+        "split": "discovery",
+        "all_positive_cells": 7484,
+        "selected_positive_cells": 7484,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group1__e57s2_e45s13p0f369": {
+        "split": "discovery",
+        "all_positive_cells": 11052,
+        "selected_positive_cells": 11052,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group1__e57s7_e36s3p0f438": {
+        "split": "discovery",
+        "all_positive_cells": 10391,
+        "selected_positive_cells": 10391,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group1__e5s3_e2s1p0f225": {
+        "split": "discovery",
+        "all_positive_cells": 8286,
+        "selected_positive_cells": 8286,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group1__e8s3_e5s1p0f423": {
+        "split": "discovery",
+        "all_positive_cells": 8796,
+        "selected_positive_cells": 8796,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group2__e11s4_e10s3p0f86": {
+        "split": "validation",
+        "all_positive_cells": 13417,
+        "selected_positive_cells": 13417,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group2__e12s11_e10s7p0f362": {
+        "split": "validation",
+        "all_positive_cells": 9380,
+        "selected_positive_cells": 9380,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group2__e12s9_e7s3p0f22": {
+        "split": "validation",
+        "all_positive_cells": 7790,
+        "selected_positive_cells": 7790,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group2__e13s8_e11s7p0f335": {
+        "split": "validation",
+        "all_positive_cells": 9095,
+        "selected_positive_cells": 9095,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group2__e16s8_e9s1p0f184": {
+        "split": "validation",
+        "all_positive_cells": 9519,
+        "selected_positive_cells": 9519,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group2__e17s8_e7s1p0f96": {
+        "split": "validation",
+        "all_positive_cells": 9974,
+        "selected_positive_cells": 9974,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group2__e18s5_e2s13p0f475": {
+        "split": "validation",
+        "all_positive_cells": 7296,
+        "selected_positive_cells": 7296,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group2__e20s5_e4s2p0f62": {
+        "split": "validation",
+        "all_positive_cells": 10949,
+        "selected_positive_cells": 10949,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group2__e20s6_e4s1p0f239": {
+        "split": "validation",
+        "all_positive_cells": 6888,
+        "selected_positive_cells": 6888,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group2__e27s1_e25s3p0f48": {
+        "split": "validation",
+        "all_positive_cells": 5794,
+        "selected_positive_cells": 5794,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group2__e28s4_e19s4p0f131": {
+        "split": "validation",
+        "all_positive_cells": 7923,
+        "selected_positive_cells": 7923,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group2__e33s8_e9s10p0f39": {
+        "split": "validation",
+        "all_positive_cells": 6716,
+        "selected_positive_cells": 6716,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group2__e34s3_e19s1p0f187": {
+        "split": "validation",
+        "all_positive_cells": 7909,
+        "selected_positive_cells": 7909,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group2__e34s4_e10s7p0f348": {
+        "split": "validation",
+        "all_positive_cells": 9008,
+        "selected_positive_cells": 9008,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group2__e3s4_e2s6p0f362": {
+        "split": "validation",
+        "all_positive_cells": 8498,
+        "selected_positive_cells": 8498,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group2__e42s7_e41s9p0f257": {
+        "split": "validation",
+        "all_positive_cells": 8664,
+        "selected_positive_cells": 8664,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group2__e46s11_e26s11p0f329": {
+        "split": "validation",
+        "all_positive_cells": 7512,
+        "selected_positive_cells": 7512,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group2__e50s4_e26s5p0f331": {
+        "split": "validation",
+        "all_positive_cells": 9063,
+        "selected_positive_cells": 9063,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group2__e50s6_e39s2p0f102": {
+        "split": "validation",
+        "all_positive_cells": 10039,
+        "selected_positive_cells": 10039,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group2__e52s8_e40s1p0f463": {
+        "split": "validation",
+        "all_positive_cells": 8533,
+        "selected_positive_cells": 8533,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group2__e57s3_e48s2p0f149": {
+        "split": "validation",
+        "all_positive_cells": 7083,
+        "selected_positive_cells": 7083,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group2__e60s12_e31s1p0f11": {
+        "split": "validation",
+        "all_positive_cells": 9893,
+        "selected_positive_cells": 9893,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group2__e7s3_e6s14p0f287": {
+        "split": "validation",
+        "all_positive_cells": 6936,
+        "selected_positive_cells": 6936,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group2__e7s4_e6s14p0f308": {
+        "split": "validation",
+        "all_positive_cells": 8303,
+        "selected_positive_cells": 8303,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e11s13_e10s8p0f357": {
+        "split": "test",
+        "all_positive_cells": 11732,
+        "selected_positive_cells": 11732,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e15s2_e12s1p0f92": {
+        "split": "test",
+        "all_positive_cells": 4440,
+        "selected_positive_cells": 4440,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e15s9_e13s5p0f10": {
+        "split": "test",
+        "all_positive_cells": 8052,
+        "selected_positive_cells": 8052,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e17s9_e15s6p0f182": {
+        "split": "test",
+        "all_positive_cells": 6384,
+        "selected_positive_cells": 6384,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e19s7_e15s6p0f143": {
+        "split": "test",
+        "all_positive_cells": 6768,
+        "selected_positive_cells": 6768,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e1s5_2": {
+        "split": "test",
+        "all_positive_cells": 6839,
+        "selected_positive_cells": 6839,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e1s9_4": {
+        "split": "test",
+        "all_positive_cells": 9148,
+        "selected_positive_cells": 9148,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e21s9_e20s6p0f95": {
+        "split": "test",
+        "all_positive_cells": 7224,
+        "selected_positive_cells": 7224,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e22s4_e12s7p0f21": {
+        "split": "test",
+        "all_positive_cells": 8344,
+        "selected_positive_cells": 8344,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e24s1_e21s4p0f77": {
+        "split": "test",
+        "all_positive_cells": 9605,
+        "selected_positive_cells": 9605,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e24s9_e13s13p0f59": {
+        "split": "test",
+        "all_positive_cells": 7243,
+        "selected_positive_cells": 7243,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e25s10_e18s11p0f182": {
+        "split": "test",
+        "all_positive_cells": 8607,
+        "selected_positive_cells": 8607,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e25s12_e13s5p0f145": {
+        "split": "test",
+        "all_positive_cells": 11876,
+        "selected_positive_cells": 11876,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e25s14_e6s1p0f63": {
+        "split": "test",
+        "all_positive_cells": 10127,
+        "selected_positive_cells": 10127,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e25s15_e17s12p0f106": {
+        "split": "test",
+        "all_positive_cells": 11929,
+        "selected_positive_cells": 11929,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e26s3_e24s2p0f39": {
+        "split": "test",
+        "all_positive_cells": 6722,
+        "selected_positive_cells": 6722,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e27s11_e25s4p0f173": {
+        "split": "test",
+        "all_positive_cells": 8821,
+        "selected_positive_cells": 8821,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e27s2_e9s11p0f237": {
+        "split": "test",
+        "all_positive_cells": 7826,
+        "selected_positive_cells": 7826,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e27s3_e20s3p0f13": {
+        "split": "test",
+        "all_positive_cells": 6118,
+        "selected_positive_cells": 6118,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e2s13_e1s10p0f221": {
+        "split": "test",
+        "all_positive_cells": 6676,
+        "selected_positive_cells": 6676,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e31s10_e26s9p0f261": {
+        "split": "test",
+        "all_positive_cells": 8221,
+        "selected_positive_cells": 8221,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e31s4_e26s11p0f19": {
+        "split": "test",
+        "all_positive_cells": 8519,
+        "selected_positive_cells": 8519,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e33s5_e27s5p0f147": {
+        "split": "test",
+        "all_positive_cells": 7400,
+        "selected_positive_cells": 7400,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e34s9_e15s11p0f103": {
+        "split": "test",
+        "all_positive_cells": 10171,
+        "selected_positive_cells": 10171,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e37s1_e35s3p0f357": {
+        "split": "test",
+        "all_positive_cells": 7185,
+        "selected_positive_cells": 7185,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e3s2_e2s2p0f349": {
+        "split": "test",
+        "all_positive_cells": 7582,
+        "selected_positive_cells": 7582,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e3s5_e2s2p0f362": {
+        "split": "test",
+        "all_positive_cells": 7513,
+        "selected_positive_cells": 7513,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e40s3_e7s4p0f110": {
+        "split": "test",
+        "all_positive_cells": 8263,
+        "selected_positive_cells": 8263,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e40s5_e16s5p0f126": {
+        "split": "test",
+        "all_positive_cells": 9100,
+        "selected_positive_cells": 9100,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e41s1_e31s3p0f362": {
+        "split": "test",
+        "all_positive_cells": 7502,
+        "selected_positive_cells": 7502,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e45s2_e18s10p0f215": {
+        "split": "test",
+        "all_positive_cells": 9593,
+        "selected_positive_cells": 9593,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e45s4_e26s13p0f217": {
+        "split": "test",
+        "all_positive_cells": 10686,
+        "selected_positive_cells": 10686,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e46s9_e13s6p0f136": {
+        "split": "test",
+        "all_positive_cells": 11164,
+        "selected_positive_cells": 11164,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e48s8_e44s4p0f284": {
+        "split": "test",
+        "all_positive_cells": 8198,
+        "selected_positive_cells": 8198,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e49s13_e46s5p0f34": {
+        "split": "test",
+        "all_positive_cells": 8015,
+        "selected_positive_cells": 8015,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e52s5_e35s5p0f6": {
+        "split": "test",
+        "all_positive_cells": 10273,
+        "selected_positive_cells": 10273,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e54s1_e10s7p0f46": {
+        "split": "test",
+        "all_positive_cells": 9502,
+        "selected_positive_cells": 9502,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e54s6_e24s5p0f6": {
+        "split": "test",
+        "all_positive_cells": 8663,
+        "selected_positive_cells": 8663,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e56s20_e54s2p0f100": {
+        "split": "test",
+        "all_positive_cells": 12342,
+        "selected_positive_cells": 12342,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e59s9_e48s9p0f99": {
+        "split": "test",
+        "all_positive_cells": 7613,
+        "selected_positive_cells": 7613,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e60s5_e17s8p0f38": {
+        "split": "test",
+        "all_positive_cells": 11435,
+        "selected_positive_cells": 11435,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e6s2_e3s3p0f69": {
+        "split": "test",
+        "all_positive_cells": 7792,
+        "selected_positive_cells": 7792,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e6s5_e4s11p0f72": {
+        "split": "test",
+        "all_positive_cells": 6454,
+        "selected_positive_cells": 6454,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e7s5_e4s11p0f455": {
+        "split": "test",
+        "all_positive_cells": 9425,
+        "selected_positive_cells": 9425,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e8s1_e7s1p0f96": {
+        "split": "test",
+        "all_positive_cells": 9862,
+        "selected_positive_cells": 9862,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e8s4_e6s1p0f191": {
+        "split": "test",
+        "all_positive_cells": 8374,
+        "selected_positive_cells": 8374,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e9s12_e8s8p0f487": {
+        "split": "test",
+        "all_positive_cells": 8602,
+        "selected_positive_cells": 8602,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e9s2_e7s1p0f137": {
+        "split": "test",
+        "all_positive_cells": 9996,
+        "selected_positive_cells": 9996,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      }
+    }
+  },
+  "9": {
+    "all_eligible_pair_count": 496,
+    "selected_pair_count": 496,
+    "discovery_frame_count": 6000,
+    "discovery_constant_absent_pairs": 0,
+    "discovery_constant_present_pairs": 0,
+    "runs": {
+      "group1__e12s2_e7s3p0f184": {
+        "split": "discovery",
+        "all_positive_cells": 14110,
+        "selected_positive_cells": 14110,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group1__e15s8_e3s1p0f254": {
+        "split": "discovery",
+        "all_positive_cells": 12206,
+        "selected_positive_cells": 12206,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group1__e16s3_e12s2p0f387": {
+        "split": "discovery",
+        "all_positive_cells": 15081,
+        "selected_positive_cells": 15081,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group1__e1s4_2": {
+        "split": "discovery",
+        "all_positive_cells": 13578,
+        "selected_positive_cells": 13578,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group1__e20s10_e11s10p0f33": {
+        "split": "discovery",
+        "all_positive_cells": 13320,
+        "selected_positive_cells": 13320,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group1__e28s10_e27s6p0f134": {
+        "split": "discovery",
+        "all_positive_cells": 14131,
+        "selected_positive_cells": 14131,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group1__e29s6_e15s10p0f10": {
+        "split": "discovery",
+        "all_positive_cells": 12592,
+        "selected_positive_cells": 12592,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group1__e30s2_e18s9p0f101": {
+        "split": "discovery",
+        "all_positive_cells": 13808,
+        "selected_positive_cells": 13808,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group1__e33s7_e28s12p0f125": {
+        "split": "discovery",
+        "all_positive_cells": 12778,
+        "selected_positive_cells": 12778,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group1__e33s8_e31s14p0f0": {
+        "split": "discovery",
+        "all_positive_cells": 16372,
+        "selected_positive_cells": 16372,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group1__e35s2_e24s5p0f215": {
+        "split": "discovery",
+        "all_positive_cells": 14096,
+        "selected_positive_cells": 14096,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group1__e36s8_e2s17p0f451": {
+        "split": "discovery",
+        "all_positive_cells": 13844,
+        "selected_positive_cells": 13844,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group1__e39s3_e30s3p0f14": {
+        "split": "discovery",
+        "all_positive_cells": 12901,
+        "selected_positive_cells": 12901,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group1__e42s10_e30s6p0f49": {
+        "split": "discovery",
+        "all_positive_cells": 12068,
+        "selected_positive_cells": 12068,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group1__e42s7_e24s8p0f161": {
+        "split": "discovery",
+        "all_positive_cells": 12884,
+        "selected_positive_cells": 12884,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group1__e48s6_e30s4p0f166": {
+        "split": "discovery",
+        "all_positive_cells": 15709,
+        "selected_positive_cells": 15709,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group1__e49s5_e20s9p0f25": {
+        "split": "discovery",
+        "all_positive_cells": 14364,
+        "selected_positive_cells": 14364,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group1__e51s6_e46s12p0f1": {
+        "split": "discovery",
+        "all_positive_cells": 13051,
+        "selected_positive_cells": 13051,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group1__e53s7_e22s8p0f164": {
+        "split": "discovery",
+        "all_positive_cells": 11881,
+        "selected_positive_cells": 11881,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group1__e54s3_e27s2p0f264": {
+        "split": "discovery",
+        "all_positive_cells": 12388,
+        "selected_positive_cells": 12388,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group1__e57s2_e45s13p0f369": {
+        "split": "discovery",
+        "all_positive_cells": 17035,
+        "selected_positive_cells": 17035,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group1__e57s7_e36s3p0f438": {
+        "split": "discovery",
+        "all_positive_cells": 16800,
+        "selected_positive_cells": 16800,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group1__e5s3_e2s1p0f225": {
+        "split": "discovery",
+        "all_positive_cells": 13833,
+        "selected_positive_cells": 13833,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group1__e8s3_e5s1p0f423": {
+        "split": "discovery",
+        "all_positive_cells": 14363,
+        "selected_positive_cells": 14363,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group2__e11s4_e10s3p0f86": {
+        "split": "validation",
+        "all_positive_cells": 19750,
+        "selected_positive_cells": 19750,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group2__e12s11_e10s7p0f362": {
+        "split": "validation",
+        "all_positive_cells": 15948,
+        "selected_positive_cells": 15948,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group2__e12s9_e7s3p0f22": {
+        "split": "validation",
+        "all_positive_cells": 13510,
+        "selected_positive_cells": 13510,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group2__e13s8_e11s7p0f335": {
+        "split": "validation",
+        "all_positive_cells": 14768,
+        "selected_positive_cells": 14768,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group2__e16s8_e9s1p0f184": {
+        "split": "validation",
+        "all_positive_cells": 16011,
+        "selected_positive_cells": 16011,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group2__e17s8_e7s1p0f96": {
+        "split": "validation",
+        "all_positive_cells": 16581,
+        "selected_positive_cells": 16581,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group2__e18s5_e2s13p0f475": {
+        "split": "validation",
+        "all_positive_cells": 12340,
+        "selected_positive_cells": 12340,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group2__e20s5_e4s2p0f62": {
+        "split": "validation",
+        "all_positive_cells": 16542,
+        "selected_positive_cells": 16542,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group2__e20s6_e4s1p0f239": {
+        "split": "validation",
+        "all_positive_cells": 12123,
+        "selected_positive_cells": 12123,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group2__e27s1_e25s3p0f48": {
+        "split": "validation",
+        "all_positive_cells": 10104,
+        "selected_positive_cells": 10104,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group2__e28s4_e19s4p0f131": {
+        "split": "validation",
+        "all_positive_cells": 13294,
+        "selected_positive_cells": 13294,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group2__e33s8_e9s10p0f39": {
+        "split": "validation",
+        "all_positive_cells": 11545,
+        "selected_positive_cells": 11545,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group2__e34s3_e19s1p0f187": {
+        "split": "validation",
+        "all_positive_cells": 13337,
+        "selected_positive_cells": 13337,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group2__e34s4_e10s7p0f348": {
+        "split": "validation",
+        "all_positive_cells": 15211,
+        "selected_positive_cells": 15211,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group2__e3s4_e2s6p0f362": {
+        "split": "validation",
+        "all_positive_cells": 13593,
+        "selected_positive_cells": 13593,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group2__e42s7_e41s9p0f257": {
+        "split": "validation",
+        "all_positive_cells": 13987,
+        "selected_positive_cells": 13987,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group2__e46s11_e26s11p0f329": {
+        "split": "validation",
+        "all_positive_cells": 12217,
+        "selected_positive_cells": 12217,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group2__e50s4_e26s5p0f331": {
+        "split": "validation",
+        "all_positive_cells": 15448,
+        "selected_positive_cells": 15448,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group2__e50s6_e39s2p0f102": {
+        "split": "validation",
+        "all_positive_cells": 17084,
+        "selected_positive_cells": 17084,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group2__e52s8_e40s1p0f463": {
+        "split": "validation",
+        "all_positive_cells": 13558,
+        "selected_positive_cells": 13558,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group2__e57s3_e48s2p0f149": {
+        "split": "validation",
+        "all_positive_cells": 11790,
+        "selected_positive_cells": 11790,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group2__e60s12_e31s1p0f11": {
+        "split": "validation",
+        "all_positive_cells": 15597,
+        "selected_positive_cells": 15597,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group2__e7s3_e6s14p0f287": {
+        "split": "validation",
+        "all_positive_cells": 11974,
+        "selected_positive_cells": 11974,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group2__e7s4_e6s14p0f308": {
+        "split": "validation",
+        "all_positive_cells": 14267,
+        "selected_positive_cells": 14267,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e11s13_e10s8p0f357": {
+        "split": "test",
+        "all_positive_cells": 17734,
+        "selected_positive_cells": 17734,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e15s2_e12s1p0f92": {
+        "split": "test",
+        "all_positive_cells": 6501,
+        "selected_positive_cells": 6501,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e15s9_e13s5p0f10": {
+        "split": "test",
+        "all_positive_cells": 13193,
+        "selected_positive_cells": 13193,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e17s9_e15s6p0f182": {
+        "split": "test",
+        "all_positive_cells": 10680,
+        "selected_positive_cells": 10680,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e19s7_e15s6p0f143": {
+        "split": "test",
+        "all_positive_cells": 11509,
+        "selected_positive_cells": 11509,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e1s5_2": {
+        "split": "test",
+        "all_positive_cells": 11236,
+        "selected_positive_cells": 11236,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e1s9_4": {
+        "split": "test",
+        "all_positive_cells": 14998,
+        "selected_positive_cells": 14998,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e21s9_e20s6p0f95": {
+        "split": "test",
+        "all_positive_cells": 11624,
+        "selected_positive_cells": 11624,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e22s4_e12s7p0f21": {
+        "split": "test",
+        "all_positive_cells": 12728,
+        "selected_positive_cells": 12728,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e24s1_e21s4p0f77": {
+        "split": "test",
+        "all_positive_cells": 14926,
+        "selected_positive_cells": 14926,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e24s9_e13s13p0f59": {
+        "split": "test",
+        "all_positive_cells": 11911,
+        "selected_positive_cells": 11911,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e25s10_e18s11p0f182": {
+        "split": "test",
+        "all_positive_cells": 14306,
+        "selected_positive_cells": 14306,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e25s12_e13s5p0f145": {
+        "split": "test",
+        "all_positive_cells": 17752,
+        "selected_positive_cells": 17752,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e25s14_e6s1p0f63": {
+        "split": "test",
+        "all_positive_cells": 16379,
+        "selected_positive_cells": 16379,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e25s15_e17s12p0f106": {
+        "split": "test",
+        "all_positive_cells": 17062,
+        "selected_positive_cells": 17062,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e26s3_e24s2p0f39": {
+        "split": "test",
+        "all_positive_cells": 11433,
+        "selected_positive_cells": 11433,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e27s11_e25s4p0f173": {
+        "split": "test",
+        "all_positive_cells": 15169,
+        "selected_positive_cells": 15169,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e27s2_e9s11p0f237": {
+        "split": "test",
+        "all_positive_cells": 12739,
+        "selected_positive_cells": 12739,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e27s3_e20s3p0f13": {
+        "split": "test",
+        "all_positive_cells": 10351,
+        "selected_positive_cells": 10351,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e2s13_e1s10p0f221": {
+        "split": "test",
+        "all_positive_cells": 11443,
+        "selected_positive_cells": 11443,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e31s10_e26s9p0f261": {
+        "split": "test",
+        "all_positive_cells": 13707,
+        "selected_positive_cells": 13707,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e31s4_e26s11p0f19": {
+        "split": "test",
+        "all_positive_cells": 13888,
+        "selected_positive_cells": 13888,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e33s5_e27s5p0f147": {
+        "split": "test",
+        "all_positive_cells": 12001,
+        "selected_positive_cells": 12001,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e34s9_e15s11p0f103": {
+        "split": "test",
+        "all_positive_cells": 16381,
+        "selected_positive_cells": 16381,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e37s1_e35s3p0f357": {
+        "split": "test",
+        "all_positive_cells": 11371,
+        "selected_positive_cells": 11371,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e3s2_e2s2p0f349": {
+        "split": "test",
+        "all_positive_cells": 12118,
+        "selected_positive_cells": 12118,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e3s5_e2s2p0f362": {
+        "split": "test",
+        "all_positive_cells": 12121,
+        "selected_positive_cells": 12121,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e40s3_e7s4p0f110": {
+        "split": "test",
+        "all_positive_cells": 13519,
+        "selected_positive_cells": 13519,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e40s5_e16s5p0f126": {
+        "split": "test",
+        "all_positive_cells": 15288,
+        "selected_positive_cells": 15288,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e41s1_e31s3p0f362": {
+        "split": "test",
+        "all_positive_cells": 12551,
+        "selected_positive_cells": 12551,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e45s2_e18s10p0f215": {
+        "split": "test",
+        "all_positive_cells": 15050,
+        "selected_positive_cells": 15050,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e45s4_e26s13p0f217": {
+        "split": "test",
+        "all_positive_cells": 17222,
+        "selected_positive_cells": 17222,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e46s9_e13s6p0f136": {
+        "split": "test",
+        "all_positive_cells": 16091,
+        "selected_positive_cells": 16091,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e48s8_e44s4p0f284": {
+        "split": "test",
+        "all_positive_cells": 13697,
+        "selected_positive_cells": 13697,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e49s13_e46s5p0f34": {
+        "split": "test",
+        "all_positive_cells": 12995,
+        "selected_positive_cells": 12995,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e52s5_e35s5p0f6": {
+        "split": "test",
+        "all_positive_cells": 14723,
+        "selected_positive_cells": 14723,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e54s1_e10s7p0f46": {
+        "split": "test",
+        "all_positive_cells": 14770,
+        "selected_positive_cells": 14770,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e54s6_e24s5p0f6": {
+        "split": "test",
+        "all_positive_cells": 13691,
+        "selected_positive_cells": 13691,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e56s20_e54s2p0f100": {
+        "split": "test",
+        "all_positive_cells": 18739,
+        "selected_positive_cells": 18739,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e59s9_e48s9p0f99": {
+        "split": "test",
+        "all_positive_cells": 12398,
+        "selected_positive_cells": 12398,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e60s5_e17s8p0f38": {
+        "split": "test",
+        "all_positive_cells": 16510,
+        "selected_positive_cells": 16510,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e6s2_e3s3p0f69": {
+        "split": "test",
+        "all_positive_cells": 12679,
+        "selected_positive_cells": 12679,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e6s5_e4s11p0f72": {
+        "split": "test",
+        "all_positive_cells": 10846,
+        "selected_positive_cells": 10846,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e7s5_e4s11p0f455": {
+        "split": "test",
+        "all_positive_cells": 15501,
+        "selected_positive_cells": 15501,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e8s1_e7s1p0f96": {
+        "split": "test",
+        "all_positive_cells": 16243,
+        "selected_positive_cells": 16243,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e8s4_e6s1p0f191": {
+        "split": "test",
+        "all_positive_cells": 14265,
+        "selected_positive_cells": 14265,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e9s12_e8s8p0f487": {
+        "split": "test",
+        "all_positive_cells": 13894,
+        "selected_positive_cells": 13894,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      },
+      "group3__e9s2_e7s1p0f137": {
+        "split": "test",
+        "all_positive_cells": 15884,
+        "selected_positive_cells": 15884,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 0
+      }
+    }
+  }
+}

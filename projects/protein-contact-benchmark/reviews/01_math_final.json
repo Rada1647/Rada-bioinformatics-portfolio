@@ -1,0 +1,2367 @@
+{
+  "reviewer": "Independent AI technical audit 1: mathematics and implementation",
+  "created_utc": "2026-10-07T15:56:51.270810+00:00",
+  "status": "final_complete",
+  "production_code_implemented_by_reviewer": false,
+  "initial_review": "reviews/01_math_initial.json",
+  "initial_review_sha256": "368c8228afced9f2463c9f00b2e89beb9f65548264ad321ae19332671683fe9a",
+  "reviewed_code_sha256": {
+    "protocol/protocol_v1.1.json": "1e25ff2c9890809f5432675c259f8ec705d2ce9bcca23969111f771fd520c84c",
+    "methods.py": "6c649cac4358d2b29a4fec2e75ae2820b0ff7d1297f06e4ae556e895d066ff17",
+    "benchmark_extension.py": "34e61d760f64cdb2bd012ba7ee54269c01805e61f73b5e532639a32b49b35f8d",
+    "prepare_extension.py": "ab9d98f07394bb34631a75f119f2aadb2fc14443f4672707944a161271122de0"
+  },
+  "checker_sha256": "36740821ca0eff8ff1f739f84884934fc8ec13a57a06eeb95f9c339c731b1129",
+  "scope": "Extends initial all-scenario Villin audit with all eight T4 validation/test output selections and aggregates, clean aggregate, and independent full raw Brier plus 32-column mathematical checks for all three T4 test runs at noise0 in every scenario. Not a line-by-line proof review of the cotype manuscript and not an independent full data rerun.",
+  "verdict": "No critical discrepancy affecting reviewed benchmark outputs detected. Initial unused very-short-path median dependency defect and floating-point tie caveats remain.",
+  "preparation_hardening_review": {
+    "artifact": "protocol/preparation_integrity_hardening.json",
+    "sha256": "09f6fc86cdd60cbd428788993409740fe0e68c836ff3f555e3bdb3b48b71f6e1",
+    "conclusion": "Diff from preserved initial preparer adds only T4 source record, extraction completion/hash, geometry and metadata integrity checks. No contact definition, discovery selection, split, seed, denoiser, metric or statistical rule changed. Numerical benchmark and protocol hashes unchanged."
+  },
+  "self_check": {
+    "max_small_dense_error": 1.2212453270876722e-15,
+    "max_tridiagonal_residual": 4.4853010194856324e-14,
+    "max_5001_frame_spectral_vs_banded_error": 1.9984014443252818e-15,
+    "length_5001_columns": 32,
+    "t_grid": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      32,
+      64
+    ],
+    "streamed_noise_exact_matches_all_8_scenarios": true,
+    "streamed_noise_test_shape": [
+      131,
+      21
+    ]
+  },
+  "scenario_results": [
+    {
+      "scenario": "flip10_cut8",
+      "selected_baseline": "power_full",
+      "selected_matched_baseline": "power_matched",
+      "selected_parameters": {
+        "raw": {},
+        "linear": {
+          "t": 8
+        },
+        "paper332": {
+          "t": 16
+        },
+        "oracle_debiased_linear": {
+          "t": 16
+        },
+        "hard_linear": {
+          "t": 16
+        },
+        "moving_average": {
+          "half_width": 16
+        },
+        "gaussian": {
+          "sigma": 4
+        },
+        "median": {
+          "width": 9
+        },
+        "power_full": {
+          "t": 8,
+          "alpha": 3
+        },
+        "power_matched": {
+          "t": 8,
+          "alpha": 3
+        }
+      },
+      "paper332_brier": 0.04036348805980258,
+      "baseline_brier": 0.03719128753665906,
+      "same_t_linear_brier": 0.0507539560158056,
+      "same_t_threshold_disagreements": 0,
+      "aggregation_check": {
+        "max_candidate_selection_mean_error": 1.3877787807814457e-17,
+        "max_aggregate_error": 0.0
+      },
+      "primary_success": {
+        "baseline": "power_full",
+        "status": "fail",
+        "relative_mean_brier_gain": -0.08529418402137105,
+        "conditions": {
+          "relative_gain_at_least_minimum": false,
+          "positive_gain_every_test_run": false,
+          "rare_guardrail_every_test_run": false,
+          "brief_guardrail_every_test_run": false
+        },
+        "per_run": [
+          {
+            "run_id": "md1us6",
+            "brier_gain": -0.0032920316060534513,
+            "positive_brier_gain": false,
+            "rare_recall_loss": 0.08799584405917571,
+            "brief_recall_loss": 0.11353176760676631,
+            "rare_guardrail_pass": false,
+            "brief_guardrail_pass": false
+          },
+          {
+            "run_id": "md1us7",
+            "brier_gain": -0.003090194793622991,
+            "positive_brier_gain": false,
+            "rare_recall_loss": 0.10803828828828821,
+            "brief_recall_loss": 0.11386656779559934,
+            "rare_guardrail_pass": false,
+            "brief_guardrail_pass": false
+          },
+          {
+            "run_id": "md1us8",
+            "brier_gain": -0.0031343751697541222,
+            "positive_brier_gain": false,
+            "rare_recall_loss": 0.10805050045495901,
+            "brief_recall_loss": 0.11620384486087987,
+            "rare_guardrail_pass": false,
+            "brief_guardrail_pass": false
+          }
+        ],
+        "scope": "Prespecified practical composite for the primary scenario only; other scenarios descriptive."
+      },
+      "matched_budget_success_secondary": {
+        "baseline": "power_matched",
+        "status": "fail",
+        "relative_mean_brier_gain": -0.08529418402137105,
+        "conditions": {
+          "relative_gain_at_least_minimum": false,
+          "positive_gain_every_test_run": false,
+          "rare_guardrail_every_test_run": false,
+          "brief_guardrail_every_test_run": false
+        },
+        "per_run": [
+          {
+            "run_id": "md1us6",
+            "brier_gain": -0.0032920316060534513,
+            "positive_brier_gain": false,
+            "rare_recall_loss": 0.08799584405917571,
+            "brief_recall_loss": 0.11353176760676631,
+            "rare_guardrail_pass": false,
+            "brief_guardrail_pass": false
+          },
+          {
+            "run_id": "md1us7",
+            "brier_gain": -0.003090194793622991,
+            "positive_brier_gain": false,
+            "rare_recall_loss": 0.10803828828828821,
+            "brief_recall_loss": 0.11386656779559934,
+            "rare_guardrail_pass": false,
+            "brief_guardrail_pass": false
+          },
+          {
+            "run_id": "md1us8",
+            "brier_gain": -0.0031343751697541222,
+            "positive_brier_gain": false,
+            "rare_recall_loss": 0.10805050045495901,
+            "brief_recall_loss": 0.11620384486087987,
+            "rare_guardrail_pass": false,
+            "brief_guardrail_pass": false
+          }
+        ],
+        "scope": "Prespecified practical composite for the primary scenario only; other scenarios descriptive."
+      }
+    },
+    {
+      "scenario": "flip05_cut8",
+      "selected_baseline": "power_full",
+      "selected_matched_baseline": "power_matched",
+      "selected_parameters": {
+        "raw": {},
+        "linear": {
+          "t": 2
+        },
+        "paper332": {
+          "t": 4
+        },
+        "oracle_debiased_linear": {
+          "t": 4
+        },
+        "hard_linear": {
+          "t": 4
+        },
+        "moving_average": {
+          "half_width": 2
+        },
+        "gaussian": {
+          "sigma": 0.5
+        },
+        "median": {
+          "width": 3
+        },
+        "power_full": {
+          "t": 4,
+          "alpha": 4
+        },
+        "power_matched": {
+          "t": 4,
+          "alpha": 3
+        }
+      },
+      "paper332_brier": 0.027147728473668756,
+      "baseline_brier": 0.023908269528584592,
+      "same_t_linear_brier": 0.032891968451330904,
+      "same_t_threshold_disagreements": 0,
+      "aggregation_check": {
+        "max_candidate_selection_mean_error": 6.938893903907228e-18,
+        "max_aggregate_error": 0.0
+      },
+      "primary_success": null,
+      "matched_budget_success_secondary": null
+    },
+    {
+      "scenario": "flip20_cut8",
+      "selected_baseline": "power_full",
+      "selected_matched_baseline": "power_matched",
+      "selected_parameters": {
+        "raw": {},
+        "linear": {
+          "t": 64
+        },
+        "paper332": {
+          "t": 64
+        },
+        "oracle_debiased_linear": {
+          "t": 64
+        },
+        "hard_linear": {
+          "t": 64
+        },
+        "moving_average": {
+          "half_width": 32
+        },
+        "gaussian": {
+          "sigma": 16
+        },
+        "median": {
+          "width": 33
+        },
+        "power_full": {
+          "t": 64,
+          "alpha": 3
+        },
+        "power_matched": {
+          "t": 64,
+          "alpha": 3
+        }
+      },
+      "paper332_brier": 0.061906353580187375,
+      "baseline_brier": 0.05042923351937528,
+      "same_t_linear_brier": 0.08272295774016154,
+      "same_t_threshold_disagreements": 0,
+      "aggregation_check": {
+        "max_candidate_selection_mean_error": 2.7755575615628914e-17,
+        "max_aggregate_error": 0.0
+      },
+      "primary_success": null,
+      "matched_budget_success_secondary": null
+    },
+    {
+      "scenario": "jitter025_cut8",
+      "selected_baseline": "power_full",
+      "selected_matched_baseline": "linear",
+      "selected_parameters": {
+        "raw": {},
+        "linear": {
+          "t": 8
+        },
+        "paper332": {
+          "t": 8
+        },
+        "hard_linear": {
+          "t": 4
+        },
+        "moving_average": {
+          "half_width": 8
+        },
+        "gaussian": {
+          "sigma": 2
+        },
+        "median": {
+          "width": 9
+        },
+        "power_full": {
+          "t": 8,
+          "alpha": 1.5
+        },
+        "power_matched": {
+          "t": 8,
+          "alpha": 3
+        }
+      },
+      "paper332_brier": 0.042416904828151004,
+      "baseline_brier": 0.04241438742260981,
+      "same_t_linear_brier": 0.04429006796151491,
+      "same_t_threshold_disagreements": 0,
+      "aggregation_check": {
+        "max_candidate_selection_mean_error": 0.0,
+        "max_aggregate_error": 0.0
+      },
+      "primary_success": null,
+      "matched_budget_success_secondary": null
+    },
+    {
+      "scenario": "jitter050_cut8",
+      "selected_baseline": "power_full",
+      "selected_matched_baseline": "power_matched",
+      "selected_parameters": {
+        "raw": {},
+        "linear": {
+          "t": 64
+        },
+        "paper332": {
+          "t": 64
+        },
+        "hard_linear": {
+          "t": 64
+        },
+        "moving_average": {
+          "half_width": 32
+        },
+        "gaussian": {
+          "sigma": 16
+        },
+        "median": {
+          "width": 65
+        },
+        "power_full": {
+          "t": 64,
+          "alpha": 2
+        },
+        "power_matched": {
+          "t": 64,
+          "alpha": 3
+        }
+      },
+      "paper332_brier": 0.05439182917573598,
+      "baseline_brier": 0.05297452341069649,
+      "same_t_linear_brier": 0.06166442567670111,
+      "same_t_threshold_disagreements": 0,
+      "aggregation_check": {
+        "max_candidate_selection_mean_error": 2.7755575615628914e-17,
+        "max_aggregate_error": 0.0
+      },
+      "primary_success": null,
+      "matched_budget_success_secondary": null
+    },
+    {
+      "scenario": "correlated10_cut8",
+      "selected_baseline": "gaussian",
+      "selected_matched_baseline": "gaussian",
+      "selected_parameters": {
+        "raw": {},
+        "linear": {
+          "t": 64
+        },
+        "paper332": {
+          "t": 64
+        },
+        "oracle_debiased_linear": {
+          "t": 64
+        },
+        "hard_linear": {
+          "t": 1
+        },
+        "moving_average": {
+          "half_width": 64
+        },
+        "gaussian": {
+          "sigma": 32
+        },
+        "median": {
+          "width": 129
+        },
+        "power_full": {
+          "t": 64,
+          "alpha": 1
+        },
+        "power_matched": {
+          "t": 64,
+          "alpha": 3
+        }
+      },
+      "paper332_brier": 0.07895500123800014,
+      "baseline_brier": 0.06247322425597079,
+      "same_t_linear_brier": 0.07749364172260563,
+      "same_t_threshold_disagreements": 0,
+      "aggregation_check": {
+        "max_candidate_selection_mean_error": 0.0,
+        "max_aggregate_error": 0.0
+      },
+      "primary_success": null,
+      "matched_budget_success_secondary": null
+    },
+    {
+      "scenario": "flip10_cut7",
+      "selected_baseline": "power_full",
+      "selected_matched_baseline": "power_matched",
+      "selected_parameters": {
+        "raw": {},
+        "linear": {
+          "t": 16
+        },
+        "paper332": {
+          "t": 16
+        },
+        "oracle_debiased_linear": {
+          "t": 32
+        },
+        "hard_linear": {
+          "t": 16
+        },
+        "moving_average": {
+          "half_width": 16
+        },
+        "gaussian": {
+          "sigma": 4
+        },
+        "median": {
+          "width": 9
+        },
+        "power_full": {
+          "t": 16,
+          "alpha": 3
+        },
+        "power_matched": {
+          "t": 16,
+          "alpha": 3
+        }
+      },
+      "paper332_brier": 0.037358025887958925,
+      "baseline_brier": 0.034035552341151375,
+      "same_t_linear_brier": 0.04773232177553638,
+      "same_t_threshold_disagreements": 0,
+      "aggregation_check": {
+        "max_candidate_selection_mean_error": 0.0,
+        "max_aggregate_error": 0.0
+      },
+      "primary_success": null,
+      "matched_budget_success_secondary": null
+    },
+    {
+      "scenario": "flip10_cut9",
+      "selected_baseline": "power_full",
+      "selected_matched_baseline": "power_matched",
+      "selected_parameters": {
+        "raw": {},
+        "linear": {
+          "t": 8
+        },
+        "paper332": {
+          "t": 8
+        },
+        "oracle_debiased_linear": {
+          "t": 8
+        },
+        "hard_linear": {
+          "t": 16
+        },
+        "moving_average": {
+          "half_width": 8
+        },
+        "gaussian": {
+          "sigma": 1
+        },
+        "median": {
+          "width": 9
+        },
+        "power_full": {
+          "t": 8,
+          "alpha": 3
+        },
+        "power_matched": {
+          "t": 8,
+          "alpha": 3
+        }
+      },
+      "paper332_brier": 0.04710221136360482,
+      "baseline_brier": 0.043674565361053796,
+      "same_t_linear_brier": 0.05656266697759687,
+      "same_t_threshold_disagreements": 0,
+      "aggregation_check": {
+        "max_candidate_selection_mean_error": 1.3877787807814457e-17,
+        "max_aggregate_error": 0.0
+      },
+      "primary_success": null,
+      "matched_budget_success_secondary": null
+    }
+  ],
+  "independent_t4_checks": [
+    {
+      "scenario": "flip10_cut8",
+      "run_id": "md1us6",
+      "noise_index": 0,
+      "shape": [
+        5001,
+        523
+      ],
+      "contact_column_indices": [
+        0,
+        16,
+        33,
+        50,
+        67,
+        84,
+        101,
+        117,
+        134,
+        151,
+        168,
+        185,
+        202,
+        218,
+        235,
+        252,
+        269,
+        286,
+        303,
+        319,
+        336,
+        353,
+        370,
+        387,
+        404,
+        420,
+        437,
+        454,
+        471,
+        488,
+        505,
+        522
+      ],
+      "cubic_selected_t": 16,
+      "independent_full_raw_brier": 0.09971925309010855,
+      "raw_brier_saved_difference": 0.0,
+      "max_resolvent_error": 2.3314683517128287e-15,
+      "max_cubic_probability_error": 2.7755575615628914e-15,
+      "max_tridiagonal_residual": 1.8318679906315083e-14,
+      "spectral_vs_production_cubic_threshold_disagreements": 0,
+      "threshold_disagreement_max_distance_from_half": 0.0,
+      "production_same_t_linear_cubic_disagreements_on_sample": 0,
+      "power_comparisons": [
+        {
+          "method": "power_full",
+          "parameters": {
+            "t": 8,
+            "alpha": 3
+          },
+          "max_probability_error": 5.2735593669694936e-15
+        },
+        {
+          "method": "power_matched",
+          "parameters": {
+            "t": 8,
+            "alpha": 3
+          },
+          "max_probability_error": 5.2735593669694936e-15
+        }
+      ]
+    },
+    {
+      "scenario": "flip10_cut8",
+      "run_id": "md1us7",
+      "noise_index": 0,
+      "shape": [
+        5001,
+        523
+      ],
+      "contact_column_indices": [
+        0,
+        16,
+        33,
+        50,
+        67,
+        84,
+        101,
+        117,
+        134,
+        151,
+        168,
+        185,
+        202,
+        218,
+        235,
+        252,
+        269,
+        286,
+        303,
+        319,
+        336,
+        353,
+        370,
+        387,
+        404,
+        420,
+        437,
+        454,
+        471,
+        488,
+        505,
+        522
+      ],
+      "cubic_selected_t": 16,
+      "independent_full_raw_brier": 0.09986645118395059,
+      "raw_brier_saved_difference": 0.0,
+      "max_resolvent_error": 2.220446049250313e-15,
+      "max_cubic_probability_error": 2.6645352591003757e-15,
+      "max_tridiagonal_residual": 2.0317081350640365e-14,
+      "spectral_vs_production_cubic_threshold_disagreements": 0,
+      "threshold_disagreement_max_distance_from_half": 0.0,
+      "production_same_t_linear_cubic_disagreements_on_sample": 0,
+      "power_comparisons": [
+        {
+          "method": "power_full",
+          "parameters": {
+            "t": 8,
+            "alpha": 3
+          },
+          "max_probability_error": 4.9404924595819466e-15
+        },
+        {
+          "method": "power_matched",
+          "parameters": {
+            "t": 8,
+            "alpha": 3
+          },
+          "max_probability_error": 4.9404924595819466e-15
+        }
+      ]
+    },
+    {
+      "scenario": "flip10_cut8",
+      "run_id": "md1us8",
+      "noise_index": 0,
+      "shape": [
+        5001,
+        523
+      ],
+      "contact_column_indices": [
+        0,
+        16,
+        33,
+        50,
+        67,
+        84,
+        101,
+        117,
+        134,
+        151,
+        168,
+        185,
+        202,
+        218,
+        235,
+        252,
+        269,
+        286,
+        303,
+        319,
+        336,
+        353,
+        370,
+        387,
+        404,
+        420,
+        437,
+        454,
+        471,
+        488,
+        505,
+        522
+      ],
+      "cubic_selected_t": 16,
+      "independent_full_raw_brier": 0.10027287085603911,
+      "raw_brier_saved_difference": 0.0,
+      "max_resolvent_error": 2.3314683517128287e-15,
+      "max_cubic_probability_error": 2.55351295663786e-15,
+      "max_tridiagonal_residual": 2.0761170560490427e-14,
+      "spectral_vs_production_cubic_threshold_disagreements": 0,
+      "threshold_disagreement_max_distance_from_half": 0.0,
+      "production_same_t_linear_cubic_disagreements_on_sample": 0,
+      "power_comparisons": [
+        {
+          "method": "power_full",
+          "parameters": {
+            "t": 8,
+            "alpha": 3
+          },
+          "max_probability_error": 5.10702591327572e-15
+        },
+        {
+          "method": "power_matched",
+          "parameters": {
+            "t": 8,
+            "alpha": 3
+          },
+          "max_probability_error": 5.10702591327572e-15
+        }
+      ]
+    },
+    {
+      "scenario": "flip05_cut8",
+      "run_id": "md1us6",
+      "noise_index": 0,
+      "shape": [
+        5001,
+        523
+      ],
+      "contact_column_indices": [
+        0,
+        16,
+        33,
+        50,
+        67,
+        84,
+        101,
+        117,
+        134,
+        151,
+        168,
+        185,
+        202,
+        218,
+        235,
+        252,
+        269,
+        286,
+        303,
+        319,
+        336,
+        353,
+        370,
+        387,
+        404,
+        420,
+        437,
+        454,
+        471,
+        488,
+        505,
+        522
+      ],
+      "cubic_selected_t": 4,
+      "independent_full_raw_brier": 0.04999611932298053,
+      "raw_brier_saved_difference": 0.0,
+      "max_resolvent_error": 2.220446049250313e-15,
+      "max_cubic_probability_error": 2.7755575615628914e-15,
+      "max_tridiagonal_residual": 6.217248937900877e-15,
+      "spectral_vs_production_cubic_threshold_disagreements": 0,
+      "threshold_disagreement_max_distance_from_half": 0.0,
+      "production_same_t_linear_cubic_disagreements_on_sample": 0,
+      "power_comparisons": [
+        {
+          "method": "power_full",
+          "parameters": {
+            "t": 4,
+            "alpha": 4
+          },
+          "max_probability_error": 5.995204332975845e-15
+        },
+        {
+          "method": "power_matched",
+          "parameters": {
+            "t": 4,
+            "alpha": 3
+          },
+          "max_probability_error": 4.773959005888173e-15
+        }
+      ]
+    },
+    {
+      "scenario": "flip05_cut8",
+      "run_id": "md1us7",
+      "noise_index": 0,
+      "shape": [
+        5001,
+        523
+      ],
+      "contact_column_indices": [
+        0,
+        16,
+        33,
+        50,
+        67,
+        84,
+        101,
+        117,
+        134,
+        151,
+        168,
+        185,
+        202,
+        218,
+        235,
+        252,
+        269,
+        286,
+        303,
+        319,
+        336,
+        353,
+        370,
+        387,
+        404,
+        420,
+        437,
+        454,
+        471,
+        488,
+        505,
+        522
+      ],
+      "cubic_selected_t": 4,
+      "independent_full_raw_brier": 0.05008826150639853,
+      "raw_brier_saved_difference": 0.0,
+      "max_resolvent_error": 1.9984014443252818e-15,
+      "max_cubic_probability_error": 2.6645352591003757e-15,
+      "max_tridiagonal_residual": 6.106226635438361e-15,
+      "spectral_vs_production_cubic_threshold_disagreements": 0,
+      "threshold_disagreement_max_distance_from_half": 0.0,
+      "production_same_t_linear_cubic_disagreements_on_sample": 0,
+      "power_comparisons": [
+        {
+          "method": "power_full",
+          "parameters": {
+            "t": 4,
+            "alpha": 4
+          },
+          "max_probability_error": 5.773159728050814e-15
+        },
+        {
+          "method": "power_matched",
+          "parameters": {
+            "t": 4,
+            "alpha": 3
+          },
+          "max_probability_error": 4.6629367034256575e-15
+        }
+      ]
+    },
+    {
+      "scenario": "flip05_cut8",
+      "run_id": "md1us8",
+      "noise_index": 0,
+      "shape": [
+        5001,
+        523
+      ],
+      "contact_column_indices": [
+        0,
+        16,
+        33,
+        50,
+        67,
+        84,
+        101,
+        117,
+        134,
+        151,
+        168,
+        185,
+        202,
+        218,
+        235,
+        252,
+        269,
+        286,
+        303,
+        319,
+        336,
+        353,
+        370,
+        387,
+        404,
+        420,
+        437,
+        454,
+        471,
+        488,
+        505,
+        522
+      ],
+      "cubic_selected_t": 4,
+      "independent_full_raw_brier": 0.04980954095987686,
+      "raw_brier_saved_difference": 0.0,
+      "max_resolvent_error": 2.220446049250313e-15,
+      "max_cubic_probability_error": 2.6645352591003757e-15,
+      "max_tridiagonal_residual": 6.106226635438361e-15,
+      "spectral_vs_production_cubic_threshold_disagreements": 0,
+      "threshold_disagreement_max_distance_from_half": 0.0,
+      "production_same_t_linear_cubic_disagreements_on_sample": 0,
+      "power_comparisons": [
+        {
+          "method": "power_full",
+          "parameters": {
+            "t": 4,
+            "alpha": 4
+          },
+          "max_probability_error": 6.106226635438361e-15
+        },
+        {
+          "method": "power_matched",
+          "parameters": {
+            "t": 4,
+            "alpha": 3
+          },
+          "max_probability_error": 4.9960036108132044e-15
+        }
+      ]
+    },
+    {
+      "scenario": "flip20_cut8",
+      "run_id": "md1us6",
+      "noise_index": 0,
+      "shape": [
+        5001,
+        523
+      ],
+      "contact_column_indices": [
+        0,
+        16,
+        33,
+        50,
+        67,
+        84,
+        101,
+        117,
+        134,
+        151,
+        168,
+        185,
+        202,
+        218,
+        235,
+        252,
+        269,
+        286,
+        303,
+        319,
+        336,
+        353,
+        370,
+        387,
+        404,
+        420,
+        437,
+        454,
+        471,
+        488,
+        505,
+        522
+      ],
+      "cubic_selected_t": 64,
+      "independent_full_raw_brier": 0.20002003423407097,
+      "raw_brier_saved_difference": 0.0,
+      "max_resolvent_error": 1.7763568394002505e-15,
+      "max_cubic_probability_error": 2.4424906541753444e-15,
+      "max_tridiagonal_residual": 6.405986852087153e-14,
+      "spectral_vs_production_cubic_threshold_disagreements": 0,
+      "threshold_disagreement_max_distance_from_half": 0.0,
+      "production_same_t_linear_cubic_disagreements_on_sample": 0,
+      "power_comparisons": [
+        {
+          "method": "power_full",
+          "parameters": {
+            "t": 64,
+            "alpha": 3
+          },
+          "max_probability_error": 4.9960036108132044e-15
+        },
+        {
+          "method": "power_matched",
+          "parameters": {
+            "t": 64,
+            "alpha": 3
+          },
+          "max_probability_error": 4.9960036108132044e-15
+        }
+      ]
+    },
+    {
+      "scenario": "flip20_cut8",
+      "run_id": "md1us7",
+      "noise_index": 0,
+      "shape": [
+        5001,
+        523
+      ],
+      "contact_column_indices": [
+        0,
+        16,
+        33,
+        50,
+        67,
+        84,
+        101,
+        117,
+        134,
+        151,
+        168,
+        185,
+        202,
+        218,
+        235,
+        252,
+        269,
+        286,
+        303,
+        319,
+        336,
+        353,
+        370,
+        387,
+        404,
+        420,
+        437,
+        454,
+        471,
+        488,
+        505,
+        522
+      ],
+      "cubic_selected_t": 64,
+      "independent_full_raw_brier": 0.20008579546041078,
+      "raw_brier_saved_difference": 0.0,
+      "max_resolvent_error": 1.887379141862766e-15,
+      "max_cubic_probability_error": 2.55351295663786e-15,
+      "max_tridiagonal_residual": 6.23945339839338e-14,
+      "spectral_vs_production_cubic_threshold_disagreements": 0,
+      "threshold_disagreement_max_distance_from_half": 0.0,
+      "production_same_t_linear_cubic_disagreements_on_sample": 0,
+      "power_comparisons": [
+        {
+          "method": "power_full",
+          "parameters": {
+            "t": 64,
+            "alpha": 3
+          },
+          "max_probability_error": 3.9968028886505635e-15
+        },
+        {
+          "method": "power_matched",
+          "parameters": {
+            "t": 64,
+            "alpha": 3
+          },
+          "max_probability_error": 3.9968028886505635e-15
+        }
+      ]
+    },
+    {
+      "scenario": "flip20_cut8",
+      "run_id": "md1us8",
+      "noise_index": 0,
+      "shape": [
+        5001,
+        523
+      ],
+      "contact_column_indices": [
+        0,
+        16,
+        33,
+        50,
+        67,
+        84,
+        101,
+        117,
+        134,
+        151,
+        168,
+        185,
+        202,
+        218,
+        235,
+        252,
+        269,
+        286,
+        303,
+        319,
+        336,
+        353,
+        370,
+        387,
+        404,
+        420,
+        437,
+        454,
+        471,
+        488,
+        505,
+        522
+      ],
+      "cubic_selected_t": 64,
+      "independent_full_raw_brier": 0.19999250627885895,
+      "raw_brier_saved_difference": 0.0,
+      "max_resolvent_error": 1.7763568394002505e-15,
+      "max_cubic_probability_error": 2.55351295663786e-15,
+      "max_tridiagonal_residual": 6.317169010117141e-14,
+      "spectral_vs_production_cubic_threshold_disagreements": 0,
+      "threshold_disagreement_max_distance_from_half": 0.0,
+      "production_same_t_linear_cubic_disagreements_on_sample": 0,
+      "power_comparisons": [
+        {
+          "method": "power_full",
+          "parameters": {
+            "t": 64,
+            "alpha": 3
+          },
+          "max_probability_error": 4.773959005888173e-15
+        },
+        {
+          "method": "power_matched",
+          "parameters": {
+            "t": 64,
+            "alpha": 3
+          },
+          "max_probability_error": 4.773959005888173e-15
+        }
+      ]
+    },
+    {
+      "scenario": "jitter025_cut8",
+      "run_id": "md1us6",
+      "noise_index": 0,
+      "shape": [
+        5001,
+        523
+      ],
+      "contact_column_indices": [
+        0,
+        16,
+        33,
+        50,
+        67,
+        84,
+        101,
+        117,
+        134,
+        151,
+        168,
+        185,
+        202,
+        218,
+        235,
+        252,
+        269,
+        286,
+        303,
+        319,
+        336,
+        353,
+        370,
+        387,
+        404,
+        420,
+        437,
+        454,
+        471,
+        488,
+        505,
+        522
+      ],
+      "cubic_selected_t": 8,
+      "independent_full_raw_brier": 0.07021654942434076,
+      "raw_brier_saved_difference": 0.0,
+      "max_resolvent_error": 2.1094237467877974e-15,
+      "max_cubic_probability_error": 2.55351295663786e-15,
+      "max_tridiagonal_residual": 1.2212453270876722e-14,
+      "spectral_vs_production_cubic_threshold_disagreements": 0,
+      "threshold_disagreement_max_distance_from_half": 0.0,
+      "production_same_t_linear_cubic_disagreements_on_sample": 0,
+      "power_comparisons": [
+        {
+          "method": "power_full",
+          "parameters": {
+            "t": 8,
+            "alpha": 1.5
+          },
+          "max_probability_error": 2.3314683517128287e-15
+        },
+        {
+          "method": "power_matched",
+          "parameters": {
+            "t": 8,
+            "alpha": 3
+          },
+          "max_probability_error": 4.496403249731884e-15
+        }
+      ]
+    },
+    {
+      "scenario": "jitter025_cut8",
+      "run_id": "md1us7",
+      "noise_index": 0,
+      "shape": [
+        5001,
+        523
+      ],
+      "contact_column_indices": [
+        0,
+        16,
+        33,
+        50,
+        67,
+        84,
+        101,
+        117,
+        134,
+        151,
+        168,
+        185,
+        202,
+        218,
+        235,
+        252,
+        269,
+        286,
+        303,
+        319,
+        336,
+        353,
+        370,
+        387,
+        404,
+        420,
+        437,
+        454,
+        471,
+        488,
+        505,
+        522
+      ],
+      "cubic_selected_t": 8,
+      "independent_full_raw_brier": 0.0689410874995173,
+      "raw_brier_saved_difference": 0.0,
+      "max_resolvent_error": 2.1094237467877974e-15,
+      "max_cubic_probability_error": 2.55351295663786e-15,
+      "max_tridiagonal_residual": 9.880984919163893e-15,
+      "spectral_vs_production_cubic_threshold_disagreements": 1,
+      "threshold_disagreement_max_distance_from_half": 2.220446049250313e-16,
+      "production_same_t_linear_cubic_disagreements_on_sample": 0,
+      "power_comparisons": [
+        {
+          "method": "power_full",
+          "parameters": {
+            "t": 8,
+            "alpha": 1.5
+          },
+          "max_probability_error": 2.6645352591003757e-15
+        },
+        {
+          "method": "power_matched",
+          "parameters": {
+            "t": 8,
+            "alpha": 3
+          },
+          "max_probability_error": 4.440892098500626e-15
+        }
+      ]
+    },
+    {
+      "scenario": "jitter025_cut8",
+      "run_id": "md1us8",
+      "noise_index": 0,
+      "shape": [
+        5001,
+        523
+      ],
+      "contact_column_indices": [
+        0,
+        16,
+        33,
+        50,
+        67,
+        84,
+        101,
+        117,
+        134,
+        151,
+        168,
+        185,
+        202,
+        218,
+        235,
+        252,
+        269,
+        286,
+        303,
+        319,
+        336,
+        353,
+        370,
+        387,
+        404,
+        420,
+        437,
+        454,
+        471,
+        488,
+        505,
+        522
+      ],
+      "cubic_selected_t": 8,
+      "independent_full_raw_brier": 0.06956352515347791,
+      "raw_brier_saved_difference": 0.0,
+      "max_resolvent_error": 2.55351295663786e-15,
+      "max_cubic_probability_error": 2.831068712794149e-15,
+      "max_tridiagonal_residual": 1.0158540675320182e-14,
+      "spectral_vs_production_cubic_threshold_disagreements": 1,
+      "threshold_disagreement_max_distance_from_half": 3.3306690738754696e-16,
+      "production_same_t_linear_cubic_disagreements_on_sample": 0,
+      "power_comparisons": [
+        {
+          "method": "power_full",
+          "parameters": {
+            "t": 8,
+            "alpha": 1.5
+          },
+          "max_probability_error": 2.942091015256665e-15
+        },
+        {
+          "method": "power_matched",
+          "parameters": {
+            "t": 8,
+            "alpha": 3
+          },
+          "max_probability_error": 4.496403249731884e-15
+        }
+      ]
+    },
+    {
+      "scenario": "jitter050_cut8",
+      "run_id": "md1us6",
+      "noise_index": 0,
+      "shape": [
+        5001,
+        523
+      ],
+      "contact_column_indices": [
+        0,
+        16,
+        33,
+        50,
+        67,
+        84,
+        101,
+        117,
+        134,
+        151,
+        168,
+        185,
+        202,
+        218,
+        235,
+        252,
+        269,
+        286,
+        303,
+        319,
+        336,
+        353,
+        370,
+        387,
+        404,
+        420,
+        437,
+        454,
+        471,
+        488,
+        505,
+        522
+      ],
+      "cubic_selected_t": 64,
+      "independent_full_raw_brier": 0.13519284670790507,
+      "raw_brier_saved_difference": 0.0,
+      "max_resolvent_error": 1.9984014443252818e-15,
+      "max_cubic_probability_error": 2.1094237467877974e-15,
+      "max_tridiagonal_residual": 7.671641100159832e-14,
+      "spectral_vs_production_cubic_threshold_disagreements": 0,
+      "threshold_disagreement_max_distance_from_half": 0.0,
+      "production_same_t_linear_cubic_disagreements_on_sample": 0,
+      "power_comparisons": [
+        {
+          "method": "power_full",
+          "parameters": {
+            "t": 64,
+            "alpha": 2
+          },
+          "max_probability_error": 2.55351295663786e-15
+        },
+        {
+          "method": "power_matched",
+          "parameters": {
+            "t": 64,
+            "alpha": 3
+          },
+          "max_probability_error": 3.7192471324942744e-15
+        }
+      ]
+    },
+    {
+      "scenario": "jitter050_cut8",
+      "run_id": "md1us7",
+      "noise_index": 0,
+      "shape": [
+        5001,
+        523
+      ],
+      "contact_column_indices": [
+        0,
+        16,
+        33,
+        50,
+        67,
+        84,
+        101,
+        117,
+        134,
+        151,
+        168,
+        185,
+        202,
+        218,
+        235,
+        252,
+        269,
+        286,
+        303,
+        319,
+        336,
+        353,
+        370,
+        387,
+        404,
+        420,
+        437,
+        454,
+        471,
+        488,
+        505,
+        522
+      ],
+      "cubic_selected_t": 64,
+      "independent_full_raw_brier": 0.13534233879801477,
+      "raw_brier_saved_difference": 0.0,
+      "max_resolvent_error": 2.55351295663786e-15,
+      "max_cubic_probability_error": 2.220446049250313e-15,
+      "max_tridiagonal_residual": 7.893685705084863e-14,
+      "spectral_vs_production_cubic_threshold_disagreements": 0,
+      "threshold_disagreement_max_distance_from_half": 0.0,
+      "production_same_t_linear_cubic_disagreements_on_sample": 0,
+      "power_comparisons": [
+        {
+          "method": "power_full",
+          "parameters": {
+            "t": 64,
+            "alpha": 2
+          },
+          "max_probability_error": 2.6645352591003757e-15
+        },
+        {
+          "method": "power_matched",
+          "parameters": {
+            "t": 64,
+            "alpha": 3
+          },
+          "max_probability_error": 3.6637359812630166e-15
+        }
+      ]
+    },
+    {
+      "scenario": "jitter050_cut8",
+      "run_id": "md1us8",
+      "noise_index": 0,
+      "shape": [
+        5001,
+        523
+      ],
+      "contact_column_indices": [
+        0,
+        16,
+        33,
+        50,
+        67,
+        84,
+        101,
+        117,
+        134,
+        151,
+        168,
+        185,
+        202,
+        218,
+        235,
+        252,
+        269,
+        286,
+        303,
+        319,
+        336,
+        353,
+        370,
+        387,
+        404,
+        420,
+        437,
+        454,
+        471,
+        488,
+        505,
+        522
+      ],
+      "cubic_selected_t": 64,
+      "independent_full_raw_brier": 0.13538057206914259,
+      "raw_brier_saved_difference": 0.0,
+      "max_resolvent_error": 2.4424906541753444e-15,
+      "max_cubic_probability_error": 2.1094237467877974e-15,
+      "max_tridiagonal_residual": 7.005507285384738e-14,
+      "spectral_vs_production_cubic_threshold_disagreements": 0,
+      "threshold_disagreement_max_distance_from_half": 0.0,
+      "production_same_t_linear_cubic_disagreements_on_sample": 0,
+      "power_comparisons": [
+        {
+          "method": "power_full",
+          "parameters": {
+            "t": 64,
+            "alpha": 2
+          },
+          "max_probability_error": 2.6645352591003757e-15
+        },
+        {
+          "method": "power_matched",
+          "parameters": {
+            "t": 64,
+            "alpha": 3
+          },
+          "max_probability_error": 3.885780586188048e-15
+        }
+      ]
+    },
+    {
+      "scenario": "correlated10_cut8",
+      "run_id": "md1us6",
+      "noise_index": 0,
+      "shape": [
+        5001,
+        523
+      ],
+      "contact_column_indices": [
+        0,
+        16,
+        33,
+        50,
+        67,
+        84,
+        101,
+        117,
+        134,
+        151,
+        168,
+        185,
+        202,
+        218,
+        235,
+        252,
+        269,
+        286,
+        303,
+        319,
+        336,
+        353,
+        370,
+        387,
+        404,
+        420,
+        437,
+        454,
+        471,
+        488,
+        505,
+        522
+      ],
+      "cubic_selected_t": 64,
+      "independent_full_raw_brier": 0.10106812289549738,
+      "raw_brier_saved_difference": 0.0,
+      "max_resolvent_error": 1.887379141862766e-15,
+      "max_cubic_probability_error": 2.4980018054066022e-15,
+      "max_tridiagonal_residual": 6.88338275267597e-14,
+      "spectral_vs_production_cubic_threshold_disagreements": 0,
+      "threshold_disagreement_max_distance_from_half": 0.0,
+      "production_same_t_linear_cubic_disagreements_on_sample": 0,
+      "power_comparisons": [
+        {
+          "method": "power_full",
+          "parameters": {
+            "t": 64,
+            "alpha": 1
+          },
+          "max_probability_error": 1.887379141862766e-15
+        },
+        {
+          "method": "power_matched",
+          "parameters": {
+            "t": 64,
+            "alpha": 3
+          },
+          "max_probability_error": 4.884981308350689e-15
+        }
+      ]
+    },
+    {
+      "scenario": "correlated10_cut8",
+      "run_id": "md1us7",
+      "noise_index": 0,
+      "shape": [
+        5001,
+        523
+      ],
+      "contact_column_indices": [
+        0,
+        16,
+        33,
+        50,
+        67,
+        84,
+        101,
+        117,
+        134,
+        151,
+        168,
+        185,
+        202,
+        218,
+        235,
+        252,
+        269,
+        286,
+        303,
+        319,
+        336,
+        353,
+        370,
+        387,
+        404,
+        420,
+        437,
+        454,
+        471,
+        488,
+        505,
+        522
+      ],
+      "cubic_selected_t": 64,
+      "independent_full_raw_brier": 0.09919278094667873,
+      "raw_brier_saved_difference": 0.0,
+      "max_resolvent_error": 2.4424906541753444e-15,
+      "max_cubic_probability_error": 2.55351295663786e-15,
+      "max_tridiagonal_residual": 7.205347429817266e-14,
+      "spectral_vs_production_cubic_threshold_disagreements": 0,
+      "threshold_disagreement_max_distance_from_half": 0.0,
+      "production_same_t_linear_cubic_disagreements_on_sample": 0,
+      "power_comparisons": [
+        {
+          "method": "power_full",
+          "parameters": {
+            "t": 64,
+            "alpha": 1
+          },
+          "max_probability_error": 2.4424906541753444e-15
+        },
+        {
+          "method": "power_matched",
+          "parameters": {
+            "t": 64,
+            "alpha": 3
+          },
+          "max_probability_error": 4.9960036108132044e-15
+        }
+      ]
+    },
+    {
+      "scenario": "correlated10_cut8",
+      "run_id": "md1us8",
+      "noise_index": 0,
+      "shape": [
+        5001,
+        523
+      ],
+      "contact_column_indices": [
+        0,
+        16,
+        33,
+        50,
+        67,
+        84,
+        101,
+        117,
+        134,
+        151,
+        168,
+        185,
+        202,
+        218,
+        235,
+        252,
+        269,
+        286,
+        303,
+        319,
+        336,
+        353,
+        370,
+        387,
+        404,
+        420,
+        437,
+        454,
+        471,
+        488,
+        505,
+        522
+      ],
+      "cubic_selected_t": 64,
+      "independent_full_raw_brier": 0.09947264849133423,
+      "raw_brier_saved_difference": 0.0,
+      "max_resolvent_error": 1.9984014443252818e-15,
+      "max_cubic_probability_error": 2.4980018054066022e-15,
+      "max_tridiagonal_residual": 7.582823258189819e-14,
+      "spectral_vs_production_cubic_threshold_disagreements": 0,
+      "threshold_disagreement_max_distance_from_half": 0.0,
+      "production_same_t_linear_cubic_disagreements_on_sample": 0,
+      "power_comparisons": [
+        {
+          "method": "power_full",
+          "parameters": {
+            "t": 64,
+            "alpha": 1
+          },
+          "max_probability_error": 1.9984014443252818e-15
+        },
+        {
+          "method": "power_matched",
+          "parameters": {
+            "t": 64,
+            "alpha": 3
+          },
+          "max_probability_error": 4.385380947269368e-15
+        }
+      ]
+    },
+    {
+      "scenario": "flip10_cut7",
+      "run_id": "md1us6",
+      "noise_index": 0,
+      "shape": [
+        5001,
+        368
+      ],
+      "contact_column_indices": [
+        0,
+        11,
+        23,
+        35,
+        47,
+        59,
+        71,
+        82,
+        94,
+        106,
+        118,
+        130,
+        142,
+        153,
+        165,
+        177,
+        189,
+        201,
+        213,
+        224,
+        236,
+        248,
+        260,
+        272,
+        284,
+        295,
+        307,
+        319,
+        331,
+        343,
+        355,
+        367
+      ],
+      "cubic_selected_t": 16,
+      "independent_full_raw_brier": 0.09996098606365683,
+      "raw_brier_saved_difference": 0.0,
+      "max_resolvent_error": 2.3314683517128287e-15,
+      "max_cubic_probability_error": 3.1086244689504383e-15,
+      "max_tridiagonal_residual": 2.0317081350640365e-14,
+      "spectral_vs_production_cubic_threshold_disagreements": 0,
+      "threshold_disagreement_max_distance_from_half": 0.0,
+      "production_same_t_linear_cubic_disagreements_on_sample": 0,
+      "power_comparisons": [
+        {
+          "method": "power_full",
+          "parameters": {
+            "t": 16,
+            "alpha": 3
+          },
+          "max_probability_error": 4.773959005888173e-15
+        },
+        {
+          "method": "power_matched",
+          "parameters": {
+            "t": 16,
+            "alpha": 3
+          },
+          "max_probability_error": 4.773959005888173e-15
+        }
+      ]
+    },
+    {
+      "scenario": "flip10_cut7",
+      "run_id": "md1us7",
+      "noise_index": 0,
+      "shape": [
+        5001,
+        368
+      ],
+      "contact_column_indices": [
+        0,
+        11,
+        23,
+        35,
+        47,
+        59,
+        71,
+        82,
+        94,
+        106,
+        118,
+        130,
+        142,
+        153,
+        165,
+        177,
+        189,
+        201,
+        213,
+        224,
+        236,
+        248,
+        260,
+        272,
+        284,
+        295,
+        307,
+        319,
+        331,
+        343,
+        355,
+        367
+      ],
+      "cubic_selected_t": 16,
+      "independent_full_raw_brier": 0.10002782052285195,
+      "raw_brier_saved_difference": 0.0,
+      "max_resolvent_error": 2.220446049250313e-15,
+      "max_cubic_probability_error": 3.1086244689504383e-15,
+      "max_tridiagonal_residual": 1.7541523789077473e-14,
+      "spectral_vs_production_cubic_threshold_disagreements": 0,
+      "threshold_disagreement_max_distance_from_half": 0.0,
+      "production_same_t_linear_cubic_disagreements_on_sample": 0,
+      "power_comparisons": [
+        {
+          "method": "power_full",
+          "parameters": {
+            "t": 16,
+            "alpha": 3
+          },
+          "max_probability_error": 4.884981308350689e-15
+        },
+        {
+          "method": "power_matched",
+          "parameters": {
+            "t": 16,
+            "alpha": 3
+          },
+          "max_probability_error": 4.884981308350689e-15
+        }
+      ]
+    },
+    {
+      "scenario": "flip10_cut7",
+      "run_id": "md1us8",
+      "noise_index": 0,
+      "shape": [
+        5001,
+        368
+      ],
+      "contact_column_indices": [
+        0,
+        11,
+        23,
+        35,
+        47,
+        59,
+        71,
+        82,
+        94,
+        106,
+        118,
+        130,
+        142,
+        153,
+        165,
+        177,
+        189,
+        201,
+        213,
+        224,
+        236,
+        248,
+        260,
+        272,
+        284,
+        295,
+        307,
+        319,
+        331,
+        343,
+        355,
+        367
+      ],
+      "cubic_selected_t": 16,
+      "independent_full_raw_brier": 0.09956432626518175,
+      "raw_brier_saved_difference": 0.0,
+      "max_resolvent_error": 2.220446049250313e-15,
+      "max_cubic_probability_error": 2.7755575615628914e-15,
+      "max_tridiagonal_residual": 1.887379141862766e-14,
+      "spectral_vs_production_cubic_threshold_disagreements": 0,
+      "threshold_disagreement_max_distance_from_half": 0.0,
+      "production_same_t_linear_cubic_disagreements_on_sample": 0,
+      "power_comparisons": [
+        {
+          "method": "power_full",
+          "parameters": {
+            "t": 16,
+            "alpha": 3
+          },
+          "max_probability_error": 5.10702591327572e-15
+        },
+        {
+          "method": "power_matched",
+          "parameters": {
+            "t": 16,
+            "alpha": 3
+          },
+          "max_probability_error": 5.10702591327572e-15
+        }
+      ]
+    },
+    {
+      "scenario": "flip10_cut9",
+      "run_id": "md1us6",
+      "noise_index": 0,
+      "shape": [
+        5001,
+        838
+      ],
+      "contact_column_indices": [
+        0,
+        27,
+        54,
+        81,
+        108,
+        135,
+        162,
+        189,
+        216,
+        243,
+        270,
+        297,
+        324,
+        351,
+        378,
+        405,
+        432,
+        459,
+        486,
+        513,
+        540,
+        567,
+        594,
+        621,
+        648,
+        675,
+        702,
+        729,
+        756,
+        783,
+        810,
+        837
+      ],
+      "cubic_selected_t": 8,
+      "independent_full_raw_brier": 0.10002200037319504,
+      "raw_brier_saved_difference": 0.0,
+      "max_resolvent_error": 1.9984014443252818e-15,
+      "max_cubic_probability_error": 2.886579864025407e-15,
+      "max_tridiagonal_residual": 1.0436096431476471e-14,
+      "spectral_vs_production_cubic_threshold_disagreements": 1,
+      "threshold_disagreement_max_distance_from_half": 1.6653345369377348e-15,
+      "production_same_t_linear_cubic_disagreements_on_sample": 0,
+      "power_comparisons": [
+        {
+          "method": "power_full",
+          "parameters": {
+            "t": 8,
+            "alpha": 3
+          },
+          "max_probability_error": 4.884981308350689e-15
+        },
+        {
+          "method": "power_matched",
+          "parameters": {
+            "t": 8,
+            "alpha": 3
+          },
+          "max_probability_error": 4.884981308350689e-15
+        }
+      ]
+    },
+    {
+      "scenario": "flip10_cut9",
+      "run_id": "md1us7",
+      "noise_index": 0,
+      "shape": [
+        5001,
+        838
+      ],
+      "contact_column_indices": [
+        0,
+        27,
+        54,
+        81,
+        108,
+        135,
+        162,
+        189,
+        216,
+        243,
+        270,
+        297,
+        324,
+        351,
+        378,
+        405,
+        432,
+        459,
+        486,
+        513,
+        540,
+        567,
+        594,
+        621,
+        648,
+        675,
+        702,
+        729,
+        756,
+        783,
+        810,
+        837
+      ],
+      "cubic_selected_t": 8,
+      "independent_full_raw_brier": 0.0997127543465054,
+      "raw_brier_saved_difference": 0.0,
+      "max_resolvent_error": 2.3314683517128287e-15,
+      "max_cubic_probability_error": 2.55351295663786e-15,
+      "max_tridiagonal_residual": 1.1324274851176597e-14,
+      "spectral_vs_production_cubic_threshold_disagreements": 0,
+      "threshold_disagreement_max_distance_from_half": 0.0,
+      "production_same_t_linear_cubic_disagreements_on_sample": 0,
+      "power_comparisons": [
+        {
+          "method": "power_full",
+          "parameters": {
+            "t": 8,
+            "alpha": 3
+          },
+          "max_probability_error": 4.773959005888173e-15
+        },
+        {
+          "method": "power_matched",
+          "parameters": {
+            "t": 8,
+            "alpha": 3
+          },
+          "max_probability_error": 4.773959005888173e-15
+        }
+      ]
+    },
+    {
+      "scenario": "flip10_cut9",
+      "run_id": "md1us8",
+      "noise_index": 0,
+      "shape": [
+        5001,
+        838
+      ],
+      "contact_column_indices": [
+        0,
+        27,
+        54,
+        81,
+        108,
+        135,
+        162,
+        189,
+        216,
+        243,
+        270,
+        297,
+        324,
+        351,
+        378,
+        405,
+        432,
+        459,
+        486,
+        513,
+        540,
+        567,
+        594,
+        621,
+        648,
+        675,
+        702,
+        729,
+        756,
+        783,
+        810,
+        837
+      ],
+      "cubic_selected_t": 8,
+      "independent_full_raw_brier": 0.10009811880106079,
+      "raw_brier_saved_difference": 0.0,
+      "max_resolvent_error": 2.3314683517128287e-15,
+      "max_cubic_probability_error": 2.3314683517128287e-15,
+      "max_tridiagonal_residual": 1.099120794378905e-14,
+      "spectral_vs_production_cubic_threshold_disagreements": 0,
+      "threshold_disagreement_max_distance_from_half": 0.0,
+      "production_same_t_linear_cubic_disagreements_on_sample": 0,
+      "power_comparisons": [
+        {
+          "method": "power_full",
+          "parameters": {
+            "t": 8,
+            "alpha": 3
+          },
+          "max_probability_error": 4.3298697960381105e-15
+        },
+        {
+          "method": "power_matched",
+          "parameters": {
+            "t": 8,
+            "alpha": 3
+          },
+          "max_probability_error": 4.3298697960381105e-15
+        }
+      ]
+    }
+  ],
+  "independent_primary_decision": {
+    "selected_baseline": "power_full",
+    "relative_brier_gain": -0.08529418402137105,
+    "conditions": {
+      "relative_gain_at_least_minimum": false,
+      "positive_gain_every_test_run": false,
+      "rare_guardrail_every_test_run": false,
+      "brief_guardrail_every_test_run": false
+    },
+    "decision": "fail",
+    "per_run": [
+      {
+        "run_id": "md1us6",
+        "brier_gain": -0.0032920316060534513,
+        "rare_recall_loss": 0.08799584405917571,
+        "brief_recall_loss": 0.11353176760676631
+      },
+      {
+        "run_id": "md1us7",
+        "brier_gain": -0.003090194793622991,
+        "rare_recall_loss": 0.10803828828828821,
+        "brief_recall_loss": 0.11386656779559934
+      },
+      {
+        "run_id": "md1us8",
+        "brier_gain": -0.0031343751697541222,
+        "rare_recall_loss": 0.10805050045495901,
+        "brief_recall_loss": 0.11620384486087987
+      }
+    ]
+  },
+  "initial_villin_and_mathematical_evidence": {
+    "resolvent_and_expected_median": {
+      "binary_path_parameter_cases": 1778,
+      "lengths": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "t_grid": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64
+      ],
+      "max_dense_matrix_error": 5.551115123125783e-16,
+      "max_cosine_spectrum_error": 1.4432899320127035e-15,
+      "max_triple_endpoint_enumeration_error": 1.3322676295501878e-15,
+      "endpoint_triple_enumeration_lengths": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "formula": "R=(I+t(I-A))^-1=(1/(1+t))*sum_{k>=0}(t/(1+t))^k A^k; mean geometric step count t. Three independent endpoint binary labels have majority probability 3h^2-2h^3."
+    },
+    "villin_test_noise_rows_checked": 6144,
+    "villin_independently_rebuilt_method_metric_rows": 156,
+    "villin_max_rebuilt_metric_error_after_disclosed_tie_alignment": 3.191891195797325e-16,
+    "villin_max_stored_aggregate_error": 0.0,
+    "actual_length_manual_median_check_count": 28,
+    "villin_scenarios": [
+      {
+        "scenario": "flip10_cut8",
+        "selected_baseline": "power_full",
+        "paper332_brier": 0.019960005333488316,
+        "baseline_brier": 0.015995172162488375,
+        "same_t_threshold_disagreements": 0
+      },
+      {
+        "scenario": "flip05_cut8",
+        "selected_baseline": "power_full",
+        "paper332_brier": 0.013962280228918182,
+        "baseline_brier": 0.011367779365096206,
+        "same_t_threshold_disagreements": 0
+      },
+      {
+        "scenario": "flip20_cut8",
+        "selected_baseline": "power_full",
+        "paper332_brier": 0.04087152435950686,
+        "baseline_brier": 0.024074157349990227,
+        "same_t_threshold_disagreements": 0
+      },
+      {
+        "scenario": "jitter025_cut8",
+        "selected_baseline": "power_full",
+        "paper332_brier": 0.007573336946544044,
+        "baseline_brier": 0.007492373430392104,
+        "same_t_threshold_disagreements": 0
+      },
+      {
+        "scenario": "jitter050_cut8",
+        "selected_baseline": "power_full",
+        "paper332_brier": 0.012644731084695382,
+        "baseline_brier": 0.012647505641804233,
+        "same_t_threshold_disagreements": 0
+      },
+      {
+        "scenario": "correlated10_cut8",
+        "selected_baseline": "median",
+        "paper332_brier": 0.061211573235329664,
+        "baseline_brier": 0.04113782102477093,
+        "same_t_threshold_disagreements": 0
+      },
+      {
+        "scenario": "flip10_cut7",
+        "selected_baseline": "power_full",
+        "paper332_brier": 0.015166326103571957,
+        "baseline_brier": 0.011448501525234578,
+        "same_t_threshold_disagreements": 0
+      },
+      {
+        "scenario": "flip10_cut9",
+        "selected_baseline": "power_full",
+        "paper332_brier": 0.02844495455988753,
+        "baseline_brier": 0.023857583321535616,
+        "same_t_threshold_disagreements": 0
+      }
+    ],
+    "scope_and_limitations": "Initial report retains every inspected output hash, exact sampled reconstruction scope, raw threshold discrepancies and unused very-short-path dependency defect."
+  },
+  "draft_report_claims_review": {
+    "file": "RESULTS.txt",
+    "sha256_at_review": "6e7b1372d886fc40cbd4a1b43792925e4d1a848806a969c90349e13ad9b1f05f",
+    "conclusion": "Mathematical formula, binary-only specialization, theorem scope and no physical-coordinate reconstruction claims are appropriate. Recommended explicit T4 same-t attribution and distinguishing independently tuned linear from linear at cubic-selected t.",
+    "t4_same_t_linear_brier": 0.0507539560158056,
+    "t4_same_t_cubic_relative_brier_gain": 0.2047223265269659,
+    "t4_same_t_threshold_disagreements": 0,
+    "t4_same_t_rare_and_brief_recall_identical": true
+  },
+  "max_full_raw_brier_error": 0.0,
+  "max_clean_aggregate_error": 0.0,
+  "output_sha256": {
+    "results/t4/flip10_cut8_validation.json": "79576cdb4c54152aa5b8ec3cd12bebadf83dbdcb9644b65e272e1993bb407d44",
+    "results/t4/flip10_cut8_test.json": "55a8be0286cce83e055c1532f625ed5b83a086d89dc9969589aa5a29ba9f5cc5",
+    "results/t4/flip05_cut8_validation.json": "3908aa30a89d19575d04e5258d56c9f664149374721778f159e57787496fb057",
+    "results/t4/flip05_cut8_test.json": "96aab5b4360fb9575682acbe5d4460f9067f194c33bc3d9bad0dce33dc1fca82",
+    "results/t4/flip20_cut8_validation.json": "9445f418c26e81c5b4b97cfa0de0bf8aa0402a40707fee8ed87526437480584c",
+    "results/t4/flip20_cut8_test.json": "801cdfdb8ffd0bbfee7bde95e37c3a881b94be6cd5ed4dcbe3b6f63df319ca1b",
+    "results/t4/jitter025_cut8_validation.json": "feec8c41d28aad1733403cb5e8f3c829eb2b8f3a699cc2e6951079ce9eabab99",
+    "results/t4/jitter025_cut8_test.json": "902641ee3a29e41c60fa2e048c55dd88c5a5600a051bfd2572f6cc54843b2d6b",
+    "results/t4/jitter050_cut8_validation.json": "ffe086f96d3e3f9bccd8db2c618b2afe8b438e7cdbf988550c353305cf92ab67",
+    "results/t4/jitter050_cut8_test.json": "571da6e27cbea73dafa552f0c8c6b6ea04e2180c1f22d92d83361b562ce90e09",
+    "results/t4/correlated10_cut8_validation.json": "f48f8c6fb9b2e778942032f2682d0bd5f28fd536642b0305a782c9776ba6a23f",
+    "results/t4/correlated10_cut8_test.json": "71165d7aea49ecfe2973b80207747b2edee163393c48720e0a0af023ffe5eaa4",
+    "results/t4/flip10_cut7_validation.json": "6c8cdd501c07e98e83b6d0f62310e022bb0d90301fb8a0c0059bc5ab84a2def7",
+    "results/t4/flip10_cut7_test.json": "848f6a10816d35d4d75aeca7b7f1bc1db9417eea9d990c1db545a2b227001ed9",
+    "results/t4/flip10_cut9_validation.json": "827555675ab505e450d6696c4f0fa44936e8d1c4611a82f73b19b44497638994",
+    "results/t4/flip10_cut9_test.json": "8dbc4c9e1492585770cb3faaf4f68cd5a2132a74a8221e88a2c29fc2665be632",
+    "results/t4/primary_clean.json": "774acbae37aa0aeeaba1f04ee92c2008e52ea2af04397ca74d57f2868c71dafa"
+  },
+  "retained_findings": [
+    {
+      "severity": "scope_limit",
+      "id": "M1",
+      "finding": "Cotype theorem does not establish denoising superiority, Brier improvement, equilibrium populations, or physical coordinate validity. Existing protocol and code disclaimers are appropriate."
+    },
+    {
+      "severity": "reporting_note",
+      "id": "M2",
+      "finding": "Short-positive recall is weighted by positive cells within complete sampled runs, not by event count; transition Brier uses a union of both endpoints. These match the clarified protocol."
+    },
+    {
+      "severity": "reporting_note",
+      "id": "M3",
+      "finding": "Power alpha=3 is a prior-ADK selected control and full power grid has 63 settings versus seven for cubic. Both declared full-budget and matched-budget comparisons must remain visible."
+    },
+    {
+      "severity": "limitation",
+      "id": "M4",
+      "finding": "Independent data-to-metric reconstruction samples two Villin trajectories and one noise draw per scenario, while stored aggregation/selection checks cover all completed rows. Full numerical reproduction is a separate reviewer task."
+    },
+    {
+      "severity": "low_unused_domain_defect",
+      "id": "M5",
+      "finding": "SciPy 1.17.0 reflect median may return nonbinary/incorrect values for some sub-20-frame multicolumn arrays and very wide windows. Reproduced for n=2 with widths17/33/65/129. These paths violate the dataset minimum20 rule. Explicit manual reflection matches every declared median width at actual lengths71/250, length249 and anticipated T4 length5001. No demonstrated effect on saved benchmark results."
+    },
+    {
+      "severity": "reporting_note",
+      "id": "M6",
+      "finding": "An independent cosine solver produces small threshold metric differences at values within about1e-14 of .5; raw disagreements are recorded. This is numerical tie sensitivity rather than an observed Brier or algorithm mismatch. Production cubic-versus-linear disagreement totals remain as saved."
+    }
+  ],
+  "claim_limit": "The binary cubic is the exact coordinatewise expected majority of three independent resolvent endpoints. Metric Markov cotype controls a different geometric inequality; neither it nor these artificial-noise experiments guarantee biological correctness, realizable coordinates or universal Brier improvement."
+}

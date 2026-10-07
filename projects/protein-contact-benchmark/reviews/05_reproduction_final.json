@@ -1,0 +1,2170 @@
+{
+  "reviewer": "05 independent numerical reproduction AI audit",
+  "checked_utc": "2026-10-07T16:06:17.788260+00:00",
+  "status": "pass_with_scope_limits",
+  "critical_findings": [],
+  "protocol_sha256": "1e25ff2c9890809f5432675c259f8ec705d2ce9bcca23969111f771fd520c84c",
+  "prepared_manifest_sha256": "14327ca99a0f909bf818fdcd3e1c9ef947262cbda50ffcb43e75917675ae0c07",
+  "source_record_checks": [
+    {
+      "run": "md1us4",
+      "source_xtc_sha256": "85543e9219cf9d636dd960d3ddd5388b05c00bfc129aed7c795278ae7712bc4c",
+      "source_xtc_md5": "991c47f3ef4af3f0803a712264452dd6",
+      "derived_ca_sha256": "ad4ff4a7c8691709d4bb4579abfc4e01e9272e3115e054fa287facb58c2d3662",
+      "scope": "Verified retained source-checksum/extraction records against prepared arrays; this reviewer does not redownload original T4 source XTCs."
+    },
+    {
+      "run": "md1us5",
+      "source_xtc_sha256": "47c33a0c813e9376328ef3fde4533c57f6cd939aaade6b0588089833346a82e3",
+      "source_xtc_md5": "1a595d1027b671a3c467e70983151cc7",
+      "derived_ca_sha256": "af840b43ddd5049ba4a68f8a779f41f4608dd953dccc93f06dc3f1e13d7aaa09",
+      "scope": "Verified retained source-checksum/extraction records against prepared arrays; this reviewer does not redownload original T4 source XTCs."
+    },
+    {
+      "run": "md1us6",
+      "source_xtc_sha256": "cffab6d60e31234b9fa2974e179d82ef46f88787804a359cd59a39d7324fca83",
+      "source_xtc_md5": "75807ff000533ee6f77f789dd2b4874f",
+      "derived_ca_sha256": "7a30f8c9319d542e253be0e092b658d20dc52275c972465f9d54ad0d99f4fe92",
+      "scope": "Verified retained source-checksum/extraction records against prepared arrays; this reviewer does not redownload original T4 source XTCs."
+    },
+    {
+      "run": "md1us7",
+      "source_xtc_sha256": "8ee4450fb3fc84c3a94e997b8957be9f2a9c784bb8b24118c76d9d28ad86f671",
+      "source_xtc_md5": "1bc5ed165677a75d255528478bd59614",
+      "derived_ca_sha256": "855e3597dd1eea33c1f2301d1d8fb537d9c00a2d2f62c18e9ad09bb03484d605",
+      "scope": "Verified retained source-checksum/extraction records against prepared arrays; this reviewer does not redownload original T4 source XTCs."
+    },
+    {
+      "run": "md1us8",
+      "source_xtc_sha256": "ded63de376caaec529ab752eac6a288a37af377f94916a1b4e7268f100727b4f",
+      "source_xtc_md5": "90c65520164769655aebd92d1760662d",
+      "derived_ca_sha256": "88c6f5a0466e0b8647979c700efa44b273de23395478d654e381de1729cccb0f",
+      "scope": "Verified retained source-checksum/extraction records against prepared arrays; this reviewer does not redownload original T4 source XTCs."
+    }
+  ],
+  "all_contacts_reconstruction": [
+    {
+      "cutoff": 7,
+      "all_pairs": 12561,
+      "selected_pairs": 368,
+      "discovery_frames": 5001,
+      "contact_arrays_reconstructed": 5
+    },
+    {
+      "cutoff": 8,
+      "all_pairs": 12561,
+      "selected_pairs": 523,
+      "discovery_frames": 5001,
+      "contact_arrays_reconstructed": 5
+    },
+    {
+      "cutoff": 9,
+      "all_pairs": 12561,
+      "selected_pairs": 838,
+      "discovery_frames": 5001,
+      "contact_arrays_reconstructed": 5
+    }
+  ],
+  "full_comparison": {
+    "files": 17,
+    "numeric_fields": 69721,
+    "other_scalar_fields": 1123,
+    "max_absolute_difference": 0.0,
+    "excluded_root_key_occurrences": {
+      "completed_utc": 17,
+      "seconds": 17,
+      "validation_file_sha256": 8,
+      "method_prediction_and_metrics_seconds": 8
+    },
+    "comparator_mode": "default, without allow-regenerated-manifest"
+  },
+  "seeds": {
+    "t4": 448,
+    "reproduced_t4": 448
+  },
+  "chronology": [
+    {
+      "output": "t4",
+      "scenario": "flip10_cut8",
+      "validation_completed_utc": "2026-10-07T15:49:27.195412+00:00",
+      "test_start_inferred_utc": "2026-10-07T15:49:27.198474+00:00",
+      "gap_seconds": 0.003062
+    },
+    {
+      "output": "t4",
+      "scenario": "flip05_cut8",
+      "validation_completed_utc": "2026-10-07T15:49:23.063149+00:00",
+      "test_start_inferred_utc": "2026-10-07T15:49:23.065716+00:00",
+      "gap_seconds": 0.002567
+    },
+    {
+      "output": "t4",
+      "scenario": "flip20_cut8",
+      "validation_completed_utc": "2026-10-07T15:49:37.878166+00:00",
+      "test_start_inferred_utc": "2026-10-07T15:49:37.880089+00:00",
+      "gap_seconds": 0.001923
+    },
+    {
+      "output": "t4",
+      "scenario": "jitter025_cut8",
+      "validation_completed_utc": "2026-10-07T15:49:23.130399+00:00",
+      "test_start_inferred_utc": "2026-10-07T15:49:23.131753+00:00",
+      "gap_seconds": 0.001354
+    },
+    {
+      "output": "t4",
+      "scenario": "jitter050_cut8",
+      "validation_completed_utc": "2026-10-07T15:51:40.360806+00:00",
+      "test_start_inferred_utc": "2026-10-07T15:51:40.363256+00:00",
+      "gap_seconds": 0.00245
+    },
+    {
+      "output": "t4",
+      "scenario": "correlated10_cut8",
+      "validation_completed_utc": "2026-10-07T15:51:38.390496+00:00",
+      "test_start_inferred_utc": "2026-10-07T15:51:38.392190+00:00",
+      "gap_seconds": 0.001694
+    },
+    {
+      "output": "t4",
+      "scenario": "flip10_cut7",
+      "validation_completed_utc": "2026-10-07T15:51:32.188247+00:00",
+      "test_start_inferred_utc": "2026-10-07T15:51:32.191630+00:00",
+      "gap_seconds": 0.003383
+    },
+    {
+      "output": "t4",
+      "scenario": "flip10_cut9",
+      "validation_completed_utc": "2026-10-07T15:53:09.522376+00:00",
+      "test_start_inferred_utc": "2026-10-07T15:53:09.524106+00:00",
+      "gap_seconds": 0.00173
+    },
+    {
+      "output": "reproduced_t4",
+      "scenario": "flip10_cut8",
+      "validation_completed_utc": "2026-10-07T15:56:07.197797+00:00",
+      "test_start_inferred_utc": "2026-10-07T15:56:07.204178+00:00",
+      "gap_seconds": 0.006381
+    },
+    {
+      "output": "reproduced_t4",
+      "scenario": "flip05_cut8",
+      "validation_completed_utc": "2026-10-07T15:56:02.515632+00:00",
+      "test_start_inferred_utc": "2026-10-07T15:56:02.519013+00:00",
+      "gap_seconds": 0.003381
+    },
+    {
+      "output": "reproduced_t4",
+      "scenario": "flip20_cut8",
+      "validation_completed_utc": "2026-10-07T15:56:20.946976+00:00",
+      "test_start_inferred_utc": "2026-10-07T15:56:20.948684+00:00",
+      "gap_seconds": 0.001708
+    },
+    {
+      "output": "reproduced_t4",
+      "scenario": "jitter025_cut8",
+      "validation_completed_utc": "2026-10-07T15:56:01.032606+00:00",
+      "test_start_inferred_utc": "2026-10-07T15:56:01.034519+00:00",
+      "gap_seconds": 0.001913
+    },
+    {
+      "output": "reproduced_t4",
+      "scenario": "jitter050_cut8",
+      "validation_completed_utc": "2026-10-07T15:58:17.731830+00:00",
+      "test_start_inferred_utc": "2026-10-07T15:58:17.732605+00:00",
+      "gap_seconds": 0.000775
+    },
+    {
+      "output": "reproduced_t4",
+      "scenario": "correlated10_cut8",
+      "validation_completed_utc": "2026-10-07T15:58:18.346783+00:00",
+      "test_start_inferred_utc": "2026-10-07T15:58:18.347872+00:00",
+      "gap_seconds": 0.001089
+    },
+    {
+      "output": "reproduced_t4",
+      "scenario": "flip10_cut7",
+      "validation_completed_utc": "2026-10-07T15:58:10.419120+00:00",
+      "test_start_inferred_utc": "2026-10-07T15:58:10.420971+00:00",
+      "gap_seconds": 0.001851
+    },
+    {
+      "output": "reproduced_t4",
+      "scenario": "flip10_cut9",
+      "validation_completed_utc": "2026-10-07T15:59:57.068044+00:00",
+      "test_start_inferred_utc": "2026-10-07T15:59:57.069561+00:00",
+      "gap_seconds": 0.001517
+    }
+  ],
+  "environments": {
+    "t4": [
+      {
+        "python": "3.12.14",
+        "numpy": "2.3.5",
+        "scipy": "1.17.0",
+        "platform": "Linux-6.18.44-x86_64-with-glibc2.39"
+      },
+      {
+        "python": "3.12.14",
+        "numpy": "2.3.5",
+        "scipy": "1.17.0",
+        "platform": "Linux-6.18.44-x86_64-with-glibc2.39"
+      },
+      {
+        "python": "3.12.14",
+        "numpy": "2.3.5",
+        "scipy": "1.17.0",
+        "platform": "Linux-6.18.44-x86_64-with-glibc2.39"
+      },
+      {
+        "python": "3.12.14",
+        "numpy": "2.3.5",
+        "scipy": "1.17.0",
+        "platform": "Linux-6.18.44-x86_64-with-glibc2.39"
+      },
+      {
+        "python": "3.12.14",
+        "numpy": "2.3.5",
+        "scipy": "1.17.0",
+        "platform": "Linux-6.18.44-x86_64-with-glibc2.39"
+      },
+      {
+        "python": "3.12.14",
+        "numpy": "2.3.5",
+        "scipy": "1.17.0",
+        "platform": "Linux-6.18.44-x86_64-with-glibc2.39"
+      },
+      {
+        "python": "3.12.14",
+        "numpy": "2.3.5",
+        "scipy": "1.17.0",
+        "platform": "Linux-6.18.44-x86_64-with-glibc2.39"
+      },
+      {
+        "python": "3.12.14",
+        "numpy": "2.3.5",
+        "scipy": "1.17.0",
+        "platform": "Linux-6.18.44-x86_64-with-glibc2.39"
+      }
+    ],
+    "reproduced_t4": [
+      {
+        "python": "3.12.14",
+        "numpy": "2.3.5",
+        "scipy": "1.17.0",
+        "platform": "Linux-6.18.44-x86_64-with-glibc2.39"
+      },
+      {
+        "python": "3.12.14",
+        "numpy": "2.3.5",
+        "scipy": "1.17.0",
+        "platform": "Linux-6.18.44-x86_64-with-glibc2.39"
+      },
+      {
+        "python": "3.12.14",
+        "numpy": "2.3.5",
+        "scipy": "1.17.0",
+        "platform": "Linux-6.18.44-x86_64-with-glibc2.39"
+      },
+      {
+        "python": "3.12.14",
+        "numpy": "2.3.5",
+        "scipy": "1.17.0",
+        "platform": "Linux-6.18.44-x86_64-with-glibc2.39"
+      },
+      {
+        "python": "3.12.14",
+        "numpy": "2.3.5",
+        "scipy": "1.17.0",
+        "platform": "Linux-6.18.44-x86_64-with-glibc2.39"
+      },
+      {
+        "python": "3.12.14",
+        "numpy": "2.3.5",
+        "scipy": "1.17.0",
+        "platform": "Linux-6.18.44-x86_64-with-glibc2.39"
+      },
+      {
+        "python": "3.12.14",
+        "numpy": "2.3.5",
+        "scipy": "1.17.0",
+        "platform": "Linux-6.18.44-x86_64-with-glibc2.39"
+      },
+      {
+        "python": "3.12.14",
+        "numpy": "2.3.5",
+        "scipy": "1.17.0",
+        "platform": "Linux-6.18.44-x86_64-with-glibc2.39"
+      }
+    ]
+  },
+  "independent_numerical_reconstruction": {
+    "methods": [
+      "raw",
+      "linear",
+      "paper332",
+      "power_full",
+      "power_matched"
+    ],
+    "test_cases": [
+      {
+        "scenario": "flip10_cut8",
+        "run_id": "md1us6",
+        "noise_index": 0,
+        "shape": [
+          5001,
+          523
+        ],
+        "max_absolute_metric_difference": 4.0245584642661925e-16,
+        "max_spectral_solve_residual": 2.1316282072803006e-14
+      },
+      {
+        "scenario": "flip10_cut8",
+        "run_id": "md1us6",
+        "noise_index": 15,
+        "shape": [
+          5001,
+          523
+        ],
+        "max_absolute_metric_difference": 4.0245584642661925e-16,
+        "max_spectral_solve_residual": 2.2648549702353193e-14
+      },
+      {
+        "scenario": "flip10_cut8",
+        "run_id": "md1us7",
+        "noise_index": 0,
+        "shape": [
+          5001,
+          523
+        ],
+        "max_absolute_metric_difference": 4.163336342344337e-16,
+        "max_spectral_solve_residual": 2.1316282072803006e-14
+      },
+      {
+        "scenario": "flip10_cut8",
+        "run_id": "md1us7",
+        "noise_index": 15,
+        "shape": [
+          5001,
+          523
+        ],
+        "max_absolute_metric_difference": 5.134781488891349e-16,
+        "max_spectral_solve_residual": 2.220446049250313e-14
+      },
+      {
+        "scenario": "flip10_cut8",
+        "run_id": "md1us8",
+        "noise_index": 0,
+        "shape": [
+          5001,
+          523
+        ],
+        "max_absolute_metric_difference": 4.163336342344337e-16,
+        "max_spectral_solve_residual": 2.0872192862952943e-14
+      },
+      {
+        "scenario": "flip10_cut8",
+        "run_id": "md1us8",
+        "noise_index": 15,
+        "shape": [
+          5001,
+          523
+        ],
+        "max_absolute_metric_difference": 3.885780586188048e-16,
+        "max_spectral_solve_residual": 2.1760371282653068e-14
+      },
+      {
+        "scenario": "jitter050_cut8",
+        "run_id": "md1us6",
+        "noise_index": 0,
+        "shape": [
+          5001,
+          523
+        ],
+        "max_absolute_metric_difference": 2.5673907444456745e-16,
+        "max_spectral_solve_residual": 7.993605777301127e-14
+      },
+      {
+        "scenario": "jitter050_cut8",
+        "run_id": "md1us6",
+        "noise_index": 15,
+        "shape": [
+          5001,
+          523
+        ],
+        "max_absolute_metric_difference": 2.498001805406602e-16,
+        "max_spectral_solve_residual": 8.704148513061227e-14
+      },
+      {
+        "scenario": "correlated10_cut8",
+        "run_id": "md1us6",
+        "noise_index": 0,
+        "shape": [
+          5001,
+          523
+        ],
+        "max_absolute_metric_difference": 2.914335439641036e-16,
+        "max_spectral_solve_residual": 8.348877145181177e-14
+      },
+      {
+        "scenario": "correlated10_cut8",
+        "run_id": "md1us6",
+        "noise_index": 15,
+        "shape": [
+          5001,
+          523
+        ],
+        "max_absolute_metric_difference": 3.608224830031759e-16,
+        "max_spectral_solve_residual": 8.526512829121202e-14
+      }
+    ],
+    "validation_candidate_scores": 42,
+    "clean_runs": 3,
+    "metric_values_total": 757,
+    "absolute_tolerance": 2e-12,
+    "max_absolute_metric_difference": 5.134781488891349e-16,
+    "max_spectral_solver_residual": 8.704148513061227e-14,
+    "implementation": "Independent Thomas forward elimination/back substitution supplies reconstructed test/clean metrics; analytic path eigenvalues sin(pi*k/(2*n))^2 and orthonormal DCT-II independently cross-check continuous predictions and validation candidate scores. Separate corruption, squared-distance contacts, event scanner and metric formulas. Imports no benchmark code.",
+    "case_selection": "All 3 primary test runs, first and last noise draws; first test run for jitter050 and correlated10 first and last draws; first validation row for 7 linear and cubic candidates; all 3 clean test runs."
+  },
+  "fresh_environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "executable": "/tmp/protein332_reproduction_env/bin/python",
+    "venv_config": "home = /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin\ninclude-system-site-packages = false\nversion = 3.12.14\nexecutable = /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12\ncommand = /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python -m venv /tmp/protein332_reproduction_env\n",
+    "packages": [
+      {
+        "name": "numpy",
+        "version": "2.3.5"
+      },
+      {
+        "name": "pip",
+        "version": "25.0.1"
+      },
+      {
+        "name": "scipy",
+        "version": "1.17.0"
+      }
+    ]
+  },
+  "readme_followup": "Confirmed explicit .venv interpreter/dependency-install commands and final raw md1us8 retention disclosure now present.",
+  "limitations": [
+    "Fresh installation/replay covers benchmark NumPy/SciPy dependencies only, on the same host and Python interpreter family. No independent-host or freshly installed raw MD extraction-stack claim.",
+    "T4 source XTC-to-CA extraction is reviewed through records and arrays here, not independently redownloaded/re-extracted by reviewer05. A separate source-level reviewer may supply that evidence.",
+    "Local timestamps support chronology but do not establish public preregistration or tamper-proof proof of no previous outcomes; test-start timestamps are inferred from completion minus elapsed runtime.",
+    "Full numerical equality is same-implementation replay; independent Thomas and spectral reconstruction sample selected methods/cases. Spectral classification is rounding-sensitive near 0.5 and is not claimed to be bitwise identical.",
+    "AI technical audit is not human peer review or experimental biological validation."
+  ],
+  "checks_total": 234405,
+  "check_counts": {
+    "manifest protocol hash": 1,
+    "preparation code hash": 1,
+    "frozen hash sidecar": 1,
+    "protocol before T4 preparation": 1,
+    "frozen T4 trajectory split": 1,
+    "prepared CA hash": 5,
+    "source/derived CA hash": 5,
+    "extraction output hash": 5,
+    "T4 recorded original checksum and size": 5,
+    "prepared contact hash": 15,
+    "T4 independently reconstructed contact array": 15,
+    "T4 discovery feature selection": 15,
+    "T4 discovery frequency": 15,
+    "T4 frame-time identity": 15,
+    "T4 coverage all positives": 15,
+    "T4 coverage selected positives": 15,
+    "T4 coverage absent positives": 15,
+    "full 17 expected output names": 1,
+    "default comparator exclusions retained": 1,
+    "eight scenario invocations": 2,
+    "protocol predates invocation": 16,
+    "invocation actual input/code hash": 384,
+    "within-run validation pointer hash": 16,
+    "saved validation choices used for test": 16,
+    "selection before inferred test start": 16,
+    "selection file before test file": 16,
+    "output protocol/manifest hash": 32,
+    "output input hashes": 32,
+    "output code hashes": 32,
+    "output scenario identity": 32,
+    "full seed row coverage": 32,
+    "full seed row count": 32,
+    "frozen seed derivation": 896,
+    "no seed-key duplication": 896,
+    "validation candidate means": 156,
+    "validation candidate argmin": 156,
+    "validation minimum": 156,
+    "full baseline argmin": 16,
+    "matched baseline argmin": 16,
+    "comparison file hashes": 34,
+    "paired field types": 79912,
+    "paired keys": 7536,
+    "exact scalar reproduction": 1123,
+    "numeric finiteness": 69721,
+    "exact numerical reproduction": 69721,
+    "excluded metadata only at root": 50,
+    "paired lengths": 1532,
+    "comparison scalar counts": 1,
+    "independent T4 stratum counts": 5,
+    "independent spectral/Thomas probability agreement": 65,
+    "spectral metric differences accounted for by threshold disagreements": 65,
+    "independent metric null identity": 715,
+    "independent spectral metric tolerance": 715,
+    "spectral differences restricted to classification metrics": 54,
+    "classification differences occur only near threshold": 12,
+    "independent validation score tolerance": 42,
+    "clean T4 strata": 3,
+    "fresh benchmark dependency package set": 1,
+    "fresh venv excludes system packages": 1
+  },
+  "script_sha256": "f1a3099f74d203a700681ffe4df7aefc55202b38251dc73548b2535ec7f39da2",
+  "completed_utc": "2026-10-07T16:07:09.048133+00:00",
+  "finite_precision_threshold_audit": {
+    "finding": "Independent DCT spectral probabilities agree with Thomas to roundoff, but a few near-0.5 calls change due to floating-point evaluation. Thomas metrics reproduce recorded metrics at the declared 2e-12 tolerance; this does not establish classification invariance across solvers or platforms.",
+    "max_spectral_vs_Thomas_probability_difference": 6.2727600891321345e-15,
+    "max_raw_spectral_metric_difference_vs_recorded": 0.0005582607077505575,
+    "affected_method_cases": [
+      {
+        "scenario": "flip10_cut8",
+        "run_id": "md1us6",
+        "noise_index": 15,
+        "method": "linear",
+        "classification_disagreements_spectral_vs_Thomas": 2,
+        "max_probability_difference": 2.4424906541753444e-15,
+        "maximum_distance_to_threshold_at_disagreement": 5.551115123125783e-16,
+        "spectral_metric_differences_vs_recorded": {
+          "precision": {
+            "spectral": 0.9192861923286066,
+            "recorded": 0.9192863611361503,
+            "signed_difference": -1.6880754361014993e-07
+          },
+          "recall": {
+            "spectral": 0.9278507746558404,
+            "recorded": 0.9278528855784931,
+            "signed_difference": -2.110922652676095e-06
+          },
+          "f1": {
+            "spectral": 0.9235486278800651,
+            "recorded": 0.9235497587636935,
+            "signed_difference": -1.1308836284085189e-06
+          }
+        },
+        "example_cells": [
+          {
+            "frame_index": 1251,
+            "feature_index": 86,
+            "spectral": 0.4999999999999999,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 1252,
+            "feature_index": 86,
+            "spectral": 0.49999999999999944,
+            "Thomas": 0.5
+          }
+        ]
+      },
+      {
+        "scenario": "flip10_cut8",
+        "run_id": "md1us6",
+        "noise_index": 15,
+        "method": "power_full",
+        "classification_disagreements_spectral_vs_Thomas": 2,
+        "max_probability_difference": 5.384581669432009e-15,
+        "maximum_distance_to_threshold_at_disagreement": 1.6653345369377348e-15,
+        "spectral_metric_differences_vs_recorded": {
+          "precision": {
+            "spectral": 0.9192861923286066,
+            "recorded": 0.9192863611361503,
+            "signed_difference": -1.6880754361014993e-07
+          },
+          "recall": {
+            "spectral": 0.9278507746558404,
+            "recorded": 0.9278528855784931,
+            "signed_difference": -2.110922652676095e-06
+          },
+          "f1": {
+            "spectral": 0.9235486278800651,
+            "recorded": 0.9235497587636935,
+            "signed_difference": -1.1308836284085189e-06
+          }
+        },
+        "example_cells": [
+          {
+            "frame_index": 1251,
+            "feature_index": 86,
+            "spectral": 0.49999999999999967,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 1252,
+            "feature_index": 86,
+            "spectral": 0.49999999999999833,
+            "Thomas": 0.5
+          }
+        ]
+      },
+      {
+        "scenario": "flip10_cut8",
+        "run_id": "md1us6",
+        "noise_index": 15,
+        "method": "power_matched",
+        "classification_disagreements_spectral_vs_Thomas": 2,
+        "max_probability_difference": 5.384581669432009e-15,
+        "maximum_distance_to_threshold_at_disagreement": 1.6653345369377348e-15,
+        "spectral_metric_differences_vs_recorded": {
+          "precision": {
+            "spectral": 0.9192861923286066,
+            "recorded": 0.9192863611361503,
+            "signed_difference": -1.6880754361014993e-07
+          },
+          "recall": {
+            "spectral": 0.9278507746558404,
+            "recorded": 0.9278528855784931,
+            "signed_difference": -2.110922652676095e-06
+          },
+          "f1": {
+            "spectral": 0.9235486278800651,
+            "recorded": 0.9235497587636935,
+            "signed_difference": -1.1308836284085189e-06
+          }
+        },
+        "example_cells": [
+          {
+            "frame_index": 1251,
+            "feature_index": 86,
+            "spectral": 0.49999999999999967,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 1252,
+            "feature_index": 86,
+            "spectral": 0.49999999999999833,
+            "Thomas": 0.5
+          }
+        ]
+      },
+      {
+        "scenario": "primary_clean",
+        "run_id": "md1us6",
+        "method": "linear",
+        "classification_disagreements_spectral_vs_Thomas": 38,
+        "max_probability_difference": 2.4424906541753444e-15,
+        "maximum_distance_to_threshold_at_disagreement": 8.881784197001252e-16,
+        "spectral_metric_differences_vs_recorded": {
+          "precision": {
+            "spectral": 0.963232394291135,
+            "recorded": 0.9632209365780453,
+            "signed_difference": 1.1457713089746413e-05
+          },
+          "recall": {
+            "spectral": 0.9538151232831602,
+            "recorded": 0.9538383434323391,
+            "signed_difference": -2.3220149178881933e-05
+          },
+          "f1": {
+            "spectral": 0.958500628167686,
+            "recorded": 0.9585066795638914,
+            "signed_difference": -6.051396205353221e-06
+          },
+          "rare_positive_recall": {
+            "spectral": 0.6782247309493533,
+            "recorded": 0.6787829916571039,
+            "signed_difference": -0.0005582607077505575
+          },
+          "short_positive_recall": {
+            "spectral": 0.6649181784070634,
+            "recorded": 0.6650866458890106,
+            "signed_difference": -0.00016846748194720984
+          }
+        },
+        "example_cells": [
+          {
+            "frame_index": 126,
+            "feature_index": 23,
+            "spectral": 0.4999999999999996,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 127,
+            "feature_index": 23,
+            "spectral": 0.4999999999999998,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 197,
+            "feature_index": 462,
+            "spectral": 0.49999999999999994,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 198,
+            "feature_index": 462,
+            "spectral": 0.49999999999999994,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 402,
+            "feature_index": 210,
+            "spectral": 0.4999999999999999,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 457,
+            "feature_index": 52,
+            "spectral": 0.49999999999999967,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 489,
+            "feature_index": 445,
+            "spectral": 0.4999999999999992,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 492,
+            "feature_index": 36,
+            "spectral": 0.49999999999999994,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 547,
+            "feature_index": 397,
+            "spectral": 0.4999999999999999,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 548,
+            "feature_index": 397,
+            "spectral": 0.4999999999999999,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 560,
+            "feature_index": 392,
+            "spectral": 0.4999999999999999,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 561,
+            "feature_index": 392,
+            "spectral": 0.49999999999999983,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 583,
+            "feature_index": 65,
+            "spectral": 0.49999999999999994,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 584,
+            "feature_index": 65,
+            "spectral": 0.49999999999999994,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 599,
+            "feature_index": 4,
+            "spectral": 0.4999999999999992,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 600,
+            "feature_index": 4,
+            "spectral": 0.4999999999999998,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 797,
+            "feature_index": 345,
+            "spectral": 0.5000000000000007,
+            "Thomas": 0.49999999999999994
+          },
+          {
+            "frame_index": 968,
+            "feature_index": 460,
+            "spectral": 0.49999999999999994,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 1527,
+            "feature_index": 280,
+            "spectral": 0.4999999999999999,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 1550,
+            "feature_index": 440,
+            "spectral": 0.49999999999999994,
+            "Thomas": 0.5
+          }
+        ]
+      },
+      {
+        "scenario": "primary_clean",
+        "run_id": "md1us6",
+        "method": "power_full",
+        "classification_disagreements_spectral_vs_Thomas": 38,
+        "max_probability_difference": 5.6066262743570405e-15,
+        "maximum_distance_to_threshold_at_disagreement": 2.6645352591003757e-15,
+        "spectral_metric_differences_vs_recorded": {
+          "precision": {
+            "spectral": 0.963232394291135,
+            "recorded": 0.9632209365780453,
+            "signed_difference": 1.1457713089746413e-05
+          },
+          "recall": {
+            "spectral": 0.9538151232831602,
+            "recorded": 0.9538383434323391,
+            "signed_difference": -2.3220149178881933e-05
+          },
+          "f1": {
+            "spectral": 0.958500628167686,
+            "recorded": 0.9585066795638914,
+            "signed_difference": -6.051396205353221e-06
+          },
+          "rare_positive_recall": {
+            "spectral": 0.6782247309493533,
+            "recorded": 0.6787829916571039,
+            "signed_difference": -0.0005582607077505575
+          },
+          "short_positive_recall": {
+            "spectral": 0.6649181784070634,
+            "recorded": 0.6650866458890106,
+            "signed_difference": -0.00016846748194720984
+          }
+        },
+        "example_cells": [
+          {
+            "frame_index": 126,
+            "feature_index": 23,
+            "spectral": 0.4999999999999987,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 127,
+            "feature_index": 23,
+            "spectral": 0.49999999999999933,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 197,
+            "feature_index": 462,
+            "spectral": 0.49999999999999994,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 198,
+            "feature_index": 462,
+            "spectral": 0.49999999999999994,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 402,
+            "feature_index": 210,
+            "spectral": 0.49999999999999967,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 457,
+            "feature_index": 52,
+            "spectral": 0.499999999999999,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 489,
+            "feature_index": 445,
+            "spectral": 0.49999999999999767,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 492,
+            "feature_index": 36,
+            "spectral": 0.49999999999999994,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 547,
+            "feature_index": 397,
+            "spectral": 0.49999999999999967,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 548,
+            "feature_index": 397,
+            "spectral": 0.49999999999999967,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 560,
+            "feature_index": 392,
+            "spectral": 0.49999999999999967,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 561,
+            "feature_index": 392,
+            "spectral": 0.4999999999999994,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 583,
+            "feature_index": 65,
+            "spectral": 0.49999999999999994,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 584,
+            "feature_index": 65,
+            "spectral": 0.49999999999999994,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 599,
+            "feature_index": 4,
+            "spectral": 0.49999999999999767,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 600,
+            "feature_index": 4,
+            "spectral": 0.49999999999999933,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 797,
+            "feature_index": 345,
+            "spectral": 0.500000000000002,
+            "Thomas": 0.49999999999999994
+          },
+          {
+            "frame_index": 968,
+            "feature_index": 460,
+            "spectral": 0.49999999999999994,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 1527,
+            "feature_index": 280,
+            "spectral": 0.49999999999999967,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 1550,
+            "feature_index": 440,
+            "spectral": 0.49999999999999994,
+            "Thomas": 0.5
+          }
+        ]
+      },
+      {
+        "scenario": "primary_clean",
+        "run_id": "md1us6",
+        "method": "power_matched",
+        "classification_disagreements_spectral_vs_Thomas": 38,
+        "max_probability_difference": 5.6066262743570405e-15,
+        "maximum_distance_to_threshold_at_disagreement": 2.6645352591003757e-15,
+        "spectral_metric_differences_vs_recorded": {
+          "precision": {
+            "spectral": 0.963232394291135,
+            "recorded": 0.9632209365780453,
+            "signed_difference": 1.1457713089746413e-05
+          },
+          "recall": {
+            "spectral": 0.9538151232831602,
+            "recorded": 0.9538383434323391,
+            "signed_difference": -2.3220149178881933e-05
+          },
+          "f1": {
+            "spectral": 0.958500628167686,
+            "recorded": 0.9585066795638914,
+            "signed_difference": -6.051396205353221e-06
+          },
+          "rare_positive_recall": {
+            "spectral": 0.6782247309493533,
+            "recorded": 0.6787829916571039,
+            "signed_difference": -0.0005582607077505575
+          },
+          "short_positive_recall": {
+            "spectral": 0.6649181784070634,
+            "recorded": 0.6650866458890106,
+            "signed_difference": -0.00016846748194720984
+          }
+        },
+        "example_cells": [
+          {
+            "frame_index": 126,
+            "feature_index": 23,
+            "spectral": 0.4999999999999987,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 127,
+            "feature_index": 23,
+            "spectral": 0.49999999999999933,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 197,
+            "feature_index": 462,
+            "spectral": 0.49999999999999994,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 198,
+            "feature_index": 462,
+            "spectral": 0.49999999999999994,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 402,
+            "feature_index": 210,
+            "spectral": 0.49999999999999967,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 457,
+            "feature_index": 52,
+            "spectral": 0.499999999999999,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 489,
+            "feature_index": 445,
+            "spectral": 0.49999999999999767,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 492,
+            "feature_index": 36,
+            "spectral": 0.49999999999999994,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 547,
+            "feature_index": 397,
+            "spectral": 0.49999999999999967,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 548,
+            "feature_index": 397,
+            "spectral": 0.49999999999999967,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 560,
+            "feature_index": 392,
+            "spectral": 0.49999999999999967,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 561,
+            "feature_index": 392,
+            "spectral": 0.4999999999999994,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 583,
+            "feature_index": 65,
+            "spectral": 0.49999999999999994,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 584,
+            "feature_index": 65,
+            "spectral": 0.49999999999999994,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 599,
+            "feature_index": 4,
+            "spectral": 0.49999999999999767,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 600,
+            "feature_index": 4,
+            "spectral": 0.49999999999999933,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 797,
+            "feature_index": 345,
+            "spectral": 0.500000000000002,
+            "Thomas": 0.49999999999999994
+          },
+          {
+            "frame_index": 968,
+            "feature_index": 460,
+            "spectral": 0.49999999999999994,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 1527,
+            "feature_index": 280,
+            "spectral": 0.49999999999999967,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 1550,
+            "feature_index": 440,
+            "spectral": 0.49999999999999994,
+            "Thomas": 0.5
+          }
+        ]
+      },
+      {
+        "scenario": "primary_clean",
+        "run_id": "md1us7",
+        "method": "linear",
+        "classification_disagreements_spectral_vs_Thomas": 38,
+        "max_probability_difference": 2.886579864025407e-15,
+        "maximum_distance_to_threshold_at_disagreement": 9.992007221626409e-16,
+        "spectral_metric_differences_vs_recorded": {
+          "precision": {
+            "spectral": 0.9647655051674241,
+            "recorded": 0.9647435323841356,
+            "signed_difference": 2.1972783288526365e-05
+          },
+          "recall": {
+            "spectral": 0.9546958471193193,
+            "recorded": 0.9547062647409346,
+            "signed_difference": -1.0417621615244066e-05
+          },
+          "f1": {
+            "spectral": 0.9597042630006728,
+            "recorded": 0.9596986549113877,
+            "signed_difference": 5.608089285069617e-06
+          },
+          "rare_positive_recall": {
+            "spectral": 0.5908108108108108,
+            "recorded": 0.591027027027027,
+            "signed_difference": -0.00021621621621625842
+          },
+          "short_positive_recall": {
+            "spectral": 0.6541792243525005,
+            "recorded": 0.6542587453182032,
+            "signed_difference": -7.952096570262857e-05
+          }
+        },
+        "example_cells": [
+          {
+            "frame_index": 158,
+            "feature_index": 309,
+            "spectral": 0.4999999999999999,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 346,
+            "feature_index": 193,
+            "spectral": 0.4999999999999996,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 389,
+            "feature_index": 87,
+            "spectral": 0.4999999999999997,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 428,
+            "feature_index": 332,
+            "spectral": 0.49999999999999994,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 533,
+            "feature_index": 88,
+            "spectral": 0.49999999999999944,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 596,
+            "feature_index": 133,
+            "spectral": 0.49999999999999983,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 597,
+            "feature_index": 133,
+            "spectral": 0.49999999999999944,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 897,
+            "feature_index": 418,
+            "spectral": 0.4999999999999999,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 951,
+            "feature_index": 135,
+            "spectral": 0.4999999999999998,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 953,
+            "feature_index": 136,
+            "spectral": 0.49999999999999956,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 1204,
+            "feature_index": 215,
+            "spectral": 0.49999999999999994,
+            "Thomas": 0.5000000000000002
+          },
+          {
+            "frame_index": 1240,
+            "feature_index": 230,
+            "spectral": 0.49999999999999994,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 1478,
+            "feature_index": 214,
+            "spectral": 0.49999999999999944,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 1566,
+            "feature_index": 171,
+            "spectral": 0.4999999999999999,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 1681,
+            "feature_index": 293,
+            "spectral": 0.4999999999999998,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 1795,
+            "feature_index": 522,
+            "spectral": 0.4999999999999998,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 1916,
+            "feature_index": 56,
+            "spectral": 0.49999999999999994,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 2107,
+            "feature_index": 326,
+            "spectral": 0.4999999999999998,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 2108,
+            "feature_index": 326,
+            "spectral": 0.4999999999999992,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 2512,
+            "feature_index": 229,
+            "spectral": 0.49999999999999983,
+            "Thomas": 0.5
+          }
+        ]
+      },
+      {
+        "scenario": "primary_clean",
+        "run_id": "md1us7",
+        "method": "power_full",
+        "classification_disagreements_spectral_vs_Thomas": 38,
+        "max_probability_difference": 5.162537064506978e-15,
+        "maximum_distance_to_threshold_at_disagreement": 2.9976021664879227e-15,
+        "spectral_metric_differences_vs_recorded": {
+          "precision": {
+            "spectral": 0.9647655051674241,
+            "recorded": 0.9647435323841356,
+            "signed_difference": 2.1972783288526365e-05
+          },
+          "recall": {
+            "spectral": 0.9546958471193193,
+            "recorded": 0.9547062647409346,
+            "signed_difference": -1.0417621615244066e-05
+          },
+          "f1": {
+            "spectral": 0.9597042630006728,
+            "recorded": 0.9596986549113877,
+            "signed_difference": 5.608089285069617e-06
+          },
+          "rare_positive_recall": {
+            "spectral": 0.5908108108108108,
+            "recorded": 0.591027027027027,
+            "signed_difference": -0.00021621621621625842
+          },
+          "short_positive_recall": {
+            "spectral": 0.6541792243525005,
+            "recorded": 0.6542587453182032,
+            "signed_difference": -7.952096570262857e-05
+          }
+        },
+        "example_cells": [
+          {
+            "frame_index": 158,
+            "feature_index": 309,
+            "spectral": 0.49999999999999967,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 346,
+            "feature_index": 193,
+            "spectral": 0.4999999999999987,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 389,
+            "feature_index": 87,
+            "spectral": 0.4999999999999993,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 428,
+            "feature_index": 332,
+            "spectral": 0.49999999999999994,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 533,
+            "feature_index": 88,
+            "spectral": 0.49999999999999833,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 596,
+            "feature_index": 133,
+            "spectral": 0.4999999999999994,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 597,
+            "feature_index": 133,
+            "spectral": 0.49999999999999833,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 897,
+            "feature_index": 418,
+            "spectral": 0.49999999999999967,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 951,
+            "feature_index": 135,
+            "spectral": 0.49999999999999933,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 953,
+            "feature_index": 136,
+            "spectral": 0.49999999999999867,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 1204,
+            "feature_index": 215,
+            "spectral": 0.49999999999999994,
+            "Thomas": 0.5000000000000007
+          },
+          {
+            "frame_index": 1240,
+            "feature_index": 230,
+            "spectral": 0.49999999999999994,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 1478,
+            "feature_index": 214,
+            "spectral": 0.49999999999999833,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 1566,
+            "feature_index": 171,
+            "spectral": 0.49999999999999967,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 1681,
+            "feature_index": 293,
+            "spectral": 0.49999999999999933,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 1795,
+            "feature_index": 522,
+            "spectral": 0.49999999999999933,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 1916,
+            "feature_index": 56,
+            "spectral": 0.49999999999999994,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 2107,
+            "feature_index": 326,
+            "spectral": 0.49999999999999933,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 2108,
+            "feature_index": 326,
+            "spectral": 0.49999999999999767,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 2512,
+            "feature_index": 229,
+            "spectral": 0.4999999999999994,
+            "Thomas": 0.5
+          }
+        ]
+      },
+      {
+        "scenario": "primary_clean",
+        "run_id": "md1us7",
+        "method": "power_matched",
+        "classification_disagreements_spectral_vs_Thomas": 38,
+        "max_probability_difference": 5.162537064506978e-15,
+        "maximum_distance_to_threshold_at_disagreement": 2.9976021664879227e-15,
+        "spectral_metric_differences_vs_recorded": {
+          "precision": {
+            "spectral": 0.9647655051674241,
+            "recorded": 0.9647435323841356,
+            "signed_difference": 2.1972783288526365e-05
+          },
+          "recall": {
+            "spectral": 0.9546958471193193,
+            "recorded": 0.9547062647409346,
+            "signed_difference": -1.0417621615244066e-05
+          },
+          "f1": {
+            "spectral": 0.9597042630006728,
+            "recorded": 0.9596986549113877,
+            "signed_difference": 5.608089285069617e-06
+          },
+          "rare_positive_recall": {
+            "spectral": 0.5908108108108108,
+            "recorded": 0.591027027027027,
+            "signed_difference": -0.00021621621621625842
+          },
+          "short_positive_recall": {
+            "spectral": 0.6541792243525005,
+            "recorded": 0.6542587453182032,
+            "signed_difference": -7.952096570262857e-05
+          }
+        },
+        "example_cells": [
+          {
+            "frame_index": 158,
+            "feature_index": 309,
+            "spectral": 0.49999999999999967,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 346,
+            "feature_index": 193,
+            "spectral": 0.4999999999999987,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 389,
+            "feature_index": 87,
+            "spectral": 0.4999999999999993,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 428,
+            "feature_index": 332,
+            "spectral": 0.49999999999999994,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 533,
+            "feature_index": 88,
+            "spectral": 0.49999999999999833,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 596,
+            "feature_index": 133,
+            "spectral": 0.4999999999999994,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 597,
+            "feature_index": 133,
+            "spectral": 0.49999999999999833,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 897,
+            "feature_index": 418,
+            "spectral": 0.49999999999999967,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 951,
+            "feature_index": 135,
+            "spectral": 0.49999999999999933,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 953,
+            "feature_index": 136,
+            "spectral": 0.49999999999999867,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 1204,
+            "feature_index": 215,
+            "spectral": 0.49999999999999994,
+            "Thomas": 0.5000000000000007
+          },
+          {
+            "frame_index": 1240,
+            "feature_index": 230,
+            "spectral": 0.49999999999999994,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 1478,
+            "feature_index": 214,
+            "spectral": 0.49999999999999833,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 1566,
+            "feature_index": 171,
+            "spectral": 0.49999999999999967,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 1681,
+            "feature_index": 293,
+            "spectral": 0.49999999999999933,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 1795,
+            "feature_index": 522,
+            "spectral": 0.49999999999999933,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 1916,
+            "feature_index": 56,
+            "spectral": 0.49999999999999994,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 2107,
+            "feature_index": 326,
+            "spectral": 0.49999999999999933,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 2108,
+            "feature_index": 326,
+            "spectral": 0.49999999999999767,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 2512,
+            "feature_index": 229,
+            "spectral": 0.4999999999999994,
+            "Thomas": 0.5
+          }
+        ]
+      },
+      {
+        "scenario": "primary_clean",
+        "run_id": "md1us8",
+        "method": "linear",
+        "classification_disagreements_spectral_vs_Thomas": 41,
+        "max_probability_difference": 2.55351295663786e-15,
+        "maximum_distance_to_threshold_at_disagreement": 8.881784197001252e-16,
+        "spectral_metric_differences_vs_recorded": {
+          "precision": {
+            "spectral": 0.9649581911606592,
+            "recorded": 0.9649423782223716,
+            "signed_difference": 1.5812938287562694e-05
+          },
+          "recall": {
+            "spectral": 0.9535132258057757,
+            "recorded": 0.9535289421241337,
+            "signed_difference": -1.5716318358061088e-05
+          },
+          "f1": {
+            "spectral": 0.9592015700460179,
+            "recorded": 0.9592017095683656,
+            "signed_difference": -1.3952234767522498e-07
+          },
+          "rare_positive_recall": {
+            "spectral": 0.6017834394904459,
+            "recorded": 0.6020746132848044,
+            "signed_difference": -0.0002911737943585013
+          },
+          "short_positive_recall": {
+            "spectral": 0.6531338196089469,
+            "recorded": 0.6532510886475753,
+            "signed_difference": -0.0001172690386284092
+          }
+        },
+        "example_cells": [
+          {
+            "frame_index": 244,
+            "feature_index": 111,
+            "spectral": 0.4999999999999991,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 245,
+            "feature_index": 111,
+            "spectral": 0.4999999999999995,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 588,
+            "feature_index": 294,
+            "spectral": 0.49999999999999994,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 669,
+            "feature_index": 246,
+            "spectral": 0.4999999999999999,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 849,
+            "feature_index": 212,
+            "spectral": 0.49999999999999956,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 984,
+            "feature_index": 391,
+            "spectral": 0.4999999999999999,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 985,
+            "feature_index": 391,
+            "spectral": 0.4999999999999996,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 1029,
+            "feature_index": 405,
+            "spectral": 0.4999999999999999,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 1115,
+            "feature_index": 345,
+            "spectral": 0.49999999999999983,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 1116,
+            "feature_index": 345,
+            "spectral": 0.4999999999999993,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 1133,
+            "feature_index": 407,
+            "spectral": 0.49999999999999956,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 1134,
+            "feature_index": 407,
+            "spectral": 0.4999999999999998,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 1233,
+            "feature_index": 192,
+            "spectral": 0.5,
+            "Thomas": 0.4999999999999994
+          },
+          {
+            "frame_index": 1530,
+            "feature_index": 29,
+            "spectral": 0.4999999999999999,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 1716,
+            "feature_index": 410,
+            "spectral": 0.4999999999999999,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 1802,
+            "feature_index": 472,
+            "spectral": 0.4999999999999991,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 1803,
+            "feature_index": 472,
+            "spectral": 0.4999999999999991,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 2551,
+            "feature_index": 328,
+            "spectral": 0.4999999999999998,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 2813,
+            "feature_index": 446,
+            "spectral": 0.49999999999999994,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 2852,
+            "feature_index": 170,
+            "spectral": 0.4999999999999999,
+            "Thomas": 0.5
+          }
+        ]
+      },
+      {
+        "scenario": "primary_clean",
+        "run_id": "md1us8",
+        "method": "power_full",
+        "classification_disagreements_spectral_vs_Thomas": 41,
+        "max_probability_difference": 5.2735593669694936e-15,
+        "maximum_distance_to_threshold_at_disagreement": 2.6645352591003757e-15,
+        "spectral_metric_differences_vs_recorded": {
+          "precision": {
+            "spectral": 0.9649581911606592,
+            "recorded": 0.9649423782223716,
+            "signed_difference": 1.5812938287562694e-05
+          },
+          "recall": {
+            "spectral": 0.9535132258057757,
+            "recorded": 0.9535289421241337,
+            "signed_difference": -1.5716318358061088e-05
+          },
+          "f1": {
+            "spectral": 0.9592015700460179,
+            "recorded": 0.9592017095683656,
+            "signed_difference": -1.3952234767522498e-07
+          },
+          "rare_positive_recall": {
+            "spectral": 0.6017834394904459,
+            "recorded": 0.6020746132848044,
+            "signed_difference": -0.0002911737943585013
+          },
+          "short_positive_recall": {
+            "spectral": 0.6531338196089469,
+            "recorded": 0.6532510886475753,
+            "signed_difference": -0.0001172690386284092
+          }
+        },
+        "example_cells": [
+          {
+            "frame_index": 244,
+            "feature_index": 111,
+            "spectral": 0.49999999999999734,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 245,
+            "feature_index": 111,
+            "spectral": 0.4999999999999986,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 588,
+            "feature_index": 294,
+            "spectral": 0.49999999999999994,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 669,
+            "feature_index": 246,
+            "spectral": 0.49999999999999967,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 849,
+            "feature_index": 212,
+            "spectral": 0.49999999999999867,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 984,
+            "feature_index": 391,
+            "spectral": 0.49999999999999967,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 985,
+            "feature_index": 391,
+            "spectral": 0.4999999999999987,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 1029,
+            "feature_index": 405,
+            "spectral": 0.49999999999999967,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 1115,
+            "feature_index": 345,
+            "spectral": 0.4999999999999994,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 1116,
+            "feature_index": 345,
+            "spectral": 0.49999999999999795,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 1133,
+            "feature_index": 407,
+            "spectral": 0.49999999999999867,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 1134,
+            "feature_index": 407,
+            "spectral": 0.49999999999999933,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 1233,
+            "feature_index": 192,
+            "spectral": 0.5,
+            "Thomas": 0.49999999999999806
+          },
+          {
+            "frame_index": 1530,
+            "feature_index": 29,
+            "spectral": 0.49999999999999967,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 1716,
+            "feature_index": 410,
+            "spectral": 0.49999999999999967,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 1802,
+            "feature_index": 472,
+            "spectral": 0.49999999999999734,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 1803,
+            "feature_index": 472,
+            "spectral": 0.49999999999999734,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 2551,
+            "feature_index": 328,
+            "spectral": 0.49999999999999933,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 2813,
+            "feature_index": 446,
+            "spectral": 0.49999999999999994,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 2852,
+            "feature_index": 170,
+            "spectral": 0.49999999999999967,
+            "Thomas": 0.5
+          }
+        ]
+      },
+      {
+        "scenario": "primary_clean",
+        "run_id": "md1us8",
+        "method": "power_matched",
+        "classification_disagreements_spectral_vs_Thomas": 41,
+        "max_probability_difference": 5.2735593669694936e-15,
+        "maximum_distance_to_threshold_at_disagreement": 2.6645352591003757e-15,
+        "spectral_metric_differences_vs_recorded": {
+          "precision": {
+            "spectral": 0.9649581911606592,
+            "recorded": 0.9649423782223716,
+            "signed_difference": 1.5812938287562694e-05
+          },
+          "recall": {
+            "spectral": 0.9535132258057757,
+            "recorded": 0.9535289421241337,
+            "signed_difference": -1.5716318358061088e-05
+          },
+          "f1": {
+            "spectral": 0.9592015700460179,
+            "recorded": 0.9592017095683656,
+            "signed_difference": -1.3952234767522498e-07
+          },
+          "rare_positive_recall": {
+            "spectral": 0.6017834394904459,
+            "recorded": 0.6020746132848044,
+            "signed_difference": -0.0002911737943585013
+          },
+          "short_positive_recall": {
+            "spectral": 0.6531338196089469,
+            "recorded": 0.6532510886475753,
+            "signed_difference": -0.0001172690386284092
+          }
+        },
+        "example_cells": [
+          {
+            "frame_index": 244,
+            "feature_index": 111,
+            "spectral": 0.49999999999999734,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 245,
+            "feature_index": 111,
+            "spectral": 0.4999999999999986,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 588,
+            "feature_index": 294,
+            "spectral": 0.49999999999999994,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 669,
+            "feature_index": 246,
+            "spectral": 0.49999999999999967,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 849,
+            "feature_index": 212,
+            "spectral": 0.49999999999999867,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 984,
+            "feature_index": 391,
+            "spectral": 0.49999999999999967,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 985,
+            "feature_index": 391,
+            "spectral": 0.4999999999999987,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 1029,
+            "feature_index": 405,
+            "spectral": 0.49999999999999967,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 1115,
+            "feature_index": 345,
+            "spectral": 0.4999999999999994,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 1116,
+            "feature_index": 345,
+            "spectral": 0.49999999999999795,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 1133,
+            "feature_index": 407,
+            "spectral": 0.49999999999999867,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 1134,
+            "feature_index": 407,
+            "spectral": 0.49999999999999933,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 1233,
+            "feature_index": 192,
+            "spectral": 0.5,
+            "Thomas": 0.49999999999999806
+          },
+          {
+            "frame_index": 1530,
+            "feature_index": 29,
+            "spectral": 0.49999999999999967,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 1716,
+            "feature_index": 410,
+            "spectral": 0.49999999999999967,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 1802,
+            "feature_index": 472,
+            "spectral": 0.49999999999999734,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 1803,
+            "feature_index": 472,
+            "spectral": 0.49999999999999734,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 2551,
+            "feature_index": 328,
+            "spectral": 0.49999999999999933,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 2813,
+            "feature_index": 446,
+            "spectral": 0.49999999999999994,
+            "Thomas": 0.5
+          },
+          {
+            "frame_index": 2852,
+            "feature_index": 170,
+            "spectral": 0.49999999999999967,
+            "Thomas": 0.5
+          }
+        ]
+      }
+    ],
+    "initial_failed_strict_spectral_check_log": "reviews/05_reproduction_final_machinecheck_attempt1.log",
+    "primary_decision_sensitivity": {
+      "recorded_status": "fail",
+      "baseline": "power_full",
+      "aggregate_brier_gain": -0.0031722005231435216,
+      "required_gain": 0.0007438257507331813,
+      "Brier_condition_remains_failed": true,
+      "explanation": "Primary composite requires Brier improvement. Its observed aggregate Brier gain is negative by orders of magnitude more than solver roundoff. Threshold rounding cannot make this continuous-metric condition pass; therefore the primary failure is unchanged regardless of these classification-boundary cells."
+    }
+  },
+  "villin_prior_completed_review": {
+    "review_file": "reviews/05_reproduction_initial.json",
+    "sha256": "3a952504e1c84363e40b84c48c3109edaea50df38294c67864b086caa322fe45",
+    "status": "pass_with_scope_limits",
+    "full_comparison": {
+      "files": 17,
+      "numeric_fields": 1105791,
+      "other_scalar_fields": 15848,
+      "max_absolute_difference": 0.0,
+      "excluded_root_key_occurrences": {
+        "completed_utc": 17,
+        "seconds": 17,
+        "validation_file_sha256": 8,
+        "method_prediction_and_metrics_seconds": 8
+      },
+      "excluded_paths": [
+        "flip10_cut8_validation.json/completed_utc",
+        "flip10_cut8_validation.json/seconds",
+        "flip10_cut8_test.json/completed_utc",
+        "flip10_cut8_test.json/validation_file_sha256",
+        "flip10_cut8_test.json/method_prediction_and_metrics_seconds",
+        "flip10_cut8_test.json/seconds",
+        "flip05_cut8_validation.json/completed_utc",
+        "flip05_cut8_validation.json/seconds",
+        "flip05_cut8_test.json/completed_utc",
+        "flip05_cut8_test.json/validation_file_sha256",
+        "flip05_cut8_test.json/method_prediction_and_metrics_seconds",
+        "flip05_cut8_test.json/seconds",
+        "flip20_cut8_validation.json/completed_utc",
+        "flip20_cut8_validation.json/seconds",
+        "flip20_cut8_test.json/completed_utc",
+        "flip20_cut8_test.json/validation_file_sha256",
+        "flip20_cut8_test.json/method_prediction_and_metrics_seconds",
+        "flip20_cut8_test.json/seconds",
+        "jitter025_cut8_validation.json/completed_utc",
+        "jitter025_cut8_validation.json/seconds",
+        "jitter025_cut8_test.json/completed_utc",
+        "jitter025_cut8_test.json/validation_file_sha256",
+        "jitter025_cut8_test.json/method_prediction_and_metrics_seconds",
+        "jitter025_cut8_test.json/seconds",
+        "jitter050_cut8_validation.json/completed_utc",
+        "jitter050_cut8_validation.json/seconds",
+        "jitter050_cut8_test.json/completed_utc",
+        "jitter050_cut8_test.json/validation_file_sha256",
+        "jitter050_cut8_test.json/method_prediction_and_metrics_seconds",
+        "jitter050_cut8_test.json/seconds",
+        "correlated10_cut8_validation.json/completed_utc",
+        "correlated10_cut8_validation.json/seconds",
+        "correlated10_cut8_test.json/completed_utc",
+        "correlated10_cut8_test.json/validation_file_sha256",
+        "correlated10_cut8_test.json/method_prediction_and_metrics_seconds",
+        "correlated10_cut8_test.json/seconds",
+        "flip10_cut7_validation.json/completed_utc",
+        "flip10_cut7_validation.json/seconds",
+        "flip10_cut7_test.json/completed_utc",
+        "flip10_cut7_test.json/validation_file_sha256",
+        "flip10_cut7_test.json/method_prediction_and_metrics_seconds",
+        "flip10_cut7_test.json/seconds",
+        "flip10_cut9_validation.json/completed_utc",
+        "flip10_cut9_validation.json/seconds",
+        "flip10_cut9_test.json/completed_utc",
+        "flip10_cut9_test.json/validation_file_sha256",
+        "flip10_cut9_test.json/method_prediction_and_metrics_seconds",
+        "flip10_cut9_test.json/seconds",
+        "primary_clean.json/completed_utc",
+        "primary_clean.json/seconds"
+      ],
+      "justification": {
+        "completed_utc": "Execution timestamp",
+        "seconds": "Elapsed runtime",
+        "method_prediction_and_metrics_seconds": "Per-method elapsed runtime",
+        "validation_file_sha256": "Differs because validation timestamps/runtime differ; independently checked as an exact within-run file hash, and validation scientific content independently compared."
+      }
+    },
+    "independent_contact_arrays": 288,
+    "independent_metric_values": 1197,
+    "max_independent_metric_difference": 8.326672684688674e-17,
+    "machinecheck_log_sha256": "961f3d6c15b10a1a8d98c20a8ec31959c20bc741e851ff87e5d13ce25165353e"
+  },
+  "optional_manifest_comparator_review": {
+    "file": "reviews/05_optional_comparator_review.json",
+    "sha256": "8a9146e2c24a29dca96ed06b476fb96ef26c2bc4b23ecc2a4fe5dc42081277af",
+    "status": "pass",
+    "tested_cases": 7,
+    "used_for_fresh_T4_comparison": false
+  },
+  "audited_code_sha256": {
+    "benchmark_extension.py": "34e61d760f64cdb2bd012ba7ee54269c01805e61f73b5e532639a32b49b35f8d",
+    "methods.py": "6c649cac4358d2b29a4fec2e75ae2820b0ff7d1297f06e4ae556e895d066ff17",
+    "prepare_extension.py": "ab9d98f07394bb34631a75f119f2aadb2fc14443f4672707944a161271122de0",
+    "compare_reproduction.py": "1d442f1b974d300ff2c1f9ba12af2f90e9cd0b8ee4b069c7d770f31d87baff8a",
+    "run_scenarios.py": "4602c7e68a24cc694690acf971aa676d3b678abb780903ffc1ba6d8c3b673775"
+  },
+  "spectral_preflight": {
+    "file": "reviews/05_spectral_audit_preflight.json",
+    "sha256": "6f1fd80a1d5e6b51718dd95926049ef4778ea34c5adba5d34f3255e86a6075e7",
+    "cases": 28,
+    "maximum_absolute_difference": 7.771561172376096e-16
+  },
+  "overall_scope": "Full same-host fresh-benchmark-dependency replay of all eight scenarios and clean controls for both T4 and villin; independent contact reconstruction for all prepared arrays and independent algorithm/metric spot checks for both datasets."
+}

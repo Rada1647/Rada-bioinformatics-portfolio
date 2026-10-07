@@ -1,0 +1,8 @@
+{
+  "changed_utc": "2026-10-07T15:27:39.485230+00:00",
+  "reason": "Independent data reviewer identified missing cross-check between T4 coordinate files and extraction completion manifests. Added required completion/hash/geometry/metadata checks and cross-check against saved source record before any T4 contact preparation or benchmark.",
+  "scope": "Input integrity validation only. Frozen scientific protocol, numerical benchmark code, Villin source branch and existing Villin outputs unchanged.",
+  "old_sha256": "e5dba0ca20af339d7a45159e35d354d3f01cf473e19982fa375366de19f81aff",
+  "preserved_original": "protocol/prepare_extension_villin_original.py",
+  "new_sha256": "ab9d98f07394bb34631a75f119f2aadb2fc14443f4672707944a161271122de0"
+}

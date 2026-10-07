@@ -1,0 +1,111 @@
+RESPONSE TO INDEPENDENT TECHNICAL AUDITS
+
+This record documents findings and resolutions. The five reviewers are separate
+AI agents with distinct audit roles; they are not human peer reviewers or
+independent experimental laboratories. Initial records are preserved unchanged.
+Final review records consolidate both completed benchmark datasets and the
+separate ubiquitin qualification decision.
+
+1. Citation accuracy and claim scope
+The NumPy/SciPy reference lists now explicitly say et al. where abbreviated.
+Conference venues and series are retained. The PDB structure's actual depositors
+are credited and the repository is identified separately. UniProt P00720 has an
+explicit source URL and access date. The report distinguishes generic controls
+from related TimeScapes literature and does not claim to reproduce TimeScapes or
+MixMatch. Unused Jaeger/Wolf context was removed from the final bibliography.
+The endpoint construction is explicitly an expectation over three independent
+geometric-walk endpoints. The released inequality is not a guarantee of lower
+Brier error, and the cubic transformation predates the new proof.
+
+2. Generic uncertainty wording in immutable Villin JSON
+Some Villin result JSON interpretation fields inherit the shared protocol phrase
+about three simulation runs. Those three test runs belong to T4. Villin instead
+uses 48 selected dependent adaptive trajectories from a single held-out archive
+group, including 47 paths of 250 sampled frames and one path of 71 frames. Final
+reporting uses that dataset-specific description. Original result files are
+preserved; this note corrects the explanatory wording, not numerical values.
+Neither noise replicates nor individual contact cells are biological replicates.
+
+3. Floating-point threshold ties
+The mathematics reviewer used an independent spectral resolvent implementation.
+Its continuous predictions agreed to numerical precision. In a sampled Villin
+5%-flip comparison, seven distinct near-0.5 cells (appearing in both equivalent
+power families) fell on opposite sides of the >=0.5 convention under the two
+solvers, at distances of at most 1.14e-14 from 0.5. Raw discrepancies and the
+reviewer's explicit tie alignment are retained in the audit. This is not exact
+independent agreement of all classification metrics. The prescribed production
+algorithm and its complete fresh-environment rerun agree exactly. Continuous
+error estimates and the primary conclusion are unaffected by those secondary
+scenario tie effects. The final T4 spectral audit also records three sampled
+near-0.5 classification differences; its maximum continuous prediction errors
+are below 7e-15. Neither dataset required a production threshold change.
+The reproduction reviewer additionally traced two primary md1us6/noise15 cells: an independent Thomas solver yields exactly0.5, while DCT gives values just below0.5. Corresponding precision/recall discrepancies are at most2.11e-6 in that check, and the Thomas metrics match the recorded metrics within2e-12. Across that reviewer's sampled noisy and clean checks,119 unique run/draw cells are rounding-sensitive (some recur in several method comparisons). The largest raw spectral metric shift is0.00055826 in clean-input rare-contact recall, or0.0558 percentage points. The primary failure already follows from the much larger continuous Brier gap. No threshold tolerance was added to production after observing outcomes.
+
+4. SciPy temporal-median edge case outside the analyzed inputs
+The mathematics reviewer reproduced anomalous scipy.ndimage.median_filter
+behavior for some very short multicolumn inputs and large reflecting windows,
+including two-frame examples. All declared window widths matched independent
+manual repeated-reflection medians for tested actual-size inputs N=71,249,250,
+and5001. No analyzed trajectory has fewer than 20 sampled frames; actual selected
+Villin lengths are 71/250 and T4 lengths are 5001. The unused dependency edge case
+was documented without changing the frozen benchmark implementation.
+
+5. Villin cadence tolerance
+The source extraction code uses a looser cadence tolerance than the frozen
+preparation rule. The independently re-read raw archive has exact 100-ps native
+spacing and exact 200-ps prepared spacing; every selected path satisfies the
+stricter preparation rule. No data selection or output changes were required.
+
+6. T4 preparation integrity hardening before T4 outcomes
+The data reviewer identified that preparation did not require an extraction
+completion manifest or compare its coordinate-file hash. Before any T4 contact
+preparation, these checks were added, together with cross-checks against saved
+published source checksums, geometry, frame count, atom count and cadence. The
+original preparation script used for Villin is preserved under protocol/, with
+both hashes and the dated reason in preparation_integrity_hardening.json. The
+Villin branch, frozen scientific rules and numerical benchmark code are unchanged.
+
+7. Source acquisition and coordinate reconstruction
+The initial T4 extraction completed its coordinates but encountered a file-size
+property/call error while writing metadata. The issue was corrected, and all
+2,430,486 coordinate values in the first run matched re-extraction exactly.
+Backbone-only periodic reconstruction likewise matched full-protein reconstruction
+bitwise on that complete run. A later download reached a disk limit; obsolete
+incomplete transport copies were removed and source-reader file handles explicitly
+closed. Only successfully recorded byte ranges were reused. A complete published
+MD5 and source-size check remains mandatory before every extraction; no partial
+trajectory is accepted. Acquisition logs and the interruption record are retained.
+
+8. Reproduction scope and reporting limits
+Fresh dependency environments provide reproducibility on this host, not validation
+on a different machine, operating system, laboratory or force field. Independent
+reviewers additionally reconstructed coordinates, contact matrices, mathematical
+operators, selections, summary metrics and uncertainty calculations within their
+recorded scopes. Conditional noise-only intervals are pointwise and unadjusted
+for multiple comparisons. All prespecified secondary scenarios are retained.
+The original freeze was prospective and private, not a public preregistration.
+
+9. Final reporting clarifications
+The T4 table compares independently tuned methods: cubic t=16 and linear/power
+t=8. An explicit same-t comparison now gives linear Brier0.0507539560158056 versus
+cubic0.04036348805980258 at t=16, with zero binary-threshold disagreements and
+identical rare/brief recall. Different tuned recall is not attributed to a
+threshold-changing cubic map. The report also shows total positive-cell coverage:
+selected T4 features contain63.3229% of held-out positive cells, while36.6771%
+are omitted. The separately reported0.1983% discovery-absent fraction is not total
+omission; most excluded positives are from discovery-constant-present pairs.
+Correlated-noise transition probabilities are explicitly labelled as transitions
+of the error indicator. All16 scenarios and both matched/full-budget controls
+remain visible.
+
+10. Reproduction command checks
+README commands now consistently use the specified virtual environment and install
+full analysis dependencies before raw extraction. Clean source/preparation folders
+prevent silent reuse of bundled arrays. Seven mutation checks of the optional
+regenerated-manifest comparison confirmed that only the provenance-manifest hash
+may be waived explicitly; changed data hashes, code, protocol, settings and metrics
+are rejected. This exception is numerical equivalence, not provenance validation.
+The final raw T4 file retention is documented.
+
+Final completion and any additional findings are recorded in the five *_final.json
+reports. Consult their checks and limitations, not simply their overall status.

@@ -1,0 +1,167 @@
+{
+  "qualified": true,
+  "created_utc": "2026-10-07T15:47:31.055507+00:00",
+  "source_doi": "10.5281/zenodo.3989057",
+  "source_metadata_sha256": "20984ce5c4df217af5016534a96f19bd4e6272d609974c6cfb1e22b5d7723759",
+  "runs": [
+    {
+      "run": "md1us4",
+      "qualified": true,
+      "shape": [
+        5001,
+        162,
+        3
+      ],
+      "coordinate_dtype": "float32",
+      "start_ps": 0.0,
+      "end_ps": 1000000.0,
+      "sample_dt_ps": 200.0,
+      "max_adjacent_ca_distance_A_float64_audit": 4.149423339121786,
+      "output_sha256": "ad4ff4a7c8691709d4bb4579abfc4e01e9272e3115e054fa287facb58c2d3662",
+      "raw_xtc_retained": false,
+      "source_integrity": {
+        "tpr": {
+          "published_md5_matched": true,
+          "md5": "94dcaca1a87b59e051ecca10fe29d508",
+          "sha256": "6c63dcc8d205cf367916fea351840b12d966ecf122d13af94c09277a0c80fdc2",
+          "source_size_bytes": 2299440
+        },
+        "xtc": {
+          "published_md5_matched": true,
+          "md5": "991c47f3ef4af3f0803a712264452dd6",
+          "sha256": "85543e9219cf9d636dd960d3ddd5388b05c00bfc129aed7c795278ae7712bc4c",
+          "source_size_bytes": 10136603972
+        }
+      }
+    },
+    {
+      "run": "md1us5",
+      "qualified": true,
+      "shape": [
+        5001,
+        162,
+        3
+      ],
+      "coordinate_dtype": "float32",
+      "start_ps": 0.0,
+      "end_ps": 1000000.0,
+      "sample_dt_ps": 200.0,
+      "max_adjacent_ca_distance_A_float64_audit": 4.1190788546668875,
+      "output_sha256": "af840b43ddd5049ba4a68f8a779f41f4608dd953dccc93f06dc3f1e13d7aaa09",
+      "raw_xtc_retained": false,
+      "source_integrity": {
+        "tpr": {
+          "published_md5_matched": true,
+          "md5": "f02fbe8f098255ed93c7155d86a590cf",
+          "sha256": "f9dd6541956db40a79be033a5deb7dbcf806e0e4c93bb0a879418f32bbf96359",
+          "source_size_bytes": 2299440
+        },
+        "xtc": {
+          "published_md5_matched": true,
+          "md5": "1a595d1027b671a3c467e70983151cc7",
+          "sha256": "47c33a0c813e9376328ef3fde4533c57f6cd939aaade6b0588089833346a82e3",
+          "source_size_bytes": 10145726248
+        }
+      }
+    },
+    {
+      "run": "md1us6",
+      "qualified": true,
+      "shape": [
+        5001,
+        162,
+        3
+      ],
+      "coordinate_dtype": "float32",
+      "start_ps": 0.0,
+      "end_ps": 1000000.0,
+      "sample_dt_ps": 200.0,
+      "max_adjacent_ca_distance_A_float64_audit": 4.132626748930788,
+      "output_sha256": "7a30f8c9319d542e253be0e092b658d20dc52275c972465f9d54ad0d99f4fe92",
+      "raw_xtc_retained": false,
+      "source_integrity": {
+        "tpr": {
+          "published_md5_matched": true,
+          "md5": "700612ab7a927c0673710083aba5214a",
+          "sha256": "d3bb2669f24797ee2d7147805a29c177bf78a437c5aa76df11f94fee58dc52b5",
+          "source_size_bytes": 2299440
+        },
+        "xtc": {
+          "published_md5_matched": true,
+          "md5": "75807ff000533ee6f77f789dd2b4874f",
+          "sha256": "cffab6d60e31234b9fa2974e179d82ef46f88787804a359cd59a39d7324fca83",
+          "source_size_bytes": 10134053888
+        }
+      }
+    },
+    {
+      "run": "md1us7",
+      "qualified": true,
+      "shape": [
+        5001,
+        162,
+        3
+      ],
+      "coordinate_dtype": "float32",
+      "start_ps": 0.0,
+      "end_ps": 1000000.0,
+      "sample_dt_ps": 200.0,
+      "max_adjacent_ca_distance_A_float64_audit": 4.133181850817243,
+      "output_sha256": "855e3597dd1eea33c1f2301d1d8fb537d9c00a2d2f62c18e9ad09bb03484d605",
+      "raw_xtc_retained": false,
+      "source_integrity": {
+        "tpr": {
+          "published_md5_matched": true,
+          "md5": "d5a66ca48a55b43a25830dd9d1355062",
+          "sha256": "dec0cbeffb1ec827720ae8d38c6ef984140597e52944a55df1bfef83d4ebf22d",
+          "source_size_bytes": 2299440
+        },
+        "xtc": {
+          "published_md5_matched": true,
+          "md5": "1bc5ed165677a75d255528478bd59614",
+          "sha256": "8ee4450fb3fc84c3a94e997b8957be9f2a9c784bb8b24118c76d9d28ad86f671",
+          "source_size_bytes": 10127022556
+        }
+      }
+    },
+    {
+      "run": "md1us8",
+      "qualified": true,
+      "shape": [
+        5001,
+        162,
+        3
+      ],
+      "coordinate_dtype": "float32",
+      "start_ps": 0.0,
+      "end_ps": 1000000.0,
+      "sample_dt_ps": 200.0,
+      "max_adjacent_ca_distance_A_float64_audit": 4.125298161499384,
+      "output_sha256": "88c6f5a0466e0b8647979c700efa44b273de23395478d654e381de1729cccb0f",
+      "raw_xtc_retained": true,
+      "source_integrity": {
+        "tpr": {
+          "published_md5_matched": true,
+          "md5": "eb4df68b5597af1744bf515734c3286a",
+          "sha256": "7c3b8913295b6f5cbec80e1f98ad78ed846384beacae1c9880a6841d776eac7e",
+          "source_size_bytes": 2299440
+        },
+        "xtc": {
+          "published_md5_matched": true,
+          "md5": "90c65520164769655aebd92d1760662d",
+          "sha256": "ded63de376caaec529ab752eac6a288a37af377f94916a1b4e7268f100727b4f",
+          "source_size_bytes": 10115749320
+        }
+      }
+    }
+  ],
+  "five_run_CA_mapping_identical": true,
+  "total_prepared_frames": 25005,
+  "total_original_XTC_bytes": 50659155984,
+  "full_protein_vs_backbone_CA_equivalence": "md1us4: all 2,430,486 scalar coordinates bitwise equal",
+  "source_data_license": "No explicit data license in fetched Zenodo metadata",
+  "construct": "Exact 162-residue simulated sequence and reference differences recorded in sequence_audit.json",
+  "python_version": "3.12.14",
+  "numpy_version": "2.3.5",
+  "scope": "Coordinate/source qualification only. No contact-feature selection, denoising estimates, or benchmark outcomes calculated."
+}

@@ -1,0 +1,30 @@
+{
+  "source_url": "https://rest.uniprot.org/uniprotkb/P00720.fasta",
+  "reference_length": 164,
+  "observed_length": 162,
+  "observed_sequence": "MNIFEMLRIDEGLRLKIYKDTEGYYTIGIGHLLTKSPSLNAAKSELDKAIGRNTNGVITKDEAEKLFNQDVDAAVRGILRNAKLKPVYDSLDAVRRAALINMVFQMGETGVAGFTNSLRMLQQKRWDEAAVNLAKSRWYNQTPNRAKRVITTFRTGTWDAYK",
+  "aligned_position_mismatches": [
+    {
+      "position": 12,
+      "reference": "R",
+      "observed": "G"
+    },
+    {
+      "position": 54,
+      "reference": "C",
+      "observed": "T"
+    },
+    {
+      "position": 97,
+      "reference": "C",
+      "observed": "A"
+    },
+    {
+      "position": 137,
+      "reference": "I",
+      "observed": "R"
+    }
+  ],
+  "reference_suffix_not_in_simulation": "NL",
+  "reference_sha256": "faa9ec7a96a1a24d2d5b754f1f609451741fdaaf424e7401b9c516ce83259b80"
+}

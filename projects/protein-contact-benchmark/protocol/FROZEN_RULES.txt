@@ -1,0 +1,72 @@
+PROSPECTIVE PROTEIN CONTACT BENCHMARK — FROZEN RULES 1.1
+
+Purpose
+Test the binary expected-median construction associated with OpenAI/math #332
+against strong conventional controls on additional protein simulations. The
+reference is an uncorrupted simulation, not experimental biological truth.
+The earlier adenylate-kinase result is development information only.
+
+Data and sealed splits
+T4 lysozyme: exact deposited mutant construct; md1us4 discovery, md1us5
+validation, md1us6/7/8 test. Verify every original file's published MD5.
+Ubiquitin: use only if native identity, time ordering, five run boundaries and
+unbiased production provenance are documented. Otherwise report qualification
+failure. For verified runs, original run order gives one discovery, one
+validation and three test runs. No silent replacement dataset.
+Villin HP35: separate adaptive stress test. Archive group 1 discovery, group 2
+validation, group 3 test. Groups are putative campaigns, with independence not
+certified. Within each group choose trajectories by ascending SHA256 of archive
+path, capped at 24 discovery, 24 validation and 48 test. No motion-based selection.
+
+Inputs and features
+Sample every 200 ps without interpolation. Extract all CA atoms, including
+nonstandard protein residues; make bonded proteins whole if needed. Use strict
+CA distance <8 Angstrom and sequence separation >=4. Sensitivities use 7/9
+Angstrom. Only discovery-variable pairs select primary features. Report how
+many held-out positive contacts that selection omits. Never join trajectories.
+Rare means discovery contact frequency <=10%. Brief means complete positive
+runs of at most 600 ps (three sampled frames), excluding boundary-censored runs.
+
+Methods and tuning
+Raw contacts; linear resolvent; #332 cubic; known-error-rate corrected linear
+oracle; hard threshold; moving average; Gaussian filter; temporal median;
+power sharpening. Seven smoothing settings per basic method; full power uses
+63 settings. A separate matched comparison fixes alpha=3 from ADK development
+and uses seven settings. Exact grids, boundaries and tie order are in JSON.
+Every method has identical validation access. Choose the strongest nonoracle
+baseline by validation only, including raw. Save choices before test evaluation.
+
+Noise and checks
+Primary: independent 10% binary flips. Secondary: 5% and 20% flips; Gaussian
+coordinate perturbation of 0.25/0.50 Angstrom; temporally correlated 10% flips
+with lag-one correlation 0.8; the 7/9 Angstrom contact cutoffs. Apply settings
+selected under primary noisy validation to clean data to measure distortion.
+Eight validation and sixteen test noise draws per trajectory, with fixed,
+paired seed derivation in JSON. No test tuning or favorable-scenario selection.
+
+Primary T4 decision
+Average each run over noise draws, then weight the three held-out runs equally.
+Practical success requires ALL of:
+1. At least 2% lower mean Brier error than the validation-selected full-budget
+   nonoracle baseline.
+2. Strictly lower Brier error on each of the three held-out runs.
+3. No more than two percentage points lost in rare-positive-cell recall on
+   any held-out run.
+4. No more than two percentage points lost in brief-positive-cell recall on
+   any held-out run.
+Missing strata make the composite criterion not fully evaluable. These are
+predeclared engineering thresholds, not consequences of a mathematical theorem.
+Ubiquitin replication is separate; villin cannot alter the T4 primary decision.
+
+Reporting and verification
+Report every prespecified scenario, every run and method, feature coverage,
+clean-input damage, settings, runtime, hashes, environment and deviations.
+Noise-only confidence intervals describe fixed-trajectory corruption variation;
+they do not imply biological replication. Five independent AI agents will audit
+mathematics, data/provenance, statistics, citations/claims, and reproduction.
+This is a locally frozen prospective protocol, not a public registry filing.
+
+The accompanying JSON is the authoritative complete executable specification.
+
+Frozen UTC: 2026-10-07T14:43:11.810208+00:00
+JSON SHA256: 1e25ff2c9890809f5432675c259f8ec705d2ce9bcca23969111f771fd520c84c

@@ -1,0 +1,11 @@
+{
+  "QUALIFICATION_README.txt": "508fae13c3e6b8429c131356b7a90151a82fc21e5a3bb3c21e97d7ab9c27b3ba",
+  "qualification.json": "5b907dcd133a485af974ae5da426225a341d4ecabf38a093345d708c7fb40bef",
+  "download_audit.json": "9170218fdf190ea5de85219c08bc604e031a3a5630c171cf23e828b2c7d985af",
+  "archive_metadata.json": "b15cbcabcbb018b0a11dea4189de59c8f7d3645a383dde2da582d4afc39b55ad",
+  "source_provenance.json": "394602b98d2e46bdb08b156cf810b01a8e99f31e9774b1ffa1ee4d732632dbd0",
+  "zenodo_record.json": "4cd0b0c65cb5c8a90c01a622a062ea34ab18820794752013205ded39eb3c9954",
+  "download_qualification.py": "5247bdb19c5c7a14cd9eaa56b05bb69839537931d8bcdf6a9e6179d06a210544",
+  "download_ranges.py": "11501db3f4eb2a12505da4c443431d533f16e868a0a9cb924ec9b45da2639e3c",
+  "inspect_archive.py": "ff356650f58f4e11776260d61145a3d3da47f5d3ba9b68bf5e9e07224e25e743"
+}

@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "Please cite this benchmark when reusing its implementation or results, and cite the original mathematical and dataset sources listed in REFERENCES.txt."
+type: software
+title: "Negative result: expected-median smoothing of protein contacts"
+version: 0.1.0
+authors:
+  - name: "Rada1647"
+abstract: >-
+  A reproducible negative-result benchmark of binary expected-median contact
+  smoothing on held-out T4 lysozyme simulations and a separate adaptive villin
+  stress dataset. The construction fails the predefined primary practical-success
+  criterion against validation-selected controls. Ubiquitin is excluded by a
+  temporal-provenance qualification gate. AI-assisted study with five independent
+  AI technical review roles; not human peer review.
+keywords:
+  - negative results
+  - protein contacts
+  - molecular dynamics
+  - denoising
+  - reproducibility
+license: MIT
+repository-code: "https://github.com/Rada1647/Rada-bioinformatics-portfolio"
+url: "https://github.com/Rada1647/Rada-bioinformatics-portfolio/tree/main/projects/protein-contact-benchmark"

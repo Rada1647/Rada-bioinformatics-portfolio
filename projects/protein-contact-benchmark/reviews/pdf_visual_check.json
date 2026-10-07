@@ -1,0 +1,25 @@
+{
+  "checked_utc": "2026-10-07T16:11:21.114649+00:00",
+  "reviewer": "Root report author, visual verification (not one of the five independent reviewers)",
+  "pdf_sha256": "4025c59ee86a5426c04e1ae565868a872accda740bf2da6450812ac2d20c9a4e",
+  "pages": 7,
+  "render_command": "pdftoppm -r 100 -png benchmark_report.pdf report_render_final/page",
+  "pages_visually_inspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "checks": [
+    "No clipped text or overlapping tables",
+    "No nearly empty continuation pages",
+    "Complete scenario and clean-control tables visible",
+    "Final page6 reports both exact reproductions and5of5 final reviews",
+    "All21 numbered references visible",
+    "Rounding sensitivity and data coverage limitations visible"
+  ],
+  "status": "pass"
+}

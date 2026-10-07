@@ -1,0 +1,65 @@
+{
+  "created_utc": "2026-10-07T16:09:40.853686+00:00",
+  "status": "pass",
+  "results_txt_sha256": "3f1a820479c5142e361f0e061e98151496490a3393b0b8b27c9f0803cb23b2f1",
+  "counts": {
+    "report_rows_checked": 57,
+    "report_numeric_fields_checked": 184,
+    "scope_phrases_checked": 7
+  },
+  "scenario_rows_count": 16,
+  "failures": [],
+  "evidence": {
+    "t4": {
+      "selected_baseline": "power_full",
+      "matched_baseline": "power_matched",
+      "conditional_intervals": [
+        {
+          "run_id": "md1us6",
+          "mean_brier_gain": -0.003292031606053452,
+          "conditional_noise_95pct_ci": [
+            -0.0033114249881455574,
+            -0.003272638223961347
+          ]
+        },
+        {
+          "run_id": "md1us7",
+          "mean_brier_gain": -0.0030901947936229877,
+          "conditional_noise_95pct_ci": [
+            -0.0031099231435950175,
+            -0.003070466443650958
+          ]
+        },
+        {
+          "run_id": "md1us8",
+          "mean_brier_gain": -0.0031343751697541266,
+          "conditional_noise_95pct_ci": [
+            -0.003150857300471168,
+            -0.0031178930390370852
+          ]
+        }
+      ]
+    }
+  },
+  "positive_coverage": {
+    "t4": {
+      "all_eligible_pairs": 12561,
+      "selected_pairs": 523,
+      "selected_positive_cells": 2861787,
+      "all_positive_cells": 4519353,
+      "selected_positive_fraction": 0.6332293582731865,
+      "omitted_positive_fraction": 0.3667706417268135,
+      "discovery_absent_positive_fraction": 0.0019830272165064335
+    },
+    "villin": {
+      "all_eligible_pairs": 496,
+      "selected_pairs": 496,
+      "selected_positive_cells": 413926,
+      "all_positive_cells": 413926,
+      "selected_positive_fraction": 1.0,
+      "omitted_positive_fraction": 0.0,
+      "discovery_absent_positive_fraction": 0.0
+    }
+  },
+  "interpretation": "All statistical report rows checked against independently recomputed means/contrasts from archived noise rows; 95% Student-t intervals are approximate pointwise conditional-noise intervals, not simultaneous or biological confidence statements."
+}

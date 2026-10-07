@@ -1,0 +1,149 @@
+{
+  "7": {
+    "all_eligible_pair_count": 12561,
+    "selected_pair_count": 368,
+    "discovery_frame_count": 5001,
+    "discovery_constant_absent_pairs": 12160,
+    "discovery_constant_present_pairs": 33,
+    "runs": {
+      "md1us4": {
+        "split": "discovery",
+        "all_positive_cells": 1022937,
+        "selected_positive_cells": 857904,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 165033
+      },
+      "md1us5": {
+        "split": "validation",
+        "all_positive_cells": 1011698,
+        "selected_positive_cells": 843144,
+        "discovery_absent_positive_cells": 3527,
+        "discovery_absent_positive_fraction": 0.0034862182192709683,
+        "omitted_positive_cells": 168554
+      },
+      "md1us6": {
+        "split": "test",
+        "all_positive_cells": 996162,
+        "selected_positive_cells": 827206,
+        "discovery_absent_positive_cells": 4001,
+        "discovery_absent_positive_fraction": 0.0040164150007729665,
+        "omitted_positive_cells": 168956
+      },
+      "md1us7": {
+        "split": "test",
+        "all_positive_cells": 1011701,
+        "selected_positive_cells": 843995,
+        "discovery_absent_positive_cells": 2687,
+        "discovery_absent_positive_fraction": 0.0026559230444568108,
+        "omitted_positive_cells": 167706
+      },
+      "md1us8": {
+        "split": "test",
+        "all_positive_cells": 1010087,
+        "selected_positive_cells": 842083,
+        "discovery_absent_positive_cells": 2976,
+        "discovery_absent_positive_fraction": 0.0029462808649155965,
+        "omitted_positive_cells": 168004
+      }
+    }
+  },
+  "8": {
+    "all_eligible_pair_count": 12561,
+    "selected_pair_count": 523,
+    "discovery_frame_count": 5001,
+    "discovery_constant_absent_pairs": 11928,
+    "discovery_constant_present_pairs": 110,
+    "runs": {
+      "md1us4": {
+        "split": "discovery",
+        "all_positive_cells": 1561390,
+        "selected_positive_cells": 1011280,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 550110
+      },
+      "md1us5": {
+        "split": "validation",
+        "all_positive_cells": 1516302,
+        "selected_positive_cells": 964053,
+        "discovery_absent_positive_cells": 2672,
+        "discovery_absent_positive_fraction": 0.0017621819400093122,
+        "omitted_positive_cells": 552249
+      },
+      "md1us6": {
+        "split": "test",
+        "all_positive_cells": 1500667,
+        "selected_positive_cells": 947453,
+        "discovery_absent_positive_cells": 3684,
+        "discovery_absent_positive_fraction": 0.002454908384071883,
+        "omitted_positive_cells": 553214
+      },
+      "md1us7": {
+        "split": "test",
+        "all_positive_cells": 1512605,
+        "selected_positive_cells": 959912,
+        "discovery_absent_positive_cells": 3044,
+        "discovery_absent_positive_fraction": 0.002012422278122841,
+        "omitted_positive_cells": 552693
+      },
+      "md1us8": {
+        "split": "test",
+        "all_positive_cells": 1506081,
+        "selected_positive_cells": 954422,
+        "discovery_absent_positive_cells": 2234,
+        "discovery_absent_positive_fraction": 0.001483319954238849,
+        "omitted_positive_cells": 551659
+      }
+    }
+  },
+  "9": {
+    "all_eligible_pair_count": 12561,
+    "selected_pair_count": 838,
+    "discovery_frame_count": 5001,
+    "discovery_constant_absent_pairs": 11523,
+    "discovery_constant_present_pairs": 200,
+    "runs": {
+      "md1us4": {
+        "split": "discovery",
+        "all_positive_cells": 2696932,
+        "selected_positive_cells": 1696732,
+        "discovery_absent_positive_cells": 0,
+        "discovery_absent_positive_fraction": 0.0,
+        "omitted_positive_cells": 1000200
+      },
+      "md1us5": {
+        "split": "validation",
+        "all_positive_cells": 2642878,
+        "selected_positive_cells": 1637333,
+        "discovery_absent_positive_cells": 5677,
+        "discovery_absent_positive_fraction": 0.0021480371019774653,
+        "omitted_positive_cells": 1005545
+      },
+      "md1us6": {
+        "split": "test",
+        "all_positive_cells": 2601385,
+        "selected_positive_cells": 1593628,
+        "discovery_absent_positive_cells": 8155,
+        "discovery_absent_positive_fraction": 0.003134868541180948,
+        "omitted_positive_cells": 1007757
+      },
+      "md1us7": {
+        "split": "test",
+        "all_positive_cells": 2631716,
+        "selected_positive_cells": 1627604,
+        "discovery_absent_positive_cells": 4187,
+        "discovery_absent_positive_fraction": 0.0015909771419104492,
+        "omitted_positive_cells": 1004112
+      },
+      "md1us8": {
+        "split": "test",
+        "all_positive_cells": 2632905,
+        "selected_positive_cells": 1628974,
+        "discovery_absent_positive_cells": 4256,
+        "discovery_absent_positive_fraction": 0.0016164654630531675,
+        "omitted_positive_cells": 1003931
+      }
+    }
+  }
+}

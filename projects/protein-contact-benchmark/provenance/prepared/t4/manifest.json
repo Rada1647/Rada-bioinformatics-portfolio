@@ -1,0 +1,178 @@
+{
+  "dataset": "t4",
+  "dataset_id": 1,
+  "protocol_sha256": "1e25ff2c9890809f5432675c259f8ec705d2ce9bcca23969111f771fd520c84c",
+  "protocol_version": "1.1",
+  "prepared_utc": "2026-10-07T15:47:19.996788+00:00",
+  "code_sha256": "ab9d98f07394bb34631a75f119f2aadb2fc14443f4672707944a161271122de0",
+  "qualification": {
+    "qualification": "Five published whole-file MD5s checked; see individual extraction/provenance records."
+  },
+  "runs": [
+    {
+      "id": "md1us4",
+      "run_index": 0,
+      "split": "discovery",
+      "source_metadata": {
+        "raw_xtc": {
+          "name": "md1us4.xtc",
+          "source_url": "https://zenodo.org/api/records/3989057/files/md1us4.xtc/content",
+          "published_size": 10136603972,
+          "published_checksum": "md5:991c47f3ef4af3f0803a712264452dd6",
+          "verified_size": 10136603972,
+          "md5": "991c47f3ef4af3f0803a712264452dd6",
+          "sha256": "85543e9219cf9d636dd960d3ddd5388b05c00bfc129aed7c795278ae7712bc4c",
+          "verified_utc": "2026-10-07T15:06:29.064256+00:00"
+        },
+        "coordinate_sha256": "ad4ff4a7c8691709d4bb4579abfc4e01e9272e3115e054fa287facb58c2d3662"
+      },
+      "coordinates_path": "coordinates/md1us4.npz",
+      "coordinates_sha256": "ad4ff4a7c8691709d4bb4579abfc4e01e9272e3115e054fa287facb58c2d3662",
+      "n_frames": 5001,
+      "n_ca": 162,
+      "contacts": {
+        "7": "contacts/md1us4_cut7.npz",
+        "8": "contacts/md1us4_cut8.npz",
+        "9": "contacts/md1us4_cut9.npz"
+      },
+      "contacts_sha256": {
+        "7": "d68c85d5b0d231c869d47bd6227647a832629a3c2a40eda5b6618a6d20ad2040",
+        "8": "134146957598891d3d08edf2e68e5254f785d76f39fb63ebd06a0728df60fc8f",
+        "9": "04d29dccb4412aba93eafbf81bf764eda5844463f63956e374ab0643cd36dc93"
+      }
+    },
+    {
+      "id": "md1us5",
+      "run_index": 1,
+      "split": "validation",
+      "source_metadata": {
+        "raw_xtc": {
+          "name": "md1us5.xtc",
+          "source_url": "https://zenodo.org/api/records/3989057/files/md1us5.xtc/content",
+          "published_size": 10145726248,
+          "published_checksum": "md5:1a595d1027b671a3c467e70983151cc7",
+          "verified_size": 10145726248,
+          "md5": "1a595d1027b671a3c467e70983151cc7",
+          "sha256": "47c33a0c813e9376328ef3fde4533c57f6cd939aaade6b0588089833346a82e3",
+          "verified_utc": "2026-10-07T15:18:41.239682+00:00",
+          "download_method": "Up to 32 concurrent HTTP ranges; complete original-file MD5 and SHA256"
+        },
+        "coordinate_sha256": "af840b43ddd5049ba4a68f8a779f41f4608dd953dccc93f06dc3f1e13d7aaa09"
+      },
+      "coordinates_path": "coordinates/md1us5.npz",
+      "coordinates_sha256": "af840b43ddd5049ba4a68f8a779f41f4608dd953dccc93f06dc3f1e13d7aaa09",
+      "n_frames": 5001,
+      "n_ca": 162,
+      "contacts": {
+        "7": "contacts/md1us5_cut7.npz",
+        "8": "contacts/md1us5_cut8.npz",
+        "9": "contacts/md1us5_cut9.npz"
+      },
+      "contacts_sha256": {
+        "7": "5086783b44db00fb57b67bf32b5c0275b5be3dc6a901fe6eeb1d14c28c9e374e",
+        "8": "e1c5f79d3c74030484623b8a7557bfdb7b4c5b4291b4c53bdd79936c670be512",
+        "9": "8e9f5ffc2cdabab9d98521dff9f718d28541dc20a9d5753a720a1d162f95b64b"
+      }
+    },
+    {
+      "id": "md1us6",
+      "run_index": 2,
+      "split": "test",
+      "source_metadata": {
+        "raw_xtc": {
+          "name": "md1us6.xtc",
+          "source_url": "https://zenodo.org/api/records/3989057/files/md1us6.xtc/content",
+          "published_size": 10134053888,
+          "published_checksum": "md5:75807ff000533ee6f77f789dd2b4874f",
+          "verified_size": 10134053888,
+          "md5": "75807ff000533ee6f77f789dd2b4874f",
+          "sha256": "cffab6d60e31234b9fa2974e179d82ef46f88787804a359cd59a39d7324fca83",
+          "verified_utc": "2026-10-07T15:29:31.048563+00:00",
+          "download_method": "Up to 32 concurrent HTTP ranges; complete original-file MD5 and SHA256"
+        },
+        "coordinate_sha256": "7a30f8c9319d542e253be0e092b658d20dc52275c972465f9d54ad0d99f4fe92"
+      },
+      "coordinates_path": "coordinates/md1us6.npz",
+      "coordinates_sha256": "7a30f8c9319d542e253be0e092b658d20dc52275c972465f9d54ad0d99f4fe92",
+      "n_frames": 5001,
+      "n_ca": 162,
+      "contacts": {
+        "7": "contacts/md1us6_cut7.npz",
+        "8": "contacts/md1us6_cut8.npz",
+        "9": "contacts/md1us6_cut9.npz"
+      },
+      "contacts_sha256": {
+        "7": "81f56ce849f39569b4440c0fdbcb8c428f31aa33d952b8f7e68b88731c20fd14",
+        "8": "507d277aed2b0ca7c0892c901fce66df039a0ce3eea4c390f1ca141fbb142811",
+        "9": "b9d8cc133f00e6526fa9a16389a5f179fb89c22fef275d6c00a11fdc224da68c"
+      }
+    },
+    {
+      "id": "md1us7",
+      "run_index": 3,
+      "split": "test",
+      "source_metadata": {
+        "raw_xtc": {
+          "name": "md1us7.xtc",
+          "source_url": "https://zenodo.org/api/records/3989057/files/md1us7.xtc/content",
+          "published_size": 10127022556,
+          "published_checksum": "md5:1bc5ed165677a75d255528478bd59614",
+          "verified_size": 10127022556,
+          "md5": "1bc5ed165677a75d255528478bd59614",
+          "sha256": "8ee4450fb3fc84c3a94e997b8957be9f2a9c784bb8b24118c76d9d28ad86f671",
+          "verified_utc": "2026-10-07T15:37:30.988236+00:00",
+          "download_method": "Up to 32 concurrent HTTP ranges; complete original-file MD5 and SHA256"
+        },
+        "coordinate_sha256": "855e3597dd1eea33c1f2301d1d8fb537d9c00a2d2f62c18e9ad09bb03484d605"
+      },
+      "coordinates_path": "coordinates/md1us7.npz",
+      "coordinates_sha256": "855e3597dd1eea33c1f2301d1d8fb537d9c00a2d2f62c18e9ad09bb03484d605",
+      "n_frames": 5001,
+      "n_ca": 162,
+      "contacts": {
+        "7": "contacts/md1us7_cut7.npz",
+        "8": "contacts/md1us7_cut8.npz",
+        "9": "contacts/md1us7_cut9.npz"
+      },
+      "contacts_sha256": {
+        "7": "9fbde7b7bf31827d414906a658d8582a6b1f079983231a50d92c23e5486fa1e0",
+        "8": "5b00270fe7207ee70300064c2bfb2ed710b3b4556aaeb980cfd12e01e9a45311",
+        "9": "4432e16bebbae5f615ec452e491e391d6997f8c7a6045b2197c87b75ca86f9fc"
+      }
+    },
+    {
+      "id": "md1us8",
+      "run_index": 4,
+      "split": "test",
+      "source_metadata": {
+        "raw_xtc": {
+          "name": "md1us8.xtc",
+          "source_url": "https://zenodo.org/api/records/3989057/files/md1us8.xtc/content",
+          "published_size": 10115749320,
+          "published_checksum": "md5:90c65520164769655aebd92d1760662d",
+          "verified_size": 10115749320,
+          "md5": "90c65520164769655aebd92d1760662d",
+          "sha256": "ded63de376caaec529ab752eac6a288a37af377f94916a1b4e7268f100727b4f",
+          "verified_utc": "2026-10-07T15:46:04.208322+00:00",
+          "download_method": "Up to 32 concurrent HTTP ranges; complete original-file MD5 and SHA256"
+        },
+        "coordinate_sha256": "88c6f5a0466e0b8647979c700efa44b273de23395478d654e381de1729cccb0f"
+      },
+      "coordinates_path": "coordinates/md1us8.npz",
+      "coordinates_sha256": "88c6f5a0466e0b8647979c700efa44b273de23395478d654e381de1729cccb0f",
+      "n_frames": 5001,
+      "n_ca": 162,
+      "contacts": {
+        "7": "contacts/md1us8_cut7.npz",
+        "8": "contacts/md1us8_cut8.npz",
+        "9": "contacts/md1us8_cut9.npz"
+      },
+      "contacts_sha256": {
+        "7": "e3bc9bcbf0f8051b2806d1d0f055b8772230cbb41d26a2ee17e8884938289201",
+        "8": "ee6194aae3397e134324e585d26fa4596721b8ef99434cca29248b74f37df7cb",
+        "9": "cc6cfa8ec5af36f2e0f850da25dc7c2775f4cc4b05730a36b28d42b5c8144d12"
+      }
+    }
+  ],
+  "coverage_path": "coverage.json"
+}

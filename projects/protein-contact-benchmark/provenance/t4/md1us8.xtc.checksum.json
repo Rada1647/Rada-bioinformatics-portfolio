@@ -1,0 +1,11 @@
+{
+  "name": "md1us8.xtc",
+  "source_url": "https://zenodo.org/api/records/3989057/files/md1us8.xtc/content",
+  "published_size": 10115749320,
+  "published_checksum": "md5:90c65520164769655aebd92d1760662d",
+  "verified_size": 10115749320,
+  "md5": "90c65520164769655aebd92d1760662d",
+  "sha256": "ded63de376caaec529ab752eac6a288a37af377f94916a1b4e7268f100727b4f",
+  "verified_utc": "2026-10-07T15:46:04.208322+00:00",
+  "download_method": "Up to 32 concurrent HTTP ranges; complete original-file MD5 and SHA256"
+}

@@ -1,0 +1,17 @@
+{
+  "recorded_utc": "2026-10-07T15:25:38.832904+00:00",
+  "event": "Disk-full interrupted md1us6 acquisition before complete-file validation",
+  "cause": "Disk recovery on process exit was consistent with an unlinked previous XTC remaining open in an MDAnalysis reader; additional workspace temporary files consumed disk. Explicit reader close was added to prevent this source of retention.",
+  "action": "Stopped downloader, retained atomic range checkpoint and partial file; root freed obsolete own-task temporary files; added explicit trajectory.close() before unlinking completed raw inputs",
+  "checkpoint_json_valid": true,
+  "completed_ranges": 70,
+  "checkpoint_bytes": 4697620480,
+  "part_logical_bytes": 10134053888,
+  "part_allocated_bytes": 5565575168,
+  "remaining_unallocated_bytes": 4568478720,
+  "acceptance_gate": "Resumed file must pass full published MD5 before extraction; partial or checkpoint state is not accepted as source integrity verification.",
+  "resumed_complete_md5": "75807ff000533ee6f77f789dd2b4874f",
+  "resumed_complete_sha256": "cffab6d60e31234b9fa2974e179d82ef46f88787804a359cd59a39d7324fca83",
+  "resumed_verified_utc": "2026-10-07T15:29:31.048563+00:00",
+  "published_md5_match_after_resume": true
+}

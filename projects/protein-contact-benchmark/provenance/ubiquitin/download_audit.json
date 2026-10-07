@@ -1,0 +1,47 @@
+{
+  "url": "https://zenodo.org/api/records/7792288/files/ubiquitin-md-generated-ensemble.zip/content",
+  "bytes": 228792237,
+  "md5": "3372f857beb371ca5ebc8d57877c5c79",
+  "sha256": "d21f88be709745f858a78c11dbfb7ff6bdb014e6cb0aaac2b489071f540dd0d8",
+  "license": {
+    "id": "cc-by-4.0"
+  },
+  "retrieved_unix": 1791384018.4854443,
+  "members": [
+    {
+      "name": "topology.pdb",
+      "bytes": 97460,
+      "crc32": "7b7cab9e"
+    },
+    {
+      "name": "Q80.dcd",
+      "bytes": 74260276,
+      "crc32": "fbaf3adf"
+    },
+    {
+      "name": "Q99.dcd",
+      "bytes": 74260276,
+      "crc32": "c3c1d4bb"
+    },
+    {
+      "name": "Q95.dcd",
+      "bytes": 74260276,
+      "crc32": "d16c71ab"
+    },
+    {
+      "name": "Q75.dcd",
+      "bytes": 74260276,
+      "crc32": "c69fbd7c"
+    },
+    {
+      "name": "Q90.dcd",
+      "bytes": 74260276,
+      "crc32": "af2a308d"
+    },
+    {
+      "name": "Q85.dcd",
+      "bytes": 74260276,
+      "crc32": "1c03f11d"
+    }
+  ]
+}

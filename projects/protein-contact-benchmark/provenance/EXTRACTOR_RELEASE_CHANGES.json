@@ -1,0 +1,14 @@
+[
+  {
+    "path": "data/t4/acquire_extract.py",
+    "original_sha256": "12de445655198752aa3da4bcafd78611b9398159056ed76284321acf217723cd",
+    "release_sha256": "e5dffe2a0c15208c7de7def7192ced0286f6ff8f4db970a1f04a8b08b656328a",
+    "change": "Completion-file guard only; extracted-coordinate operations preserved"
+  },
+  {
+    "path": "data/villin/qualify_extract.py",
+    "original_sha256": "d08847de547d59abaf98409c9fc606ee964c6c01a90dbdefe36ae1bf51ea2f4f",
+    "release_sha256": "d08847de547d59abaf98409c9fc606ee964c6c01a90dbdefe36ae1bf51ea2f4f",
+    "change": "Byte-identical"
+  }
+]

@@ -1,0 +1,642 @@
+{
+  "title": "Prospective multi-protein extension of the #332 contact-denoising benchmark",
+  "version": "1.1",
+  "created_utc": "2026-10-07T14:43:11.810208+00:00",
+  "status": "Protocol specified before new-protein benchmark outcomes; not a public registry preregistration",
+  "prior_information": "ADK results and its alpha=3,t=8 sharpening winner are development information. They are excluded from fresh confirmation.",
+  "objective": "Test whether the binary expected-median construction linked to OpenAI/math family332 improves reconstruction of artificially corrupted simulated contacts over strong validation-selected controls.",
+  "mathematics": {
+    "A": "symmetric lazy reflecting path; adjacent entries1/4, interior diagonal1/2, endpoints3/4; one independent path per trajectory",
+    "H": "[I+t(I-A)]^-1 Z",
+    "Y": "3H^2-2H^3 entrywise for binary input Z only",
+    "claim_limit": "The cotype theorem does not guarantee lower Brier error, biological accuracy, or physically realizable coordinates."
+  },
+  "datasets": {
+    "t4": {
+      "role": "primary confirmation",
+      "source": "https://zenodo.org/records/3989057",
+      "doi": "10.5281/zenodo.3989057",
+      "discovery": [
+        "md1us4"
+      ],
+      "validation": [
+        "md1us5"
+      ],
+      "test": [
+        "md1us6",
+        "md1us7",
+        "md1us8"
+      ],
+      "construct": "Use deposited construct exactly; record topology-derived sequence and modifications. Do not label wild type.",
+      "qualification": "Require published full-file MD5 verification, matching protein topology subset, continuous chronological trajectory, finite CA coordinates and whole-protein geometry."
+    },
+    "ubiquitin": {
+      "role": "conditional second confirmation; qualification failure is a result",
+      "source": "https://zenodo.org/records/7792288",
+      "doi": "10.5281/zenodo.7792288",
+      "expected": "Native folded ensemble: five independent50ns runs, last40ns sampled40ps. Biased partial-fold ensembles are excluded.",
+      "qualification": "Require documented native identity, chronological frame order, exact five-run boundaries and unbiased native-production provenance. File length or apparent coordinate jumps alone do not prove order. If not verified, exclude from temporal benchmarking and report why; no silent substitute.",
+      "split": "After verified author mapping, ascending original run ID: first discovery, second validation, final three test."
+    },
+    "villin": {
+      "role": "separately reported adaptive-sampling stress test, not primary confirmation",
+      "source": "https://doi.org/10.6084/m9.figshare.32541291",
+      "temperature_K": 360,
+      "eligibility": "Finite complete single-protein CA trajectories with at least20 sampled frames. Exclude only objective topology/time/corruption failures; record all exclusions. No contact- or motion-based selection.",
+      "split_algorithm": "Exact top-level archive group 1 = discovery, 2 = validation, 3 = test. These are putative adaptive campaigns, not certified independent simulation campaigns. No trajectory crosses partitions. If archive groups differ from these metadata, stop and record a pre-outcome amendment; do not infer new splits silently.",
+      "sampling": "Within each partition choose first24 discovery,24 validation,48 test trajectories ordered by SHA256 of canonical archive-relative path. Retain all if fewer. Minimum1 trajectory per partition; sample caps are fixed for tractability before outcomes.",
+      "ancestry_caveat": "Three archive groups each have 20 roots and 60 adaptive epochs; source does not certify their generation seeds or independence. Within-group ancestral paths and adaptive selection are dependent. No equilibrium populations, folding rates, biological-replication inference or independent-campaign claim."
+    }
+  },
+  "preprocessing": {
+    "frame_interval_ps": 200,
+    "sampling": "Take first available production frame and exact integer stride from native cadence; no temporal interpolation. Require constant source cadence dividing200ps within1e-3ps; otherwise ineligible unless pre-outcome amendment records alternative.",
+    "equilibration": "Use provided production trajectories; no additional motion-dependent trimming. Ubiquitin already excludes first10ns per source.",
+    "coordinates": "CA only; float32 storage, float64 distance arithmetic; unwrap bonded protein when needed before extracting. Record actual sequence, residue IDs, chain IDs, units, selected atom indices and frame times.",
+    "pairs": "One protein chain; positional sequence separation >=4; all nonlocal CA pairs eligible.",
+    "contact": "Euclidean distance strictly less than cutoff; primary8Angstrom,7/9Angstrom sensitivity.",
+    "features": "Select only nonconstant contacts across pooled discovery frames at each cutoff; test/validation never select features. If no features, dataset/scenario not evaluable.",
+    "rare": "Discovery pooled contact frequency <=0.10 among selected features.",
+    "brief": "Complete observed positive runs of duration <=600ps, i.e. at most3 sampled frames; omit runs touching trajectory boundaries. This is a sampled-run definition, not continuous-time lifetime.",
+    "coverage": "For each held-out trajectory report all eligible pair count, selected pair count, total positive cells and fraction in discovery-constant-absent pairs. Primary scores cover only selected features.",
+    "independent_paths": "Never smooth, infer events or calculate differences across trajectory or split boundaries."
+  },
+  "methods": {
+    "raw": [
+      {}
+    ],
+    "linear": [
+      {
+        "t": 1
+      },
+      {
+        "t": 2
+      },
+      {
+        "t": 4
+      },
+      {
+        "t": 8
+      },
+      {
+        "t": 16
+      },
+      {
+        "t": 32
+      },
+      {
+        "t": 64
+      }
+    ],
+    "paper332": [
+      {
+        "t": 1
+      },
+      {
+        "t": 2
+      },
+      {
+        "t": 4
+      },
+      {
+        "t": 8
+      },
+      {
+        "t": 16
+      },
+      {
+        "t": 32
+      },
+      {
+        "t": 64
+      }
+    ],
+    "oracle_debiased_linear": [
+      {
+        "t": 1
+      },
+      {
+        "t": 2
+      },
+      {
+        "t": 4
+      },
+      {
+        "t": 8
+      },
+      {
+        "t": 16
+      },
+      {
+        "t": 32
+      },
+      {
+        "t": 64
+      }
+    ],
+    "hard_linear": [
+      {
+        "t": 1
+      },
+      {
+        "t": 2
+      },
+      {
+        "t": 4
+      },
+      {
+        "t": 8
+      },
+      {
+        "t": 16
+      },
+      {
+        "t": 32
+      },
+      {
+        "t": 64
+      }
+    ],
+    "moving_average": [
+      {
+        "half_width": 1
+      },
+      {
+        "half_width": 2
+      },
+      {
+        "half_width": 4
+      },
+      {
+        "half_width": 8
+      },
+      {
+        "half_width": 16
+      },
+      {
+        "half_width": 32
+      },
+      {
+        "half_width": 64
+      }
+    ],
+    "gaussian": [
+      {
+        "sigma": 0.5
+      },
+      {
+        "sigma": 1
+      },
+      {
+        "sigma": 2
+      },
+      {
+        "sigma": 4
+      },
+      {
+        "sigma": 8
+      },
+      {
+        "sigma": 16
+      },
+      {
+        "sigma": 32
+      }
+    ],
+    "median": [
+      {
+        "width": 3
+      },
+      {
+        "width": 5
+      },
+      {
+        "width": 9
+      },
+      {
+        "width": 17
+      },
+      {
+        "width": 33
+      },
+      {
+        "width": 65
+      },
+      {
+        "width": 129
+      }
+    ],
+    "power_full": [
+      {
+        "t": 1,
+        "alpha": 0.5
+      },
+      {
+        "t": 1,
+        "alpha": 0.75
+      },
+      {
+        "t": 1,
+        "alpha": 1
+      },
+      {
+        "t": 1,
+        "alpha": 1.25
+      },
+      {
+        "t": 1,
+        "alpha": 1.5
+      },
+      {
+        "t": 1,
+        "alpha": 2
+      },
+      {
+        "t": 1,
+        "alpha": 3
+      },
+      {
+        "t": 1,
+        "alpha": 4
+      },
+      {
+        "t": 1,
+        "alpha": 8
+      },
+      {
+        "t": 2,
+        "alpha": 0.5
+      },
+      {
+        "t": 2,
+        "alpha": 0.75
+      },
+      {
+        "t": 2,
+        "alpha": 1
+      },
+      {
+        "t": 2,
+        "alpha": 1.25
+      },
+      {
+        "t": 2,
+        "alpha": 1.5
+      },
+      {
+        "t": 2,
+        "alpha": 2
+      },
+      {
+        "t": 2,
+        "alpha": 3
+      },
+      {
+        "t": 2,
+        "alpha": 4
+      },
+      {
+        "t": 2,
+        "alpha": 8
+      },
+      {
+        "t": 4,
+        "alpha": 0.5
+      },
+      {
+        "t": 4,
+        "alpha": 0.75
+      },
+      {
+        "t": 4,
+        "alpha": 1
+      },
+      {
+        "t": 4,
+        "alpha": 1.25
+      },
+      {
+        "t": 4,
+        "alpha": 1.5
+      },
+      {
+        "t": 4,
+        "alpha": 2
+      },
+      {
+        "t": 4,
+        "alpha": 3
+      },
+      {
+        "t": 4,
+        "alpha": 4
+      },
+      {
+        "t": 4,
+        "alpha": 8
+      },
+      {
+        "t": 8,
+        "alpha": 0.5
+      },
+      {
+        "t": 8,
+        "alpha": 0.75
+      },
+      {
+        "t": 8,
+        "alpha": 1
+      },
+      {
+        "t": 8,
+        "alpha": 1.25
+      },
+      {
+        "t": 8,
+        "alpha": 1.5
+      },
+      {
+        "t": 8,
+        "alpha": 2
+      },
+      {
+        "t": 8,
+        "alpha": 3
+      },
+      {
+        "t": 8,
+        "alpha": 4
+      },
+      {
+        "t": 8,
+        "alpha": 8
+      },
+      {
+        "t": 16,
+        "alpha": 0.5
+      },
+      {
+        "t": 16,
+        "alpha": 0.75
+      },
+      {
+        "t": 16,
+        "alpha": 1
+      },
+      {
+        "t": 16,
+        "alpha": 1.25
+      },
+      {
+        "t": 16,
+        "alpha": 1.5
+      },
+      {
+        "t": 16,
+        "alpha": 2
+      },
+      {
+        "t": 16,
+        "alpha": 3
+      },
+      {
+        "t": 16,
+        "alpha": 4
+      },
+      {
+        "t": 16,
+        "alpha": 8
+      },
+      {
+        "t": 32,
+        "alpha": 0.5
+      },
+      {
+        "t": 32,
+        "alpha": 0.75
+      },
+      {
+        "t": 32,
+        "alpha": 1
+      },
+      {
+        "t": 32,
+        "alpha": 1.25
+      },
+      {
+        "t": 32,
+        "alpha": 1.5
+      },
+      {
+        "t": 32,
+        "alpha": 2
+      },
+      {
+        "t": 32,
+        "alpha": 3
+      },
+      {
+        "t": 32,
+        "alpha": 4
+      },
+      {
+        "t": 32,
+        "alpha": 8
+      },
+      {
+        "t": 64,
+        "alpha": 0.5
+      },
+      {
+        "t": 64,
+        "alpha": 0.75
+      },
+      {
+        "t": 64,
+        "alpha": 1
+      },
+      {
+        "t": 64,
+        "alpha": 1.25
+      },
+      {
+        "t": 64,
+        "alpha": 1.5
+      },
+      {
+        "t": 64,
+        "alpha": 2
+      },
+      {
+        "t": 64,
+        "alpha": 3
+      },
+      {
+        "t": 64,
+        "alpha": 4
+      },
+      {
+        "t": 64,
+        "alpha": 8
+      }
+    ],
+    "power_matched": [
+      {
+        "t": 1,
+        "alpha": 3
+      },
+      {
+        "t": 2,
+        "alpha": 3
+      },
+      {
+        "t": 4,
+        "alpha": 3
+      },
+      {
+        "t": 8,
+        "alpha": 3
+      },
+      {
+        "t": 16,
+        "alpha": 3
+      },
+      {
+        "t": 32,
+        "alpha": 3
+      },
+      {
+        "t": 64,
+        "alpha": 3
+      }
+    ]
+  },
+  "filter_details": {
+    "power": "h^alpha/(h^alpha+(1-h)^alpha), continuous endpoints0/1",
+    "hard": "H>=0.5",
+    "oracle": "clip((H-epsilon)/(1-2epsilon),0,1); only binary-flip scenarios, including correlated flips; supplied actual epsilon makes this oracle-informed",
+    "moving_average": "scipy.ndimage.uniform_filter1d, width2*half_width+1,axis0,reflect",
+    "gaussian": "scipy.ndimage.gaussian_filter1d,axis0,reflect,truncate4",
+    "median": "scipy.ndimage.median_filter,size(width,1),reflect",
+    "boundary": "scipy half-sample symmetric reflect for finite-window filters; reflecting lazy-path endpoints for resolvent; each trajectory separate"
+  },
+  "scenarios": [
+    {
+      "name": "flip10_cut8",
+      "kind": "bitflip",
+      "level": 0.1,
+      "cutoff_A": 8,
+      "primary": true
+    },
+    {
+      "name": "flip05_cut8",
+      "kind": "bitflip",
+      "level": 0.05,
+      "cutoff_A": 8,
+      "primary": false
+    },
+    {
+      "name": "flip20_cut8",
+      "kind": "bitflip",
+      "level": 0.2,
+      "cutoff_A": 8,
+      "primary": false
+    },
+    {
+      "name": "jitter025_cut8",
+      "kind": "jitter",
+      "level": 0.25,
+      "cutoff_A": 8,
+      "primary": false
+    },
+    {
+      "name": "jitter050_cut8",
+      "kind": "jitter",
+      "level": 0.5,
+      "cutoff_A": 8,
+      "primary": false
+    },
+    {
+      "name": "correlated10_cut8",
+      "kind": "correlated",
+      "level": 0.1,
+      "rho": 0.8,
+      "cutoff_A": 8,
+      "primary": false
+    },
+    {
+      "name": "flip10_cut7",
+      "kind": "bitflip",
+      "level": 0.1,
+      "cutoff_A": 7,
+      "primary": false
+    },
+    {
+      "name": "flip10_cut9",
+      "kind": "bitflip",
+      "level": 0.1,
+      "cutoff_A": 9,
+      "primary": false
+    }
+  ],
+  "noise": {
+    "bitflip": "Independent Bernoulli epsilon error per frame/contact, XOR clean binary contact.",
+    "jitter": "Independent mean-zero Gaussian noise, specified SD Angstrom, per frame/CA atom/Cartesian component, then threshold distances using same pairs.",
+    "correlated": "For each contact initialize E0~Bernoulli(epsilon); P(0->1)=epsilon*(1-rho)=.02 and P(1->0)=(1-epsilon)*(1-rho)=.18; independent chains per contact and trajectory; XOR clean.",
+    "seeds": "numpy.default_rng(numpy.random.SeedSequence([20261007,phase,dataset_id,run_index,scenario_index,noise_index])); phase1validation,2test; dataset_id t4=1,ubiquitin=2,villin=3; run_index from stable sorted complete dataset manifest; scenario_index is zero-based protocol order; noise_index zero-based.",
+    "validation_count": 8,
+    "test_count": 16,
+    "paired": "Every method gets identical corrupted input within a trajectory/scenario/noise_index."
+  },
+  "selection": {
+    "objective": "Mean Brier error, equal weight per validation trajectory then noise realization.",
+    "method_settings": "Choose each method settings independently by validation only; exact ties go to first candidate in protocol order. Save selection before any test-noise evaluation for that dataset/scenario.",
+    "baseline": "Single best validation-selected NONORACLE method other than paper332; tie order raw,linear,hard_linear,moving_average,gaussian,median,power_full,power_matched.",
+    "matched_baseline": "Same selection but exclude power_full; seven-candidate alpha3 family retains ADK winner and matches cubic candidate count.",
+    "tuning_budget": "Report every candidate count. Main comparison deliberately includes full63 power family; matched-budget contrast excludes it. Validation access identical. No test tuning or method additions."
+  },
+  "metrics": [
+    "brier",
+    "mae",
+    "occupancy_mae",
+    "occupancy_signed_bias",
+    "precision",
+    "recall",
+    "f1",
+    "rare_brier",
+    "rare_positive_recall",
+    "short_positive_recall",
+    "transition_brier"
+  ],
+  "aggregation": "Mean over noise realizations within each test trajectory, then equal-weight trajectory means. For cross-protein descriptive summary, equal weight per protein; villin kept separate. Null strata remain null; do not silently coerce zero.",
+  "primary_success": {
+    "relative_mean_brier_gain_min": 0.02,
+    "positive_gain_every_test_run": true,
+    "max_rare_recall_loss_each_run": 0.02,
+    "max_brief_recall_loss_each_run": 0.02,
+    "missing_guardrail": "If a required rare/brief positive stratum is absent on any test run, composite practical success is not fully evaluable; report other conditions.",
+    "zero_baseline": "Relative gain not evaluable when comparator Brier is zero.",
+    "scope": "Operational engineering threshold chosen before outcomes, not derived from theorem or a clinically/biologically validated meaningful-effect threshold. Apply against full-budget selected baseline; matched result secondary.",
+    "primary_scope": "T4 lysozyme only. Eligible ubiquitin gets its own separate replication pass/fail. Villin results are descriptive adaptive stress results and cannot change the primary T4 decision."
+  },
+  "uncertainty": "Report all test-run effects; noise-only paired95% Student-t intervals per run are descriptive conditional on its fixed reference trajectory. No biological p-values from noise seeds, frames or contacts; no claim of population generalization from3simulation runs. Report all prespecified scenarios, never choose a favorable one as primary.",
+  "clean_control": "Apply every method settings chosen on primary noisy validation to clean test contacts without retuning. Include actual epsilon=.1 for oracle to expose its misspecification on clean input; label that fact. Report Brier/occupancy/brief/rare damage.",
+  "attribution": "For each test noise draw, compare linear H and cubic phi(H) at cubic-selected t; report Brier and threshold disagreements. Real-arithmetic .5 classification equivalence may differ at floating-point ties; report any actual discrepancies.",
+  "execution": "No denoising outcomes viewed before this protocol is frozen and saved. Metadata, source publications and geometric input-integrity checks are allowed. Code corrections are versioned; statistical rules cannot be changed silently after outcomes. Record protocol/code/input hashes with results.",
+  "review": "After benchmarks, five independent AI agents review mathematics/implementation, dataset/provenance, statistics/protocol, citations/claims, and numerical reproduction. These are AI technical audits, not human peer review.",
+  "release": "Save protocol, immutable results, source/checksum provenance, executable code, environment, reviews and report. Confirm source data terms before public redistribution; no GitHub publication is authorized by this task.",
+  "supersedes_sha256": "2beb18b272fa6c882bf55cfd9702d1dfcc88e22247bc3a08ec1ac7a1ebb0fac1",
+  "amendment_reason": "Before any new-protein benchmark outcomes: archive metadata shows three villin archive groups with complete within-group ancestry; adaptive selection can couple ancestral roots. Hold out entire archive groups rather than split roots. Clarify metric formulas and primary scope. No outcome-informed change.",
+  "metric_definitions": {
+    "brier": "Mean (prediction-reference)^2 over all selected frame/contact cells.",
+    "mae": "Mean absolute prediction-reference over all selected cells.",
+    "occupancy_mae": "For each selected contact, absolute difference between mean prediction and mean reference across this trajectory, then average contacts.",
+    "occupancy_signed_bias": "Mean prediction-reference over all selected cells.",
+    "classification": "Prediction >= 0.5. TP/(TP+FP) precision; TP/(TP+FN) recall; 2TP/(2TP+FP+FN) F1; zero denominator -> null.",
+    "rare_brier": "Brier over columns with discovery frequency <=0.10.",
+    "rare_positive_recall": "Mean classified prediction at positive reference cells in rare columns; empty mask -> null.",
+    "short_positive_recall": "Mean classified prediction at reference-positive cells in complete sampled positive runs of <=600ps; empty mask -> null. This is cell recall within short events, not an event-detection rate.",
+    "transition_brier": "Brier on both endpoint frames of each adjacent reference contact-state change; union overlapping masks; empty mask -> null.",
+    "null_aggregation": "Retain per-run nulls and denominator counts. For descriptive aggregate nullable metrics, average available run means and report contributing-run count; practical-success guardrails require evaluable strata on every test run."
+  }
+}

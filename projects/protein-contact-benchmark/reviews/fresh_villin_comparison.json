@@ -1,0 +1,105 @@
+{
+  "checked_utc": "2026-10-07T15:02:28.042079+00:00",
+  "original": "protein332_extension/results/villin",
+  "reproduction": "protein332_extension/results/reproduced_villin",
+  "files": [
+    {
+      "file": "correlated10_cut8_test.json",
+      "original_sha256": "dc3ffb1ece5040ef40d93261aa668c84fb1fec79a7811d9b4e6b54634efb0925",
+      "reproduction_sha256": "0cc521e3a9c6d033f10b7bc0f8ce21db192b6bf4d2cd38bb53057095d78b6c6e"
+    },
+    {
+      "file": "correlated10_cut8_validation.json",
+      "original_sha256": "5b7ed313a5360527256318fe7bde58443bb25361d8879aa039267d889b115b4f",
+      "reproduction_sha256": "fed7ea0ea54bfea6f249ce59c23a9191c108db57c20aa26a8dbef3e8b828f4a7"
+    },
+    {
+      "file": "flip05_cut8_test.json",
+      "original_sha256": "440e53821e83047e5b09ae33da644167e192403623e152b1bc8068a46f1c9c4f",
+      "reproduction_sha256": "5d46da91d574065236aa2a87cdbf91c6d87874e6e24b93f2ab2745ca3b3e0cd1"
+    },
+    {
+      "file": "flip05_cut8_validation.json",
+      "original_sha256": "8d6f1dd50336c142e7f373f8e3c35ab7619e8e133f3f0122765483e5c71d1940",
+      "reproduction_sha256": "42cb865f8f05389fc8fe6602d2c6b75ee9232a7572ec04237a91ddf7fa67ba7f"
+    },
+    {
+      "file": "flip10_cut7_test.json",
+      "original_sha256": "14a51bf59e785e5e46add10f5b7a978f31a80efdb38527edf04ac6d8c2cf6514",
+      "reproduction_sha256": "308c08e0b3dc0b0f63aee42cb3f646535794080436878e1950770e6eed1b10ea"
+    },
+    {
+      "file": "flip10_cut7_validation.json",
+      "original_sha256": "b1b078621a7886480f7c5153606aa5a09ef386c027ce7c67c817bedf8183adb4",
+      "reproduction_sha256": "874a1b7d34a6ebd5ae880808af4ad95cf2b1ed31b3bd8c9ebd9bc1838d122455"
+    },
+    {
+      "file": "flip10_cut8_test.json",
+      "original_sha256": "5ffa8653cb8c54b7d1c2cee26975b82970bc7cb79a5fff4c5d7c8908e5218d84",
+      "reproduction_sha256": "6e9618f67420d70db41e91f160db043beef11b01974947bea705324ffb7f110d"
+    },
+    {
+      "file": "flip10_cut8_validation.json",
+      "original_sha256": "9fddaa9c1437ac4bce2744b51e664fd78ac6af3a7a12d3d61ca63a4101c7672a",
+      "reproduction_sha256": "7ab9fefe5af87830e3d0f4916f1c421cee33dafd4de8026cbd27ca46e2275479"
+    },
+    {
+      "file": "flip10_cut9_test.json",
+      "original_sha256": "ede153c284a32e004012f59b26dcb07d26216a30af5232c9c7680c5c37ff94e2",
+      "reproduction_sha256": "3970c283f88d50a5c60595e7b595fb93d9a6194ca83d69b8814d2466ff4a16bd"
+    },
+    {
+      "file": "flip10_cut9_validation.json",
+      "original_sha256": "344be976f6070a0ac4755df8cd500d47c4abeaf98bbad8d9b453edc28982a7ff",
+      "reproduction_sha256": "809f9ffcb8741d3b42159b121647ae3ef2ae6705712bdf64554b352f0b75134e"
+    },
+    {
+      "file": "flip20_cut8_test.json",
+      "original_sha256": "046362d4e064bcbf9136ee3ea2f273ee832ba867b68e51ce24bb50c0aef337e3",
+      "reproduction_sha256": "6c27f43a8a562b40ef1e46156db251737cd919fd848bfcf99eb87b36cb8e9836"
+    },
+    {
+      "file": "flip20_cut8_validation.json",
+      "original_sha256": "bc673caef68939a6c6f4d125ed5f626dade71c1f5f77c3a7cee1f3316476ac25",
+      "reproduction_sha256": "902c06653130f85322d779b108137ddd64bd83a800bf39acf24c34c59fa96960"
+    },
+    {
+      "file": "jitter025_cut8_test.json",
+      "original_sha256": "9cc59fc3de1680b059d06308aab87216b5088ed69cd5017deaf06cfd804fc093",
+      "reproduction_sha256": "7fe4e1b373dac7f4d03626d9710ab89a75f71389dedab49806041416579854ff"
+    },
+    {
+      "file": "jitter025_cut8_validation.json",
+      "original_sha256": "72696e6109c752da7a32c61f8e1e5027f7c247b3423969e87bf12cc1016073b8",
+      "reproduction_sha256": "a6f9da82ecca6c6cf2774ef9795f75aea699b7a594df432c7c16a5995b816734"
+    },
+    {
+      "file": "jitter050_cut8_test.json",
+      "original_sha256": "47c053703aa1c54c05c323bd67d8b4cbaa4294b1ea8c966d1c5da64faedcbe7d",
+      "reproduction_sha256": "959bb37e64d8430948d3e366f1691c88b2a908d3d65c416dc5865e3a465edccd"
+    },
+    {
+      "file": "jitter050_cut8_validation.json",
+      "original_sha256": "df94750f8fd925796cec90978e90666c7989fca730f521ff907d08fdafb9ea27",
+      "reproduction_sha256": "8bb361812318fbf190df47520f163ff68f1ab2a10814ce3f048bcbbd0dcf40e8"
+    },
+    {
+      "file": "primary_clean.json",
+      "original_sha256": "f7c6f0165b5d06ac681909598f5f4ff8b1b30f1c4608edbaa0e8ae0f5539b742",
+      "reproduction_sha256": "1e2d1c889a0618021d5d0f1607463fafdccee244ded54563a3dee9583e77f9a1"
+    }
+  ],
+  "excluded_metadata_keys": [
+    "completed_utc",
+    "method_prediction_and_metrics_seconds",
+    "seconds",
+    "validation_file_sha256"
+  ],
+  "numeric_fields_compared": 1105791,
+  "other_scalar_fields_compared": 15848,
+  "difference_count": 0,
+  "max_absolute_difference": 0.0,
+  "differences": [],
+  "status": "exact_match",
+  "scope": "All17 scientific output JSON files; invocation timestamps/paths and runtime metadata are not reproducibility targets. This comparison is numerical reproduction of the same algorithm, not an independent algorithm implementation."
+}

@@ -1,0 +1,83 @@
+{
+  "reviewer": "Independent AI reviewer4: citations and claim scope",
+  "stage": "Follow-up reference-fix verification and build_report.py prose review; final T4/full-report review pending",
+  "reviewed_utc": "2026-10-07T15:22:12.423219+00:00",
+  "status": "reference_fixes_verified; report_template_minor_scope_corrections_requested",
+  "critical_issues": [],
+  "verified_fixes": [
+    {
+      "id": "CIT-01",
+      "status": "resolved",
+      "evidence": "REFERENCES.txt entries10/11 now have et al.; build_report.py applies additional_authors marker."
+    },
+    {
+      "id": "CIT-02",
+      "status": "resolved",
+      "evidence": "REFERENCES.txt entries3/5/9 include conference booktitle and available series; build_report.py renders journal/booktitle/series."
+    },
+    {
+      "id": "CIT-03",
+      "status": "resolved",
+      "evidence": "references.json and REFERENCES.txt list PDB deposition authors Chiu,Davies,Kubelka,Hofrichter,Eaton in primary-record order, repository separately retained in references.json."
+    }
+  ],
+  "report_template_checks": {
+    "theorem_to_application": "No accuracy or physical-validity guarantee claimed; implemented binary cubic/resolvent and earlier cubic attribution are disclosed.",
+    "constructs": "T4 exact162aa sequence and current-reference caveat retained; villin engineeredHP35/NLE65/HSP68/NLE70 retained; no wild-type or simulation-pH inference.",
+    "dataset_roles": "T4 primary, villin separate adaptive stress and96-path subset, ubiquitin excluded provenance gate are clear. No unverified independent-campaign claim.",
+    "statistics_language": "Primary engineering thresholds distinguished from theorem; conditional noise intervals and no biological replication stated; no causal functional interpretation of short contacts.",
+    "pipeline_claims": "ABSURDer explicitly not run; generic controls explicitly not full reproduced pipelines; residual ambiguous citation clustering noted below.",
+    "villin_dynamic_assertion": "Current completed primary villin output has paper332 t=64 and linear t=64, and zero same-t disagreements, supporting the template assertion. For reuse, this prose should remain linked to selected settings rather than assumed generally.",
+    "rights": "Accurate API-supported license statements retained.",
+    "pending_completion_claims": "T4 all-five full-file verification, exact numeric report values, fresh T4 reproduction, and final review count cannot be signed off before final outputs."
+  },
+  "remaining_items": [
+    {
+      "id": "CIT-TEMPLATE-01",
+      "severity": "low",
+      "location": "build_report.py:generic-control paragraph citation cluster",
+      "issue": "The paragraph appends Wriggers2009 and JaegerWolf2025 together with method references without stating the contextual claims these papers support. Explicit generic-controls disclaimer helps, but grouping still obscures why those two references are cited.",
+      "requested_change": "Use Sadhanala for the linear resolvent relation, BerthelotEq7 for binary power sharpening, and Brier for score attribution. Give TimeScapes and Jager/Wolf their own accurate related-work sentence, or omit unused contextual reference(s).",
+      "primary_sources": [
+        "https://pubs.acs.org/doi/10.1021/ct900229u",
+        "https://pubs.acs.org/doi/10.1021/acs.jpcb.5c04586"
+      ]
+    },
+    {
+      "id": "CIT-TEMPLATE-02",
+      "severity": "low",
+      "location": "build_report.py:T4 current-UniProt comparison paragraph",
+      "issue": "Precise P00720 comparison is presented without a corresponding source citation in report prose. The underlying audit does give the URL.",
+      "requested_change": "Add explicit UniProtP00720 source URL/reference and retrieval date, or clearly point to sequence_audit.json with its source_url and frozen reference FASTA.",
+      "primary_sources": [
+        "https://rest.uniprot.org/uniprotkb/P00720.fasta"
+      ]
+    },
+    {
+      "id": "SCOPE-TEMPLATE-01",
+      "severity": "low",
+      "location": "build_report.py:first mathematical-method paragraph",
+      "issue": "Expected median wording leaves endpoint stopping law implicit in report prose.",
+      "requested_change": "Say three independent geometric-walk endpoints; equations imply this law but the plain wording should match the source exactly."
+    },
+    {
+      "id": "SCOPE-01",
+      "severity": "low",
+      "location": "Immutable raw villin JSON interpretation field",
+      "status": "acknowledged_resolution_pending",
+      "issue": "Root reports a forthcoming REVIEW_RESPONSE.txt correction for generic3-run wording; current build_report.py independently uses correct48test/96total trajectory scope.",
+      "requested_change": "Confirm correction note exists in final deliverable; retaining immutable numerical outputs is appropriate."
+    }
+  ],
+  "scope_limits": [
+    "Did not run build_report.py because T4 results are pending.",
+    "Did not edit production files or overwrite initial review.",
+    "Reference corrections checked against independently retrieved primary sources recorded in04_citations_initial.json; no new publication claims were introduced by these corrections.",
+    "This follow-up is not final study approval."
+  ],
+  "reviewed_file_sha256": {
+    "references.json": "a04c4c2f813431112a8fc2916a8f38ca115a87e64426d3986f7c5d2b7d30d790",
+    "REFERENCES.txt": "1c953fc2c25ac7e1eed991e49e8f4f3875858227f3bb7c3cbeb293511f7adaa2",
+    "build_report.py": "5f7dadf47af24d06e013b9564bdf5f37f46d59d3c608f4064fb6316645195dd5"
+  }
+}

@@ -1,0 +1,9 @@
+# Frozen scientific hashes require byte-preserving checkout on every platform.
+* -text
+*.py diff
+*.md diff
+*.txt diff
+*.json diff
+*.csv diff
+*.yml diff
+*.cff diff

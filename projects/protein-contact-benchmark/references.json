@@ -1,0 +1,459 @@
+[
+  {
+    "id": "OpenAI2026",
+    "authors": [
+      "OpenAI"
+    ],
+    "year": 2026,
+    "date": "2026-10-05",
+    "title": "Metric Markov Cotype Two of ℓ1",
+    "type": "preprint",
+    "catalogue_family": 332,
+    "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+    "url": "https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/preprints/Metric-Markov-Cotype-Two-of-l1-October-5-2026/l1-markov-cotype.pdf",
+    "primary_urls": [
+      "https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/preprints/Metric-Markov-Cotype-Two-of-l1-October-5-2026/build/main.tex",
+      "https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/preprints/Metric-Markov-Cotype-Two-of-l1-October-5-2026/build/references.bib"
+    ],
+    "verification": "Fetched exact pinned TeX and bibliography through GitHub connector; independently checked local review-copy hashes.",
+    "source_sha256": "656a6f35bf6543ecf0cf2dbc38a83a7a05427592123a5eb817be24250e2e6953",
+    "source_git_blob_sha1": "8f318a3dbffdcc67cec2f9f7590abf4c52b1cd79",
+    "source_bytes": 23932,
+    "role": "Documented mathematical source of implemented construction.",
+    "claim_scope": "Geometric endpoint resolvent, entrywise cubic on binary cut coordinates, expected median of three endpoints, metric Markov-cotype inequality. The source attributes its additional ingredient to a martingale estimate for the cubic.",
+    "do_not_claim": "Formal proof verification, general superiority for contact reconstruction, or physical/kinetic validity."
+  },
+  {
+    "id": "ChengWangXiang2026",
+    "authors": [
+      "Qingjin Cheng",
+      "Yue Wang",
+      "Bo Xiang"
+    ],
+    "year": 2026,
+    "date": "2026-09-09",
+    "title": "Sharp Metric Cotype Inequalities for L1 via Nonlinear Cut Smoothing",
+    "type": "preprint",
+    "arxiv": "2609.08749v2",
+    "doi": "10.48550/arXiv.2609.08749",
+    "url": "https://arxiv.org/html/2609.08749v2",
+    "primary_urls": [
+      "https://arxiv.org/abs/2609.08749v2",
+      "https://arxiv.org/html/2609.08749v2",
+      "https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/preprints/Metric-Markov-Cotype-Two-of-l1-October-5-2026/build/references.bib"
+    ],
+    "verification": "Full arXiv v2 HTML retrieved by Firecrawl with status200; metadata agrees with pinned #332 bibliography.",
+    "role": "Earlier mathematical construction and required attribution.",
+    "claim_scope": "Finite cut representations, nonlinear smoothing with P(s)=3s^2−2s^3, ternary rounding, sharp metric cotype inequalities for L1.",
+    "do_not_claim": "That metric cotype and metric Markov cotype are the same invariant, or that this paper evaluates protein denoising."
+  },
+  {
+    "id": "SadhanalaWangTibshirani2016",
+    "authors": [
+      "Veeru Sadhanala",
+      "Yu-Xiang Wang",
+      "Ryan Tibshirani"
+    ],
+    "author_name_note": "Proceedings PDF expands names to Veeranjaneyulu Sadhanala and Ryan J. Tibshirani; PMLR BibTeX uses the forms listed.",
+    "year": 2016,
+    "title": "Graph Sparsification Approaches for Laplacian Smoothing",
+    "booktitle": "Proceedings of the 19th International Conference on Artificial Intelligence and Statistics",
+    "series": "Proceedings of Machine Learning Research",
+    "volume": "51",
+    "pages": "1250–1259",
+    "url": "https://proceedings.mlr.press/v51/sadhanala16.html",
+    "primary_urls": [
+      "https://proceedings.mlr.press/v51/sadhanala16.html",
+      "https://proceedings.mlr.press/v51/sadhanala16.pdf"
+    ],
+    "web_refs": [
+      "turn154search2",
+      "turn163view2"
+    ],
+    "role": "Related standard formulation of the implemented linear control.",
+    "claim_scope": "Equations1,2,4 give squared-error Laplacian regularization and solution (I+lambda L)^−1 y. Setting L=I−A for this symmetric stochastic path gives the benchmark linear resolvent.",
+    "do_not_claim": "That graph sparsification, the paper's logistic estimator, or its experiments were implemented."
+  },
+  {
+    "id": "Wriggers2009",
+    "authors": [
+      "Willy Wriggers",
+      "Kate A. Stafford",
+      "Yibing Shan",
+      "Stefano Piana",
+      "Paul Maragakis",
+      "Kresten Lindorff-Larsen",
+      "Patrick J. Miller",
+      "Justin Gullingsrud",
+      "Charles A. Rendleman",
+      "Michael P. Eastwood",
+      "Ron O. Dror",
+      "David E. Shaw"
+    ],
+    "year": 2009,
+    "title": "Automated Event Detection and Activity Monitoring in Long Molecular Dynamics Simulations",
+    "journal": "Journal of Chemical Theory and Computation",
+    "volume": "5",
+    "issue": "10",
+    "pages": "2595–2605",
+    "doi": "10.1021/ct900229u",
+    "url": "https://doi.org/10.1021/ct900229u",
+    "primary_urls": [
+      "https://pubs.acs.org/doi/10.1021/ct900229u",
+      "https://biomachina.org/publications.html"
+    ],
+    "web_refs": [
+      "turn165search1",
+      "turn166view1"
+    ],
+    "role": "Related work only.",
+    "claim_scope": "TimeScapes detects contact-changing events and activity in long MD trajectories using side-chain coarse graining, geometric contact measures and time-series analysis.",
+    "do_not_claim": "A baseline tested in this benchmark or validation of this benchmark's C-alpha cutoff, noise model or rare-contact definition."
+  },
+  {
+    "id": "Berthelot2019",
+    "authors": [
+      "David Berthelot",
+      "Nicholas Carlini",
+      "Ian Goodfellow",
+      "Nicolas Papernot",
+      "Avital Oliver",
+      "Colin A. Raffel"
+    ],
+    "year": 2019,
+    "title": "MixMatch: A Holistic Approach to Semi-Supervised Learning",
+    "booktitle": "Advances in Neural Information Processing Systems",
+    "volume": "32",
+    "url": "https://papers.neurips.cc/paper_files/paper/2019/hash/1cd138d0499a68f4bb72bee04bbec2d7-Abstract.html",
+    "primary_urls": [
+      "https://papers.neurips.cc/paper_files/paper/2019/hash/1cd138d0499a68f4bb72bee04bbec2d7-Abstract.html",
+      "https://papers.neurips.cc/paper_files/paper/2019/file/1cd138d0499a68f4bb72bee04bbec2d7-Paper.pdf"
+    ],
+    "web_refs": [
+      "turn157search2",
+      "turn163view0"
+    ],
+    "role": "Post-hoc mathematical analogy for conventional score sharpening.",
+    "claim_scope": "Equation7 uses normalized powers p_i^(1/T), matching the two-class benchmark map when alpha=1/T.",
+    "do_not_claim": "Implementation of MixMatch, semi-supervised training, data augmentation, MixUp, or borrowing the benchmark's full tuning protocol from this paper."
+  },
+  {
+    "id": "Brier1950",
+    "authors": [
+      "Glenn W. Brier"
+    ],
+    "year": 1950,
+    "title": "Verification of forecasts expressed in terms of probability",
+    "journal": "Monthly Weather Review",
+    "volume": "78",
+    "issue": "1",
+    "pages": "1–3",
+    "doi": "10.1175/1520-0493(1950)078<0001:VOFEIT>2.0.CO;2",
+    "url": "https://journals.ametsoc.org/view/journals/mwre/78/1/1520-0493_1950_078_0001_vofeit_2_0_co_2.xml",
+    "primary_urls": [
+      "https://journals.ametsoc.org/view/journals/mwre/78/1/1520-0493_1950_078_0001_vofeit_2_0_co_2.xml"
+    ],
+    "web_refs": [
+      "turn159search6"
+    ],
+    "verification": "Publisher metadata retrieved via search and Firecrawl. Use explicit local binary-MSE formula instead of relying on an unstated historical normalization.",
+    "role": "Scoring-rule attribution.",
+    "claim_scope": "Historical squared-probability forecast score. In this paper define Brier=mean((score−binary_reference)^2)."
+  },
+  {
+    "id": "MichaudAgrawal2011",
+    "authors": [
+      "Naveen Michaud-Agrawal",
+      "Elizabeth J. Denning",
+      "Thomas B. Woolf",
+      "Oliver Beckstein"
+    ],
+    "year": 2011,
+    "title": "MDAnalysis: A toolkit for the analysis of molecular dynamics simulations",
+    "journal": "Journal of Computational Chemistry",
+    "volume": "32",
+    "pages": "2319–2327",
+    "doi": "10.1002/jcc.21787",
+    "url": "https://doi.org/10.1002/jcc.21787",
+    "primary_urls": [
+      "https://onlinelibrary.wiley.com/doi/full/10.1002/jcc.21787",
+      "https://www.mdanalysis.org/citations/",
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC3144279/"
+    ],
+    "web_refs": [
+      "turn156search1",
+      "turn164view1",
+      "turn168search4",
+      "turn168search5"
+    ],
+    "verification": "Metadata verified against Wiley publisher record, author manuscript indexed at PMC, and official MDAnalysis citation guidance.",
+    "role": "Foundational software used to extract C-alpha coordinates.",
+    "claim_scope": "Credit MDAnalysis together with Gowers2016; version2.9.0 is the benchmark's recorded extraction version, not a version claim established by the 2011 article.",
+    "issue": "10"
+  },
+  {
+    "id": "Gowers2016",
+    "authors": [
+      "Richard J. Gowers",
+      "Max Linke",
+      "Jonathan Barnoud",
+      "Tyler J. E. Reddy",
+      "Manuel N. Melo",
+      "Sean L. Seyler",
+      "Jan Domański",
+      "David L. Dotson",
+      "Sébastien Buchoux",
+      "Ian M. Kenney",
+      "Oliver Beckstein"
+    ],
+    "year": 2016,
+    "title": "MDAnalysis: A Python Package for the Rapid Analysis of Molecular Dynamics Simulations",
+    "booktitle": "Proceedings of the 15th Python in Science Conference",
+    "editors": [
+      "Sebastian Benthall",
+      "Scott Rostrup"
+    ],
+    "pages": "98–105",
+    "doi": "10.25080/Majora-629e541a-00e",
+    "url": "https://doi.org/10.25080/Majora-629e541a-00e",
+    "primary_urls": [
+      "https://www.mdanalysis.org/citations/",
+      "https://proceedings.scipy.org/articles/proceedings-2016.pdf"
+    ],
+    "web_refs": [
+      "turn157search6",
+      "turn164view1"
+    ],
+    "role": "Foundational coordinate-extraction software credit.",
+    "claim_scope": "MDAnalysis structural and temporal trajectory analysis and subsequent library developments. Correct page range is98–105; use proceedings author order.",
+    "do_not_claim": "That this article itself establishes the exact extraction-version or simulation provenance in this benchmark."
+  },
+  {
+    "id": "Harris2020",
+    "authors": [
+      "Charles R. Harris",
+      "K. Jarrod Millman",
+      "Stéfan J. van der Walt"
+    ],
+    "additional_authors": "et al.; full official BibTeX at primary citation URL",
+    "year": 2020,
+    "title": "Array programming with NumPy",
+    "journal": "Nature",
+    "volume": "585",
+    "issue": "7825",
+    "pages": "357–362",
+    "doi": "10.1038/s41586-020-2649-2",
+    "url": "https://doi.org/10.1038/s41586-020-2649-2",
+    "primary_urls": [
+      "https://numpy.org/ja/citing-numpy/",
+      "https://doi.org/10.1038/s41586-020-2649-2"
+    ],
+    "web_refs": [
+      "turn158search6",
+      "turn165search5"
+    ],
+    "role": "Actual core numerical-array software dependency.",
+    "claim_scope": "Standard NumPy citation; benchmark version2.3.5 is recorded by local runtime metadata."
+  },
+  {
+    "id": "Virtanen2020",
+    "authors": [
+      "Pauli Virtanen",
+      "Ralf Gommers",
+      "Travis E. Oliphant"
+    ],
+    "additional_authors": "et al., including SciPy1.0 Contributors; full official BibTeX at primary citation URL",
+    "year": 2020,
+    "title": "SciPy 1.0: Fundamental Algorithms for Scientific Computing in Python",
+    "journal": "Nature Methods",
+    "volume": "17",
+    "issue": "3",
+    "pages": "261–272",
+    "doi": "10.1038/s41592-019-0686-2",
+    "url": "https://doi.org/10.1038/s41592-019-0686-2",
+    "primary_urls": [
+      "https://scipy.org/citing-scipy/"
+    ],
+    "web_refs": [
+      "turn158search2"
+    ],
+    "role": "Actual linear algebra, filtering, distance and statistical-function dependency.",
+    "claim_scope": "Standard SciPy citation; benchmark version1.17.0 is recorded by local runtime metadata."
+  },
+  {
+    "id": "Hunter2007",
+    "authors": [
+      "John D. Hunter"
+    ],
+    "year": 2007,
+    "title": "Matplotlib: A 2D graphics environment",
+    "journal": "Computing in Science & Engineering",
+    "volume": "9",
+    "issue": "3",
+    "pages": "90–95",
+    "doi": "10.1109/MCSE.2007.55",
+    "url": "https://doi.org/10.1109/MCSE.2007.55",
+    "primary_urls": [
+      "https://matplotlib.org/stable/project/citing.html"
+    ],
+    "web_refs": [
+      "turn159search2"
+    ],
+    "role": "Actual plotting dependency.",
+    "claim_scope": "Standard Matplotlib citation; benchmark version3.10.8 is recorded by local runtime metadata."
+  },
+  {
+    "id": "Kummerer2021",
+    "authors": [
+      "Felix Kümmerer",
+      "Simone Orioli",
+      "David Harding-Larsen",
+      "Falk Hoffmann",
+      "Yulian Gavrilov",
+      "Kaare Teilum",
+      "Kresten Lindorff-Larsen"
+    ],
+    "year": 2021,
+    "title": "Fitting Side-Chain NMR Relaxation Data Using Molecular Simulations",
+    "journal": "Journal of Chemical Theory and Computation",
+    "volume": "17",
+    "issue": "8",
+    "pages": "5262–5275",
+    "doi": "10.1021/acs.jctc.0c01338",
+    "url": "https://doi.org/10.1021/acs.jctc.0c01338",
+    "role": "Original T4 simulation study; this benchmark uses deposited raw trajectories, not the ABSURDer reweighting method."
+  },
+  {
+    "id": "KummererData2020",
+    "authors": [
+      "Felix Kümmerer",
+      "Simone Orioli",
+      "David Harding-Larsen",
+      "Falk Hoffmann",
+      "Yulian Gavrilov",
+      "Kaare Teilum",
+      "Kresten Lindorff-Larsen"
+    ],
+    "year": 2020,
+    "title": "5x 1 µs all-atom MD trajectories; AMBER ff99SB*-ILDN & TIP4P/2005; T4 Lysozyme; Fitting side-chain NMR relaxation data using molecular simulations",
+    "doi": "10.5281/zenodo.3989057",
+    "url": "https://zenodo.org/records/3989057",
+    "role": "Five original protein-only XTCs and matching TPRs; full published MD5s verified."
+  },
+  {
+    "id": "Aina2023",
+    "authors": [
+      "Adekunle Aina",
+      "Shawn C. C. Hsueh",
+      "Steven S. Plotkin"
+    ],
+    "year": 2023,
+    "title": "PROTHON: A Local Order Parameter-Based Method for Efficient Comparison of Protein Ensembles",
+    "journal": "Journal of Chemical Information and Modeling",
+    "volume": "63",
+    "issue": "11",
+    "pages": "3453–3461",
+    "doi": "10.1021/acs.jcim.3c00145",
+    "url": "https://doi.org/10.1021/acs.jcim.3c00145",
+    "role": "Methods underlying excluded ubiquitin structural ensemble; temporal run mapping not established."
+  },
+  {
+    "id": "AinaData2023",
+    "authors": [
+      "Adekunle Aina",
+      "Shawn C. C. Hsueh",
+      "Steven S. Plotkin"
+    ],
+    "year": 2023,
+    "title": "Molecular dynamics-generated ensemble dataset of ubiquitin; for PROTHON: A Local Order Parameter-Based Method for Efficient Comparison of Protein Ensembles",
+    "doi": "10.5281/zenodo.7792288",
+    "url": "https://zenodo.org/records/7792288",
+    "role": "Verified archive used for qualification only; excluded from temporal benchmark."
+  },
+  {
+    "id": "Doerr2016",
+    "authors": [
+      "Stefan Doerr",
+      "Matthew J. Harvey",
+      "Frank Noé",
+      "Gianni De Fabritiis"
+    ],
+    "year": 2016,
+    "title": "HTMD: High-Throughput Molecular Dynamics for Molecular Discovery",
+    "journal": "Journal of Chemical Theory and Computation",
+    "volume": "12",
+    "issue": "4",
+    "pages": "1845–1852",
+    "doi": "10.1021/acs.jctc.6b00049",
+    "url": "https://doi.org/10.1021/acs.jctc.6b00049",
+    "role": "Adaptive MD framework and dataset attribution; HTMD/MSM pipeline is not run here."
+  },
+  {
+    "id": "DoerrData2026",
+    "authors": [
+      "Stefan Doerr"
+    ],
+    "year": 2026,
+    "title": "HTMD tutorial data",
+    "version": "1",
+    "doi": "10.6084/m9.figshare.32541291.v1",
+    "url": "https://doi.org/10.6084/m9.figshare.32541291.v1",
+    "role": "Villin trajectory archive; explicit CC BY 4.0."
+  },
+  {
+    "id": "HTMDTutorial2026",
+    "authors": [
+      "Acellera"
+    ],
+    "year": 2026,
+    "title": "Protein folding MSM: villin headpiece",
+    "url": "https://software.acellera.com/htmd/tutorials/analysis/villin-folding.html",
+    "role": "Primary trajectory conditions and tutorial provenance; empirical archive metadata overrides tutorial approximate download size."
+  },
+  {
+    "id": "Kubelka2006",
+    "authors": [
+      "Jan Kubelka",
+      "T.-K. Chiu",
+      "David R. Davies",
+      "William A. Eaton",
+      "James Hofrichter"
+    ],
+    "year": 2006,
+    "title": "Sub-microsecond Protein Folding",
+    "journal": "Journal of Molecular Biology",
+    "volume": "359",
+    "pages": "546–553",
+    "doi": "10.1016/j.jmb.2006.03.034",
+    "url": "https://doi.org/10.1016/j.jmb.2006.03.034",
+    "role": "Engineered HP35 construct context; topology sequence confirms noncanonical residues. Simulation conditions are from the deposited tutorial dataset, not this experimental paper."
+  },
+  {
+    "id": "PDB2F4K",
+    "authors": [
+      "T. K. Chiu",
+      "D. R. Davies",
+      "J. Kubelka",
+      "J. Hofrichter",
+      "W. A. Eaton"
+    ],
+    "year": 2006,
+    "title": "2F4K: Chicken villin subdomain HP-35, K65(NLE), N68H, K70(NLE), pH9",
+    "doi": "10.2210/pdb2F4K/pdb",
+    "url": "https://www.rcsb.org/structure/2F4K",
+    "role": "Construct identity corroboration only; crystal pH does not establish simulated protonation or pH.",
+    "repository": "RCSB PDB / wwPDB"
+  },
+  {
+    "id": "UniProtP00720",
+    "authors": [
+      "UniProt Consortium"
+    ],
+    "year": 2026,
+    "title": "UniProtKB P00720: Endolysin, bacteriophage T4; reference sequence",
+    "type": "database record",
+    "url": "https://rest.uniprot.org/uniprotkb/P00720.fasta",
+    "accessed": "2026-10-07",
+    "role": "Exact reference for the deposited T4 sequence comparison; fetched bytes and SHA256 retained in data/t4."
+  }
+]

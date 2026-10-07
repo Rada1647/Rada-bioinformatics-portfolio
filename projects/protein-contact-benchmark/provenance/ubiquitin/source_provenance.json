@@ -1,0 +1,33 @@
+{
+  "source_article": "https://doi.org/10.1021/acs.jcim.3c00145",
+  "article_copy": "https://aai-research-lab.github.io/assets/pdf/Aina2023Prothon.pdf",
+  "dataset": "https://doi.org/10.5281/zenodo.7792288",
+  "original_author_repository": {
+    "url": "https://github.com/PlotkinLab/Prothon",
+    "commit": "d2d7fdb462f1cf1fa9294a6a77de8c0ca4e47fbf"
+  },
+  "current_author_repository": {
+    "url": "https://github.com/aai-research-lab/Prothon",
+    "commit": "882e4f157d7b5db2837e2bdc5bca0ea8ef592a97"
+  },
+  "paper_reported": {
+    "native_independent_runs": 5,
+    "per_run_total_ns": 50,
+    "retained_final_ns": 40,
+    "sampling_interval_ps": 40,
+    "per_ensemble_frames": 5000,
+    "pdb": "1UBQ",
+    "force_field": "CHARMM36m",
+    "temperature_K": 300,
+    "pressure_bar": 1,
+    "water": "TIP3P",
+    "NaCl_mM": 150
+  },
+  "chronology_evidence": {
+    "paper": "States equal 40 ps sampling over final 40 ns of each of five runs; does not give the archived DCD run-to-frame mapping.",
+    "original_author_example": "Loads Q99.dcd as reference ensemble and Q75/Q80/Q85/Q90/Q95 as five other ensembles. No trajectory assembly or run-boundary script.",
+    "current_author_ubiquitin_script": "States frames come from continuous trajectories, but loads all Q99 frames as one ensemble and never identifies original runs or boundaries.",
+    "current_author_convergence_script": "Computes contiguous prefixes of the 5000-frame Q99 ensemble as a single trajectory. This is not a map to the five original simulation runs."
+  },
+  "download_observation": "Initial streaming transfer was truncated at 29162900 bytes; published MD5 gate caught truncation. Reacquired missing ranges with exact HTTP206 Content-Range checks; final full checksum must pass."
+}

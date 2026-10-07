@@ -1,0 +1,381 @@
+{
+  "reviewer": "Independent AI technical reviewer 4 of 5: citations and claim scope",
+  "review_kind": "AI technical audit, not human peer review or formal proof verification",
+  "phase": "Final scientific-content, reference and rendered-PDF audit of completed T4/Villin report",
+  "created_utc": "2026-10-07T16:03:24.213133+00:00",
+  "overall": "PASS_WITH_EXPLICIT_SCOPE",
+  "critical_issue_count": 0,
+  "unresolved_scientific_or_citation_issue_count": 0,
+  "production_edits_made": false,
+  "initial_review_snapshot": "reviews/04_citations_initial.json",
+  "followup_records": [
+    "reviews/04_citations_followup.json",
+    "reviews/04_citations_resolution_check.json",
+    "reviews/04_citations_report_checks.json"
+  ],
+  "reviewed_scope": [
+    "Actual RESULTS.txt, REFERENCES.txt, references.json, build_report.py, README.txt and REVIEW_RESPONSE.txt",
+    "Frozen protocol 1.1 and source-data provenance/qualification records",
+    "All 16 prespecified T4/Villin scenario rows and both primary conclusions against raw test aggregates",
+    "Five T4 source/extraction checksum manifests and actual derived NPZ hashes",
+    "Both complete fresh-environment numerical comparison manifests",
+    "primary_results.png visual labels, values, method highlighting and interpretation scope",
+    "Independently retrieved primary publication, dataset and software metadata; important full-text mathematical-method passages"
+  ],
+  "primary_source_verification": [
+    {
+      "id": "OpenAI2026",
+      "url": "https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/preprints/Metric-Markov-Cotype-Two-of-l1-October-5-2026/build/main.tex",
+      "verification": "Independently fetched pinned TeX using GitHub connector; returned git blob 8f318a3dbffdcc67cec2f9f7590abf4c52b1cd79. Exact title, OpenAI author, October 5 2026 date inspected.",
+      "scope": "The paper identifies its new ingredient as a martingale estimate for the cubic, expressly attributes prior cubic cut smoothing to Cheng/Wang/Xiang, distinguishes metric from metric Markov cotype, and states the expected coordinatewise median of three independent geometric endpoints interpretation."
+    },
+    {
+      "id": "ChengWangXiang2026",
+      "url": "https://arxiv.org/html/2609.08749v2",
+      "verification": "Independently retrieved full HTML using direct HTTP after browse DisabledError; 375717 bytes. Header gives arXiv:2609.08749v2, 09 Sep 2026; title and all three authors match. GitHub-pinned references.bib independently agrees.",
+      "scope": "Equation 2.10 is P(s)=3s^2-2s^3. Finite cut representations, nonlinear smoothing and ternary rounding address sharp metric cotype; no protein reconstruction experiment, no independent validation of #332 proof."
+    },
+    {
+      "id": "Sadhanala2016",
+      "url": "https://proceedings.mlr.press/v51/sadhanala16.html",
+      "verification": "Primary PMLR metadata and PDF independently opened. Author-name variants explicitly allowed by local reference note.",
+      "scope": "AISTATS 2016, PMLR 51, 1250-1259. Equations 1,2,4 establish standard squared-error Laplacian smoothing and inverse solution. Benchmark does not reproduce sparsification or logistic estimators.",
+      "web_ref": "turn242view3"
+    },
+    {
+      "id": "Sadhanala2016_equations",
+      "url": "https://proceedings.mlr.press/v51/sadhanala16.pdf",
+      "verification": "Primary PDF equations inspected.",
+      "scope": "With L=I-A, its solution (I+lambda L)^-1 y corresponds to linear benchmark control.",
+      "web_ref": "turn247view0"
+    },
+    {
+      "id": "Wriggers2009",
+      "url": "https://pubs.acs.org/doi/10.1021/ct900229u",
+      "verification": "Primary ACS search record confirms all 12 authors, title, 2009, JCTC 5(10)2595-2605, DOI.",
+      "scope": "TimeScapes uses side-chain coarse graining, geometric contacts and time series analysis. Generic CA median/Gaussian filters are not a replication of TimeScapes.",
+      "web_ref": "turn241search4"
+    },
+    {
+      "id": "Berthelot2019",
+      "url": "https://papers.neurips.cc/paper_files/paper/2019/hash/1cd138d0499a68f4bb72bee04bbec2d7-Abstract.html",
+      "verification": "Primary NeurIPS author order confirms Papernot before Oliver; title, year, venue/volume match.",
+      "scope": "Only normalized-power sharpening analogy is cited. Full MixMatch includes classifier training, augmentations and MixUp absent here.",
+      "web_ref": "turn243view0"
+    },
+    {
+      "id": "Berthelot2019_equation7",
+      "url": "https://papers.neurips.cc/paper_files/paper/2019/file/1cd138d0499a68f4bb72bee04bbec2d7-Paper.pdf",
+      "verification": "Primary paper Equation 7 and adjacent text inspected.",
+      "scope": "For two classes [h,1-h], Eq7 equals h^alpha/(h^alpha+(1-h)^alpha), alpha=1/T. Paper itself calls temperature adjustment common; do not claim invention of power sharpening or full MixMatch replication.",
+      "web_ref": "turn242view2"
+    },
+    {
+      "id": "JaegerWolf2025",
+      "url": "https://pubs.acs.org/doi/10.1021/acs.jpcb.5c04586",
+      "verification": "Primary ACS record confirms names/title/year/JPCB129(42)10956-10966/DOI.",
+      "scope": "Biased pathway clustering, not contact denoising; cannot support general simple-method superiority.",
+      "web_ref": "turn244search2"
+    },
+    {
+      "id": "Brier1950",
+      "url": "https://journals.ametsoc.org/view/journals/mwre/78/1/1520-0493_1950_078_0001_vofeit_2_0_co_2.xml",
+      "verification": "Publisher search record confirms Glenn W. Brier, title, 1950, pages1-3 and exact DOI.",
+      "scope": "Historical scoring-rule attribution; benchmark explicitly fixes binary mean squared error normalization.",
+      "web_ref": "turn246search4"
+    },
+    {
+      "id": "MDAnalysis2011",
+      "url": "https://www.mdanalysis.org/citations/",
+      "verification": "Official citation page confirms authors/title/journal32(2011)2319-2327/DOI10.1002/jcc.21787.",
+      "scope": "Software credit, not evidence for exact extraction-version or topology identity.",
+      "web_ref": "turn245view3"
+    },
+    {
+      "id": "MDAnalysis2016",
+      "url": "https://proceedings.scipy.org/articles/proceedings-2016.pdf",
+      "verification": "Proceedings primary PDF metadata independently inspected via retrieval: Gowers, Linke, Barnoud, Reddy, Melo, Seyler, Domanski, Dotson, Buchoux, Kenney, Beckstein; 98-105. Official citation page swaps Domanski/Dotson, so local use of proceedings order is reasonable.",
+      "scope": "Software credit; DOI10.25080/Majora-629e541a-00e verified with primary proceedings record.",
+      "web_ref": "turn244search5"
+    },
+    {
+      "id": "NumPy2020",
+      "url": "https://numpy.org/citing-numpy/",
+      "verification": "Official project citation confirms metadata/DOI and full author list.",
+      "scope": "REFERENCES.txt should preserve et al. for truncated list.",
+      "web_ref": "turn245view0"
+    },
+    {
+      "id": "SciPy2020",
+      "url": "https://scipy.org/citing-scipy/",
+      "verification": "Official project citation confirms metadata/DOI and full author list including SciPy 1.0 Contributors.",
+      "scope": "REFERENCES.txt should preserve et al. for truncated list.",
+      "web_ref": "turn245view1"
+    },
+    {
+      "id": "Matplotlib2007",
+      "url": "https://matplotlib.org/stable/project/citing.html",
+      "verification": "Official project citation confirms J.D.Hunter,title,2007,9(3)90-95,DOI.",
+      "scope": "Software credit only.",
+      "web_ref": "turn245view2"
+    },
+    {
+      "id": "Kummerer2021",
+      "url": "https://pubs.acs.org/jctcce/issue/17/8",
+      "verification": "Primary issue contents confirms all seven authors/title/2021/17(8)5262-5275/DOI10.1021/acs.jctc.0c01338.",
+      "scope": "Original T4 simulation study; benchmark does not run ABSURDer.",
+      "web_ref": "turn246search1"
+    },
+    {
+      "id": "KummererData2020",
+      "url": "https://zenodo.org/records/3989057",
+      "verification": "Live page and independently refreshed API match title, seven creators, publication2020-08-18, DOI10.5281/zenodo.3989057, version1 and listed filenames/checksums.",
+      "scope": "Five independent1us simulations; ff99SB*-ILDN with modified methyl rotation barriers, TIP4P/2005, protein coordinates every1ps.",
+      "web_ref": "turn238view0"
+    },
+    {
+      "id": "T4_license",
+      "url": "https://zenodo.org/api/records/3989057",
+      "verification": "Independent direct HTTP JSON fetch: metadata.access_right=open and metadata.license absent. Web License heading also blank.",
+      "scope": "Do not infer a dataset license from open access, or inherit separate software license."
+    },
+    {
+      "id": "T4_reference",
+      "url": "https://rest.uniprot.org/uniprotkb/P00720.fasta",
+      "verification": "Fresh primary FASTA independently inspected.",
+      "scope": "Current reference is164aa. Direct MDAnalysis read of deposited md1us4.tpr yielded162 CA and exact saved sequence; T54/A97 and R12G/I137R plus absent terminal NL vs current reference match audit. Not safely called wild type. Mutation provenance beyond sequence differences not independently established.",
+      "web_ref": "turn246view0"
+    },
+    {
+      "id": "Aina2023",
+      "url": "https://pubs.acs.org/doi/10.1021/acs.jcim.3c00145",
+      "verification": "Primary ACS record confirms three authors/title/2023/JCIM63(11)3453-3461/DOI.",
+      "scope": "PROTHON compares structural ensembles, not temporal contact denoising. This review does not independently re-derive original five-run-to-frame mapping.",
+      "web_ref": "turn241search2"
+    },
+    {
+      "id": "AinaData2023",
+      "url": "https://zenodo.org/records/7792288",
+      "verification": "Live page and independent API refresh confirm creators/title/date2023-04-02/DOI10.5281/zenodo.7792288 and metadata.license.id=cc-by-4.0.",
+      "scope": "Dataset is an ensemble archive; public metadata alone does not recover original run boundaries. Exclusion is appropriately stated as provenance limitation, not invalid published data.",
+      "web_ref": "turn238view2"
+    },
+    {
+      "id": "Doerr2016",
+      "url": "https://pubs.acs.org/doi/10.1021/acs.jctc.6b00049",
+      "verification": "Primary ACS record confirms Doerr,Harvey,Noe,De Fabritiis;title;2016;JCTC12(4)1845-1852;DOI.",
+      "scope": "HTMD framework/adaptive/MSM attribution, not an implemented MSM benchmark.",
+      "web_ref": "turn244search0"
+    },
+    {
+      "id": "DoerrData2026",
+      "url": "https://api.figshare.com/v2/articles/32541291",
+      "verification": "Independent direct HTTP API refresh confirms Stefan Doerr,title HTMD tutorial data,version1,published2026-06-02,DOI10.6084/m9.figshare.32541291.v1,license CC BY4.0.",
+      "scope": "Dataset license explicitly recorded; API metadata is authoritative over a blank/unavailable rendered landing page."
+    },
+    {
+      "id": "HTMDTutorial",
+      "url": "https://software.acellera.com/htmd/tutorials/analysis/villin-folding.html",
+      "verification": "Primary tutorial independently opened; current page copyright2026 and example dated June2,2026.",
+      "scope": "Unbiased explicit-solvent360K trajectories,2137 paths,approx107us,100ps source cadence. Tutorial approximate1GB conflicts with its own later2.5GB estimate; exact2,559,410,654 bytes comes from dataset metadata. Independence of archive groups is not certified.",
+      "web_ref": "turn239view2"
+    },
+    {
+      "id": "PDB2F4K_and_Kubelka2006",
+      "url": "https://www.rcsb.org/structure/2F4K",
+      "verification": "Primary structure record confirms engineered35-residue construct K65NLE/N68H/K70NLE,release2006-04-11,DOI10.2210/pdb2F4K/pdb. Primary citation lists Kubelka,Chiu,Davies,Eaton,Hofrichter,JMB359,546-553,2006,DOI10.1016/j.jmb.2006.03.034.",
+      "scope": "Pattern corroborates actual deposited villin topology (independently parsed35CA,NLE65,HSP68,NLE70; identical group PDB hashes). Does not establish exact simulation starting PDB or simulated pH from crystal pH.",
+      "web_ref": "turn239view3"
+    }
+  ],
+  "source_note": "Unused JaegerWolf2025 was removed after initial review. UniProtP00720 was added as an explicit database-record reference with access date 2026-10-07; its primary FASTA was independently verified in the initial review.",
+  "citation_checks": {
+    "reference_count": 21,
+    "all_references_cited": true,
+    "all_citation_numbers_resolve": true,
+    "report_and_standalone_bibliography_identical": true,
+    "initial_author_venue_depositor_fixes_resolved": true,
+    "uniprot_access_date_explicit": true,
+    "timeScapes_context_separated_from_tested_controls": true,
+    "full_MixMatch_pipeline_not_claimed": true
+  },
+  "outcome_scope_checks": {
+    "t4_primary": "FAIL correctly reported: cubic 0.04036348805980258 versus selected power 0.03719128753665906, gain -8.529418402137105%. No mathematical or biological superiority claim. The matched-budget comparator gives the same Brier error and FAIL decision.",
+    "villin_stress": "FAIL correctly retained separately: cubic 0.019960005333488316 versus power 0.015995172162488375, gain -24.78768675%; no independent-campaign or population claim.",
+    "all_scenarios": "All 16 prespecified rows are present. Rounded values and signs were verified against raw test aggregate JSON, including the tiny positive Villin jitter050 advantage and tiny negative T4 jitter025 effect. No favorable-scenario substitution.",
+    "same_scale_threshold": "Actual T4 prose explicitly separates cubic-selected t=16 and its same-t linear comparator (zero disagreements) from independently tuned linear/power t=8. Villin same-t monotonicity is also explained.",
+    "coverage": "The report explicitly gives selected-feature positive-cell coverage and total omitted coverage: T4 approximately 63.3229% retained and 36.6771% omitted, alongside the 0.1983% discovery-constant-absent subset. Newly appearing contacts are not represented as all omitted dynamics.",
+    "inference": "Noise-only intervals are conditional, pointwise and unadjusted. No protein-population significance, experimental functional claim, kinetics inference, or biological replication from frames, contacts or noise draws is claimed.",
+    "mathematical_attribution": "The binary expected-median construction is linked accurately to OpenAI #332; prior cubic attribution to Cheng/Wang/Xiang is retained. Metric cotype and metric Markov cotype are not conflated. The theorem does not guarantee Brier improvement.",
+    "data_identity": "The exact deposited T4 sequence is retained without a wild-type label. Engineered HP35 NLE65/HSP68/NLE70 is retained; no unverified exact starting PDB or simulation pH is claimed.",
+    "excluded_ubiquitin": "There is no temporal benchmark result. The original-run mapping exclusion is bounded to inspected provenance. The published structural ensemble is not described as invalid.",
+    "rights": "Villin and ubiquitin CC BY 4.0 were confirmed by primary APIs; the T4 license field is absent, and no blanket public redistribution grant is claimed."
+  },
+  "t4_completion_evidence": [
+    {
+      "run": "md1us4",
+      "tpr": {
+        "md5": "94dcaca1a87b59e051ecca10fe29d508",
+        "verified_size": 2299440
+      },
+      "xtc": {
+        "md5": "991c47f3ef4af3f0803a712264452dd6",
+        "verified_size": 10136603972
+      },
+      "output_hash_valid": true
+    },
+    {
+      "run": "md1us5",
+      "tpr": {
+        "md5": "f02fbe8f098255ed93c7155d86a590cf",
+        "verified_size": 2299440
+      },
+      "xtc": {
+        "md5": "1a595d1027b671a3c467e70983151cc7",
+        "verified_size": 10145726248
+      },
+      "output_hash_valid": true
+    },
+    {
+      "run": "md1us6",
+      "tpr": {
+        "md5": "700612ab7a927c0673710083aba5214a",
+        "verified_size": 2299440
+      },
+      "xtc": {
+        "md5": "75807ff000533ee6f77f789dd2b4874f",
+        "verified_size": 10134053888
+      },
+      "output_hash_valid": true
+    },
+    {
+      "run": "md1us7",
+      "tpr": {
+        "md5": "d5a66ca48a55b43a25830dd9d1355062",
+        "verified_size": 2299440
+      },
+      "xtc": {
+        "md5": "1bc5ed165677a75d255528478bd59614",
+        "verified_size": 10127022556
+      },
+      "output_hash_valid": true
+    },
+    {
+      "run": "md1us8",
+      "tpr": {
+        "md5": "eb4df68b5597af1744bf515734c3286a",
+        "verified_size": 2299440
+      },
+      "xtc": {
+        "md5": "90c65520164769655aebd92d1760662d",
+        "verified_size": 10115749320
+      },
+      "output_hash_valid": true
+    }
+  ],
+  "raw_source_audit_limit": "The citation reviewer independently cross-checked published metadata against all five checksum/extraction manifests and rehashed actual derived NPZ files, but did not independently rehash all original XTC bytes. Data reviewer 2 independently rehashed retained md1us8 and sampled 129 full-protein reconstructions. Source verification of removed md1us4-7 remains acquisition-manifest evidence.",
+  "fresh_reproduction_evidence": {
+    "t4": {
+      "files": 17,
+      "numeric_fields_compared": 69721,
+      "other_scalar_fields_compared": 1123,
+      "difference_count": 0,
+      "max_absolute_difference": 0.0,
+      "scope": "Same algorithm and host/Python family with fresh benchmark dependencies; not an independent laboratory, host, OS or force field."
+    },
+    "villin": {
+      "files": 17,
+      "numeric_fields_compared": 1105791,
+      "other_scalar_fields_compared": 15848,
+      "difference_count": 0,
+      "max_absolute_difference": 0.0,
+      "scope": "Same algorithm and host/Python family with fresh benchmark dependencies; not an independent laboratory, host, OS or force field."
+    }
+  },
+  "review_response_checks": "Recorded responses match auditor evidence for seven unique secondary-scenario near-threshold cells, manual median checks at actual sizes, stricter cadence compliance, input-integrity hardening before T4 preparation, first-run backbone/full-protein bitwise equality, same-host reproduction limits, and the immutable Villin interpretation correction.",
+  "findings_resolved": [
+    "CIT-01: truncated-author markers",
+    "CIT-02: conference booktitles and series",
+    "CIT-03: PDB deposition authors",
+    "CIT-TEMPLATE-01: contextual citation separation",
+    "CIT-TEMPLATE-02: UniProt traceability",
+    "SCOPE-TEMPLATE-01: geometric stopping law",
+    "SCOPE-01: generic Villin three-run wording correction note",
+    "SCOPE-02: all five T4 completion records"
+  ],
+  "limits": [
+    "This is not formal verification of the #332 proof.",
+    "This is not an exhaustive independent numerical rerun. Scenario aggregates and reporting were checked, and separate numerical-audit limits are retained.",
+    "Negative performance under artificial noise and a finite protein panel does not disprove the theorem or establish universal method inferiority.",
+    "All seven final PDF pages were visually inspected and their text content checked against RESULTS.txt. This does not extend the scientific or numerical scope beyond the checks explicitly recorded."
+  ],
+  "pending_mechanical_regeneration": [],
+  "reviewed_file_sha256": {
+    "RESULTS.txt": "9ff8ccd640985bad04144ba32ff8fb59bd5611b624313d8d72fdbc4deedb574a",
+    "REFERENCES.txt": "1bab0b7c1a8c88f829a1a26fb698c4d172d29e0a1faa900d7516a4640a96d82f",
+    "references.json": "a04c4c2f813431112a8fc2916a8f38ca115a87e64426d3986f7c5d2b7d30d790",
+    "build_report.py": "11d8c7f8e1b522414b0fc499d977d92326ba461bd72961e3bcb3ef236b753dca",
+    "README.txt": "6fecc9a21a941b78af8d63723684b15e02858f608f9f5e2e3a6fa23c2eee6db7",
+    "REVIEW_RESPONSE.txt": "fbff770aafe6228da50c66578d901df7faceaf00d24c1691d42613603e73e130",
+    "summary.json": "4d0b163b14def085952b0996aec37e873068055053685437790b7d49fc824991",
+    "primary_results.png": "b8b7e6d337406f6ea3118ab487e0012ee6af0b01d372ff76d667f0783580a3ef",
+    "reviews/fresh_t4_comparison.json": "aa5d4c47bf79b610b95ab7933353e6f87fff250f44f80686b34ad009a4080abf",
+    "reviews/fresh_villin_comparison.json": "6faf943aa0dbded104b89f0c6c5e73e81a8d4d1527eea423e513c7a23d2ba03c"
+  },
+  "final_rendering_addendum": {
+    "checked_utc": "2026-10-07T16:12:01.334330+00:00",
+    "status": "PASS",
+    "pdf_pages": 7,
+    "visual_pages_inspected": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "visual_findings": "No clipping, overlap, missing table cells, broken reference glyphs or orphaned section/table fragments observed. Page3 method labels were additionally inspected at original image detail. All21 reference entries are present and readable.",
+    "pdf_text_vs_results_blocks_and_rows_checked": 121,
+    "missing_text_blocks_or_table_rows": [],
+    "normalization": "Whitespace ignored for comparison; plain-text table separators removed. Embedded figure marker excluded because PDF contains the actual figure.",
+    "complete_16_scenario_table_present": true,
+    "complete_reference_list_present": true,
+    "fresh_reproduction_paragraphs_finalized": true,
+    "five_review_records_confirmed": true,
+    "draft_pending_language_absent": true,
+    "reviewer05_scope_checked": {
+      "continuous_probability_max_difference": 6.2727600891321345e-15,
+      "max_classified_metric_fraction_shift": 0.0005582607077505575,
+      "max_classified_metric_percentage_point_shift": 0.05582607077505575,
+      "report_rounding": "0.0558 percentage points in sampled clean-input rare-contact recall is correctly rounded.",
+      "claim_boundary": "Independent continuous predictions agree to roundoff; near0.5 classifications can differ. Exact full fresh same-algorithm replay is a separate claim. The primary FAIL conclusion already follows from the clearly negative continuous Brier improvement, regardless of these sampled threshold effects.",
+      "independent_scope": "Reviewer05 separately implemented Thomas reconstruction and DCT continuous cross-checks for selected cases; this is not exhaustive bitwise agreement of independent implementations or independent-host validation."
+    },
+    "production_files_modified_by_this_reviewer": false
+  },
+  "final_file_sha256": {
+    "benchmark_report.pdf": "4025c59ee86a5426c04e1ae565868a872accda740bf2da6450812ac2d20c9a4e",
+    "RESULTS.txt": "3f1a820479c5142e361f0e061e98151496490a3393b0b8b27c9f0803cb23b2f1",
+    "REFERENCES.txt": "1bab0b7c1a8c88f829a1a26fb698c4d172d29e0a1faa900d7516a4640a96d82f",
+    "references.json": "a04c4c2f813431112a8fc2916a8f38ca115a87e64426d3986f7c5d2b7d30d790",
+    "build_report.py": "22cbeb82867fb881f274291acffcf508580ee8ed40d73f2bf3538b411b82d89a",
+    "README.txt": "211f73ec3b6d420616e72caaa23a76105855a2bae7816c2c58871238067beeb6",
+    "REVIEW_RESPONSE.txt": "10c58f179275c74da67e9078271fcefd1e0dc863db497baeede205d45b57292d",
+    "summary.json": "4d0b163b14def085952b0996aec37e873068055053685437790b7d49fc824991",
+    "primary_results.png": "b8b7e6d337406f6ea3118ab487e0012ee6af0b01d372ff76d667f0783580a3ef",
+    "reviews/05_reproduction_final.json": "26e70eca155af0515fa638225d2c5feb0dcedc141e4de19cd4decb43c37c701e",
+    "reviews/fresh_t4_comparison.json": "aa5d4c47bf79b610b95ab7933353e6f87fff250f44f80686b34ad009a4080abf",
+    "reviews/fresh_villin_comparison.json": "6faf943aa0dbded104b89f0c6c5e73e81a8d4d1527eea423e513c7a23d2ba03c",
+    "report_render_final/report.txt": "ff2b240e5af4984bf1af93ee130e84dba789d549930971961e267d7e61870752"
+  },
+  "final_page_png_sha256": {
+    "report_render_final/page-1.png": "d69dc24c19b3220588c1aae0ffad56448a025d4e25f1443c378ee59c30620bb6",
+    "report_render_final/page-2.png": "97190be02a606e2486b83cbf3134d4b7b6291ce6b9abb8ce63b86b93061425b9",
+    "report_render_final/page-3.png": "b808e5e88a11299b7ed6c016abe5e2dc4e47ff949354d47587aad6c7639ef794",
+    "report_render_final/page-4.png": "e52a3af5e9755132f0e6a3426fffe454833a9bf1486a0d1bf9f3bc03ff99c803",
+    "report_render_final/page-5.png": "070073232c192e9eba5b89e4340378ea3b8d5f9a3c7c2aaf9596930749efbf7b",
+    "report_render_final/page-6.png": "b229e1e3db05342b1a1d595cac3c1a8508dbb182f53aed0c0fbfc41a7c7f690e",
+    "report_render_final/page-7.png": "6a6ed05c8ac198c9ed6faabd373fb38dac14a40de42a158932223862978206f4"
+  }
+}

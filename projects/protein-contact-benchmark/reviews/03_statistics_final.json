@@ -1,0 +1,1903 @@
+{
+  "reviewer": "Independent AI technical audit 03: statistics and protocol",
+  "created_utc": "2026-10-07T15:55:49.966922+00:00",
+  "scope": "Final completed T4 confirmation plus Villin adaptive stress set: all 16 dataset-scenarios, validation selections, source-derived coverage and report statistics",
+  "independence": "Recomputed from archived candidate scores and noise rows with standalone reviewer code; no import of production analysis modules. Recomputed discovery features, reference contacts, coverage, and strata from coordinates/contacts. Does not independently regenerate method predictions, which belongs to reproduction audit.",
+  "status": "pass_with_interpretation_limits",
+  "protocol_sha256": "1e25ff2c9890809f5432675c259f8ec705d2ce9bcca23969111f771fd520c84c",
+  "code_sha256": "34e61d760f64cdb2bd012ba7ee54269c01805e61f73b5e532639a32b49b35f8d",
+  "machine_checks": {
+    "candidate_grid_numeric_fields_checked": 2996,
+    "candidate_count_numeric_fields_checked": 156,
+    "run_counts_numeric_fields_checked": 200,
+    "validation_noise_count_numeric_fields_checked": 1600,
+    "validation_candidate_scores_read": 189200,
+    "validation_mean_numeric_fields_checked": 1892,
+    "selection_stability_numeric_fields_checked": 156,
+    "selected_parameters_numeric_fields_checked": 172,
+    "selected_validation_numeric_fields_checked": 156,
+    "baseline_choice_nonnumeric_fields_checked": 32,
+    "locked_test_settings_numeric_fields_checked": 172,
+    "locked_test_settings_nonnumeric_fields_checked": 32,
+    "identity_nonnumeric_fields_checked": 176,
+    "identity_numeric_fields_checked": 68,
+    "chronology_nonnumeric_fields_checked": 17,
+    "seed_numeric_fields_checked": 48768,
+    "run_counts_nonnumeric_fields_checked": 408,
+    "noise_count_numeric_fields_checked": 6528,
+    "per_run_aggregate_numeric_fields_checked": 43758,
+    "noise_contributor_numeric_fields_checked": 43758,
+    "same_t_per_run_aggregate_numeric_fields_checked": 4488,
+    "same_t_noise_contributor_numeric_fields_checked": 4488,
+    "threshold_numeric_fields_checked": 424,
+    "stratum_denominator_numeric_fields_checked": 2040,
+    "paired_interval_numeric_fields_checked": 32130,
+    "paired_interval_nonnumeric_fields_checked": 3570,
+    "intervals_checked": 3570,
+    "overall_aggregate_numeric_fields_checked": 1716,
+    "run_contributor_numeric_fields_checked": 1716,
+    "same_t_overall_numeric_fields_checked": 176,
+    "same_t_overall_count_numeric_fields_checked": 176,
+    "composite_numeric_fields_checked": 310,
+    "composite_nonnumeric_fields_checked": 432,
+    "summary_nonnumeric_fields_checked": 1476,
+    "summary_numeric_fields_checked": 13094,
+    "seed_uniqueness_numeric_fields_checked": 6,
+    "locked_clean_settings_numeric_fields_checked": 22,
+    "clean_aggregate_numeric_fields_checked": 220,
+    "clean_contributor_numeric_fields_checked": 220,
+    "hash_cap_nonnumeric_fields_checked": 96,
+    "run_index_numeric_fields_checked": 96,
+    "split_group_nonnumeric_fields_checked": 96,
+    "path_hash_nonnumeric_fields_checked": 96,
+    "coverage_numeric_fields_checked": 1545,
+    "coverage_nonnumeric_fields_checked": 303,
+    "feature_integrity_nonnumeric_fields_checked": 2079,
+    "contact_cells_recomputed_from_coordinates": 78631651,
+    "t4_split_numeric_fields_checked": 5,
+    "t4_split_nonnumeric_fields_checked": 10,
+    "coordinate_time_nonnumeric_fields_checked": 12,
+    "coordinate_time_numeric_fields_checked": 18,
+    "all_eligible_reference_contact_cells_recomputed": 942263415,
+    "receipt_metadata_nonnumeric_fields_checked": 4,
+    "frozen_zip_nonnumeric_fields_checked": 1
+  },
+  "maximum_absolute_numeric_differences": {
+    "candidate_grid": 0.0,
+    "candidate_count": 0.0,
+    "run_counts": 0.0,
+    "validation_noise_count": 0.0,
+    "validation_mean": 9.71445146547012e-17,
+    "selection_stability": 0.0,
+    "selected_parameters": 0.0,
+    "selected_validation": 0.0,
+    "locked_test_settings": 0.0,
+    "identity": 0.0,
+    "seed": 0.0,
+    "noise_count": 0.0,
+    "per_run_aggregate": 1.1102230246251565e-16,
+    "noise_contributor": 0.0,
+    "same_t_per_run_aggregate": 1.1102230246251565e-16,
+    "same_t_noise_contributor": 0.0,
+    "threshold": 0.0,
+    "stratum_denominator": 0.0,
+    "paired_interval": 2.220446049250313e-16,
+    "overall_aggregate": 2.220446049250313e-16,
+    "run_contributor": 0.0,
+    "same_t_overall": 2.220446049250313e-16,
+    "same_t_overall_count": 0.0,
+    "composite": 2.220446049250313e-16,
+    "summary": 2.842170943040401e-14,
+    "seed_uniqueness": 0.0,
+    "locked_clean_settings": 0.0,
+    "clean_aggregate": 2.220446049250313e-16,
+    "clean_contributor": 0.0,
+    "run_index": 0.0,
+    "coverage": 0.0,
+    "t4_split": 0.0,
+    "coordinate_time": 0.0
+  },
+  "failures": [],
+  "evidence": {
+    "villin": {
+      "scenarios": [
+        {
+          "scenario": "flip10_cut8",
+          "validation_record_count": 192,
+          "selected_parameters": {
+            "raw": {},
+            "linear": {
+              "t": 64
+            },
+            "paper332": {
+              "t": 64
+            },
+            "oracle_debiased_linear": {
+              "t": 64
+            },
+            "hard_linear": {
+              "t": 32
+            },
+            "moving_average": {
+              "half_width": 8
+            },
+            "gaussian": {
+              "sigma": 4
+            },
+            "median": {
+              "width": 9
+            },
+            "power_full": {
+              "t": 32,
+              "alpha": 3
+            },
+            "power_matched": {
+              "t": 32,
+              "alpha": 3
+            }
+          },
+          "candidate_minimum_exact_tie_indices": {
+            "raw": [
+              0
+            ],
+            "linear": [
+              6
+            ],
+            "paper332": [
+              6
+            ],
+            "oracle_debiased_linear": [
+              6
+            ],
+            "hard_linear": [
+              5
+            ],
+            "moving_average": [
+              3
+            ],
+            "gaussian": [
+              3
+            ],
+            "median": [
+              2
+            ],
+            "power_full": [
+              51
+            ],
+            "power_matched": [
+              5
+            ]
+          },
+          "baseline": "power_full",
+          "baseline_tied_methods": [
+            "power_full",
+            "power_matched"
+          ],
+          "matched_baseline": "power_matched",
+          "paper332_brier": 0.019960005333488316,
+          "selected_baseline_brier": 0.015995172162488375,
+          "matched_baseline_brier": 0.015995172162488375,
+          "linear_brier": 0.031136492388911266,
+          "gain_vs_selected_baseline_percent": -24.78768675149496,
+          "gain_vs_matched_percent": -24.78768675149496,
+          "gain_vs_linear_percent": 35.8951384626846,
+          "null_run_method_metric_counts": {},
+          "test_runs": 48,
+          "contributing_run_counts_unique": [
+            48
+          ],
+          "contributing_noise_counts_unique": [
+            16
+          ],
+          "stress_success_descriptive": {
+            "baseline": "power_full",
+            "relative_mean_brier_gain": -0.24787686751494958,
+            "conditions": {
+              "relative_gain_at_least_minimum": false,
+              "positive_gain_every_test_run": false,
+              "rare_guardrail_every_test_run": false,
+              "brief_guardrail_every_test_run": false
+            },
+            "status": "fail",
+            "run_counts": {
+              "positive_brier": 0,
+              "rare_guardrail_pass": 3,
+              "brief_guardrail_pass": 0
+            },
+            "rare_loss_range": [
+              0.0139234986294543,
+              0.08905579399141633
+            ],
+            "brief_loss_range": [
+              0.04703878406708595,
+              0.08017729752412928
+            ],
+            "nonevaluable_rare_runs": [],
+            "nonevaluable_brief_runs": []
+          },
+          "matched_budget_success_secondary": {
+            "baseline": "power_matched",
+            "relative_mean_brier_gain": -0.24787686751494958,
+            "conditions": {
+              "relative_gain_at_least_minimum": false,
+              "positive_gain_every_test_run": false,
+              "rare_guardrail_every_test_run": false,
+              "brief_guardrail_every_test_run": false
+            },
+            "status": "fail",
+            "run_counts": {
+              "positive_brier": 0,
+              "rare_guardrail_pass": 3,
+              "brief_guardrail_pass": 0
+            },
+            "rare_loss_range": [
+              0.0139234986294543,
+              0.08905579399141633
+            ],
+            "brief_loss_range": [
+              0.04703878406708595,
+              0.08017729752412928
+            ],
+            "nonevaluable_rare_runs": [],
+            "nonevaluable_brief_runs": []
+          },
+          "weighting_evidence": {
+            "test_frames_distribution": {
+              "250": 47,
+              "71": 1
+            },
+            "equal_run_cubic_brier": 0.019960005333488316,
+            "cell_weighted_cubic_brier_for_diagnostic_only": 0.01997143349108361,
+            "used_for_score": "equal run means; cell weighted value is diagnostic only"
+          }
+        },
+        {
+          "scenario": "flip05_cut8",
+          "validation_record_count": 192,
+          "selected_parameters": {
+            "raw": {},
+            "linear": {
+              "t": 16
+            },
+            "paper332": {
+              "t": 16
+            },
+            "oracle_debiased_linear": {
+              "t": 16
+            },
+            "hard_linear": {
+              "t": 16
+            },
+            "moving_average": {
+              "half_width": 4
+            },
+            "gaussian": {
+              "sigma": 2
+            },
+            "median": {
+              "width": 5
+            },
+            "power_full": {
+              "t": 8,
+              "alpha": 3
+            },
+            "power_matched": {
+              "t": 8,
+              "alpha": 3
+            }
+          },
+          "candidate_minimum_exact_tie_indices": {
+            "raw": [
+              0
+            ],
+            "linear": [
+              4
+            ],
+            "paper332": [
+              4
+            ],
+            "oracle_debiased_linear": [
+              4
+            ],
+            "hard_linear": [
+              4
+            ],
+            "moving_average": [
+              2
+            ],
+            "gaussian": [
+              2
+            ],
+            "median": [
+              1
+            ],
+            "power_full": [
+              33
+            ],
+            "power_matched": [
+              3
+            ]
+          },
+          "baseline": "power_full",
+          "baseline_tied_methods": [
+            "power_full",
+            "power_matched"
+          ],
+          "matched_baseline": "power_matched",
+          "paper332_brier": 0.013962280228918182,
+          "selected_baseline_brier": 0.011367779365096206,
+          "matched_baseline_brier": 0.011367779365096206,
+          "linear_brier": 0.019823470517609274,
+          "gain_vs_selected_baseline_percent": -22.823286593581926,
+          "gain_vs_matched_percent": -22.823286593581926,
+          "gain_vs_linear_percent": 29.566923125214487,
+          "null_run_method_metric_counts": {},
+          "test_runs": 48,
+          "contributing_run_counts_unique": [
+            48
+          ],
+          "contributing_noise_counts_unique": [
+            16
+          ]
+        },
+        {
+          "scenario": "flip20_cut8",
+          "validation_record_count": 192,
+          "selected_parameters": {
+            "raw": {},
+            "linear": {
+              "t": 64
+            },
+            "paper332": {
+              "t": 64
+            },
+            "oracle_debiased_linear": {
+              "t": 64
+            },
+            "hard_linear": {
+              "t": 64
+            },
+            "moving_average": {
+              "half_width": 16
+            },
+            "gaussian": {
+              "sigma": 8
+            },
+            "median": {
+              "width": 33
+            },
+            "power_full": {
+              "t": 64,
+              "alpha": 4
+            },
+            "power_matched": {
+              "t": 64,
+              "alpha": 3
+            }
+          },
+          "candidate_minimum_exact_tie_indices": {
+            "raw": [
+              0
+            ],
+            "linear": [
+              6
+            ],
+            "paper332": [
+              6
+            ],
+            "oracle_debiased_linear": [
+              6
+            ],
+            "hard_linear": [
+              6
+            ],
+            "moving_average": [
+              4
+            ],
+            "gaussian": [
+              4
+            ],
+            "median": [
+              4
+            ],
+            "power_full": [
+              61
+            ],
+            "power_matched": [
+              6
+            ]
+          },
+          "baseline": "power_full",
+          "baseline_tied_methods": [
+            "power_full"
+          ],
+          "matched_baseline": "power_matched",
+          "paper332_brier": 0.04087152435950686,
+          "selected_baseline_brier": 0.024074157349990227,
+          "matched_baseline_brier": 0.025596741186425617,
+          "linear_brier": 0.06431926941694668,
+          "gain_vs_selected_baseline_percent": -69.77343699019835,
+          "gain_vs_matched_percent": -59.6747182066353,
+          "gain_vs_linear_percent": 36.455241593994025,
+          "null_run_method_metric_counts": {},
+          "test_runs": 48,
+          "contributing_run_counts_unique": [
+            48
+          ],
+          "contributing_noise_counts_unique": [
+            16
+          ]
+        },
+        {
+          "scenario": "jitter025_cut8",
+          "validation_record_count": 192,
+          "selected_parameters": {
+            "raw": {},
+            "linear": {
+              "t": 1
+            },
+            "paper332": {
+              "t": 2
+            },
+            "hard_linear": {
+              "t": 1
+            },
+            "moving_average": {
+              "half_width": 1
+            },
+            "gaussian": {
+              "sigma": 0.5
+            },
+            "median": {
+              "width": 3
+            },
+            "power_full": {
+              "t": 2,
+              "alpha": 2
+            },
+            "power_matched": {
+              "t": 2,
+              "alpha": 3
+            }
+          },
+          "candidate_minimum_exact_tie_indices": {
+            "raw": [
+              0
+            ],
+            "linear": [
+              0
+            ],
+            "paper332": [
+              1
+            ],
+            "hard_linear": [
+              0,
+              1
+            ],
+            "moving_average": [
+              0
+            ],
+            "gaussian": [
+              0
+            ],
+            "median": [
+              0
+            ],
+            "power_full": [
+              14
+            ],
+            "power_matched": [
+              1
+            ]
+          },
+          "baseline": "power_full",
+          "baseline_tied_methods": [
+            "power_full"
+          ],
+          "matched_baseline": "gaussian",
+          "paper332_brier": 0.007573336946544044,
+          "selected_baseline_brier": 0.007492373430392105,
+          "matched_baseline_brier": 0.007640298366370905,
+          "linear_brier": 0.007641731569282326,
+          "gain_vs_selected_baseline_percent": -1.0806123974482893,
+          "gain_vs_matched_percent": 0.8764241475384663,
+          "gain_vs_linear_percent": 0.8950147243225596,
+          "null_run_method_metric_counts": {},
+          "test_runs": 48,
+          "contributing_run_counts_unique": [
+            48
+          ],
+          "contributing_noise_counts_unique": [
+            16
+          ]
+        },
+        {
+          "scenario": "jitter050_cut8",
+          "validation_record_count": 192,
+          "selected_parameters": {
+            "raw": {},
+            "linear": {
+              "t": 2
+            },
+            "paper332": {
+              "t": 4
+            },
+            "hard_linear": {
+              "t": 4
+            },
+            "moving_average": {
+              "half_width": 1
+            },
+            "gaussian": {
+              "sigma": 1
+            },
+            "median": {
+              "width": 3
+            },
+            "power_full": {
+              "t": 4,
+              "alpha": 1.5
+            },
+            "power_matched": {
+              "t": 4,
+              "alpha": 3
+            }
+          },
+          "candidate_minimum_exact_tie_indices": {
+            "raw": [
+              0
+            ],
+            "linear": [
+              1
+            ],
+            "paper332": [
+              2
+            ],
+            "hard_linear": [
+              2
+            ],
+            "moving_average": [
+              0
+            ],
+            "gaussian": [
+              1
+            ],
+            "median": [
+              0
+            ],
+            "power_full": [
+              22
+            ],
+            "power_matched": [
+              2
+            ]
+          },
+          "baseline": "power_full",
+          "baseline_tied_methods": [
+            "power_full"
+          ],
+          "matched_baseline": "power_matched",
+          "paper332_brier": 0.012644731084695382,
+          "selected_baseline_brier": 0.012647505641804231,
+          "matched_baseline_brier": 0.013120640167777331,
+          "linear_brier": 0.013151616180854602,
+          "gain_vs_selected_baseline_percent": 0.021937583484274752,
+          "gain_vs_matched_percent": 3.6271788342364815,
+          "gain_vs_linear_percent": 3.854165824099362,
+          "null_run_method_metric_counts": {},
+          "test_runs": 48,
+          "contributing_run_counts_unique": [
+            48
+          ],
+          "contributing_noise_counts_unique": [
+            16
+          ]
+        },
+        {
+          "scenario": "correlated10_cut8",
+          "validation_record_count": 192,
+          "selected_parameters": {
+            "raw": {},
+            "linear": {
+              "t": 64
+            },
+            "paper332": {
+              "t": 64
+            },
+            "oracle_debiased_linear": {
+              "t": 64
+            },
+            "hard_linear": {
+              "t": 64
+            },
+            "moving_average": {
+              "half_width": 64
+            },
+            "gaussian": {
+              "sigma": 32
+            },
+            "median": {
+              "width": 129
+            },
+            "power_full": {
+              "t": 64,
+              "alpha": 1
+            },
+            "power_matched": {
+              "t": 64,
+              "alpha": 3
+            }
+          },
+          "candidate_minimum_exact_tie_indices": {
+            "raw": [
+              0
+            ],
+            "linear": [
+              6
+            ],
+            "paper332": [
+              6
+            ],
+            "oracle_debiased_linear": [
+              6
+            ],
+            "hard_linear": [
+              6
+            ],
+            "moving_average": [
+              6
+            ],
+            "gaussian": [
+              6
+            ],
+            "median": [
+              6
+            ],
+            "power_full": [
+              56
+            ],
+            "power_matched": [
+              6
+            ]
+          },
+          "baseline": "median",
+          "baseline_tied_methods": [
+            "median"
+          ],
+          "matched_baseline": "median",
+          "paper332_brier": 0.06121157323532967,
+          "selected_baseline_brier": 0.04113782102477093,
+          "matched_baseline_brier": 0.04113782102477093,
+          "linear_brier": 0.060037011396759384,
+          "gain_vs_selected_baseline_percent": -48.79634290418889,
+          "gain_vs_matched_percent": -48.79634290418889,
+          "gain_vs_linear_percent": -1.9563962483210589,
+          "null_run_method_metric_counts": {},
+          "test_runs": 48,
+          "contributing_run_counts_unique": [
+            48
+          ],
+          "contributing_noise_counts_unique": [
+            16
+          ]
+        },
+        {
+          "scenario": "flip10_cut7",
+          "validation_record_count": 192,
+          "selected_parameters": {
+            "raw": {},
+            "linear": {
+              "t": 64
+            },
+            "paper332": {
+              "t": 64
+            },
+            "oracle_debiased_linear": {
+              "t": 64
+            },
+            "hard_linear": {
+              "t": 32
+            },
+            "moving_average": {
+              "half_width": 16
+            },
+            "gaussian": {
+              "sigma": 8
+            },
+            "median": {
+              "width": 9
+            },
+            "power_full": {
+              "t": 32,
+              "alpha": 4
+            },
+            "power_matched": {
+              "t": 32,
+              "alpha": 3
+            }
+          },
+          "candidate_minimum_exact_tie_indices": {
+            "raw": [
+              0
+            ],
+            "linear": [
+              6
+            ],
+            "paper332": [
+              6
+            ],
+            "oracle_debiased_linear": [
+              6
+            ],
+            "hard_linear": [
+              5
+            ],
+            "moving_average": [
+              4
+            ],
+            "gaussian": [
+              4
+            ],
+            "median": [
+              2
+            ],
+            "power_full": [
+              52
+            ],
+            "power_matched": [
+              5
+            ]
+          },
+          "baseline": "power_full",
+          "baseline_tied_methods": [
+            "power_full"
+          ],
+          "matched_baseline": "power_matched",
+          "paper332_brier": 0.015166326103571957,
+          "selected_baseline_brier": 0.011448501525234576,
+          "matched_baseline_brier": 0.011501640737587747,
+          "linear_brier": 0.02635914482595617,
+          "gain_vs_selected_baseline_percent": -32.47433360726398,
+          "gain_vs_matched_percent": -31.86228338716838,
+          "gain_vs_linear_percent": 42.462753614686726,
+          "null_run_method_metric_counts": {},
+          "test_runs": 48,
+          "contributing_run_counts_unique": [
+            48
+          ],
+          "contributing_noise_counts_unique": [
+            16
+          ]
+        },
+        {
+          "scenario": "flip10_cut9",
+          "validation_record_count": 192,
+          "selected_parameters": {
+            "raw": {},
+            "linear": {
+              "t": 16
+            },
+            "paper332": {
+              "t": 32
+            },
+            "oracle_debiased_linear": {
+              "t": 32
+            },
+            "hard_linear": {
+              "t": 16
+            },
+            "moving_average": {
+              "half_width": 4
+            },
+            "gaussian": {
+              "sigma": 4
+            },
+            "median": {
+              "width": 9
+            },
+            "power_full": {
+              "t": 16,
+              "alpha": 3
+            },
+            "power_matched": {
+              "t": 16,
+              "alpha": 3
+            }
+          },
+          "candidate_minimum_exact_tie_indices": {
+            "raw": [
+              0
+            ],
+            "linear": [
+              4
+            ],
+            "paper332": [
+              5
+            ],
+            "oracle_debiased_linear": [
+              5
+            ],
+            "hard_linear": [
+              4
+            ],
+            "moving_average": [
+              2
+            ],
+            "gaussian": [
+              3
+            ],
+            "median": [
+              2
+            ],
+            "power_full": [
+              42
+            ],
+            "power_matched": [
+              4
+            ]
+          },
+          "baseline": "power_full",
+          "baseline_tied_methods": [
+            "power_full",
+            "power_matched"
+          ],
+          "matched_baseline": "power_matched",
+          "paper332_brier": 0.02844495455988753,
+          "selected_baseline_brier": 0.023857583321535616,
+          "matched_baseline_brier": 0.023857583321535616,
+          "linear_brier": 0.03989330656890741,
+          "gain_vs_selected_baseline_percent": -19.228147195491566,
+          "gain_vs_matched_percent": -19.228147195491566,
+          "gain_vs_linear_percent": 28.69742569281698,
+          "null_run_method_metric_counts": {},
+          "test_runs": 48,
+          "contributing_run_counts_unique": [
+            48
+          ],
+          "contributing_noise_counts_unique": [
+            16
+          ]
+        }
+      ],
+      "validation_noise_records": 1536,
+      "test_noise_records": 6144,
+      "clean_aggregate_brier": {
+        "raw": 0.0,
+        "linear": 0.01497580625238313,
+        "paper332": 0.014780145564135582,
+        "oracle_debiased_linear": 0.014727356843318959,
+        "hard_linear": 0.01769468423443889,
+        "moving_average": 0.018619845175622696,
+        "gaussian": 0.01580749906590918,
+        "median": 0.020793893400726942,
+        "power_full": 0.013756791075100238,
+        "power_matched": 0.013756791075100238
+      },
+      "hash_selection": {
+        "1": {
+          "split": "discovery",
+          "eligible": 708,
+          "selected": 24,
+          "unique_ancestral_roots_selected": 6
+        },
+        "2": {
+          "split": "validation",
+          "eligible": 710,
+          "selected": 24,
+          "unique_ancestral_roots_selected": 5
+        },
+        "3": {
+          "split": "test",
+          "eligible": 719,
+          "selected": 48,
+          "unique_ancestral_roots_selected": 6
+        }
+      },
+      "coverage": {
+        "7": {
+          "all_eligible_pair_count": 496,
+          "selected_pair_count": 494,
+          "discovery_frame_count": 6000,
+          "discovery_constant_absent_pairs": 2,
+          "discovery_constant_present_pairs": 0,
+          "test_total_positive_cells": 271956,
+          "test_discovery_absent_positive_cells": 31,
+          "pooled_test_absent_positive_fraction": 0.0001139890276368236
+        },
+        "8": {
+          "all_eligible_pair_count": 496,
+          "selected_pair_count": 496,
+          "discovery_frame_count": 6000,
+          "discovery_constant_absent_pairs": 0,
+          "discovery_constant_present_pairs": 0,
+          "test_total_positive_cells": 413926,
+          "test_discovery_absent_positive_cells": 0,
+          "pooled_test_absent_positive_fraction": 0.0
+        },
+        "9": {
+          "all_eligible_pair_count": 496,
+          "selected_pair_count": 496,
+          "discovery_frame_count": 6000,
+          "discovery_constant_absent_pairs": 0,
+          "discovery_constant_present_pairs": 0,
+          "test_total_positive_cells": 661817,
+          "test_discovery_absent_positive_cells": 0,
+          "pooled_test_absent_positive_fraction": 0.0
+        }
+      }
+    },
+    "t4": {
+      "scenarios": [
+        {
+          "scenario": "flip10_cut8",
+          "validation_record_count": 8,
+          "selected_parameters": {
+            "raw": {},
+            "linear": {
+              "t": 8
+            },
+            "paper332": {
+              "t": 16
+            },
+            "oracle_debiased_linear": {
+              "t": 16
+            },
+            "hard_linear": {
+              "t": 16
+            },
+            "moving_average": {
+              "half_width": 16
+            },
+            "gaussian": {
+              "sigma": 4
+            },
+            "median": {
+              "width": 9
+            },
+            "power_full": {
+              "t": 8,
+              "alpha": 3
+            },
+            "power_matched": {
+              "t": 8,
+              "alpha": 3
+            }
+          },
+          "candidate_minimum_exact_tie_indices": {
+            "raw": [
+              0
+            ],
+            "linear": [
+              3
+            ],
+            "paper332": [
+              4
+            ],
+            "oracle_debiased_linear": [
+              4
+            ],
+            "hard_linear": [
+              4
+            ],
+            "moving_average": [
+              4
+            ],
+            "gaussian": [
+              3
+            ],
+            "median": [
+              2
+            ],
+            "power_full": [
+              33
+            ],
+            "power_matched": [
+              3
+            ]
+          },
+          "baseline": "power_full",
+          "baseline_tied_methods": [
+            "power_full",
+            "power_matched"
+          ],
+          "matched_baseline": "power_matched",
+          "paper332_brier": 0.04036348805980258,
+          "selected_baseline_brier": 0.03719128753665906,
+          "matched_baseline_brier": 0.03719128753665906,
+          "linear_brier": 0.05080675650427335,
+          "gain_vs_selected_baseline_percent": -8.529418402137104,
+          "gain_vs_matched_percent": -8.529418402137104,
+          "gain_vs_linear_percent": 20.55488120677883,
+          "null_run_method_metric_counts": {},
+          "test_runs": 3,
+          "contributing_run_counts_unique": [
+            3
+          ],
+          "contributing_noise_counts_unique": [
+            16
+          ],
+          "primary_success": {
+            "baseline": "power_full",
+            "relative_mean_brier_gain": -0.08529418402137105,
+            "conditions": {
+              "relative_gain_at_least_minimum": false,
+              "positive_gain_every_test_run": false,
+              "rare_guardrail_every_test_run": false,
+              "brief_guardrail_every_test_run": false
+            },
+            "status": "fail",
+            "run_counts": {
+              "positive_brier": 0,
+              "rare_guardrail_pass": 0,
+              "brief_guardrail_pass": 0
+            },
+            "rare_loss_range": [
+              0.0879958440591756,
+              0.10805050045495901
+            ],
+            "brief_loss_range": [
+              0.11353176760676631,
+              0.11620384486087987
+            ],
+            "nonevaluable_rare_runs": [],
+            "nonevaluable_brief_runs": []
+          },
+          "matched_budget_success_secondary": {
+            "baseline": "power_matched",
+            "relative_mean_brier_gain": -0.08529418402137105,
+            "conditions": {
+              "relative_gain_at_least_minimum": false,
+              "positive_gain_every_test_run": false,
+              "rare_guardrail_every_test_run": false,
+              "brief_guardrail_every_test_run": false
+            },
+            "status": "fail",
+            "run_counts": {
+              "positive_brier": 0,
+              "rare_guardrail_pass": 0,
+              "brief_guardrail_pass": 0
+            },
+            "rare_loss_range": [
+              0.0879958440591756,
+              0.10805050045495901
+            ],
+            "brief_loss_range": [
+              0.11353176760676631,
+              0.11620384486087987
+            ],
+            "nonevaluable_rare_runs": [],
+            "nonevaluable_brief_runs": []
+          },
+          "weighting_evidence": {
+            "test_frames_distribution": {
+              "5001": 3
+            },
+            "equal_run_cubic_brier": 0.04036348805980258,
+            "cell_weighted_cubic_brier_for_diagnostic_only": 0.04036348805980258,
+            "used_for_score": "equal run means; cell weighted value is diagnostic only"
+          }
+        },
+        {
+          "scenario": "flip05_cut8",
+          "validation_record_count": 8,
+          "selected_parameters": {
+            "raw": {},
+            "linear": {
+              "t": 2
+            },
+            "paper332": {
+              "t": 4
+            },
+            "oracle_debiased_linear": {
+              "t": 4
+            },
+            "hard_linear": {
+              "t": 4
+            },
+            "moving_average": {
+              "half_width": 2
+            },
+            "gaussian": {
+              "sigma": 0.5
+            },
+            "median": {
+              "width": 3
+            },
+            "power_full": {
+              "t": 4,
+              "alpha": 4
+            },
+            "power_matched": {
+              "t": 4,
+              "alpha": 3
+            }
+          },
+          "candidate_minimum_exact_tie_indices": {
+            "raw": [
+              0
+            ],
+            "linear": [
+              1
+            ],
+            "paper332": [
+              2
+            ],
+            "oracle_debiased_linear": [
+              2
+            ],
+            "hard_linear": [
+              2
+            ],
+            "moving_average": [
+              1
+            ],
+            "gaussian": [
+              0
+            ],
+            "median": [
+              0
+            ],
+            "power_full": [
+              25
+            ],
+            "power_matched": [
+              2
+            ]
+          },
+          "baseline": "power_full",
+          "baseline_tied_methods": [
+            "power_full"
+          ],
+          "matched_baseline": "power_matched",
+          "paper332_brier": 0.027147728473668756,
+          "selected_baseline_brier": 0.023908269528584592,
+          "matched_baseline_brier": 0.02411129819784863,
+          "linear_brier": 0.03224047920536915,
+          "gain_vs_selected_baseline_percent": -13.549533316123467,
+          "gain_vs_matched_percent": -12.593391906583683,
+          "gain_vs_linear_percent": 15.796138448377262,
+          "null_run_method_metric_counts": {},
+          "test_runs": 3,
+          "contributing_run_counts_unique": [
+            3
+          ],
+          "contributing_noise_counts_unique": [
+            16
+          ]
+        },
+        {
+          "scenario": "flip20_cut8",
+          "validation_record_count": 8,
+          "selected_parameters": {
+            "raw": {},
+            "linear": {
+              "t": 64
+            },
+            "paper332": {
+              "t": 64
+            },
+            "oracle_debiased_linear": {
+              "t": 64
+            },
+            "hard_linear": {
+              "t": 64
+            },
+            "moving_average": {
+              "half_width": 32
+            },
+            "gaussian": {
+              "sigma": 16
+            },
+            "median": {
+              "width": 33
+            },
+            "power_full": {
+              "t": 64,
+              "alpha": 3
+            },
+            "power_matched": {
+              "t": 64,
+              "alpha": 3
+            }
+          },
+          "candidate_minimum_exact_tie_indices": {
+            "raw": [
+              0
+            ],
+            "linear": [
+              6
+            ],
+            "paper332": [
+              6
+            ],
+            "oracle_debiased_linear": [
+              6
+            ],
+            "hard_linear": [
+              6
+            ],
+            "moving_average": [
+              5
+            ],
+            "gaussian": [
+              5
+            ],
+            "median": [
+              4
+            ],
+            "power_full": [
+              60
+            ],
+            "power_matched": [
+              6
+            ]
+          },
+          "baseline": "power_full",
+          "baseline_tied_methods": [
+            "power_full",
+            "power_matched"
+          ],
+          "matched_baseline": "power_matched",
+          "paper332_brier": 0.06190635358018737,
+          "selected_baseline_brier": 0.050429233519375276,
+          "matched_baseline_brier": 0.050429233519375276,
+          "linear_brier": 0.08272295774016154,
+          "gain_vs_selected_baseline_percent": -22.758862786210106,
+          "gain_vs_matched_percent": -22.758862786210106,
+          "gain_vs_linear_percent": 25.16424065174332,
+          "null_run_method_metric_counts": {},
+          "test_runs": 3,
+          "contributing_run_counts_unique": [
+            3
+          ],
+          "contributing_noise_counts_unique": [
+            16
+          ]
+        },
+        {
+          "scenario": "jitter025_cut8",
+          "validation_record_count": 8,
+          "selected_parameters": {
+            "raw": {},
+            "linear": {
+              "t": 8
+            },
+            "paper332": {
+              "t": 8
+            },
+            "hard_linear": {
+              "t": 4
+            },
+            "moving_average": {
+              "half_width": 8
+            },
+            "gaussian": {
+              "sigma": 2
+            },
+            "median": {
+              "width": 9
+            },
+            "power_full": {
+              "t": 8,
+              "alpha": 1.5
+            },
+            "power_matched": {
+              "t": 8,
+              "alpha": 3
+            }
+          },
+          "candidate_minimum_exact_tie_indices": {
+            "raw": [
+              0
+            ],
+            "linear": [
+              3
+            ],
+            "paper332": [
+              3
+            ],
+            "hard_linear": [
+              2
+            ],
+            "moving_average": [
+              3
+            ],
+            "gaussian": [
+              2
+            ],
+            "median": [
+              2
+            ],
+            "power_full": [
+              31
+            ],
+            "power_matched": [
+              3
+            ]
+          },
+          "baseline": "power_full",
+          "baseline_tied_methods": [
+            "power_full"
+          ],
+          "matched_baseline": "linear",
+          "paper332_brier": 0.042416904828151004,
+          "selected_baseline_brier": 0.04241438742260981,
+          "matched_baseline_brier": 0.04429006796151491,
+          "linear_brier": 0.04429006796151491,
+          "gain_vs_selected_baseline_percent": -0.005935263230630665,
+          "gain_vs_matched_percent": 4.229307426196682,
+          "gain_vs_linear_percent": 4.229307426196682,
+          "null_run_method_metric_counts": {},
+          "test_runs": 3,
+          "contributing_run_counts_unique": [
+            3
+          ],
+          "contributing_noise_counts_unique": [
+            16
+          ]
+        },
+        {
+          "scenario": "jitter050_cut8",
+          "validation_record_count": 8,
+          "selected_parameters": {
+            "raw": {},
+            "linear": {
+              "t": 64
+            },
+            "paper332": {
+              "t": 64
+            },
+            "hard_linear": {
+              "t": 64
+            },
+            "moving_average": {
+              "half_width": 32
+            },
+            "gaussian": {
+              "sigma": 16
+            },
+            "median": {
+              "width": 65
+            },
+            "power_full": {
+              "t": 64,
+              "alpha": 2
+            },
+            "power_matched": {
+              "t": 64,
+              "alpha": 3
+            }
+          },
+          "candidate_minimum_exact_tie_indices": {
+            "raw": [
+              0
+            ],
+            "linear": [
+              6
+            ],
+            "paper332": [
+              6
+            ],
+            "hard_linear": [
+              6
+            ],
+            "moving_average": [
+              5
+            ],
+            "gaussian": [
+              5
+            ],
+            "median": [
+              5
+            ],
+            "power_full": [
+              59
+            ],
+            "power_matched": [
+              6
+            ]
+          },
+          "baseline": "power_full",
+          "baseline_tied_methods": [
+            "power_full"
+          ],
+          "matched_baseline": "power_matched",
+          "paper332_brier": 0.05439182917573598,
+          "selected_baseline_brier": 0.05297452341069649,
+          "matched_baseline_brier": 0.05399256135377836,
+          "linear_brier": 0.06166442567670111,
+          "gain_vs_selected_baseline_percent": -2.675447882846464,
+          "gain_vs_matched_percent": -0.7394867217753772,
+          "gain_vs_linear_percent": 11.793828323472022,
+          "null_run_method_metric_counts": {},
+          "test_runs": 3,
+          "contributing_run_counts_unique": [
+            3
+          ],
+          "contributing_noise_counts_unique": [
+            16
+          ]
+        },
+        {
+          "scenario": "correlated10_cut8",
+          "validation_record_count": 8,
+          "selected_parameters": {
+            "raw": {},
+            "linear": {
+              "t": 64
+            },
+            "paper332": {
+              "t": 64
+            },
+            "oracle_debiased_linear": {
+              "t": 64
+            },
+            "hard_linear": {
+              "t": 1
+            },
+            "moving_average": {
+              "half_width": 64
+            },
+            "gaussian": {
+              "sigma": 32
+            },
+            "median": {
+              "width": 129
+            },
+            "power_full": {
+              "t": 64,
+              "alpha": 1
+            },
+            "power_matched": {
+              "t": 64,
+              "alpha": 3
+            }
+          },
+          "candidate_minimum_exact_tie_indices": {
+            "raw": [
+              0
+            ],
+            "linear": [
+              6
+            ],
+            "paper332": [
+              6
+            ],
+            "oracle_debiased_linear": [
+              6
+            ],
+            "hard_linear": [
+              0,
+              1
+            ],
+            "moving_average": [
+              6
+            ],
+            "gaussian": [
+              6
+            ],
+            "median": [
+              6
+            ],
+            "power_full": [
+              56
+            ],
+            "power_matched": [
+              6
+            ]
+          },
+          "baseline": "gaussian",
+          "baseline_tied_methods": [
+            "gaussian"
+          ],
+          "matched_baseline": "gaussian",
+          "paper332_brier": 0.07895500123800014,
+          "selected_baseline_brier": 0.062473224255970794,
+          "matched_baseline_brier": 0.062473224255970794,
+          "linear_brier": 0.07749364172260563,
+          "gain_vs_selected_baseline_percent": -26.382145596485884,
+          "gain_vs_matched_percent": -26.382145596485884,
+          "gain_vs_linear_percent": -1.8857798948532596,
+          "null_run_method_metric_counts": {},
+          "test_runs": 3,
+          "contributing_run_counts_unique": [
+            3
+          ],
+          "contributing_noise_counts_unique": [
+            16
+          ]
+        },
+        {
+          "scenario": "flip10_cut7",
+          "validation_record_count": 8,
+          "selected_parameters": {
+            "raw": {},
+            "linear": {
+              "t": 16
+            },
+            "paper332": {
+              "t": 16
+            },
+            "oracle_debiased_linear": {
+              "t": 32
+            },
+            "hard_linear": {
+              "t": 16
+            },
+            "moving_average": {
+              "half_width": 16
+            },
+            "gaussian": {
+              "sigma": 4
+            },
+            "median": {
+              "width": 9
+            },
+            "power_full": {
+              "t": 16,
+              "alpha": 3
+            },
+            "power_matched": {
+              "t": 16,
+              "alpha": 3
+            }
+          },
+          "candidate_minimum_exact_tie_indices": {
+            "raw": [
+              0
+            ],
+            "linear": [
+              4
+            ],
+            "paper332": [
+              4
+            ],
+            "oracle_debiased_linear": [
+              5
+            ],
+            "hard_linear": [
+              4
+            ],
+            "moving_average": [
+              4
+            ],
+            "gaussian": [
+              3
+            ],
+            "median": [
+              2
+            ],
+            "power_full": [
+              42
+            ],
+            "power_matched": [
+              4
+            ]
+          },
+          "baseline": "power_full",
+          "baseline_tied_methods": [
+            "power_full",
+            "power_matched"
+          ],
+          "matched_baseline": "power_matched",
+          "paper332_brier": 0.03735802588795892,
+          "selected_baseline_brier": 0.034035552341151375,
+          "matched_baseline_brier": 0.034035552341151375,
+          "linear_brier": 0.047732321775536386,
+          "gain_vs_selected_baseline_percent": -9.761773552270045,
+          "gain_vs_matched_percent": -9.761773552270045,
+          "gain_vs_linear_percent": 21.73432069020885,
+          "null_run_method_metric_counts": {},
+          "test_runs": 3,
+          "contributing_run_counts_unique": [
+            3
+          ],
+          "contributing_noise_counts_unique": [
+            16
+          ]
+        },
+        {
+          "scenario": "flip10_cut9",
+          "validation_record_count": 8,
+          "selected_parameters": {
+            "raw": {},
+            "linear": {
+              "t": 8
+            },
+            "paper332": {
+              "t": 8
+            },
+            "oracle_debiased_linear": {
+              "t": 8
+            },
+            "hard_linear": {
+              "t": 16
+            },
+            "moving_average": {
+              "half_width": 8
+            },
+            "gaussian": {
+              "sigma": 1
+            },
+            "median": {
+              "width": 9
+            },
+            "power_full": {
+              "t": 8,
+              "alpha": 3
+            },
+            "power_matched": {
+              "t": 8,
+              "alpha": 3
+            }
+          },
+          "candidate_minimum_exact_tie_indices": {
+            "raw": [
+              0
+            ],
+            "linear": [
+              3
+            ],
+            "paper332": [
+              3
+            ],
+            "oracle_debiased_linear": [
+              3
+            ],
+            "hard_linear": [
+              4
+            ],
+            "moving_average": [
+              3
+            ],
+            "gaussian": [
+              1
+            ],
+            "median": [
+              2
+            ],
+            "power_full": [
+              33
+            ],
+            "power_matched": [
+              3
+            ]
+          },
+          "baseline": "power_full",
+          "baseline_tied_methods": [
+            "power_full",
+            "power_matched"
+          ],
+          "matched_baseline": "power_matched",
+          "paper332_brier": 0.04710221136360482,
+          "selected_baseline_brier": 0.0436745653610538,
+          "matched_baseline_brier": 0.0436745653610538,
+          "linear_brier": 0.05656266697759687,
+          "gain_vs_selected_baseline_percent": -7.848151376470414,
+          "gain_vs_matched_percent": -7.848151376470414,
+          "gain_vs_linear_percent": 16.725618008321838,
+          "null_run_method_metric_counts": {},
+          "test_runs": 3,
+          "contributing_run_counts_unique": [
+            3
+          ],
+          "contributing_noise_counts_unique": [
+            16
+          ]
+        }
+      ],
+      "validation_noise_records": 64,
+      "test_noise_records": 384,
+      "clean_aggregate_brier": {
+        "raw": 0.0,
+        "linear": 0.022811888059202506,
+        "paper332": 0.027345689653607837,
+        "oracle_debiased_linear": 0.02715097382922052,
+        "hard_linear": 0.0412015748539266,
+        "moving_average": 0.04577596128335173,
+        "gaussian": 0.039340817457717454,
+        "median": 0.05733550549291034,
+        "power_full": 0.021296865830517066,
+        "power_matched": 0.021296865830517066
+      },
+      "frozen_split_verified": [
+        {
+          "id": "md1us4",
+          "run_index": 0,
+          "split": "discovery"
+        },
+        {
+          "id": "md1us5",
+          "run_index": 1,
+          "split": "validation"
+        },
+        {
+          "id": "md1us6",
+          "run_index": 2,
+          "split": "test"
+        },
+        {
+          "id": "md1us7",
+          "run_index": 3,
+          "split": "test"
+        },
+        {
+          "id": "md1us8",
+          "run_index": 4,
+          "split": "test"
+        }
+      ],
+      "coverage": {
+        "7": {
+          "all_eligible_pair_count": 12561,
+          "selected_pair_count": 368,
+          "discovery_frame_count": 5001,
+          "discovery_constant_absent_pairs": 12160,
+          "discovery_constant_present_pairs": 33,
+          "test_total_positive_cells": 3017950,
+          "test_discovery_absent_positive_cells": 9664,
+          "pooled_test_absent_positive_fraction": 0.003202173660928776
+        },
+        "8": {
+          "all_eligible_pair_count": 12561,
+          "selected_pair_count": 523,
+          "discovery_frame_count": 5001,
+          "discovery_constant_absent_pairs": 11928,
+          "discovery_constant_present_pairs": 110,
+          "test_total_positive_cells": 4519353,
+          "test_discovery_absent_positive_cells": 8962,
+          "pooled_test_absent_positive_fraction": 0.0019830272165064335
+        },
+        "9": {
+          "all_eligible_pair_count": 12561,
+          "selected_pair_count": 838,
+          "discovery_frame_count": 5001,
+          "discovery_constant_absent_pairs": 11523,
+          "discovery_constant_present_pairs": 200,
+          "test_total_positive_cells": 7866006,
+          "test_discovery_absent_positive_cells": 16598,
+          "pooled_test_absent_positive_fraction": 0.0021100924662401732
+        }
+      }
+    },
+    "freeze_receipt_evidence": {
+      "receipt_copy": {
+        "source": "Successful Library upload-helper output observed before the first new-protein benchmark invocation",
+        "results": [
+          {
+            "file_name": "FROZEN_RULES.txt",
+            "library_file_id": "[REDACTED: private storage identifier or local metadata]",
+            "file_id": "[REDACTED: private storage identifier or local metadata]",
+            "current_version_number": 0,
+            "local_metadata_applied": true,
+            "local_xattrs": "[REDACTED: private storage identifier or local metadata]"
+          },
+          {
+            "file_name": "protein332_frozen_protocol.zip",
+            "library_file_id": "[REDACTED: private storage identifier or local metadata]",
+            "file_id": "[REDACTED: private storage identifier or local metadata]",
+            "current_version_number": 0,
+            "local_metadata_applied": true,
+            "local_xattrs": "[REDACTED: private storage identifier or local metadata]"
+          }
+        ],
+        "caveat": "Private persistent save; not an independent public preregistration registry. This receipt copy was written during analysis; source tool execution established the original order."
+      },
+      "observed_files": [
+        {
+          "file_name": "FROZEN_RULES.txt",
+          "sha256": "324854f85f94b317ab83e40942baaa6d442f5268449a7575d6bf6806ddda22a1",
+          "local_xattrs": "[REDACTED: private storage identifier or local metadata]"
+        },
+        {
+          "file_name": "protein332_frozen_protocol.zip",
+          "sha256": "019f512cd218488b409b7e8a716006c3dab162dd4964fe9091e01e67f784ccf9",
+          "local_xattrs": "[REDACTED: private storage identifier or local metadata]"
+        }
+      ],
+      "first_villin_invocation_utc": "2026-10-07T14:51:05.028367+00:00",
+      "protocol_created_utc": "2026-10-07T14:43:11.810208+00:00",
+      "interpretation": "Local archive bytes and persistent-save identifier xattrs agree. The receipt copy explicitly was written during analysis and lacks an independent server timestamp; original tool ordering is reported by parent-session provenance, not independently proved by local receipt. Not a public preregistration."
+    }
+  },
+  "interpretation_limits": [
+    "All intervals use 16 paired artificial-noise replicates per fixed trajectory, df=15. Frames, contacts, trajectories or seeds are not asserted to be independent biological replicates.",
+    "Per-run 95% intervals are pointwise and unadjusted across scenarios, runs and comparators. They support descriptive conditional noise statements, not familywise significance or biological generalization.",
+    "Villin 48 test paths belong to one held-out adaptive archive group; within-group ancestry and adaptive selection imply dependence. Held-out groups have unverified campaign independence. Hash caps prevent outcome selection but do not restore independence or equilibrium sampling.",
+    "Validation-selected full power has 63 candidates while cubic and matched alpha=3 family have seven; both full-budget primary and matched secondary comparisons must be reported.",
+    "Frozen archive, current JSON hash and version-0 Library identifier xattrs agree. Receipt copy was created during analysis and has no independent server timestamp; original save-before-run ordering is supported by parent conversation provenance. This is a private prospective freeze, not a public registry preregistration."
+  ],
+  "critical_findings": [],
+  "summary_numeric_field_count": 213270,
+  "findings": [
+    {
+      "severity": "none",
+      "finding": "No discrepancy in candidate aggregation, tuning/tie-breaking, equal-run metric weighting, contributor/null handling, conditional CIs, effect arithmetic, composite decision, summary, hash-capped selection, feature selection or coverage."
+    },
+    {
+      "severity": "interpretation",
+      "finding": "Villin primary cubic has higher Brier than full/matched power in all 48 held-out paths. Its 35.895% gain over linear alone does not establish comparative success. One secondary jitter scenario has only 0.02194% gain over selected baseline and cannot replace the primary scenario."
+    },
+    {
+      "severity": "interpretation",
+      "finding": "The 48 selected test trajectories descend from only six named roots within one adaptive archive group. Even roots may be coupled by adaptive selection; report these as dependent stress paths, not 48 independent biological simulations."
+    },
+    {
+      "id": "t4_primary",
+      "severity": "interpretation",
+      "finding": "T4 primary cubic Brier 0.04036348805980258 versus selected full/matched power 0.03719128753665906: 8.5294184% worse. Every composite gate fails, with 0/3 positive Brier gains, 0/3 rare guardrail passes and 0/3 brief guardrail passes. Rare losses are 8.7996–10.8051 percentage points; brief losses are 11.3532–11.6204 points. All strata are evaluable."
+    },
+    {
+      "id": "coverage_scope",
+      "severity": "interpretation",
+      "resolution": "Report now explicitly states both selected-positive coverage and total omitted-positive fraction; numeric statements independently checked.",
+      "finding": "T4 primary scores cover 523/12,561 eligible pairs and 63.3229% of held-out positive cells. The 0.1983% positives in discovery-absent pairs are only part of omission: discovery-constant-present pairs are also excluded. Total omitted positive-cell fraction is 36.6771%. This is protocol-consistent feature-restricted performance, not all-contact accuracy."
+    }
+  ],
+  "report_checks": {
+    "created_utc": "2026-10-07T16:09:40.853686+00:00",
+    "status": "pass",
+    "results_txt_sha256": "3f1a820479c5142e361f0e061e98151496490a3393b0b8b27c9f0803cb23b2f1",
+    "counts": {
+      "report_rows_checked": 57,
+      "report_numeric_fields_checked": 184,
+      "scope_phrases_checked": 7
+    },
+    "scenario_rows_count": 16,
+    "failures": [],
+    "evidence": {
+      "t4": {
+        "selected_baseline": "power_full",
+        "matched_baseline": "power_matched",
+        "conditional_intervals": [
+          {
+            "run_id": "md1us6",
+            "mean_brier_gain": -0.003292031606053452,
+            "conditional_noise_95pct_ci": [
+              -0.0033114249881455574,
+              -0.003272638223961347
+            ]
+          },
+          {
+            "run_id": "md1us7",
+            "mean_brier_gain": -0.0030901947936229877,
+            "conditional_noise_95pct_ci": [
+              -0.0031099231435950175,
+              -0.003070466443650958
+            ]
+          },
+          {
+            "run_id": "md1us8",
+            "mean_brier_gain": -0.0031343751697541266,
+            "conditional_noise_95pct_ci": [
+              -0.003150857300471168,
+              -0.0031178930390370852
+            ]
+          }
+        ]
+      }
+    },
+    "positive_coverage": {
+      "t4": {
+        "all_eligible_pairs": 12561,
+        "selected_pairs": 523,
+        "selected_positive_cells": 2861787,
+        "all_positive_cells": 4519353,
+        "selected_positive_fraction": 0.6332293582731865,
+        "omitted_positive_fraction": 0.3667706417268135,
+        "discovery_absent_positive_fraction": 0.0019830272165064335
+      },
+      "villin": {
+        "all_eligible_pairs": 496,
+        "selected_pairs": 496,
+        "selected_positive_cells": 413926,
+        "all_positive_cells": 413926,
+        "selected_positive_fraction": 1.0,
+        "omitted_positive_fraction": 0.0,
+        "discovery_absent_positive_fraction": 0.0
+      }
+    },
+    "interpretation": "All statistical report rows checked against independently recomputed means/contrasts from archived noise rows; 95% Student-t intervals are approximate pointwise conditional-noise intervals, not simultaneous or biological confidence statements."
+  },
+  "report_numeric_fields_checked": 184
+}

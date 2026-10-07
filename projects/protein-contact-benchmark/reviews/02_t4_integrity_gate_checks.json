@@ -1,0 +1,105 @@
+{
+  "reviewer": "Independent AI data/provenance audit #2",
+  "code_sha256": "ab9d98f07394bb34631a75f119f2aadb2fc14443f4672707944a161271122de0",
+  "only_T4_source_gate_changed": true,
+  "tests": [
+    {
+      "test": "control_complete4_and5_then_missing6",
+      "rejected": true,
+      "exception_type": "RuntimeError",
+      "message": "All five verified T4 CA runs are required: missing /tmp/review2_t4_gate_mpyoaxn9/data/t4/md1us6_ca_200ps.npz"
+    },
+    {
+      "test": "missing_extraction_manifest",
+      "rejected": true,
+      "exception_type": "FileNotFoundError",
+      "message": "[Errno 2] No such file or directory: '/tmp/review2_t4_gate_b58k7g6a/data/t4/md1us4_extraction.json'"
+    },
+    {
+      "test": "bad_extraction_run",
+      "rejected": true,
+      "exception_type": "AssertionError",
+      "message": ""
+    },
+    {
+      "test": "bad_extraction_output",
+      "rejected": true,
+      "exception_type": "AssertionError",
+      "message": ""
+    },
+    {
+      "test": "bad_extraction_output_sha256",
+      "rejected": true,
+      "exception_type": "AssertionError",
+      "message": ""
+    },
+    {
+      "test": "bad_extraction_output_size",
+      "rejected": true,
+      "exception_type": "AssertionError",
+      "message": ""
+    },
+    {
+      "test": "bad_extraction_n_ca",
+      "rejected": true,
+      "exception_type": "AssertionError",
+      "message": ""
+    },
+    {
+      "test": "bad_extraction_sample_nframes",
+      "rejected": true,
+      "exception_type": "AssertionError",
+      "message": ""
+    },
+    {
+      "test": "bad_extraction_sample_dt_ps",
+      "rejected": true,
+      "exception_type": "AssertionError",
+      "message": ""
+    },
+    {
+      "test": "bad_extraction_max_adjacent_ca_distance_angstrom",
+      "rejected": true,
+      "exception_type": "AssertionError",
+      "message": ""
+    },
+    {
+      "test": "checksum_record_wrong_published_md5",
+      "rejected": true,
+      "exception_type": "AssertionError",
+      "message": ""
+    },
+    {
+      "test": "checksum_record_wrong_source_size",
+      "rejected": true,
+      "exception_type": "AssertionError",
+      "message": ""
+    },
+    {
+      "test": "checksum_record_wrong_sha256",
+      "rejected": true,
+      "exception_type": "AssertionError",
+      "message": ""
+    },
+    {
+      "test": "partial_raw_and_checkpoint_without_CA",
+      "rejected": true,
+      "exception_type": "RuntimeError",
+      "message": "All five verified T4 CA runs are required: missing /tmp/review2_t4_gate_au238mx2/data/t4/md1us4_ca_200ps.npz"
+    },
+    {
+      "test": "self_consistent_checksum_not_published",
+      "rejected": true,
+      "exception_type": "AssertionError",
+      "message": ""
+    },
+    {
+      "test": "truncated_CA",
+      "rejected": true,
+      "exception_type": "AssertionError",
+      "message": ""
+    }
+  ],
+  "all_rejected_before_prepared_output": true,
+  "scope": "Isolated temporary copies of metadata with symlinked read-only completed4/5 coordinates; no production file changed. Control reaches missing6 as expected. Complete5-run positive gate remains pending."
+}

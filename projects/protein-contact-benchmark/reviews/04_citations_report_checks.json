@@ -1,0 +1,185 @@
+{
+  "t4_checksum_manifest_and_derived_hash_checks": [
+    {
+      "run": "md1us4",
+      "tpr": {
+        "md5": "94dcaca1a87b59e051ecca10fe29d508",
+        "verified_size": 2299440
+      },
+      "xtc": {
+        "md5": "991c47f3ef4af3f0803a712264452dd6",
+        "verified_size": 10136603972
+      },
+      "output_hash_valid": true
+    },
+    {
+      "run": "md1us5",
+      "tpr": {
+        "md5": "f02fbe8f098255ed93c7155d86a590cf",
+        "verified_size": 2299440
+      },
+      "xtc": {
+        "md5": "1a595d1027b671a3c467e70983151cc7",
+        "verified_size": 10145726248
+      },
+      "output_hash_valid": true
+    },
+    {
+      "run": "md1us6",
+      "tpr": {
+        "md5": "700612ab7a927c0673710083aba5214a",
+        "verified_size": 2299440
+      },
+      "xtc": {
+        "md5": "75807ff000533ee6f77f789dd2b4874f",
+        "verified_size": 10134053888
+      },
+      "output_hash_valid": true
+    },
+    {
+      "run": "md1us7",
+      "tpr": {
+        "md5": "d5a66ca48a55b43a25830dd9d1355062",
+        "verified_size": 2299440
+      },
+      "xtc": {
+        "md5": "1bc5ed165677a75d255528478bd59614",
+        "verified_size": 10127022556
+      },
+      "output_hash_valid": true
+    },
+    {
+      "run": "md1us8",
+      "tpr": {
+        "md5": "eb4df68b5597af1744bf515734c3286a",
+        "verified_size": 2299440
+      },
+      "xtc": {
+        "md5": "90c65520164769655aebd92d1760662d",
+        "verified_size": 10115749320
+      },
+      "output_hash_valid": true
+    }
+  ],
+  "raw_rehash_scope": "No full source XTC rehash by citation reviewer; published source metadata, completion manifests and all actual derived-file hashes cross-checked. Reviewer2 independently rehashed retained md1us8; other originals removed after acquisition verification.",
+  "references_count": 21,
+  "all_references_cited": true,
+  "all_citations_resolve": true,
+  "standalone_references_match_report": true,
+  "all_16_scenario_rows_match_raw_test_aggregate": true,
+  "scenario_rows": [
+    {
+      "dataset": "t4",
+      "name": "correlated10_cut8",
+      "cubic_brier": 0.07895500123800014,
+      "gain_vs_selected_percent": -26.3821455964859,
+      "gain_vs_linear_percent": -1.8857798948532596
+    },
+    {
+      "dataset": "t4",
+      "name": "flip05_cut8",
+      "cubic_brier": 0.027147728473668756,
+      "gain_vs_selected_percent": -13.549533316123467,
+      "gain_vs_linear_percent": 15.796138448377262
+    },
+    {
+      "dataset": "t4",
+      "name": "flip10_cut7",
+      "cubic_brier": 0.037358025887958925,
+      "gain_vs_selected_percent": -9.761773552270066,
+      "gain_vs_linear_percent": 21.734320690208822
+    },
+    {
+      "dataset": "t4",
+      "name": "flip10_cut8",
+      "cubic_brier": 0.04036348805980258,
+      "gain_vs_selected_percent": -8.529418402137104,
+      "gain_vs_linear_percent": 20.55488120677883
+    },
+    {
+      "dataset": "t4",
+      "name": "flip10_cut9",
+      "cubic_brier": 0.04710221136360482,
+      "gain_vs_selected_percent": -7.8481513764704305,
+      "gain_vs_linear_percent": 16.725618008321838
+    },
+    {
+      "dataset": "t4",
+      "name": "flip20_cut8",
+      "cubic_brier": 0.061906353580187375,
+      "gain_vs_selected_percent": -22.758862786210102,
+      "gain_vs_linear_percent": 25.164240651743306
+    },
+    {
+      "dataset": "t4",
+      "name": "jitter025_cut8",
+      "cubic_brier": 0.042416904828151004,
+      "gain_vs_selected_percent": -0.005935263230630665,
+      "gain_vs_linear_percent": 4.229307426196682
+    },
+    {
+      "dataset": "t4",
+      "name": "jitter050_cut8",
+      "cubic_brier": 0.05439182917573598,
+      "gain_vs_selected_percent": -2.675447882846464,
+      "gain_vs_linear_percent": 11.793828323472022
+    },
+    {
+      "dataset": "villin",
+      "name": "correlated10_cut8",
+      "cubic_brier": 0.061211573235329664,
+      "gain_vs_selected_percent": -48.79634290418887,
+      "gain_vs_linear_percent": -1.9563962483210473
+    },
+    {
+      "dataset": "villin",
+      "name": "flip05_cut8",
+      "cubic_brier": 0.013962280228918182,
+      "gain_vs_selected_percent": -22.823286593581926,
+      "gain_vs_linear_percent": 29.566923125214487
+    },
+    {
+      "dataset": "villin",
+      "name": "flip10_cut7",
+      "cubic_brier": 0.015166326103571957,
+      "gain_vs_selected_percent": -32.474333607263965,
+      "gain_vs_linear_percent": 42.46275361468674
+    },
+    {
+      "dataset": "villin",
+      "name": "flip10_cut8",
+      "cubic_brier": 0.019960005333488316,
+      "gain_vs_selected_percent": -24.78768675149496,
+      "gain_vs_linear_percent": 35.895138462684585
+    },
+    {
+      "dataset": "villin",
+      "name": "flip10_cut9",
+      "cubic_brier": 0.02844495455988753,
+      "gain_vs_selected_percent": -19.228147195491566,
+      "gain_vs_linear_percent": 28.69742569281698
+    },
+    {
+      "dataset": "villin",
+      "name": "flip20_cut8",
+      "cubic_brier": 0.04087152435950686,
+      "gain_vs_selected_percent": -69.77343699019835,
+      "gain_vs_linear_percent": 36.455241593994025
+    },
+    {
+      "dataset": "villin",
+      "name": "jitter025_cut8",
+      "cubic_brier": 0.007573336946544044,
+      "gain_vs_selected_percent": -1.080612397448301,
+      "gain_vs_linear_percent": 0.8950147243225596
+    },
+    {
+      "dataset": "villin",
+      "name": "jitter050_cut8",
+      "cubic_brier": 0.012644731084695382,
+      "gain_vs_selected_percent": 0.021937583484288467,
+      "gain_vs_linear_percent": 3.854165824099362
+    }
+  ],
+  "reviewed_report_sha256": "6e7b1372d886fc40cbd4a1b43792925e4d1a848806a969c90349e13ad9b1f05f"
+}

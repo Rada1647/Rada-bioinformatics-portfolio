@@ -1,0 +1,119 @@
+{
+  "reviewer": "05",
+  "checked_utc": "2026-10-07T15:38:18.029289+00:00",
+  "status": "pass",
+  "comparator_sha256": "1d442f1b974d300ff2c1f9ba12af2f90e9cd0b8ee4b069c7d770f31d87baff8a",
+  "fixture_scope": "Disposable synthetic 17-output fixtures to test CLI exclusion behavior; no benchmark rerun or production output mutation.",
+  "tests": [
+    {
+      "case": "Default rejects changed preparation hash",
+      "optional": false,
+      "expected_pass": false,
+      "exit_code": 1,
+      "difference_count": 17,
+      "excluded_metadata_keys": [
+        "completed_utc",
+        "method_prediction_and_metrics_seconds",
+        "seconds",
+        "validation_file_sha256"
+      ]
+    },
+    {
+      "case": "Explicit optional mode allows changed preparation hash",
+      "optional": true,
+      "expected_pass": true,
+      "exit_code": 0,
+      "difference_count": 0,
+      "excluded_metadata_keys": [
+        "completed_utc",
+        "method_prediction_and_metrics_seconds",
+        "prepared_manifest_sha256",
+        "seconds",
+        "validation_file_sha256"
+      ]
+    },
+    {
+      "case": "Optional mode rejects changed prepared contact hash",
+      "optional": true,
+      "expected_pass": false,
+      "exit_code": 1,
+      "difference_count": 17,
+      "excluded_metadata_keys": [
+        "completed_utc",
+        "method_prediction_and_metrics_seconds",
+        "prepared_manifest_sha256",
+        "seconds",
+        "validation_file_sha256"
+      ]
+    },
+    {
+      "case": "Optional mode rejects changed benchmark code hash",
+      "optional": true,
+      "expected_pass": false,
+      "exit_code": 1,
+      "difference_count": 17,
+      "excluded_metadata_keys": [
+        "completed_utc",
+        "method_prediction_and_metrics_seconds",
+        "prepared_manifest_sha256",
+        "seconds",
+        "validation_file_sha256"
+      ]
+    },
+    {
+      "case": "Optional mode rejects changed protocol hash",
+      "optional": true,
+      "expected_pass": false,
+      "exit_code": 1,
+      "difference_count": 17,
+      "excluded_metadata_keys": [
+        "completed_utc",
+        "method_prediction_and_metrics_seconds",
+        "prepared_manifest_sha256",
+        "seconds",
+        "validation_file_sha256"
+      ]
+    },
+    {
+      "case": "Optional mode rejects changed scientific metric",
+      "optional": true,
+      "expected_pass": false,
+      "exit_code": 1,
+      "difference_count": 17,
+      "excluded_metadata_keys": [
+        "completed_utc",
+        "method_prediction_and_metrics_seconds",
+        "prepared_manifest_sha256",
+        "seconds",
+        "validation_file_sha256"
+      ]
+    },
+    {
+      "case": "Optional mode rejects changed selected smoothing parameter",
+      "optional": true,
+      "expected_pass": false,
+      "exit_code": 1,
+      "difference_count": 17,
+      "excluded_metadata_keys": [
+        "completed_utc",
+        "method_prediction_and_metrics_seconds",
+        "prepared_manifest_sha256",
+        "seconds",
+        "validation_file_sha256"
+      ]
+    }
+  ],
+  "readme_review": {
+    "raw_reconstruction_paths": "Source directories renamed to reference; exact extractor+metadata copies recreate required relative source paths and preparation uses them correctly.",
+    "manifest_exception_reason": "Preparation timestamps and source-acquisition provenance change the manifest hash on independent extraction. Exact prepared-array file hashes and all scientific result fields remain required.",
+    "requested_documentation_corrections": [
+      "Install requirements-analysis.txt explicitly before extraction commands and use the same .venv interpreter throughout.",
+      "Clarify T4 script retains final md1us8 raw XTC for source-level review although md1us4\u20137 newly downloaded XTCs are removed."
+    ]
+  },
+  "limits": [
+    "Comparator itself is not a provenance attestation. Optional mode permits any preparation-manifest bytes to differ; users must inspect regenerated provenance.",
+    "Default production result comparison and independent reviewer hash checks remain stronger for the existing prepared inputs.",
+    "No claim of independently rerunning source extraction follows from these tests."
+  ]
+}

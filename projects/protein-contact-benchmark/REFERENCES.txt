@@ -1,0 +1,41 @@
+[1] OpenAI (2026). Metric Markov Cotype Two of ℓ1. https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/preprints/Metric-Markov-Cotype-Two-of-l1-October-5-2026/l1-markov-cotype.pdf
+
+[2] Qingjin Cheng; Yue Wang; Bo Xiang (2026). Sharp Metric Cotype Inequalities for L1 via Nonlinear Cut Smoothing. https://arxiv.org/html/2609.08749v2
+
+[3] Veeru Sadhanala; Yu-Xiang Wang; Ryan Tibshirani (2016). Graph Sparsification Approaches for Laplacian Smoothing. Proceedings of the 19th International Conference on Artificial Intelligence and Statistics; Proceedings of Machine Learning Research; 51; 1250–1259; https://proceedings.mlr.press/v51/sadhanala16.html
+
+[4] Willy Wriggers; Kate A. Stafford; Yibing Shan; Stefano Piana; Paul Maragakis; Kresten Lindorff-Larsen; Patrick J. Miller; Justin Gullingsrud; Charles A. Rendleman; Michael P. Eastwood; Ron O. Dror; David E. Shaw (2009). Automated Event Detection and Activity Monitoring in Long Molecular Dynamics Simulations. Journal of Chemical Theory and Computation; 5; 10; 2595–2605; https://doi.org/10.1021/ct900229u
+
+[5] David Berthelot; Nicholas Carlini; Ian Goodfellow; Nicolas Papernot; Avital Oliver; Colin A. Raffel (2019). MixMatch: A Holistic Approach to Semi-Supervised Learning. Advances in Neural Information Processing Systems; 32; https://papers.neurips.cc/paper_files/paper/2019/hash/1cd138d0499a68f4bb72bee04bbec2d7-Abstract.html
+
+[6] Glenn W. Brier (1950). Verification of forecasts expressed in terms of probability. Monthly Weather Review; 78; 1; 1–3; https://journals.ametsoc.org/view/journals/mwre/78/1/1520-0493_1950_078_0001_vofeit_2_0_co_2.xml
+
+[7] Naveen Michaud-Agrawal; Elizabeth J. Denning; Thomas B. Woolf; Oliver Beckstein (2011). MDAnalysis: A toolkit for the analysis of molecular dynamics simulations. Journal of Computational Chemistry; 32; 10; 2319–2327; https://doi.org/10.1002/jcc.21787
+
+[8] Richard J. Gowers; Max Linke; Jonathan Barnoud; Tyler J. E. Reddy; Manuel N. Melo; Sean L. Seyler; Jan Domański; David L. Dotson; Sébastien Buchoux; Ian M. Kenney; Oliver Beckstein (2016). MDAnalysis: A Python Package for the Rapid Analysis of Molecular Dynamics Simulations. Proceedings of the 15th Python in Science Conference; 98–105; https://doi.org/10.25080/Majora-629e541a-00e
+
+[9] Charles R. Harris; K. Jarrod Millman; Stéfan J. van der Walt; et al. (2020). Array programming with NumPy. Nature; 585; 7825; 357–362; https://doi.org/10.1038/s41586-020-2649-2
+
+[10] Pauli Virtanen; Ralf Gommers; Travis E. Oliphant; et al. (2020). SciPy 1.0: Fundamental Algorithms for Scientific Computing in Python. Nature Methods; 17; 3; 261–272; https://doi.org/10.1038/s41592-019-0686-2
+
+[11] John D. Hunter (2007). Matplotlib: A 2D graphics environment. Computing in Science & Engineering; 9; 3; 90–95; https://doi.org/10.1109/MCSE.2007.55
+
+[12] Felix Kümmerer; Simone Orioli; David Harding-Larsen; Falk Hoffmann; Yulian Gavrilov; Kaare Teilum; Kresten Lindorff-Larsen (2021). Fitting Side-Chain NMR Relaxation Data Using Molecular Simulations. Journal of Chemical Theory and Computation; 17; 8; 5262–5275; https://doi.org/10.1021/acs.jctc.0c01338
+
+[13] Felix Kümmerer; Simone Orioli; David Harding-Larsen; Falk Hoffmann; Yulian Gavrilov; Kaare Teilum; Kresten Lindorff-Larsen (2020). 5x 1 µs all-atom MD trajectories; AMBER ff99SB*-ILDN & TIP4P/2005; T4 Lysozyme; Fitting side-chain NMR relaxation data using molecular simulations. https://zenodo.org/records/3989057
+
+[14] Adekunle Aina; Shawn C. C. Hsueh; Steven S. Plotkin (2023). PROTHON: A Local Order Parameter-Based Method for Efficient Comparison of Protein Ensembles. Journal of Chemical Information and Modeling; 63; 11; 3453–3461; https://doi.org/10.1021/acs.jcim.3c00145
+
+[15] Adekunle Aina; Shawn C. C. Hsueh; Steven S. Plotkin (2023). Molecular dynamics-generated ensemble dataset of ubiquitin; for PROTHON: A Local Order Parameter-Based Method for Efficient Comparison of Protein Ensembles. https://zenodo.org/records/7792288
+
+[16] Stefan Doerr; Matthew J. Harvey; Frank Noé; Gianni De Fabritiis (2016). HTMD: High-Throughput Molecular Dynamics for Molecular Discovery. Journal of Chemical Theory and Computation; 12; 4; 1845–1852; https://doi.org/10.1021/acs.jctc.6b00049
+
+[17] Stefan Doerr (2026). HTMD tutorial data. https://doi.org/10.6084/m9.figshare.32541291.v1
+
+[18] Acellera (2026). Protein folding MSM: villin headpiece. https://software.acellera.com/htmd/tutorials/analysis/villin-folding.html
+
+[19] Jan Kubelka; T.-K. Chiu; David R. Davies; William A. Eaton; James Hofrichter (2006). Sub-microsecond Protein Folding. Journal of Molecular Biology; 359; 546–553; https://doi.org/10.1016/j.jmb.2006.03.034
+
+[20] T. K. Chiu; D. R. Davies; J. Kubelka; J. Hofrichter; W. A. Eaton (2006). 2F4K: Chicken villin subdomain HP-35, K65(NLE), N68H, K70(NLE), pH9. https://www.rcsb.org/structure/2F4K
+
+[21] UniProt Consortium (2026). UniProtKB P00720: Endolysin, bacteriophage T4; reference sequence. https://rest.uniprot.org/uniprotkb/P00720.fasta (accessed 2026-10-07)

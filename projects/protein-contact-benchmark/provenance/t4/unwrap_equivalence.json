@@ -1,0 +1,56 @@
+{
+  "verified_utc": "2026-10-07T15:07:58.514151+00:00",
+  "reference": "md1us4_full_make_whole_reference.npz",
+  "optimized": "md1us4_ca_200ps.npz",
+  "all_arrays_bitwise_equal": true,
+  "xyz_scalar_comparisons": 2430486,
+  "fields": {
+    "xyz": {
+      "shape": [
+        5001,
+        162,
+        3
+      ],
+      "array_equal": true,
+      "max_absolute_difference_A": 0.0
+    },
+    "time_ps": {
+      "shape": [
+        5001
+      ],
+      "array_equal": true
+    },
+    "ca_atom_indices": {
+      "shape": [
+        162
+      ],
+      "array_equal": true
+    },
+    "resids": {
+      "shape": [
+        162
+      ],
+      "array_equal": true
+    },
+    "resnames": {
+      "shape": [
+        162
+      ],
+      "array_equal": true
+    },
+    "frame_indices": {
+      "shape": [
+        5001
+      ],
+      "array_equal": true
+    },
+    "box_dimensions": {
+      "shape": [
+        5001,
+        6
+      ],
+      "array_equal": true
+    }
+  },
+  "explanation": "Original full-protein bonded make_whole versus connected N-CA-C backbone make_whole plus already-whole bond gate. All 5,001 selected frames and all 162 CA atoms match exactly. Therefore all contact cutoffs necessarily match."
+}

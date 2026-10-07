@@ -1,0 +1,38 @@
+[
+  {
+    "sample": 0,
+    "max_coordinate_error_A": 0.0,
+    "max_relative_coordinate_error_A": 0.0,
+    "seconds": 0.014715900000737747
+  },
+  {
+    "sample": 1,
+    "max_coordinate_error_A": 0.0,
+    "max_relative_coordinate_error_A": 0.0,
+    "seconds": 0.010039387001597788
+  },
+  {
+    "sample": 1000,
+    "max_coordinate_error_A": 0.0,
+    "max_relative_coordinate_error_A": 0.0,
+    "seconds": 0.010765945000457577
+  },
+  {
+    "sample": 2500,
+    "max_coordinate_error_A": 0.0,
+    "max_relative_coordinate_error_A": 0.0,
+    "seconds": 0.009644103000027826
+  },
+  {
+    "sample": 4999,
+    "max_coordinate_error_A": 0.0,
+    "max_relative_coordinate_error_A": 0.0,
+    "seconds": 0.010436717999255052
+  },
+  {
+    "sample": 5000,
+    "max_coordinate_error_A": 0.0,
+    "max_relative_coordinate_error_A": 0.0,
+    "seconds": 0.013457847999234218
+  }
+]
