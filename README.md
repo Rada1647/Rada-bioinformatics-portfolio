@@ -62,6 +62,8 @@ Only the completed project above is presented as a result. Future studies and
 learning exercises can be added in their own folders with clear status labels.
 Source trajectories, topologies, and coordinate/contact arrays are not included.
 
-Original project code and writing use the [MIT license](LICENSE). Third-party
-datasets, metadata, papers, and dependencies retain their own terms; see the
-project's [notices](projects/protein-contact-benchmark/THIRD_PARTY_NOTICES.md).
+The [MIT license](LICENSE) applies only to original project code and writing.
+Third-party datasets, metadata, papers, and dependencies retain their own
+licenses and terms, including applicable attribution requirements; they are not
+relicensed by this repository. See the project's
+[notices](projects/protein-contact-benchmark/THIRD_PARTY_NOTICES.md).
