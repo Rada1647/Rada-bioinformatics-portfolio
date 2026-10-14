@@ -43,8 +43,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 6756,
-      "sha256": "7a976c89667281a561cf9d4875029e0ce5d3e9e785155e11037fb9b7d2a2f61f"
+      "bytes": 6892,
+      "sha256": "1b33888efce6693613f5d1a4a22f965fdfb586f8385821199e337f739d0d2913"
     },
     {
       "path": "REFERENCES.txt",
@@ -53,8 +53,8 @@
     },
     {
       "path": "RELEASE_NOTES.md",
-      "bytes": 4698,
-      "sha256": "fbb5f8faff6689ef16ac10dd83e741a00eaeb790f4616d84508acc14347c551e"
+      "bytes": 4768,
+      "sha256": "3a942071d161ebf65f2b18a48c75996d1475f2b1950de72396e7d4a137c37613"
     },
     {
       "path": "REPRODUCING.md",

@@ -80,3 +80,5 @@ root and uses this project as its working directory. The nested workflow is
 retained as part of the standalone package; GitHub does not run it from here.
 No benchmark algorithm, frozen protocol or numerical result was changed.
 The public file manifest was refreshed for these documentation changes.
+
+README: added plain-language summary; no scientific content changed.

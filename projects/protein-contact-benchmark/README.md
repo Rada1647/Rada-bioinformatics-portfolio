@@ -1,13 +1,16 @@
 # Negative result: expected-median smoothing of protein contacts
 
+**In short:** I tested a trick from a recent math paper for cleaning up noisy
+records of which protein parts touch. On T4 lysozyme, it beat simple smoothing
+with 20.55% lower error, but lost to a standard tuned sharpening method with
+8.53% higher error and missed about 10 percentage points more of the rare and
+brief contacts. It works as a smoother but offers no advantage over that standard
+tool here. The underlying theorem never promised better noise removal.
+
 Part of [Rada’s Bioinformatics Portfolio](../../README.md). Run this project’s
 commands from `projects/protein-contact-benchmark/`.
 
-**Status: the predefined practical-success test failed.** This benchmark tested
-whether an expected-median construction used in OpenAI/math catalogue family
-**#332** improves recovery of artificially corrupted protein-contact trajectories.
-On held-out T4 lysozyme simulations, it did not beat the stronger prespecified
-controls. A separate villin stress test also favored those controls.
+**Status: the predefined practical-success test failed.**
 
 This repository preserves the negative result, frozen rules, implementation,
 numerical outputs, source provenance, and five AI technical review reports.
